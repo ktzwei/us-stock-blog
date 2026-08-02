@@ -1,286 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>美股小白观察报告 · 2026.08.01</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 归档</title>
 <style>
-  :root {
-    --bg: #0a0e17;
-    --surface: #111726;
-    --surface-2: #1a2233;
-    --border: #232d42;
-    --text: #e6eaf2;
-    --muted: #8a94ab;
-    --accent: #4f8cff;
-    --green: #38d996;
-    --red: #ff5c6c;
-    --amber: #ffb84d;
-    --purple: #a78bfa;
-    --radius: 14px;
-    --mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
 
-  /* ===== Header ===== */
-  header {
-    padding: 64px 0 40px;
-    border-bottom: 1px solid var(--border);
-    background:
-      radial-gradient(1200px 400px at 20% -10%, rgba(79,140,255,0.15), transparent 60%),
-      radial-gradient(800px 300px at 90% -20%, rgba(56,217,150,0.08), transparent 60%);
-  }
-  .kicker {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--mono); font-size: 12px; letter-spacing: 2px;
-    color: var(--green); text-transform: uppercase;
-    margin-bottom: 18px;
-  }
-  .kicker::before { content: ""; width: 28px; height: 1px; background: var(--green); }
-  h1 {
-    font-size: clamp(28px, 5vw, 42px);
-    font-weight: 700; letter-spacing: -0.02em; line-height: 1.2;
-    margin-bottom: 14px;
-  }
-  .date {
-    font-family: var(--mono); color: var(--muted); font-size: 14px;
-    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  }
-  .temp {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--surface); border: 1px solid var(--border);
-    padding: 4px 12px; border-radius: 999px;
-    font-size: 13px; color: var(--amber);
-  }
-  .temp b { font-weight: 600; }
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
 
-  /* ===== Sections ===== */
-  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
-  .section-title {
-    font-size: 13px; font-family: var(--mono); letter-spacing: 1.5px;
-    color: var(--accent); text-transform: uppercase; margin-bottom: 24px;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .section-title::before { content: ""; width: 18px; height: 2px; background: var(--accent); }
-
-  .h2 { font-size: 20px; font-weight: 600; margin: 24px 0 12px; letter-spacing: -0.01em; }
-  .p { color: var(--text); margin-bottom: 12px; }
-  .muted { color: var(--muted); }
-  .accent { color: var(--accent); }
-  .green { color: var(--green); }
-  .red { color: var(--red); }
-  .amber { color: var(--amber); }
-  .purple { color: var(--purple); }
-
-  /* Cards */
-  .card {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 20px 22px; margin: 16px 0;
-  }
-  .card-tag {
-    display: inline-block; font-size: 12px; font-family: var(--mono);
-    padding: 3px 10px; border-radius: 6px; margin-bottom: 10px;
-    background: rgba(79,140,255,0.12); color: var(--accent);
-  }
-  .card-tag.green { background: rgba(56,217,150,0.12); color: var(--green); }
-  .card-tag.red { background: rgba(255,92,108,0.12); color: var(--red); }
-  .card-tag.amber { background: rgba(255,184,77,0.12); color: var(--amber); }
-
-  /* Tables */
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-  th {
-    text-align: left; font-family: var(--mono); font-size: 11px; letter-spacing: 1px;
-    text-transform: uppercase; color: var(--muted); padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; }
-
-  /* Quote / callout */
-  .callout {
-    background: linear-gradient(135deg, rgba(79,140,255,0.08), rgba(56,217,150,0.05));
-    border-left: 3px solid var(--accent);
-    padding: 20px 24px; border-radius: 0 var(--radius) var(--radius) 0;
-    margin: 20px 0;
-  }
-  .callout .big { font-size: 17px; font-weight: 600; line-height: 1.6; }
-
-  /* Quote block */
-  .quote {
-    border-left: 3px solid var(--green); padding-left: 18px; margin: 14px 0;
-    color: var(--text); font-style: italic;
-  }
-  .quote .who { display: block; font-style: normal; font-size: 13px; color: var(--muted); margin-top: 6px; font-family: var(--mono); }
-
-  /* list */
-  .list { list-style: none; }
-  .list li {
-    padding: 10px 0; border-bottom: 1px dashed var(--border);
-    padding-left: 22px; position: relative; font-size: 15px;
-  }
-  .list li:last-child { border-bottom: none; }
-  .list li::before {
-    content: "▸"; position: absolute; left: 0; color: var(--accent);
-  }
-  .list b { color: var(--text); }
-
-  /* Ticker chip */
-  .ticker {
-    display: inline-block; font-family: var(--mono); font-size: 13px;
-    color: var(--purple); background: rgba(167,139,250,0.1);
-    padding: 1px 8px; border-radius: 5px; margin: 0 2px;
-  }
-
-  /* Glossary */
-  .glossary { list-style: none; }
-  .glossary li {
-    padding: 12px 0; border-bottom: 1px solid var(--border);
-    display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: baseline;
-  }
-  .glossary li:last-child { border-bottom: none; }
-  .glossary .term { font-family: var(--mono); color: var(--accent); font-size: 14px; font-weight: 600; }
-
-  footer {
-    padding: 40px 0 64px; text-align: center; color: var(--muted); font-size: 13px;
-  }
-  footer .note { font-size: 12px; margin-top: 8px; }
-
-  /* sentiment bar */
-  .meter {
-    display: flex; align-items: center; gap: 16px; margin: 8px 0;
-  }
-  .meter-bar {
-    flex: 1; height: 8px; border-radius: 99px; background: var(--surface-2);
-    position: relative; overflow: hidden;
-  }
-  .meter-fill {
-    position: absolute; inset: 0; width: 55%;
-    background: linear-gradient(90deg, var(--red), var(--amber), var(--green));
-    border-radius: 99px;
-  }
-  .meter-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-family: var(--mono); }
-
-  @media (max-width: 600px) {
-    .wrap { padding: 0 18px; }
-    header { padding: 44px 0 28px; }
-    .glossary li { grid-template-columns: 1fr; gap: 2px; }
-    td:first-child { white-space: normal; }
-  }
+.list { list-style:none; padding:0; }
+.list li { padding:14px 0; border-bottom:1px dashed var(--border); }
+.list a { font-size:17px; font-weight:600; }
+.list .d { font-family:var(--mono); color:var(--muted); font-size:14px; margin-right:10px; }
+.count { color:var(--muted); font-size:14px; }
 </style>
 </head>
 <body>
-
-<header>
-  <div class="wrap">
-    <div class="kicker">US Stock Daily</div>
-    <h1>美股小白观察报告</h1>
-    <div class="date">
-      <span>2026.08.01 晚间</span>
-      <span class="temp">🌡️ <b>恐慌退潮 · 信心回暖</b></span>
-    </div>
-  </div>
-</header>
-
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily</div>
+  <h1>美股小白观察报告</h1>
+  <div class="date">共 1 期 · 每晚 19:00 更新</div>
+</div></header>
 <div class="wrap">
-
-  <!-- 主线 -->
-  <section class="section">
-    <div class="section-title">今日主线 · Main Themes</div>
-
-    <div class="card">
-      <span class="card-tag green">主线一 · AI 基建</span>
-      <div class="h2">四大 CSP 集体加码，亚马逊把账算清楚了</div>
-      <p class="p">本周四大云厂（微软、亚马逊、谷歌、Meta）财报集体交卷，<b>2026 年合计 Capex 指引上调至 $7200–7450 亿</b>。其中 <span class="ticker">$AMZN</span> 最猛：全年现金 Capex 从 $2000 亿上调到 <b class="green">$2200 亿</b>，主要因为 HBM/内存涨价。</p>
-      <p class="p">CEO 贾西首次系统拆解 AI 投入回报模型：<b>服务器不到 3 年回本，数据中心寿命 30 年+</b>，AWS 长期目标年收入 1 万亿美元。而且 2026、2027 年算力依然供不应求，连 2028 年需求都已非常强劲。</p>
-      <div class="quote">CSP 毛利大爆发 + 回本周期缩短，这个逻辑被微软和亚马逊连续两份财报实锤了。
-        <span class="who">— qinbafrank</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <span class="card-tag red">主线二 · 杠杆出清</span>
-      <div class="h2">Leopold 基金 7 月爆亏 67%，但 YTD 仍 +80%</div>
-      <p class="p">知名 AI 对冲基金经理 Leopold Aschenbrenner 的基金 7 月净值暴跌 67%，但公开信显示年初至今仍赚 <b class="green">+80%</b>，且宣布去杠杆继续留在市场。</p>
-      <p class="p">多位博主观点分歧：<span class="accent">qinbafrank</span>、<span class="accent">Jukan</span>、<span class="accent">Serenity</span> 力挺（「YTD +80% 仍是最强对冲基金之一」）；<span class="accent">Irrational Analysis</span> 冷眼一句「So is Leopold」。</p>
-      <p class="p">宏观意义更关键：<b>以 Leopold 清算为标志，最重要的边际卖家被解决，去杠杆大概率接近尾声。</b>韩国杠杆 ETF 的 AUM 从 $500 亿降到 $170 亿。</p>
-    </div>
-  </section>
-
-  <!-- 其他关注 -->
-  <section class="section">
-    <div class="section-title">其他关注 · Also Watching</div>
+  <div class="section">
+    <h2>📚 历史日报</h2>
+    <p class="count">点击任意日期查看当天完整报告</p>
     <ul class="list">
-      <li><b>存储多空交织</b> — 韩国 DRAM 出口单价创历史新高，但长鑫存储 LPDDR6 即将量产。川沐判断：三巨头核心 HBM4 护城河仍在。</li>
-      <li><b><span class="ticker">$RDDT</span> 财报冤案</b> — 收入 $8.05 亿超预期、EPS $1.25 超预期，却因 DAU 微降 0.6% 暴跌 <span class="red">-22.6%</span>。Serenity 直呼「市场总喜欢编造叙事解释下跌」。</li>
-      <li><b>日元干预警报</b> — 美国财政部可能干预日元，上一次触发 carry trade 大规模平仓、日经单日暴跌 4600 点。</li>
-      <li><b>DeepSeek V4 Flash 发布</b> — 参数仅 2840 亿，性能逼近万亿级对手，价格只有 1/15，重点升级 Coding Agent。</li>
-      <li><b><span class="ticker">$TSLA</span> 或与 SpaceX 合并</b> — WSJ 报道特斯拉考虑出售中国业务，为合并铺路。</li>
-      <li><b>激光器比存储更缺</b> — $LITE CEO 警告 InP 激光器供应缺口比内存更严重，相关标的 $AAOI、$SIVE、$COHR。</li>
+<li><a href="reports/2026-08-01.html"><span class="d">2026.08.01</span></a></li>
     </ul>
-  </section>
-
-  <!-- 单点机会 -->
-  <section class="section">
-    <div class="section-title">单点机会 · Opportunities</div>
-    <table>
-      <tr><th>方向</th><th>逻辑</th><th>⚠️ 风险</th></tr>
-      <tr><td>超大 CSP</td><td>AI 底座由 CSP 承载，Capex→收入→FCF 闭环已被财报验证。$MSFT、$AMZN、$GOOGL 受益。</td><td>油价上涨→通胀反弹；中期选举政治不确定性。</td></tr>
-      <tr><td>存储</td><td>韩国 DRAM 出口价创新高说明需求真实，AI 降价→用量暴增→存储需求确定。</td><td>长鑫进度超预期；存储周期波动剧烈。</td></tr>
-      <tr><td><span class="ticker">$RDDT</span></td><td>全面超预期的财报却 -22%，更像情绪宣泄。AI 数据授权是潜在催化剂。</td><td>DAU 放缓若是趋势而非噪音，估值逻辑会变。</td></tr>
-    </table>
-  </section>
-
-  <!-- 情绪温度 -->
-  <section class="section">
-    <div class="section-title">市场情绪温度计 · Sentiment</div>
-    <div class="meter">
-      <span style="font-size:13px;color:var(--red)">恐慌</span>
-      <div class="meter-bar"><div class="meter-fill"></div></div>
-      <span style="font-size:13px;color:var(--green)">贪婪</span>
-    </div>
-    <div class="meter-labels"><span>当前位置</span><span>约 55/100 · 恐慌退潮，信心回暖</span></div>
-    <p class="p" style="margin-top:16px">四大 CSP 财报信心拉满，去杠杆约 90% 完成，但日元干预、油价、中期选举三颗暗雷仍在。不是「无脑冲」的时候。</p>
-  </section>
-
-  <!-- 小白一句话 -->
-  <section class="section">
-    <div class="section-title">给小白的一句话</div>
-    <div class="callout">
-      <p class="big">AI 不再是 PPT 上的故事，CSP 用真金白银和实打实的回本数据把它变成了基建。但 8 月还有 CPI、中期选举、日元干预三颗「暗雷」——仓位别太满，留点现金等机会。市场不缺黑天鹅，只缺黑天鹅来了你还有子弹。</p>
-    </div>
-  </section>
-
-  <!-- 词典 -->
-  <section class="section">
-    <div class="section-title">专有名词小词典 · Glossary</div>
-    <ul class="glossary">
-      <li><span class="term">CSP</span><span>云服务商，指 $AMZN(AWS)、$MSFT(Azure)、$GOOGL(GCP) 等卖算力的公司。</span></li>
-      <li><span class="term">Capex</span><span>资本开支，建数据中心、买服务器花的钱。Capex 涨 = 看多 AI 未来。</span></li>
-      <li><span class="term">FCF</span><span>自由现金流，公司真正能自由支配的钱。负值 = 花得比挣得多。</span></li>
-      <li><span class="term">ROIC</span><span>投入资本回报率，衡量每一块钱投资能赚回多少。</span></li>
-      <li><span class="term">Carry Trade</span><span>借低息货币（如日元）投高收益资产。日元一升值全部反噬。</span></li>
-      <li><span class="term">HBM</span><span>高带宽内存，AI 芯片的高速内存，三星/SK海力士/美光垄断。</span></li>
-      <li><span class="term">InP</span><span>磷化铟，做光通信激光器的关键材料，AI 光互联的核心瓶颈。</span></li>
-      <li><span class="term">DAU</span><span>日活跃用户数，衡量 App/平台用户规模。</span></li>
-      <li><span class="term">YTD</span><span>年初至今（Year-To-Date）。</span></li>
-    </ul>
-  </section>
-
+  </div>
 </div>
-
-<footer>
-  <div>数据来源：8 位美股博主共 60 条今日推文</div>
-  <div class="note">仅供学习参考，不构成投资建议 · ktzwei.github.io/us-stock-blog</div>
-</footer>
-
-</body>
-</html>
+<footer><div>仅供学习参考，不构成投资建议 · 由 @kongruite 生成</div></footer>
+</body></html>
