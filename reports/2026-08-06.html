@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.08.06</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.08.06</a></h1>
+  <div class="date">2026.08.06</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.08.06</h1>
+<h2>一、今日最热方向</h2>
+<h3>🔥 Google 大地震：Jeff Dean 离职 + 组织大换血</h3>
+<p>今天整个美股圈都在讨论一件事——<strong>Google 的灵魂人物 Jeff Dean 离职了</strong>。</p>
+<p>这位在谷歌干了 27 年、级别 L11（全公司几十万人里凤毛麟角）的传奇工程师，宣布创立新公司 Discovery Loop。而在此之前，AlphaFold 诺奖得主 John Jumper 跳去了 Anthropic，Transformer 论文作者 Noam Shazeer 去了 OpenAI。</p>
+<p>Google 的回应是立刻宣布组织架构调整：
+- <strong>Demis Hassabis</strong>（原 DeepMind CEO）卸任日常运营，转为 GDM 主席 + Alphabet 首席科学家
+- <strong>Koray Kavukcuoglu</strong>（原 DeepMind CTO）升任 SVP，直接向劈柴汇报，全面负责 Gemini</p>
+<p><strong>市场反应</strong>：$GOOG 当日跌了约 5%。</p>
+<p>但有意思的是——好几位博主都在讲「二阶思维」：这不一定是坏事。Google 之前山头林立、决策缓慢，现在 Hassabis 被「架空」去做战略、Koray 专注产品落地，长期看可能反而让 Gemini 加速。</p>
+<hr />
+<h3>🧠 AI 算力链：存储 + 光通信双线博弈</h3>
+<p>今天硬件赛道的信息密度极高，两条线同时在发酵：</p>
+<p><strong>存储线</strong>：
+- $SNDK 财报后下跌，Jukan 发长文分析：毛利率见顶不一定是坏事，说明 SanDisk 没在压榨客户，而是走长期路线。只要 AI 超级周期继续、大厂 Capex 不停，存储公司应该从「周期股」被重估为「AI 基础设施」。
+- 川沐实操：减了 SNXX/MUU/SK Hynix 一半仓位，等闪迪财报波动结束后集中到 MUU 和 SNXX。
+- NVIDIA Rubin 的 SOCAMM2 配置被砍到 64GB——Jukan 解读为供应端瓶颈（内存厂商只能供 60-70%），不是需求问题。</p>
+<p><strong>光通信线</strong>：
+- $AEVA 盘后暴涨 18%，原来是签了一个 CPO/NPO 光引擎合作，给某大 hyperscaler 供货，2027H2 部署。
+- $VIAV 说 CPO 已经在产生收入了，12 月会加速。
+- Roundhill 明天上线光学 ETF（LYTE），对标之前大火的 DRAM ETF。
+- 对冲基金圈的博弈：很多人 long 存储 short 光通信，理由是「中国会 flooding the market with lasers」。</p>
+<hr />
+<h2>二、其他关注方向</h2>
+<h3>📉 宏观：市场等两个关键信号</h3>
+<p>qinbafrank 的分析：美股连涨四天后回调很正常，现在市场在等两件事：</p>
+<ol>
+<li><strong>美伊谈判</strong>：霍尔木兹海峡能不能重新打开 → 油价回落 → 通胀担忧解除。这件事甚至比下周的 CPI 数据更重要。</li>
+<li><strong>大非农</strong>：昨晚 ADP 小非农远低于预期 → 明晚正式非农大概率也疲软 → 劳动力市场趋弱 → 加息担忧消除。</li>
+</ol>
+<p>如果这两个剧本都兑现，市场情绪会明显回暖。AI 基本面没问题——这波财报季已经证明了商业化在加速，ROIC 已经开始能算出来了。</p>
+<hr />
+<h3>🤖 AI 应用层：从半导体转向软件</h3>
+<p>Starzq 观察到 $MSFT $PLTR $NET 大涨——这是 AI 投资从半导体向云和软件转移的信号。另外 SpaceX 的云计算业务回本周期不到 1 年，堪称印钞机。</p>
+<hr />
+<h3>📦 $SPCX 锁定期博弈</h3>
+<p>labubu_trader 纠正了之前的判断：<strong>内部人在锁定期内其实不能做空 SPCX</strong>。既然财报不错，他并不看空锁定期到期后的走势。做期权的话，他偏好 3-6 个月的 Call。</p>
+<hr />
+<h3>🇭🇰 MiniMax 纳入港股通</h3>
+<p>川沐提到 MiniMax 进入港股通，是 A 股能买到的最小的 AI 大模型公司。</p>
+<hr />
+<h3>💰 DeepSeek 要涨价</h3>
+<p>Jukan 转发了 DeepSeek 即将大幅提高 API 定价的消息。加上之前川沐提到「梁圣（DeepSeek 创始人）太权威了」——几个月就放出一个接近顶级水平的模型，价格打到白菜价，从不抛头露面。现在开始涨价，说明烧钱获客阶段可能结束了。</p>
+<hr />
+<h3>🔧 12 英寸硅晶圆短缺</h3>
+<p>Jukan 详细报道了台湾环球晶圆的表态：12 英寸晶圆已出现供应紧张，逻辑芯片厂也在抢产能。长期协议从 3 年拉长到 5-8 年，环球晶圆甚至签了 10 年长约。晶圆涨价正在从现货传导到长约——这是半导体上游的先行指标。</p>
+<hr />
+<h2>三、值得关注的单点机会</h2>
+<blockquote>
+<p>以下仅为博主观点整理，不构成投资建议。小白请自行判断风险。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>博主</th>
+<th>逻辑一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GOOG 长期</td>
+<td>starzq / qinbafrank</td>
+<td>Jeff Dean 离开 + 组织重组 = 扫清官僚、加速 Gemini，二阶看多</td>
+</tr>
+<tr>
+<td>$SNDK 存储</td>
+<td>Jukan</td>
+<td>毛利率见顶 ≠ 周期见顶，AI 超级周期下存储应被重估</td>
+</tr>
+<tr>
+<td>$AEVA 光通信</td>
+<td>Serenity</td>
+<td>CPO/NPO 新玩家，盘后 +18%，受益于光通信大趋势</td>
+</tr>
+<tr>
+<td>$AAOI 光通信</td>
+<td>Serenity</td>
+<td>2027H1 放量，$471M/月收入拐点，西方玩家在贸易限制中受益</td>
+</tr>
+<tr>
+<td>MUU / SNXX 存储</td>
+<td>川沐</td>
+<td>等闪迪财报波动结束后集中仓位</td>
+</tr>
+<tr>
+<td>LYTE 光学 ETF</td>
+<td>Jukan</td>
+<td>Roundhill 新发，复制 DRAM ETF 路径</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、市场情绪温度计 🌡️</h2>
+<pre><code>🐻 恐慌  ····|···· 🐂 狂热
+        ⬆️ 当前位置：谨慎乐观
+</code></pre>
+<p>今天情绪从连涨四天的高位自然回落。Google 暴雷拉低了指数，但博主们普遍不恐慌——更多是在讨论「是不是借利空洗牌」。宏观上等非农和伊朗谈判落地，微观上 AI 硬件和软件的基本面都没坏。</p>
+<p><strong>情绪关键词</strong>：观望、调仓、等信号</p>
+<hr />
+<h2>五、给小白的一句话</h2>
+<blockquote>
+<p>今天最重要的不是 Google 跌了多少，而是聪明钱在借这个「坏消息」重新判断 AI 赛道里谁在真正加速、谁在掉队。组织换血、晶圆短缺、光学 ETF 上线——这些才是长期方向的路标。别被一天的红绿牵着走。</p>
+</blockquote>
+<hr />
+<h2>六、专有名词小词典</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$GOOG</strong></td>
+<td>Google 母公司 Alphabet 的股票代码</td>
+</tr>
+<tr>
+<td><strong>$SNDK</strong></td>
+<td>SanDisk，闪存/存储公司，刚被分拆独立上市</td>
+</tr>
+<tr>
+<td><strong>$AEVA</strong></td>
+<td>Aeva Technologies，激光雷达公司，现拓展光通信</td>
+</tr>
+<tr>
+<td><strong>$AAOI</strong></td>
+<td>Applied Optoelectronics，光通信器件公司</td>
+</tr>
+<tr>
+<td><strong>$VIAV</strong></td>
+<td>Viavi Solutions，光通信测试设备商</td>
+</tr>
+<tr>
+<td><strong>$MSFT / $PLTR / $NET</strong></td>
+<td>微软 / Palantir / Cloudflare，云和软件代表</td>
+</tr>
+<tr>
+<td><strong>CPO / NPO</strong></td>
+<td>Co-Packaged Optics / Near-Packaged Optics，共封装光学——把光模块和芯片封装在一起，降低功耗，AI 数据中心的关键技术</td>
+</tr>
+<tr>
+<td><strong>SOCAMM2</strong></td>
+<td>NVIDIA 的一种内存模组规格，用于 Rubin 平台</td>
+</tr>
+<tr>
+<td><strong>HBM / HBM4E</strong></td>
+<td>High Bandwidth Memory，高带宽内存，AI 芯片的「高速缓存」</td>
+</tr>
+<tr>
+<td><strong>Capex</strong></td>
+<td>Capital Expenditure，资本支出——科技巨头砸钱建数据中心</td>
+</tr>
+<tr>
+<td><strong>ADP / 大非农</strong></td>
+<td>美国就业数据。ADP 是私营机构统计（小非农），大非农是官方数据，后者更重要</td>
+</tr>
+<tr>
+<td><strong>ROIC</strong></td>
+<td>Return on Invested Capital，投资回报率——判断 AI 投入是否划算的关键指标</td>
+</tr>
+<tr>
+<td><strong>LTA</strong></td>
+<td>Long-Term Agreement，长期供货协议</td>
+</tr>
+<tr>
+<td><strong>12 英寸晶圆</strong></td>
+<td>300mm 硅晶圆，先进制程芯片的基础材料</td>
+</tr>
+<tr>
+<td><strong>BiCS10</strong></td>
+<td>Kioxia 的第十代 3D NAND 闪存技术</td>
+</tr>
+<tr>
+<td><strong>NBM</strong></td>
+<td>Non-Binding Memorandum，非约束性备协议——SanDisk 和客户的一种灵活供货模式</td>
+</tr>
+<tr>
+<td><strong>ELSFP</strong></td>
+<td>一种光模块封装标准</td>
+</tr>
+</tbody>
+</table>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
