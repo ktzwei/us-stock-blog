@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.08.12</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.08.12</a></h1>
+  <div class="date">2026.08.12</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.08.12</h1>
+<blockquote>
+<p>🕐 本报告基于 8 位美股博主的今日推文与市场动态整理，覆盖光互连、存储、MLCC、宏观四大主线。</p>
+</blockquote>
+<hr />
+<h2>一、今日最热方向</h2>
+<h3>🔦 光互连：Lumentum 财报引爆，光进铜退路径前所未有的清晰</h3>
+<p>今天光互连是绝对的 C 位。核心催化剂是 <strong>$LITE (Lumentum)</strong> 昨晚发布了一份「教科书级」的强劲财报，多位博主围绕它展开深度讨论。</p>
+<p><strong>@qinbafrank</strong> 给出了非常详尽的拆解（强烈建议小白至少读完这一段）：</p>
+<ul>
+<li><strong>盈利质量惊人</strong>：非 GAAP 毛利率达 <strong>50.4%</strong>，比原计划提前了一个量级。增量收入以 ~61% 的惊人比例转化为毛利润，~55% 转化为营业利润——也就是说，每多赚 1 美元，有 0.55 美元直接变成利润。这不是靠涨价，而是产品组合、良率、产能利用率共同作用的结果。</li>
+<li><strong>1.6T 光模块不再只是「故事」</strong>：800G 仍是主力，但 1.6T 已开始出货，预计 2027 年初加速。管理层明确说 1.6T 设计更难，反而放大了 LITE 的技术壁垒。</li>
+<li><strong>OCS（光电路交换）翻倍</strong>：季度出货量环比翻番，下一季度单季 OCS 收入预计首次超过 <strong>1 亿美元</strong>。</li>
+<li><strong>NPO 与 CPO 不是替代，是加速器</strong>：CPO 仍是长期终局，但大多数客户优先推进 NPO（近封装光学），LITE 已收到首个 ELS（外置光源）模块订单，超高功率激光器预计 2027 下半年放量。NPO 带来的是光学市场的<strong>额外扩大</strong>，不是需求转移。</li>
+<li><strong>真正的瓶颈是磷化铟激光器产能</strong>：EML、超高功率 CW 激光器全线供不应求，日本两座磷化铟晶圆厂正在扩产，InP 衬底供应再次收紧。</li>
+</ul>
+<p>CEO 说了一句很震撼的话：<strong>「对一个主要超大规模云厂商来说，仅仅连接两个 AI 数据中心站点的网络容量，就是他们过去十年建设的全球骨干网总容量的两倍。」</strong></p>
+<p><strong>@aleabitoreddit (Serenity)</strong> 则从产业链角度切入，聚焦 CW 激光器瓶颈：</p>
+<ul>
+<li><strong>$SIVE (Sivers)</strong>：市值仅 ~$15 亿，却是全球仅有的 4 家西方 CPO 领导者之一。CW DFB 激光器是光互连的关键卡脖子环节，而 Sivers 正卡在这个位置。Serenity 类比 LITE 从 $30 亿涨到 $600 亿+的路径，认为 Sivers 有类似潜力（前提是成功并购切入光模块/光引擎）。</li>
+<li><strong>$AAOI</strong>：明确表示 CW 激光器产能不足，光收发器需求缺口 20-40%，客户每周都在催货。</li>
+<li><strong>中美差距</strong>：$AAOI 和 $LITE 均表态中国厂商在 CPO 激光器上落后 2-3 年以上，西方厂商护城河短期不会被填平。</li>
+</ul>
+<p><strong>一句话总结</strong>：光互连已经从「概念」进入「业绩兑现期」，LITE 财报把整个板块的叙事从模糊变清晰——800G 现在赚钱，1.6T 明年加速，OCS 翻倍增长，NPO/CPO 打开 2027-2028 的想象空间。</p>
+<hr />
+<h2>二、其他关注方向</h2>
+<h3>💾 存储：去杠杆尾声？多空博弈进入新阶段</h3>
+<p>存储是最近争议最大的板块。今天有三条线索交织：</p>
+<p><strong>线索一：韩国去杠杆接近尾声</strong></p>
+<p><strong>@xiaomustock (川沐)</strong> 引述韩国官方数据：韩国股票杠杆交易规模从 6 月 25 日的 <strong>19.4 万亿韩元峰值骤降至 8 月 7 日的 8000 亿韩元</strong>，缩减近 <strong>96%</strong>。他的判断：「散户大多爆仓割肉了，存储这波去杠杆很彻底。买在无人问津，卖在人声鼎沸。」</p>
+<p><strong>线索二：Temasek 首次投资韩国，押注存储</strong></p>
+<p><strong>@jukan05</strong> 独家报道：新加坡淡马锡首次投资韩国股市，标的正是 <strong>三星电子</strong> 和 <strong>SK 海力士</strong>。淡马锡认为在 AI 价值链中，存储半导体是最被低估的环节。尽管三星海力士从低点已涨超 880%，淡马锡仍认为有更大空间。</p>
+<p><strong>线索三：DDR5 继续涨价，YMTC 崛起</strong></p>
+<ul>
+<li>服务器 DDR5 本月全线涨价 <strong>15%-23%</strong>，32GB RDIMM 现货价 $1,800-$2,100。</li>
+<li>YMTC（长江存储）出货量超越美光、闪迪、铠侠，跃居全球 NAND 第三。</li>
+</ul>
+<p><strong>@qinbafrank</strong> 对「多光空存」策略的最新判断：「现在这个时点空存性价比不高了。空间还有，只是最暴力丝滑的阶段过去了。未来就像大科技，甚至可能跟英伟达近两年走势很像。」</p>
+<h3>📡 $RKLB (Rocket Lab)：利空不跌的启示</h3>
+<p><strong>@qinbafrank</strong> 注意到一个有趣现象：RKLB 财报强劲但中子星火箭首飞推迟，按理该跌，结果大幅低开后一路高走回到 $80 以上。他归因于三点：
+1. 从 $150 跌到 $60 已经定价了太多利空
+2. 发射和系统业务本身非常强劲
+3. 市场可能在预期整合铱星通信——一个年收入近 $10 亿、净利润超 $1 亿的现金牛，整合后 RKLB 营收利润直接翻倍，还能拿到 250 万卫星用户</p>
+<h3>🏭 三星的两面：玻璃基板遇阻 vs Claude 提效</h3>
+<p><strong>@jukan05</strong> 带来两条方向相反的三星动态：</p>
+<ul>
+<li>❌ <strong>三星电机玻璃基板</strong>：客户可靠性评估不通过，投资计划一推再推，量产时间可能推迟到 2028 年以后。设备订单遥遥无期。</li>
+<li>✅ <strong>三星电子用 Claude 加速芯片设计</strong>：系统 LSI 事业部引入 Anthropic 的 Claude Code 后，原本一个多月的 SoC 验证工作两天完成，入职两年的工程师一天完成了原本需一个月的工作。</li>
+</ul>
+<h3>📊 宏观：CPI 之夜的关键博弈</h3>
+<p><strong>@qinbafrank</strong> 做了非常细致的 CPI 前瞻（今晚公布 7 月数据）：</p>
+<ul>
+<li>核心 CPI 大概率继续走弱：住房（占核心 CPI 44.6%）保持 0.1%-0.2% 低涨幅，劳动力市场走弱拖累服务通胀，二手车批发价下行，核心商品关税效应减弱。</li>
+<li>克利夫兰联储预测核心 CPI 同比 <strong>2.52%</strong>，环比 0.21%。</li>
+<li>他判断：略低于预期的概率最大，符合预期次之。</li>
+<li>中期隐忧：油价和美伊博弈。克利夫兰联储实时预测 8 月 CPI 环比已到 0.35%，值得留意。</li>
+</ul>
+<hr />
+<h2>三、值得关注的单点机会</h2>
+<h3>1. $LITE — 光互连龙头，业绩兑现加速</h3>
+<p>当前是光互连板块叙事最清晰的时刻。LITE 财报不仅数字好，更重要的是给出了明确的时间线：1.6T 2027 加速，OCS 下季度破亿，NPO 2027H2 放量。在高确定性增长阶段，市场通常愿意给更高估值。（@qinbafrank 深度分析）</p>
+<h3>2. 韩国存储 — 去杠杆尾声 + 主权基金背书</h3>
+<p>96% 的杠杆缩减 + 淡马锡首次入局，构成了一个「最悲观的时候可能已过」的叙事组合。DDR5 持续涨价提供基本面支撑。不是 V 型反转的剧本，但最暴力的下跌段可能已经走完。（@xiaomustock, @jukan05, @qinbafrank）</p>
+<h3>3. $SIVE — 光互连链上的「小市值卡位者」</h3>
+<p>市值 ~$15 亿，卡在 CW 激光器这个关键瓶颈上。全球仅 4 家西方 CPO 领导者之一。高风险高弹性，适合能承受波动的投资者关注。（@aleabitoreddit 深度分析）</p>
+<h3>4. $CBRS — 弹性标的</h3>
+<p><strong>@0xSleepinRain</strong> 认为除 Neocloud 和黄金外，$CBRS 是未来弹性较好的标的。今天财报日，博主已买入。（注意：单一个股推荐，请自行判断风险）</p>
+<h3>5. 三星/SK 海力士 — Temasek 背书</h3>
+<p>主权基金用真金白银投票，认为 AI 价值链中存储最被低估。可作为存储板块的「稳妥」切入点。</p>
+<hr />
+<h2>四、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光互连</td>
+<td>🔥🔥🔥🔥🔥</td>
+<td>LITE 财报引爆，叙事从模糊变清晰，多头情绪高涨</td>
+</tr>
+<tr>
+<td>存储</td>
+<td>🌤️→☀️</td>
+<td>去杠杆近尾声+Temasek 入局，悲观情绪触底回升</td>
+</tr>
+<tr>
+<td>AI 算力基建</td>
+<td>🔥🔥🔥🔥</td>
+<td>800VDC 供电、玻璃基板、DDR5 涨价，基建逻辑不变</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>⚖️</td>
+<td>等 CPI 给方向，核心通胀走弱是大概率利好</td>
+</tr>
+<tr>
+<td>小盘/弹性股</td>
+<td>🔥🔥🔥</td>
+<td>RKLB 利空不跌，CBRS 受关注，风险偏好回暖</td>
+</tr>
+<tr>
+<td>整体</td>
+<td>☀️ 偏暖</td>
+<td>财报季验证 AI 基本面，去杠杆接近尾声</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、给小白的一句话</h2>
+<blockquote>
+<p>今天最重要的信号藏在 Lumentum 的财报里——不是因为它涨了多少，而是它第一次把光互连的「下一步」讲清楚了：800G 现在赚钱，1.6T 明年加速，OCS 季度破亿，NPO/CPO 打开 2028。当一家龙头公司的 CEO 说「两个 AI 数据中心之间的网络容量，等于过去十年全球骨干网总和的两倍」时，你就知道这个赛道的天花板还远远没到。</p>
+</blockquote>
+<hr />
+<h2>六、专有名词小词典</h2>
+<table>
+<thead>
+<tr>
+<th>术语/代码</th>
+<th>全称</th>
+<th>白话解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$LITE</strong></td>
+<td>Lumentum Holdings</td>
+<td>光通信龙头，做激光器、光模块、光电路交换，是 AI 数据中心光互连的核心供应商</td>
+</tr>
+<tr>
+<td><strong>$SIVE</strong></td>
+<td>Sivers Semiconductors</td>
+<td>瑞典半导体公司，专注 CW 激光器，卡在 CPO（共封装光学）的关键瓶颈位置</td>
+</tr>
+<tr>
+<td><strong>$AAOI</strong></td>
+<td>Applied Optoelectronics</td>
+<td>光收发器制造商，800G/1.6T 光模块供不应求</td>
+</tr>
+<tr>
+<td><strong>$RKLB</strong></td>
+<td>Rocket Lab</td>
+<td>小火箭发射+卫星系统公司，正在整合铱星通信</td>
+</tr>
+<tr>
+<td><strong>$CBRS</strong></td>
+<td>待确认</td>
+<td>博主提及的高弹性标的，请自行查证</td>
+</tr>
+<tr>
+<td><strong>$COHR</strong></td>
+<td>Coherent</td>
+<td>光通信与激光巨头，市值 ~$725 亿</td>
+</tr>
+<tr>
+<td><strong>$AVGO</strong></td>
+<td>Broadcom</td>
+<td>博通，市值 ~$2.13 万亿，AI 芯片与网络巨头</td>
+</tr>
+<tr>
+<td><strong>$MTSI</strong></td>
+<td>MACOM Technology Solutions</td>
+<td>射频与光半导体公司</td>
+</tr>
+<tr>
+<td><strong>$SMTC</strong></td>
+<td>Semtech</td>
+<td>高性能模拟与混合信号半导体</td>
+</tr>
+<tr>
+<td><strong>$FN</strong></td>
+<td>Fabrinet</td>
+<td>光通信精密制造服务商</td>
+</tr>
+<tr>
+<td><strong>CW 激光器</strong></td>
+<td>Continuous-Wave Laser</td>
+<td>连续波激光器，CPO 架构中作为外置光源的核心器件，目前严重供不应求</td>
+</tr>
+<tr>
+<td><strong>EML</strong></td>
+<td>Electro-Absorption Modulated Laser</td>
+<td>电吸收调制激光器，高速光通信的核心光源，同样供不应求</td>
+</tr>
+<tr>
+<td><strong>OCS</strong></td>
+<td>Optical Circuit Switch</td>
+<td>光电路交换，数据中心内部用光来切换网络连接，比传统电交换更快更省电</td>
+</tr>
+<tr>
+<td><strong>NPO</strong></td>
+<td>Near-Packaged Optics</td>
+<td>近封装光学，把光模块移到离芯片更近的位置，是铜缆到 CPO 的中间方案</td>
+</tr>
+<tr>
+<td><strong>CPO</strong></td>
+<td>Co-Packaged Optics</td>
+<td>共封装光学，把光引擎和芯片封装在一起，是光互连的终极形态</td>
+</tr>
+<tr>
+<td><strong>ELS</strong></td>
+<td>External Light Source</td>
+<td>外置光源，CPO/NPO 架构中放在交换机外面的激光器模块</td>
+</tr>
+<tr>
+<td><strong>InP</strong></td>
+<td>Indium Phosphide</td>
+<td>磷化铟，制造高速激光器的关键半导体材料，目前产能紧张</td>
+</tr>
+<tr>
+<td><strong>MLCC</strong></td>
+<td>Multi-Layer Ceramic Capacitor</td>
+<td>多层陶瓷电容，AI 服务器用大量 MLCC，是被动元件中的核心品类</td>
+</tr>
+<tr>
+<td><strong>SOX</strong></td>
+<td>Philadelphia Semiconductor Index</td>
+<td>费城半导体指数，衡量半导体板块整体表现</td>
+</tr>
+<tr>
+<td><strong>CPI</strong></td>
+<td>Consumer Price Index</td>
+<td>消费者物价指数，衡量通胀的核心指标</td>
+</tr>
+<tr>
+<td><strong>核心 CPI</strong></td>
+<td>Core CPI</td>
+<td>剔除食品和能源的 CPI，更能反映真实通胀趋势</td>
+</tr>
+<tr>
+<td><strong>LTA</strong></td>
+<td>Long-Term Agreement</td>
+<td>长期供货协议，大客户提前锁定产能</td>
+</tr>
+<tr>
+<td><strong>GAAP / Non-GAAP</strong></td>
+<td>会计准则口径</td>
+<td>GAAP 是标准会计口径（包含一次性项目），Non-GAAP 剔除一次性影响更能反映真实经营</td>
+</tr>
+<tr>
+<td><strong>TAM</strong></td>
+<td>Total Addressable Market</td>
+<td>总可服务市场，一个产品理论上能卖到的最大市场规模</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>📝 数据来源：Twitter List 美股博主分组 · 今日抓取 60 条新推文 · 覆盖 8 位博主</p>
+<p>⚠️ 免责声明：本报告为信息整理，不构成投资建议。所有「机会」仅为博主观点汇总，请独立判断，风险自担。</p>
+</blockquote>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
