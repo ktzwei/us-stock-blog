@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.09.23</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.09.23</a></h1>
+  <div class="date">2026.09.23</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.09.23</h1>
+<blockquote>
+<p>今日主线：<strong>存储链新闻最密集</strong>——三星改 DRAM 路线图、JPM 下调 HBM 升级节奏、长江存储告美光。</p>
+</blockquote>
+<p><strong>本期覆盖：美股博主 12 位（今日有推文 10 位 / 无推文 2 位）。</strong>
+窗口：2026-09-22 21:24 → 2026-09-23 21:24（北京时间），美股名单共 60 条原文。
+名单以实时 API 现拉为准：@aleabitoreddit、@jukan05、@insane_analyst、@xiaomustock、@fi56622380、@0xSleepinRain、@qinbafrank、@LinQingV、@nft_hu、@mdzzi、@labubu_trader、@starzq。</p>
+<hr />
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @jukan05（Jukan）— 今日 4 条</h3>
+<p><strong>① JPM 把 HBM 升级节奏往后推了：16Hi 最早 2029 年才上（09-23 07:38）</strong></p>
+<blockquote>
+<p>原文：「JPM has updated its HBM model and now expects 16Hi HBM adoption in 2029 at the earliest. Good morning.」
+（中文：摩根大通更新了它的 HBM 模型，现在预期 16Hi 的 HBM 最早要到 2029 年才会被采用。早上好。）</p>
+</blockquote>
+<p><strong>解读</strong>：HBM（High Bandwidth Memory，高带宽内存，AI 显卡上贴着 GPU 堆叠的那种超高速内存）的代数是用「Hi」表示堆叠层数的——16Hi 就是 16 层芯片叠在一起。层数越多、容量和带宽越大，但对堆叠和键合工艺的要求也越高。JPM（摩根大通，卖方投行）把 16Hi 的普及时间点推后到 2029 年，意思是<strong>「升级没有市场想的那么快」</strong>。这对两类公司是反向信号：对 $MU（美光）、$SK Hynix、$SSNLF（三星）来说，节奏慢意味着单代产品的赚钱窗口更长、资本开支压力更早缓解（利好）；对靠「新一代马上来」炒预期的人（比如提前押注 16Hi 设备的标的）则是降温。</p>
+<p><strong>② 中国在搞全栈硬件自主，连交换机都不放过（09-23 12:59）</strong></p>
+<blockquote>
+<p>原文：「China is pursuing full-stack hardware independence, including switches.」
+（中文：中国正在追求全栈硬件独立，包括交换机在内。）
+附链接：https://t.co/3gsvyHsNnw</p>
+</blockquote>
+<p><strong>解读</strong>：交换机（switch，数据中心里负责把服务器互相连起来的网络设备）原本是 $ANET（Arista）、$CSCO（思科）、$AVGO（博通）的自留地。「全栈」= 从芯片、板卡到整机全都要自己造，这条的意义是<strong>国产替代的清单又变长了</strong>，长期对美股网络设备的中国收入是压力，对国内设备链是增量。Jukan 只丢了一句加链接，属于给读者指方向的类型。</p>
+<p><strong>③ 三星改了下一代 DRAM 路线图：把混合键合往前拉（09-23 14:12｜长文核心摘要）</strong></p>
+<blockquote>
+<p>原文精选：「Samsung Electronics has revised its next generation DRAM development strategy. The company recently moved "B1b," a technology that had been under development as a standalone project, onto its official roadmap and designated it "D0a," its first DRAM below 10 nanometers… D0a originally referred to Samsung's vertical channel transistor (VCT) DRAM process. VCT DRAM has now been reclassified under a separate name, "D0a-V."… "B1b was in R&amp;D, but it was not on Samsung's official roadmap," said a source. "With this strategy revision, it has been folded into D0a. It means Samsung is actively pushing for fast commercialization of B1b DRAM."」
+以及：「Samsung is currently reviewing applying B1b to HBM5 (eighth generation). HBM5 is expected to enter mass production around 2029. Samsung is developing the product with a target of raising operating speed by roughly 50% or more over its predecessor, HBM4E. Commercialization of B1b based D0a DRAM is estimated to be at least two years away.」
+（中文大意：三星修改了下一代 DRAM 开发策略，把原本只是研发项目的「B1b」正式塞进官方路线图，并直接命名成「D0a」——它第一代 10 纳米以下的 DRAM。D0a 这个名字原本是给 VCT（垂直沟道晶体管）DRAM 用的，现在 VCT 被降级改名成「D0a-V」。B1b 的做法是：把存储单元（cell）和外围电路（peri）分在两张晶圆上做，再用晶圆对晶圆（W2W）混合键合把单元直接压在外围电路上面，比传统把两者放同一张晶圆上做得更密。三星目前正在评估把 B1b 用在第八代 HBM（HBM5）上，HBM5 预计 2029 年前后量产，目标速度比上一代 HBM4E 提升 50% 以上。B1b 版 D0a 的量产至少还要两年，具体投资时程预计明年年中定案。）</p>
+</blockquote>
+<p><strong>解读</strong>：这条是今天技术含量最高的一条，小白只要抓三个点。
+第一，<strong>DRAM（内存）的下一步靠的不是「继续缩小线宽」，而是「把两张晶圆叠起来」</strong>——因为线宽已经快缩到头了（1d 代约为 10-11nm，基本是最后一代 10nm 级），三星选择先用混合键合（hybrid bonding，铜对铜直接连接，不用小凸点）而不是更难的 VCT 来冲 10nm 以下。第二，<strong>VCT 被降级</strong>说明连三星也觉得它「还需要更多时间」，产业界普遍判断 B1b 的商业化门槛更低、会先落地。第三，<strong>B1b 的下一站是 HBM5</strong>，也就是 2029 年的产品——这和上面 JPM 的「16Hi 最早 2029」在时间上是对得上的：<strong>下一波真正的内存升级，窗口在 2029 年附近，而不是明年</strong>。对小白来说，这是理解「存储超级周期到底能走多久」的关键时间锚。</p>
+<p><strong>④ 纯链接一条</strong>：https://t.co/Vli4WLAFZk （延续上一条的报道出处，无额外文字观点）</p>
+<hr />
+<h3>2. @aleabitoreddit（Serenity）— 今日 3 条</h3>
+<p><strong>① 马斯克说 AI 最晚 2028 年全面超过人类，他把它套进 Anthropic 的时间表（09-23 09:07）</strong></p>
+<blockquote>
+<p>原文：「Elon Musk: "AI will beat [humans] in all fields by the end of next year or maybe 2028, at the latest." Kind of maps to Anthropic's economic implications paper where 2026-2028 was the buildout. Then 2028-2030 was unprecedented economic growth. So we're still early H2 2026.」
+（中文：马斯克说「AI 会在明年年底、或者最晚 2028 年，在所有领域超过人类」。这差不多能对上 Anthropic 那篇关于经济影响的论文：2026-2028 是建设期，然后 2028-2030 是前所未有的经济增长。所以我们还在 2026 年下半场的早期。）</p>
+</blockquote>
+<p><strong>解读</strong>：他做的是<strong>「把大佬的口头预测和产业论文的时间轴对齐」</strong>这件事——两个来源都说同一句话：现在是投入期（buildout，比的是谁在买设备、谁在建数据中心），真正兑现到经济数据上要 2028 年之后。对小白的意义：<strong>别用「AI 什么时候变现」来判断现在的股价，判断依据应该是「今年谁在花钱、花在什么上」</strong>。他还加了一句「we're still early H2 2026」，意思是这轮建设的上半场都还没走完。</p>
+<p><strong>② 他不认同某家 AI 公司 2 万亿美元估值，宁可要 OpenAI 的 1.2 万亿（09-23 09:19）</strong></p>
+<blockquote>
+<p>原文：「No, hard to justify $2T valuation. I'd rather do OpenAI at $1.2T. All your Chinese AI labs like DeepSeek or Minimax or Zhipu are much more reasonably valued.」
+（中文：不，2 万亿美元估值很难说得过去。我倒宁愿按 1.2 万亿美元给 OpenAI。你们那些中国 AI 实验室，像 DeepSeek、MiniMax、智谱，估值合理得多。）</p>
+</blockquote>
+<p><strong>解读</strong>：这是对一级市场（未上市公司股权）的估值判断，不是可以直接交易的标的，但<strong>逻辑值得抄走：同一笔钱买「更便宜的同类资产」</strong>。他给的两个数字（2T vs 1.2T）说明他对头部 AI 公司的溢价非常挑剔——<strong>当叙事热到一定程度，连看多的人也开始算性价比了</strong>，这本身是市场情绪的读数。</p>
+<p><strong>③ 供应链的「短缺」要一年一年重新算，但未来一年半前所未有（09-23 09:23）</strong></p>
+<blockquote>
+<p>原文：「Memory LTAs span until 2031. $AVGO expects 100% supply constrained growth Y/Y for next 2 years. $NVDA expects 70% supply constrained growth next year (implying year after that demand keeps up). $SIVE CEO said there's a massive demand supply imbalance for lasers for at least the next 3-5 years. I think semi supply chain growth needs to be re-accessed year by year, but at least for the next year and half I see unprecedented growth.」
+（中文：内存的长期供货协议（LTA，Long-Term Agreement）已经签到 2031 年。$AVGO 预期未来两年每年都是 100% 供给受限下的增长。$NVDA 预期明年是 70% 的供给受限增长（言下之意是再下一年需求还跟得上）。$SIVE 的 CEO 说激光器至少有 3-5 年的严重供需失衡。我认为半导体供应链的增长需要逐年重新评估，但至少未来一年半我看到的是前所未有的增长。）</p>
+</blockquote>
+<p><strong>解读</strong>：这条是<strong>把「缺货」这件事量化的三种证据</strong>：长单签得有多远（内存签到 2031）、公司自己怎么说（$AVGO 两年 100%、$NVDA 一年 70%，这两个数字的意思是「增速的上限就是产能」）、上游怎么说（$SIVE 的激光器 3-5 年失衡）。对小白最有用的概念是<strong>「供给受限增长」（supply constrained growth）</strong>：不是没人买，而是造不出来——这种增长的质量比靠降价换量的增长高得多。同时他留了个诚实的尾巴：<strong>这个链条要一年一年重算，别当成永动机</strong>。</p>
+<hr />
+<h3>3. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 11 条</h3>
+<p><strong>① 她今天最实的一条：说自己为什么买 $RKLB，理由写得像一份简版研究（09-23 21:04）</strong></p>
+<blockquote>
+<p>原文：「买入 $RKLB 的原因基本为——持续看好基本面，价格回调到合适位置，ATM的融资都出完了。
+基本面：Q2 营收创纪录 2.34 亿美元，同比 +62%；积压订单 23.6 亿美元。Electron 9 月 19 日完成第 96 次任务、今年第 17 次，继续保持高频高成功率执行。
+80 亿美元收购 Iridium 的资金基本筹措到位。和对 Mynaric 和 Motiv 的收购金额完全不同，80 亿收购 Iridium 是下一个量级。9 月 15 日，Rocket Lab 宣布完成 ATM，募集约 19 亿美元来完成收购。这部分的卖盘（应该也是年内最大）已经完成。
+风险点：中火箭年内首飞窗口正在收窄，但感觉大家都有了预期。一次成功比如期失败更重要。」</p>
+</blockquote>
+<p><strong>解读</strong>：$RKLB 是 Rocket Lab，一家做小型运载火箭 + 卫星平台的公司（跟 $SPCE 那种太空旅游不是一个生意）。
+她给的是<strong>一套可以照搬的买入模板</strong>，值得拆开看：
+- <strong>为什么现在买</strong>：不是因为它涨了，而是「价格回调到合适位置」+「卖压出清」。
+- <strong>ATM 是什么</strong>：At-The-Market 发行，公司按市价在二级市场慢慢增发新股来融资——<strong>这会持续制造卖压</strong>，股价往往在融资完成前被压着。她判断 9 月 15 日那笔约 19 亿美元的 ATM 已经做完，意味着「年内最大的一批卖盘结束了」，这是买点的核心理由。
+- <strong>基本面</strong>：Q2 营收 2.34 亿美元、同比 +62%，积压订单（backlog，已签合同但还没确认收入的部分）23.6 亿美元——<strong>积压订单大约是单季营收的 10 倍</strong>，这是看未来收入的底气。Electron（它的小型火箭）今年已经飞了 17 次，高频 + 高成功率。
+- <strong>81 亿美元收购 Iridium（铱星，卫星通信运营商）</strong>：整个收购的资金基本到位，这是「下一个量级」的扩张。
+- <strong>风险她自己说清楚了</strong>：Neutron（中火箭，比 Electron 大一号、是用来抢更大发射市场的新火箭）年内首飞的窗口在收窄——<strong>首飞推迟会打击叙事，而「一次成功」比「按时发射」更重要</strong>。</p>
+<p>对小白的价值：<strong>买点不只看价格，还要看「谁在卖、卖完了没有」</strong>——增发结束、解禁结束、大股东卖完，这些都可能比财报更是短期拐点。</p>
+<p><strong>② 把 $CRWV 类比成 $ORCL：杠杆重、赌注大，但赚钱周期一来收入成倍兑现（09-23 21:05）</strong></p>
+<blockquote>
+<p>原文：「其实 $CRWV 给我的感觉和 $ORCL 有点像，更高的杠杆、更重的赌注，但是当赚钱周期开始，他们的收入也是成倍地兑现。」</p>
+</blockquote>
+<p><strong>解读</strong>：$CRWV 是 CoreWeave（租 GPU 算力的云公司），$ORCL 是甲骨文（靠云基础设施订单翻身的老牌软件公司）。她抓的是<strong>同一种商业模型</strong>：先借重债买资产（$ORCL 建数据中心、$CRWV 买 GPU），短期看负债表很难看、自由现金流为负；但一旦算力/云的需求周期起势，<strong>收入是指数级兑现的</strong>，杠杆反过来放大回报。对小白：看这类公司<strong>别只看当季利润，要看「负债换来的产能有没有被客户签掉」</strong>——$ORCL 看 RPO（剩余履约义务，已签约未确认收入），$CRWV 看合同积压和客户集中度。</p>
+<p><strong>③ 竹北现场观察：台积电的财富效应，正在把一整个城市抬起来（09-23 14:44 / 16:52）</strong></p>
+<blockquote>
+<p>原文：「又到了家庭聚餐时间，深刻感受到竹北真的是经济上行期。每一块地都盖起了楼，生育率上升、学校一直盖，每个人都说有几十张、几百张的台积电，好市多永远人多到进不去，房价一直涨，甚至停车费都一直涨。」
+补充：「竹北的高铁站附近，到处都在建设」</p>
+</blockquote>
+<p><strong>解读</strong>：竹北是台湾新竹（台积电总部与园区所在地）隔壁的高铁新城。这条不是投资建议，但<strong>是一手的需求侧证据</strong>：她说「每个人都说有几十张、几百张的台积电」——<strong>$TSM 的股票在本地已经变成一种普遍的家庭资产</strong>，而房价、生育率、学校、商场人流的全面上行，是半导体财富在实体上的落地。对判断存储/半导体周期的投资者来说，这类「草根观察」比研报更早、更真实。</p>
+<blockquote>
+<p>另 8 条为互动与生活内容：回复提醒她家的猫鼻头颜色可能受温度光照影响（「温度性色素减退」）、聊越南人在台湾做宝可梦卡诈骗、家庭聚餐与好市多排队、回复朋友关于排队人潮和餐厅口味等。</p>
+</blockquote>
+<hr />
+<h3>4. @labubu_trader（3X Long Labubu）— 今日 9 条</h3>
+<p><strong>① 今天他最硬的观点：不看好 OpenAI 下个月的消费级 AI 产品（09-23 12:15）</strong></p>
+<blockquote>
+<p>原文：「Not optimistic about OAI's personal AI products which will be released next month. It's not about quality but about the cost of consumer products and also monetization. I think OAI should focus on the enterprise side to maximize their revenue growth and beat the shit out of Anth.」
+（中文：不看好 OpenAI 下个月要发布的个人 AI 产品。问题不在质量，而在消费级产品的成本以及变现。我认为 OpenAI 应该专注企业端，把收入增长最大化，然后把 Anthropic 打得满地找牙。）</p>
+</blockquote>
+<p><strong>解读</strong>：这里是<strong>「产品好不好」和「生意赚不赚钱」是两回事</strong>。消费级 AI 助手要面对两笔大成本：获客成本（CAC，把用户拉来的营销钱）和算力成本（每次对话都在烧 GPU）。而卖给企业的 token（按用量付费）几乎是纯毛利、不需要教育市场。所以他的判断是：<strong>OpenAI 做 C 端硬件/助手是「叫好不叫座」，短期 ROI 远低于卖企业 token</strong>。对美股的含义：如果 $MSFT（OpenAI 最大合作方）或 OpenAI 相关链条的收入预期靠的是 C 端订阅爆发，这个预期可能偏乐观；反过来，企业级 AI（$MSFT、$GOOGL、$AMZN 云业务）的变现路径更扎实。</p>
+<p><strong>② 为什么广告模式在 AI 产品上很难做（09-23 12:21）</strong></p>
+<blockquote>
+<p>原文：「Cost of customer acquisition and computation cost is huge. The short term ROI is way lower than selling tokens to the enterprise. Also don't underestimate the challenge of building ads products. You need the full feedback loop to understand the conversions and downstream value to the advertisers. However I highly doubt the advertisers would be willing to share the conversions data and downstream conversion value data to OAI. Even for TikTok US, they have gained the trust recently from advertisers and had the full feedback loop data collected less than a year.」
+（中文：获客成本和算力成本巨大。短期 ROI 远低于把 token 卖给企业。还有，别低估做广告产品的难度。你需要完整的反馈闭环，才能搞清楚转化率和对广告主的后续价值。但我高度怀疑广告主愿不愿意把转化数据和后续转化价值数据交给 OpenAI。就连 TikTok 美国，也是最近才赢得广告主的信任、把完整的反馈闭环数据收集齐全，花了不到一年。）</p>
+</blockquote>
+<p><strong>解读</strong>：这是<strong>免费 AI 产品「靠广告变现」路线最大的坑</strong>：广告生意的核心是「我能证明我的投放带来了多少转化」，而要证明就必须拿到广告主的下游数据。<strong>传统广告平台（$GOOGL、$META）花了十几年才建起这套信任和数据回路</strong>，TikTok 用了不到一年。他用这个类比提醒：<strong>别把「AI 有巨大流量」直接等同于「AI 广告能赚钱」</strong>。</p>
+<p><strong>③ Muse 是另一个战场：降价反而会带来更多用量（09-23 12:25）</strong></p>
+<blockquote>
+<p>原文：「I think muse is in a different battlefield. The revenue growth for both on the enterprise side is still pretty impressive, lower token price actually would spark way more usage, that's called Jevons paradox. Also ChatGPT 6's latest price today is even comparable with Deepseek.」
+（中文：我认为 Muse 在另一个战场上。两边的企业端收入增长都还是相当惊人的，更低的 token 价格其实会激发更多用量，这叫杰文斯悖论（Jevons paradox：效率/价格下降反而让总消耗上升）。而且 ChatGPT 6 最新的价格现在都能跟 DeepSeek 比了。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>杰文斯悖论（Jevons paradox）</strong> 是理解「AI 价格战为什么对卖铲子的公司是好事」的关键概念——单价降、用量涨得更快，总收入反而更高。他还点出 ChatGPT 6 的价格已经贴到 DeepSeek 的水平，也就是说<strong>前沿模型和廉价模型的价差在消失</strong>，这对依赖低价获客的国产模型是压力，对靠算力需求吃饭的硬件链（$NVDA、HBM、内存）是利好。</p>
+<p><strong>④ 承接 Meta Muse：技术打开未来，但只有产品能交付（09-23 11:14）</strong></p>
+<blockquote>
+<p>原文：「Well said. Technology opens the future, but only products deliver it. Besides, OAI already feels the huge pressure from muse, and will probably release their personal assistant product in Oct.」
+（中文：说得好。技术打开未来，但只有产品才交付它。而且 OpenAI 已经感受到 Muse 巨大的压力，大概会在 10 月发布他们的个人助手产品。）</p>
+</blockquote>
+<p><strong>解读</strong>：昨天（09-22）Meta 的 Muse 是全场话题，今天他继续这条线：<strong>OpenAI 10 月发个人助手，是被动应战</strong>（否则不会跟得这么紧）。对小白：<strong>看 AI 竞赛别只看发布会，看「谁先被迫跟进」</strong>——被迫跟进的一方，通常毛利会被打。</p>
+<p><strong>⑤ 小幅点评一条：$CMCSA 这类服务就该挨打（09-23 11:37）</strong></p>
+<blockquote>
+<p>原文：「Totally make sense, service like $CMCSA totally deserves this.」
+（中文：完全说得通，像 $CMCSA 这样的服务完全活该。）</p>
+</blockquote>
+<p><strong>解读</strong>：$CMCSA 是康卡斯特（美国宽带+有线电视巨头）。他这条是在附和别人的吐槽，方向是<strong>传统服务型巨头被替代/被竞争削价是合理的</strong>，属于情绪表达多于分析。</p>
+<blockquote>
+<p>另 4 条为互动：催别人开 swag 店、一个「!」、图片回复、「Big congrats!」恭喜朋友。</p>
+</blockquote>
+<hr />
+<h3>5. @qinbafrank（qinbafrank）— 今日 4 条</h3>
+<p><strong>① 美伊谈了 3 小时「非常富有成效」，油价跌、股与币同涨（09-23 09:28）</strong></p>
+<blockquote>
+<p>原文精选：「美伊深夜传来好消息，昨天最重要的事件是——美伊进行了3小时"非常富有成效"的会谈：1、川普表示，美国官员早前与伊朗代表团进行了三个小时的会晤，与伊朗的会晤进展顺利……2、伊朗方面确认外长在联合国大会期间与美国总统特使威特科夫会晤。伊朗方面向美国代表传达了"严格"的条件，重启霍尔木兹海峡的条件包括立即解除海上封锁、立即释放被冻结的伊朗资产，以及结束所有"抵抗"前线的战争。
+最关键的核心是：双方谈完之后，没有谈崩，又安排下一次会谈。而且不是礼节性的见面、已经存在可以讨论的具体交换条件。这就进一步提振了市场预和情绪：油价继续下跌，美股加密都进一步上涨。
+还是之前的聊的：基本面还很强劲的情况下、油价不出问题则市场也不出问题。宏观压制因素被接触、基本面支撑就能往上蹿。」</p>
+</blockquote>
+<p><strong>解读</strong>：核心变量是<strong>霍尔木兹海峡</strong>（全球约五分之一的海运原油要从这里过），它的重启条件被摆上桌面，等于<strong>最坏的地缘尾部风险在被拆除</strong>。他的判断框架很清楚：<strong>油价是压制项，基本面是支撑项；压制项一旦解除，支撑项就能把指数往上顶</strong>。昨天油价继续跌、美股和加密同步上涨，就是这个逻辑的现场验证。对小白：<strong>盯油价（$WTI / $USOIL）比盯新闻标题更有效</strong>，因为它是这条逻辑最直接的价格体现。</p>
+<p><strong>② 长文：《Circle 稳定币网络全景图》——USDC 的护城河是怎么一层层垒起来的（09-23 10:06）</strong></p>
+<blockquote>
+<p>原文精选：「《Circle稳定币网络全景图》从强网络效应护城河的构建角度去看Circle与币安的深度合作…… 强网络效应平台的护城河，核心是"规模+密度+切换成本"。这些东西在起步阶段几乎都不存在，必须靠产品、补贴、营销、收购或监管套利，在真实竞争中一点一点积累。一旦过了临界点，效应会自我强化，看起来像"天生壁垒"，但回头看，几乎没有一家是躺着拿到的。
+1、币安：之前已经开始战略合作，昨晚更深度合作之后，这已经是Circle目前唯一同时具备股权 + 长期激励费 + 钱包基础设施嵌入的交易所关系，绑定深度仅次于Coinbase；
+现在它正在变成：用 Coinbase、Binance、Hyperliquid 控制"钱停在哪里"；用 Intuit、JCB、Nium、Tazapay 控制"钱怎么流"；再用 CPN + Arc 尝试控制"钱怎么结算"。这意味着USDC开始争夺交易和支付系统里的"默认结算资产"位置。
+之前聊60上下是Cricle的安全边际…… 现在能看出来网络效应正在初步建立，虽然还没有完全建立支配地位，但这个势头已经开始显现。」</p>
+</blockquote>
+<p><strong>解读</strong>：$CRCL 是 Circle，USDC 的发行方（美元稳定币，1 美元对应 1 枚）。他把 Circle 的护城河拆成三层——<strong>交易平台层（钱停在哪）、支付层（钱怎么走）、结算层（钱怎么清算）</strong>，并强调这些关系不是天生的，是「产品 + 补贴 + 营销 + 监管套利」一点点攒出来的。对小白最实用的是两个词：<strong>「默认结算资产」</strong>（大家做生意默认用哪个稳定币结算，谁占住谁收利息）和<strong>「安全边际」</strong>（他之前提过 $60 附近对 $CRCL 是舒服的位置——即价格低于这个区间才值得考虑，而不是追高）。同时他诚实补了一句：竞对也在扩张，市场很可能再 FUD（Fear, Uncertainty, Doubt，恐慌唱空）$CRCL 一轮。</p>
+<p><strong>③ 回复：CRCL 的优势是动态的，竞对也有资源做出动静（09-23 10:15）</strong></p>
+<blockquote>
+<p>原文：「@hzqsns 要看它们后续的落地节奏的，资源有，应该是能做到一定体量的。crcl的优势现在慢慢把cex和链上场景都占完了、然后还在向支付和企业资金流场景拓展。这是个动态演化的过程，其他对手也在拓展，毕竟有资源和渠道，只够搞出一些动静出来、说不定市场又得fud crcl一次😅」</p>
+</blockquote>
+<p><strong>解读</strong>：这是对他自己上一条的<strong>风险对冲</strong>——别把「护城河初步建立」读成「已经赢了」。他明确指出竞争对手（比如 $PYPL、$V 体系或交易所自建稳定币）都有资源和渠道，<strong>阶段性会冒出消息把 $CRCL 的价格打一轮</strong>。对小白：<strong>看网络效应的公司，要同时跟踪两件事——自己拿下的新合作，以及对手发的新产品</strong>。</p>
+<p><strong>④ 一条闲聊</strong>：回复 @jason_chen998 关于某人新闻的惊讶（无投资观点）。</p>
+<hr />
+<h3>6. @LinQingV（Macro_Lin）— 今日 5 条</h3>
+<p><strong>① 长江存储告美光的专利诉讼在德国推进到禁制令阶段（09-23 08:54）</strong></p>
+<blockquote>
+<p>原文：「DIGITIMES 报道，长江存储对美光的专利诉讼在德国法院推进到禁制令阶段，若落地可能影响欧洲车用及工控存储供应。长江存储有点牛逼哦。」</p>
+</blockquote>
+<p><strong>解读</strong>：长江存储（YMTC）是中国 NAND（闪存芯片，断电不丢数据的存储，用在 SSD、手机、汽车里）龙头。<strong>禁制令（injunction）</strong> = 法院判你可以先停止销售，这在专利战里是杀伤力最大的一步。如果德国法院真下禁令，<strong>$MU（美光）在欧洲的车用（车载电子）和工控（工业控制）存储供应会受影响</strong>——车用存储的特点是认证周期长、替换难、单价高，短期缺货容易推高价格。对国产链的反向意义：<strong>中国存储厂的专利武器开始能打到海外竞对的销售端了</strong>，这和 Jukan 讲的「两家中国存储厂互相跨界争夺」是同一场大戏的两面。</p>
+<p><strong>② 华为把昇腾 960DT 的时间表提前了三个季度，但产能受制于中芯国际（09-23 09:48）</strong></p>
+<blockquote>
+<p>原文：「华为把 Ascend 960DT 时间表提前三个季度至 2027年一季度；但是，昇腾 900 系列因中芯国际产能受限，仅向少数国家限量供应。compute die产能也上不去，😂」</p>
+</blockquote>
+<p><strong>解读</strong>：昇腾（Ascend）是华为的 AI 算力芯片（对标 $NVDA 的 GPU）。<strong>「时间表提前」是需求侧信号，「产能受限」是供给侧现实</strong>——他把两者摆在一起，意思是中国的算力需求爆炸，但<strong>卡点在中芯国际（$SMIC）的先进制程产能、以及 compute die（计算芯粒）的产出</strong>。对美股投资的含义有两层：短期看，中国自产算力上不来，<strong>$NVDA 在合规范围内能卖的部分仍有空间</strong>；长期看，一旦产能突破，替代效应才会真正显现。他后面两条回复（「肯定满足不了」「需求爆发太快」）就是在强调<strong>需求远远大于产能</strong>这个事实。</p>
+<p><strong>③ 回复补充：需求爆发太快，产能满足不了（09-23 09:54 / 10:06）</strong></p>
+<blockquote>
+<p>原文：「@Rickylu88 肯定满足不了。」「@curtuner 需求爆发太快」</p>
+</blockquote>
+<p><strong>解读</strong>：两句话把上一条的关键结论钉死了：<strong>这不是华为不想卖，是造不出来</strong>。对小白：看国产替代不要只看「发布了什么」，要看<strong>「产能什么时候到位」</strong>——半导体是产能生意，发布 ≠ 出货。</p>
+<p><strong>④ Opus 5.5 发布：顺手了，但判断力还是弱项（09-23 20:00｜AI 工具向观察）</strong></p>
+<blockquote>
+<p>原文精选：「Opus 5.5 发布了，看着口碑似乎有所改善？这一代用下来，总算顺手了。Opus 5能力不差，但写东西那股Claudish腔调实在劝退。5.5在这方面收敛了很多，速度和额度也宽裕了，让人愿意长时间挂着用。
+要说短板，还是在判断力上。它做事细致，但全局观容易用力过猛，碰到需要冷静review的场合，我还是更信Astra。
+便宜是真便宜，费token也是真费。单价只有Astra一半，输出却多出好几倍，一个任务跑下来，花的钱未必少。说白了，就是把成本从单价挪到了用量上，对算力需求来说反倒是好事。」</p>
+</blockquote>
+<p><strong>解读</strong>：这条表面是工具测评，实际藏了一个<strong>算力需求的投资结论</strong>：「单价便宜一半，但输出量多好几倍，最后花的钱没少」——<strong>这就是前面 labubu 说的杰文斯悖论在真实账单里的样子</strong>。对硬件链（$NVDA、HBM、DRAM、电力）来说，<strong>模型越便宜、用量越大，总算力消耗反而越涨</strong>，这是多头逻辑里最扎实的一环。</p>
+<hr />
+<h3>7. @starzq（Star@Day1Global Podcast）— 今日 9 条</h3>
+<p><strong>① RWA（现实世界资产上链）正在加速，重点是「机构的钱怎么进来」（09-23 09:02）</strong></p>
+<blockquote>
+<p>原文：「RWA 正在飞速发展🚀 Robinhood Chain 把代币化股票玩出了新花样，Google 开始在香港招聘Web3首席架构师，要求有 RWA 和稳定币经验。这个赛道的核心还是机构的钱怎么进来，它们的需求是什么。本期 @day1globalpod，我们邀请了 Kamino 战略负责人 @cheryldchan 来聊聊链上金融的未来，欢迎阅读和收听」</p>
+</blockquote>
+<p><strong>解读</strong>：RWA = Real World Asset，把股票、债券、房地产这些真实资产做成链上代币。这里有一个<strong>可以直接在美股上交易的信息</strong>：$HOOD（Robinhood）在用「Robinhood Chain」做<strong>代币化股票</strong>（把美股做成链上可交易的代币）——这对券商而言可能是新的分发渠道，也可能是对 $HOOD 估值逻辑的一次重估。另外「Google 在香港招 Web3 首席架构师，要求 RWA 和稳定币经验」说明<strong>大厂在做人才和基础设施层面的提前布局</strong>。他点出的核心问题很务实：<strong>这个赛道成不成，取决于机构的需求而不是散户的热情。</strong></p>
+<p><strong>② 「机构真的再次入场了」（09-23 13:41 / 13:51）</strong></p>
+<blockquote>
+<p>原文：「@Rubywang @cheryldchan 机构来了 https://t.co/70E3OpC8UO」「机构真的再次入场了 https://t.co/FGhrpPNhXE」</p>
+</blockquote>
+<p><strong>解读</strong>：两条短帖，语气是「证据来了」。结合上一条，他在强调的是<strong>同一件事有两个方向的钱在进来：合规大厂的人才与产品、以及机构的资金</strong>。对美股的相关标的是 $COIN、$HOOD、$CRCL 这类「币股」——加密基础设施的机构化，是这些公司的收入来源。</p>
+<p><strong>③ 播客上线（09-23 13:56 / 18:10）</strong></p>
+<blockquote>
+<p>原文：「E84 播客直达：https://t.co/BlLY8e5sUU 苹果播客、Spotify 等客户端可以直接搜索 Day1Global」「感谢 @cheryldchan 的希望看到越来越多的 RWA 在 @Kamino_ZH 上增加使用场景，资产上链之后真正被用起来」</p>
+</blockquote>
+<p><strong>解读</strong>：内容分发，无额外投资观点。但他那句「<strong>资产上链之后真正被用起来</strong>」是这个赛道最容易被忽略的检验标准——<strong>代币化不是终点，能不能被当作抵押品、被借出去、被用起来才是</strong>（这一点和雨中狂睡今天聊的 BTC 信用跨链是同一件事）。</p>
+<blockquote>
+<p>另 3 条为互动：表情回复、以及给读者指路「参考这一条」。</p>
+</blockquote>
+<hr />
+<h3>8. @0xSleepinRain（雨中狂睡SleepinRain）— 今日 6 条</h3>
+<p><strong>① 他今天唯一的深度长文：Zest Protocol —— BTC 留在主网，让别的链来用它的「信用」（09-23 18:49）</strong></p>
+<blockquote>
+<p>原文精选：「Zest 的核心其实是信用跨链，资产不跨链：BTC 留在主网，各条链来使用 BTC 的"信用"。
+现在 Crypto 大方向的采用场景主要是以下三种：1、RWA 资产，meme 是推动 RWA 资产采用的手段；2、有现金流收入的应用，不限于 Perpdex、DeFi、支付、U 卡等；3、meme 等注意力资产。第二点中，比较核心的就是两点：PMF 和资金效率。
+现在 Crypto 行业应用/基础设施发展的趋势就是在卷这个资金效率……还是 BTC 等核心资产的叙事演变，从储值资产叙事逐步演变为链上信用体系里的核心抵押品。
+Zest 团队早期曾参与 Stacks 生态建设，并拿到了Tim Draper 旗下 Draper Associates 和 YZi Labs 的投资……Zest 这次的 Bitcoin Collateral Vaults 产品逻辑很容易理解：BTC 继续留在 Bitcoin L1，用户只需要将其存到协议金库，且不需要先把 BTC 包装成另外一个资产，或者跨链，就可以将其作为抵押品，在以太坊获得稳定币流动性。目前上线的是有额度限制的主网 Demo。
+综上所述，Zest 真正想要解决的核心问题是：怎么让几万亿美元规模的 BTC，在不封装、不跨链转移资产的情况下，进入全球链上信用市场……传统 BTC holder 最大的行为惯性之一，就是不愿意把 BTC 交给第三方，更不愿意为了获得一些 DeFi 收益，把原生 BTC 换成一个自己并不完全信任的包装资产。
+最后我昨天去看了一下 $ZEST 的 K 线，当时 MC 约 21M，FDV 约 150M。具体观点已经在图上标注，如果在比较好的位置去买入的话，盈亏比还是蛮好的。」</p>
+</blockquote>
+<p><strong>解读</strong>：这条表面上聊的是一个加密协议，但<strong>它讲的东西和美股 RWA 板块是同一个故事</strong>，值得小白看懂逻辑。
+- <strong>问题</strong>：BTC 有几万亿美元规模，但绝大部分只是「躺在钱包里当储值资产」，不产生收益。想让 BTC 生息，传统做法是把它跨链包装成另一个代币（比如 $WBTC），<strong>但很多老持有人不信任这种包装资产</strong>。
+- <strong>Zest 的做法</strong>：<strong>信用跨链、资产不跨链</strong>——BTC 本身不动、留在比特币主网，只是把「BTC 作为抵押品的信用」传到以太坊上，用来借稳定币。这样既不用交出自己的 BTC，也不用换成包装币。
+- <strong>数据</strong>：$ZEST 当时市值（MC，Market Cap，流通市值）约 2100 万美元，FDV（Fully Diluted Valuation，把未来所有要发的币都算进去的完全稀释估值）约 1.5 亿美元——<strong>MC 远小于 FDV</strong>，说明大量代币还没解锁，这是他提醒「要在好的位置买、看盈亏比」的原因（未解锁的代币未来是持续卖压）。
+- <strong>行业级结论</strong>：他认为加密的机会只剩三类——RWA、有现金流收入的应用、注意力资产；而<strong>竞争的核心是「资金效率」</strong>：同样的钱，用一次还是用三次。</p>
+<p><strong>② 另 5 条为互动</strong>：包括「教授被盗了」（安全事件吐槽，未点名标的）、「这个帅」、「一起摸奶的」、「真正的eth」、以及怀疑某媒体收了 pumpfun 广告费。<strong>点到的标的：$ZEST（上文详述）、ETH、BTC。</strong></p>
+<hr />
+<h3>9. @insane_analyst（Irrational Analysis）— 今日 6 条</h3>
+<p><strong>今日无实质观点，仅互动</strong>（6 条全部为回复，无长文）。</p>
+<p><strong>① 透露对 uVCSEL 的关注（09-23 07:01）</strong></p>
+<blockquote>
+<p>原文：「Yes. For uVCSEL」
+（中文：是的。针对 uVCSEL。）</p>
+</blockquote>
+<p><strong>解读</strong>：uVCSEL = 微型垂直腔面发射激光器（Vertical-Cavity Surface-Emitting Laser，芯片间/服务器内部光互连用的光源）。<strong>这正好和 Serenity 今天引用的 $SIVE CEO 那句「激光器至少 3-5 年严重供需失衡」是同一个产业链</strong>——AI 数据中心的算力瓶颈正在从「算」转向「连」，光互连（用光而不是铜传数据）是今年的关键增量方向。</p>
+<p><strong>② 自认这是周期股，但想赌一把情绪（09-23 07:01）</strong></p>
+<blockquote>
+<p>原文：「No i also think cyclical but trying to chase stupidity」
+（中文：不，我也认为它是周期性的，但我在试着追逐愚蠢。）
+以及「Ya November」（是的，11 月）</p>
+</blockquote>
+<p><strong>解读</strong>：「cyclical（周期性）」是他给某个标的的定性——<strong>周期股的特点是涨得猛跌得也快，不能当长期复利品持有</strong>。他说自己在「chase stupidity（追市场的愚蠢）」，属于诚实承认自己在做情绪交易，不是价值投资。另外「11 月」这条是他对某个时间点的确认（未点明标的）。</p>
+<p><strong>③ 关于优先股与普通股的定价问题（09-23 08:04 / 08:11 / 08:32）</strong></p>
+<blockquote>
+<p>原文：「Why prefered cheaper than common?」「Sorry shouldn't prefered having voting rights make it more valuable?」「Thanks for accommodating my smooth-brain」
+（中文：为什么优先股比普通股便宜？抱歉，优先股有投票权难道不该更值钱吗？谢谢包容我这颗笨脑子。）</p>
+</blockquote>
+<p><strong>解读</strong>：他在向别人请教一个<strong>基础但重要的定价问题</strong>：preferred（优先股）通常没有投票权、但分红优先；common（普通股）有投票权。他疑惑「有投票权的反而不便宜吗」——实际市场里<strong>投票权往往给溢价（双重股权结构的公司里，有投票权的股更贵）</strong>，如果优先股更便宜，通常是因为它条款里有别的限制（比如可赎回、转股权受限）。这条对小白的价值是：<strong>同名公司可能有多种股票（如 $GOOG / $GOOGL），价格和权利都不一样，下单前先看清楚。</strong></p>
+<blockquote>
+<p>今天他没有发布任何看多/看空的明确观点，属于「答疑 + 观察」的一天。</p>
+</blockquote>
+<hr />
+<h3>10. @mdzzi（茶不思）— 今日 3 条</h3>
+<p><strong>今日无实质观点，仅互动</strong>（3 条均为回复）。</p>
+<p><strong>① 关键提示：等财报端的增量订单来验证（09-23 11:00）</strong></p>
+<blockquote>
+<p>原文：「这个是毋庸置疑的。看接下来几个季度财报端是否带来增量订单。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是今天他唯一带信息量的表述——<strong>某个共识他已经认同，但真正的检验点在「接下来几个季度的财报里有没有增量订单」</strong>。这正是判断 AI/半导体产业链最实用的方法：<strong>叙事可以提前跑，订单只能从财报里数</strong>。呼应今天 Jukan 和 Serenity 的存储话题，值得记下来当验证清单。</p>
+<blockquote>
+<p>另 2 条为纯闲聊回复（「You need to learn "摸奶来财"」、以及回复 @AntonLaVay 表示看不懂某个需求）。</p>
+</blockquote>
+<hr />
+<h3>11. @xiaomustock（川沐｜Trumoo🐮）— 今日无新推文</h3>
+<p>窗口内没有新推文（也不在回复列表里）。这位博主是昨日 AI/存储话题的主要参与者之一，今天没有发言。</p>
+<hr />
+<h3>12. @fi56622380（fin）— 今日无新推文</h3>
+<p>窗口内没有新推文。</p>
+<hr />
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>美股博主</strong></td>
+<td>🟢 偏多，但只多「供应链」不追「故事」</td>
+<td>Jukan 复盘存储技术路线、Serenity 给出 $AVGO 两年 100% / $NVDA 明年 70% 的供给受限增长、Fiona 实盘加仓 $RKLB 并给出买点逻辑；同时对 AI 消费端变现（labubu 谈 OpenAI C 端、广告模型）明确存疑——<strong>看多硬件、拷问应用</strong></td>
+</tr>
+<tr>
+<td><strong>宏观</strong></td>
+<td>🟢 偏暖（地缘压制项在拆除）</td>
+<td>qinbafrank：美伊 3 小时会谈未谈崩、已安排下一轮、有具体交换条件（解除海上封锁/释放资产/停战）；油价继续跌，美股与加密同涨。他的框架是「基本面强劲 + 油价不出问题 = 市场不出问题」</td>
+</tr>
+<tr>
+<td><strong>风险</strong></td>
+<td>🟡 三个方向</td>
+<td>① <strong>升级节奏风险</strong>：JPM 把 16Hi HBM 推后到 2029 年、三星 B1b 版 D0a 量产至少还要两年——预期跑太快的标的会被打；② <strong>供给与法律风险</strong>：长江存储诉 $MU 在德国推进到禁制令阶段、中国两家存储厂互相跨界抢地盘，长期是过剩与专利战；③ <strong>个股执行风险</strong>：Fiona 自己点出 $RKLB 的 Neutron 首飞窗口在收窄；$CRCL 随时可能被竞对消息再 FUD 一轮</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、给小白的一句话</h2>
+<p>今天最值钱的两条，都跟「<strong>别被叙事带跑</strong>」有关。</p>
+<p>第一条是<strong>存储的时间锚</strong>。市场一直在讲「缺货、涨价、超级周期」，但今天两位博主给出了同一方向的修正：JPM 把 16Hi HBM（16 层堆叠的高带宽内存）的普及推后到<strong>最早 2029 年</strong>，三星把下一代 DRAM 的路线从更难的 VCT 换成了工艺门槛更低的<strong>混合键合（B1b）</strong>，且 B1b 版 10nm 以下 DRAM 量产<strong>至少还要两年</strong>。翻译成人话：<strong>这一代产品的赚钱窗口被拉长了，下一代升级没那么快来</strong>。可跟的研究方向是：$MU（美光）、$AVGO、三星的季度指引里，<strong>「供给受限」还能持续几个季度</strong>（Serenity 引用的原话是 $AVGO 两年 100%、$NVDA 明年 70%），以及验证点——<strong>看接下来几个季度的财报里有没有增量订单</strong>（@mdzzi 今天说的那句话），而不是看新闻里的形容词。</p>
+<p>第二条是<strong>买点的构成</strong>。Fiona 今天把 $RKLB 的买入理由写得像模板：价格回调到合适位置、基本面创纪录（Q2 营收 2.34 亿美元同比 +62%、积压订单 23.6 亿美元）、<strong>约 19 亿美元的 ATM 增发卖压出清</strong>。这三件事里，最容易被小白忽略、也最有用的其实是第三件：<strong>增发、解禁、大股东减持这类「卖压」结束，常常比财报更能标记短期拐点</strong>。可直接照做的动作：以后看中一只票，先查它最近有没有在做 ATM/增发、什么时候结束。</p>
+<p>风险提醒：今天反而没有博主在喊牛市，喊多的人全部给出了具体条件和风险点（Neutron 首飞窗口、$CRCL 可能再被 FUD、周期股属性）。<strong>当看多的人开始讲条件，说明行情还没到最热的时候，但也说明这波上涨依赖的是「产能和订单」，不是「情绪」——一旦订单验证不上，回调会很快。</strong>别追新闻里的单日大涨，盯价格与财报这两个硬证据。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-09-22 21:24 → 2026-09-23 21:24（北京时间）。以下为美股名单 10 位有推文博主的 <strong>全部 60 条</strong>原文，未省略。</p>
+</blockquote>
+<h3>@nft_hu（Fiona ❤️&amp; ✌️）— 11 条</h3>
+<p><strong>[09-23 10:41]</strong>
+@zjjsas007 感谢提醒！回去重新看了一下，可能是新手机色调问题。不过最近会去医院复检一次！ https://t.co/Ozr975l79O</p>
+<p><strong>[09-23 11:02]</strong>
+@zjjsas007 研究了下，猫咪的鼻头颜色也会受温度、光照影响。
+我家猫夏天鼻头粉粉的，冬天就会变淡发白，医生说这叫"温度性色素减退"，
+尤其是英短、金渐层这类浅色猫。</p>
+<p><strong>[09-23 14:29]</strong>
+听说一个越南人在台湾搞宝可梦卡诈骗，骗了几个亿…</p>
+<p><strong>[09-23 14:29]</strong>
+@zjjsas007 谢谢😊</p>
+<p><strong>[09-23 14:44]</strong>
+又到了家庭聚餐时间，深刻感受到竹北真的是经济上行期。
+每一块地都盖起了楼，生育率上升、学校一直盖，每个人都说有几十张、几百张的台积电，好市多永远人多到进不去，房价一直涨，甚至停车费都一直涨。</p>
+<p><strong>[09-23 14:55]</strong>
+@Peterandjuly0 都是黑卡，9点去的队伍是我目前排过最长的</p>
+<p><strong>[09-23 16:50]</strong>
+@yuchanghan45946 好吃的也比较少，其他都不错</p>
+<p><strong>[09-23 16:51]</strong>
+@sgg_trader 大概率是</p>
+<p><strong>[09-23 16:52]</strong>
+竹北的高铁站附近，到处都在建设 https://t.co/FeACcRwJDL</p>
+<p><strong>[09-23 21:04]</strong>
+买入 $RKLB 的原因基本为——持续看好基本面，价格回调到合适位置， ATM的融资都出完了。
+基本面：Q2 营收创纪录 2.34 亿美元，同比 +62%；积压订单 23.6 亿美元。Electron 9 月 19 日完成第 96 次任务、今年第 17 次，继续保持高频高成功率执行。
+80 亿美元 收购 Iridium的资金基本筹措到位。和对Mynaric和Motiv的收购金额完全不同，80亿收购Iridium是下一个量级。9 月 15 日，Rocket Lab 宣布完成 ATM，募集约 19 亿美元来完成收购。这部分的卖盘（应该也是年内最大）已经完成。
+风险点：中火箭年内首飞窗口正在收窄，但感觉大家都有了预期。一次成功比如期失败更重要。</p>
+<p><strong>[09-23 21:05]</strong>
+其实 $CRWV 给我的感觉和 $ORCL 有点像，更高的杠杆、更重的赌注，但是当赚钱周期开始，他们的收入也是成倍地兑现。</p>
+<h3>@labubu_trader（3X Long Labubu）— 9 条</h3>
+<p><strong>[09-23 07:45]</strong>
+@alexandr_wang Open a swag store right now!!! https://t.co/rbJ6fdmlBb</p>
+<p><strong>[09-23 09:03]</strong>
+!</p>
+<p><strong>[09-23 11:09]</strong>
+@alexandr_wang https://t.co/iu0GznxcPF</p>
+<p><strong>[09-23 11:14]</strong>
+Well said. Technology opens the future, but only products deliver it.
+Besides, OAI already feels the huge pressure from muse, and will probably release their personal assistant product in Oct.</p>
+<p><strong>[09-23 11:35]</strong>
+@kevinxu Big congrats!</p>
+<p><strong>[09-23 11:37]</strong>
+@LeoNelissen Totally make sense, service like $CMCSA totally deserves this.</p>
+<p><strong>[09-23 12:15]</strong>
+Not optimistic about OAI's personal AI products which will be released next month
+It's not about quality but about the cost of consumer products and also monetization. 
+I think OAI should focus on the enterprise side to maximize their revenue growth and beat the shit out of Anth.</p>
+<p><strong>[09-23 12:21]</strong>
+Cost of customer acquisition and computation cost is huge. The short term ROI is way lower than selling tokens to the enterprise .
+Also don't underestimate the challenge of building ads products. You need the full feedback loop to understand the conversions and downstream value to the advertisers. 
+However I highly doubt the advertisers would be willing to share the conversions data and downstream conversion value data to OAI. 
+Even for TikTok US, they have gained the trust recently from advertisers and had the full feedback loop data collected less than a year.</p>
+<p><strong>[09-23 12:25]</strong>
+@moneyinmarket I think muse is in a different battlefield.
+The revenue growth for both on the enterprise side is still pretty impressive, lower token price actually would spark way more usage, that's called Jevons paradox.
+Also ChatGPT 6's latest price today is even comparable with Deepseek.</p>
+<h3>@starzq（Star@Day1Global Podcast）— 9 条</h3>
+<p><strong>[09-23 07:25]</strong>
+@looshine 😂</p>
+<p><strong>[09-23 07:27]</strong>
+@santiagoyoungus 并不是，参考这一条</p>
+<p><strong>[09-23 08:49]</strong>
+https://t.co/WIMc86KgsP</p>
+<p><strong>[09-23 09:02]</strong>
+RWA 正在飞速发展🚀
+Robinhood Chain 把代币化股票玩出了新花样，Google 开始在香港招聘Web3首席架构师，要求有 RWA 和稳定币经验
+这个赛道的核心还是机构的钱怎么进来，它们的需求是什么
+本期 @day1globalpod , 我们邀请了 Kamino 战略负责人 @cheryldchan 来聊聊链上金融的未来，欢迎阅读和收听</p>
+<p><strong>[09-23 11:11]</strong>
+@zijing @day1globalpod @cheryldchan ❤️</p>
+<p><strong>[09-23 13:41]</strong>
+@Rubywang @cheryldchan 机构来了
+https://t.co/70E3OpC8UO</p>
+<p><strong>[09-23 13:51]</strong>
+机构真的再次入场了 https://t.co/FGhrpPNhXE</p>
+<p><strong>[09-23 13:56]</strong>
+E84 播客直达：https://t.co/BlLY8e5sUU
+苹果播客、Spotify 等客户端可以直接搜索 Day1Global https://t.co/SPWzDN2l8b</p>
+<p><strong>[09-23 18:10]</strong>
+感谢 @cheryldchan 的希望看到越来越多的 RWA 在 @Kamino_ZH 上增加使用场景，资产上链之后真正被用起来</p>
+<h3>@insane_analyst（Irrational Analysis）— 6 条</h3>
+<p><strong>[09-23 07:01]</strong>
+@mingfang1979 Yes. For uVCSEL</p>
+<p><strong>[09-23 07:01]</strong>
+@JackieNate1 No i also think cyclical but trying to chase stupidity</p>
+<p><strong>[09-23 07:41]</strong>
+@LivingByMoment Ya November</p>
+<p><strong>[09-23 08:04]</strong>
+@EricJhonsa Why prefered cheaper than common?</p>
+<p><strong>[09-23 08:11]</strong>
+@EricJhonsa Sorry shouldn't prefered having voting rights make it more valuable?</p>
+<p><strong>[09-23 08:32]</strong>
+@EricJhonsa Thanks for accommodating my smooth-brain</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 6 条</h3>
+<p><strong>[09-23 12:53]</strong>
+@abyssofgambling @CryptoApprenti1 教授被盗了</p>
+<p><strong>[09-23 12:53]</strong>
+@Web3Feng 这个帅</p>
+<p><strong>[09-23 13:28]</strong>
+@keoneHD 一起摸奶的</p>
+<p><strong>[09-23 18:49]</strong>
+Zest 的核心其实是信用跨链，资产不跨链：BTC 留在主网，各条链来使用 BTC 的“信用”。
+现在 Crypto 大方向的采用场景主要是以下三种：
+1、RWA 资产，meme 是推动 RWA 资产采用的手段；
+2、有现金流收入的应用，不限于 Perpdex、DeFi、支付、U 卡等；
+3、meme 等注意力资产。
+第二点中，比较核心的就是两点：PMF 和资金效率。
+其他部分我之前已经聊过很多了，但没怎么聊过资金效率这个事情。现在 Crypto 行业应用/基础设施发展的趋势就是在卷这个资金效率——不论是 Perpdex + 预测市场的统一账户、统一保证金，还是 BTC 等核心资产的叙事演变，从储值资产叙事逐步演变为链上信用体系里的核心抵押品。
+最近在看 Zest Protocol，也是因为这个原因。Zest 团队早期曾参与 Stacks 生态建设，并拿到了Tim Draper 旗下 Draper Associates 和 YZi Labs 的投资，旨在为 BTC 构建抵押和信用基础设施。该协议的核心特色是：「将比特币 Layer1 网络上的 $BTC 与成熟的 DeFi 基础设施连接起来，而不是强行将用户自身所持有的资产和流动性迁移到另外一个 BTC Layer2 生态」。这与 Stacks 之前的愿景一致的，Zest 现在想当于是对其下一阶段可编程比特币的探索。
+Zest 这次的 Bitcoin Collateral Vaults 产品逻辑很容易理解：BTC 继续留在 Bitcoin L1，用户只需要将其存到协议金库，且不需要先把 BTC 包装成另外一个资产，或者跨链，就可以将其作为抵押品，在以太坊获得稳定币流动性。目前上线的是有额度限制的主网 Demo。后面它更大的目标是作为基础设施，支持更多的金融应用，从而将 BTC 的资本效率释放出来。
+综上所述，Zest 真正想要解决的核心问题是：怎么让几万亿美元规模的 BTC，在不封装、不跨链转移资产的情况下，进入全球链上信用市场。因为传统 BTC holder 最大的行为惯性之一，就是不愿意把 BTC 交给第三方，更不愿意为了获得一些 DeFi 收益，把原生 BTC 换成一个自己并不完全信任的包装资产。Zest 在做的不是把 BTC 搬到每一条链，而是让BTC 留在主网，各条链来使用 BTC 的“信用”。虽然最终结果上和 Coinbase cbBTC 等资产类似，但 Zest 的核心其实信用跨链，资产不跨链。
+最后我昨天去看了一下 $ZEST 的 K 线，当时 MC 约 21M，FDV 约 150M。具体观点已经在图上标注，如果在比较好的位置去买入的话，盈亏比还是蛮好的。</p>
+<p><strong>[09-23 18:50]</strong>
+@diamondhandjs 真正的eth</p>
+<p><strong>[09-23 19:57]</strong>
+@CyberPhilos @BlockBeatsAsia 收了pumpfun的广告费</p>
+<h3>@LinQingV（Macro_Lin）— 5 条</h3>
+<p><strong>[09-23 08:54]</strong>
+DIGITIMES 报道，长江存储对美光的专利诉讼在德国法院推进到禁制令阶段，若落地可能影响欧洲车用及工控存储供应。长江存储有点牛逼哦。</p>
+<p><strong>[09-23 09:48]</strong>
+华为把 Ascend 960DT 时间表提前三个季度至 2027年一季度；但是，昇腾 900 系列因中芯国际产能受限，仅向少数国家限量供应。compute die产能也上不去，😂</p>
+<p><strong>[09-23 09:54]</strong>
+@Rickylu88 肯定满足不了。</p>
+<p><strong>[09-23 10:06]</strong>
+@curtuner 需求爆发太快</p>
+<p><strong>[09-23 20:00]</strong>
+Opus 5.5 发布了，看着口碑似乎有所改善？
+这一代用下来，总算顺手了。Opus 5能力不差，但写东西那股Claudish腔调实在劝退。5.5在这方面收敛了很多，速度和额度也宽裕了，让人愿意长时间挂着用。
+要说短板，还是在判断力上。它做事细致，但全局观容易用力过猛，碰到需要冷静review的场合，我还是更信Astra。
+便宜是真便宜，费token也是真费。单价只有Astra一半，输出却多出好几倍，一个任务跑下来，花的钱未必少。说白了，就是把成本从单价挪到了用量上，对算力需求来说反倒是好事。</p>
+<h3>@jukan05（Jukan）— 4 条</h3>
+<p><strong>[09-23 07:38]</strong>
+JPM has updated its HBM model and now expects 16Hi HBM adoption in 2029 at the earliest.</p>
+<p>Good morning.</p>
+<p><strong>[09-23 12:59]</strong>
+China is pursuing full-stack hardware independence, including switches. https://t.co/3gsvyHsNnw</p>
+<p><strong>[09-23 14:12]</strong>
+Samsung Electronics Revises Roadmap for Next Generation DRAM "D0a," Pulls Hybrid Bonding Forward</p>
+<p>Samsung Electronics has revised its next generation DRAM development strategy. The company recently moved "B1b," a technology that had been under development as a standalone project, onto its official roadmap and designated it "D0a," its first DRAM below 10 nanometers (nm).</p>
+<p>D0a originally referred to Samsung's vertical channel transistor (VCT) DRAM process. VCT DRAM has now been reclassified under a separate name, "D0a-V." Samsung changed the D0a designation to accelerate the adoption of advanced packaging in commodity DRAM. B1b refers to a technology that uses wafer to wafer (W2W) hybrid bonding to increase internal integration density.</p>
+<p>"B1b was in R&amp;D, but it was not on Samsung's official roadmap," said a source familiar with the matter. "With this strategy revision, it has been folded into D0a. It means Samsung is actively pushing for fast commercialization of B1b DRAM."</p>
+<p>Samsung Shifts D0a Designation from VCT DRAM to B1b</p>
+<p>According to ZDNet Korea's reporting on the 23rd, Samsung has changed the definition of its next generation D0a DRAM from VCT DRAM to B1b.</p>
+<p>DRAM has advanced by shrinking internal circuit linewidths. The most recently commercialized DRAM is 1c (sixth generation 10nm class), with linewidths of around 11 to 12nm. The next product, 1d (seventh generation 10nm class), comes in at 10 to 11nm and is effectively the last 10nm class DRAM. These linewidth figures are marketing terms used to indicate performance, not actual physical dimensions.</p>
+<p>Samsung has pursued several technological shifts to realize D0a, the first sub 10nm DRAM. B1b is the most prominent of these.</p>
+<p>B1b fabricates the memory cells and the surrounding driver circuitry, known as the peri, on separate wafers and then bonds them together, stacking the cell on top of the peri. Compared with the conventional approach of integrating both cell and peri on a single wafer, this allows the cells to be packed more densely. It also lets each of the cell and the peri use a process optimized for it.</p>
+<p>B1b uses W2W hybrid bonding. Hybrid bonding joins chips by directly connecting their copper interconnects. Compared with conventional packaging that connects chips through small bumps, it improves integration density and performance. W2W hybrid bonding is also entering full scale adoption in high layer count NAND of 400 layers or more. W2W means bonding one wafer to another.</p>
+<p>Why Samsung Is Prioritizing B1b: "VCT DRAM Needs More Time"</p>
+<p>VCT DRAM, previously called the D0a process, has been renamed D0a-V as a derivative. VCT stands up the transistor inside the DRAM cell, the smallest unit that stores data, vertically instead of laying it horizontally.</p>
+<p>Making the transistor vertical reduces cell area. The conventional cell area, calculated by multiplying the feature size (F) in each direction, is 6F². VCT can bring this down to 4F². A smaller cell means more cells can be integrated in the same area.</p>
+<p>VCT DRAM, however, is considered extremely difficult technically. It requires high aspect ratio etching to form vertical transistors and new materials to address the rise in leakage current that comes with smaller cell area.</p>
+<p>W2W hybrid bonding, as used in B1b, is already in volume production in existing semiconductor processes such as CMOS image sensors and high layer count NAND. This appears to be why Samsung moved B1b ahead of VCT DRAM in priority for implementing the D0a process.</p>
+<p>"From a design standpoint, B1b has a lower barrier to commercialization than VCT, so the industry sees early adoption of B1b as likely," another source said. "Inside Samsung, too, the mood is to move faster on B1b than on VCT."</p>
+<p><strong>B1b to Play a Major Role in Next Generation AI Memory "HBM5"</strong></p>
+<p>B1b could also play a significant role in Samsung's next generation high bandwidth memory (HBM) business. Samsung is currently reviewing applying B1b to HBM5 (eighth generation).</p>
+<p>HBM5 is expected to enter mass production around 2029. Samsung is developing the product with a target of raising operating speed by roughly 50% or more over its predecessor, HBM4E.</p>
+<p>Commercialization of B1b based D0a DRAM is estimated to be at least two years away. The industry expects the specific mass production investment schedule to be finalized around the middle of next year.</p>
+<p>VCT DRAM development is continuing in parallel. The industry view is that VCT DRAM and 3D DRAM could eventually be developed on top of B1b. 3D DRAM stacks the cells themselves vertically and is expected to follow VCT DRAM.</p>
+<p>"B1b will ultimately be applied alongside VCT DRAM or 3D DRAM," said Choi Jeongdong, Senior Vice President at TechInsights. "Manufacturing the cell and peri separately brings many advantages, so hybrid bonding will serve as a platform applied together with future DRAM cell architectures."</p>
+<p><strong>[09-23 14:12]</strong>
+https://t.co/Vli4WLAFZk</p>
+<h3>@qinbafrank（qinbafrank）— 4 条</h3>
+<p><strong>[09-23 09:28]</strong>
+美伊深夜传来好消息，昨天最重要的事件是——美伊进行了3小时“非常富有成效”的会谈：1、川普表示，美国官员早前与伊朗代表团进行了三个小时的会晤，与伊朗的会晤进展顺利。他表示，与伊朗的会晤非常富有成效，将在不久的将来安排另一次会谈。美国中东问题特使威特科夫则就与伊朗的会谈表示，目前感觉非常好。</p>
+<p>2、伊朗方面确认外长在联合国大会期间与美国总统特使威特科夫会晤。伊朗方面向美国代表传达了“严格”的条件，重启霍尔木兹海峡的条件包括立即解除海上封锁、立即释放被冻结的伊朗资产，以及结束所有“抵抗”前线的战争。</p>
+<p>最关键的核心是：双方谈完之后，没有谈崩，又安排下一次会谈。而且不是礼节性的见面、已经存在可以讨论的具体交换条件。</p>
+<p>这就进一步提振了市场预和情绪：油价继续下跌，美股加密都进一步上涨。</p>
+<p>还是之前的聊的：基本面还很强劲的情况下、油价不出问题则市场也不出问题。宏观压制因素被接触、基本面支撑就能往上蹿。</p>
+<p>本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易</p>
+<p><strong>[09-23 10:06]</strong>
+《Circle稳定币网络全景图》从强网络效应护城河的构建角度去看Circle与币安的深度合作。昨晚披露币安跟Circle的深度合作，对于Circle来说跟最大的加密交易所进一步深度绑定，意义重大。但更深入的去看，这就是一个如何一步步从无到有建立起业务护城河和典型商业案例。</p>
+<p>8月初有聊过，强网络效应平台的护城河，核心是“规模+密度+切换成本”。这些东西在起步阶段几乎都不存在，必须靠产品、补贴、营销、收购或监管套利，在真实竞争中一点一点积累。一旦过了临界点，效应会自我强化，看起来像“天生壁垒”，但回头看，几乎没有一家是躺着拿到的。</p>
+<p>1、再回看Circle在CEX上的布局
+1）coinbase自然不用说，USDC最核心的深度分销关系，“储备分成+全产品介入”模式；
+2）币安，之前已经开始战略合作，昨晚更深度合作之后，这已经是Circle目前唯一同时具备股权 + 长期激励费 + 钱包基础设施嵌入的交易所关系，绑定深度仅次于Coinbase；
+3）OKX
+去年7月战略合作，给6000万+用户提供1:1的USD↔USDC兑换，打通银行出入金，并做教育和社区推广， 
+今年9月再升级，扩大OKX现货、保证金、期货里的USDC计价市场；推出由Circle出资的USDC保证金增长计划（满足持仓和交易量条件可领奖励）。跟OKX合作，从出入金打通，做到交易场景全覆盖
+4）Bybit：把USDC从交易对扩到理财、返现和日常支付
+5）Kraken：补USDC深度，同时导入EURC</p>
+<p>2、Circle的整体布局
+除了CEX的布局动作，还要把Circle在链上、企业资金流、支付、银行层面的合作放在一起看。以前 Circle 是：
+发行 USDC，让更多交易所支持 USDC。
+现在它正在变成：
+用 Coinbase、Binance、Hyperliquid 控制“钱停在哪里”；
+用 Intuit、JCB、Nium、Tazapay 控制“钱怎么流”；
+再用 CPN + Arc 尝试控制“钱怎么结算”。
+这意味着USDC开始争夺交易和支付系统里的“默认结算资产”位置。</p>
+<p>3、Circle已经开始形成一张完整的分销网络：
+银行美元
+→ BNY / Standard Chartered
+→ USDC
+→ Coinbase / Binance / Hyperliquid
+→ CPN / Arc
+→ Nium / Tazapay / JCB / Intuit
+→ 企业、商户、个人</p>
+<p>这个网络也是分层的：
+1）交易平台解决的是“USDC 放在哪里、拿来交易什么、能不能当保证金”；
+2）支付平台解决的是“USDC 能不能真正进入企业资金流、商户收款和跨境结算”；
+3）再往下一层，Arc + CPN 则试图把这些合作伙伴连接成 Circle 自己的一套网络。</p>
+<p>一旦这个闭环真正跑起来，USDC 的竞争逻辑就会变成：
+“谁控制的美元结算网络更广、场景更深、用户资金停留时间更长。”</p>
+<p>最后就形成下面这幅《Circle 稳定币网络全景图》，这样我们会直观地看出 CRCL 已经从“稳定币发行商”走到哪一步。</p>
+<p>也是8月初推文聊到的：稳定币法案通过也才一年时间，稳定币领域正在打这场垒“网络效应”筑“护城河”的仗，战斗正酣。</p>
+<p>之前聊60上下是Cricle的安全边际：
+ https://t.co/b0dvHyqyC0
+之前对Circle的理解竞争力的理解： https://t.co/cyuMsZ1xZZ
+现在能看出来网络效应正在初步建立，虽然还没有完全建立支配地位，但这个势头已经开始显现</p>
+<p><strong>[09-23 10:15]</strong>
+@hzqsns 要看它们后续的落地节奏的，资源有，应该是能做到一定体量的。crcl的优势现在慢慢把cex和链上场景都占完了、然后还在向支付和企业资金流场景拓展。这是个动态演化的过程，其他对手也在拓展，毕竟有资源和渠道，只够搞出一些动静出来、说不定市场又得fud crcl一次😅</p>
+<p><strong>[09-23 16:41]</strong>
+@jason_chen998 真的是她么？这么残忍😱</p>
+<h3>@aleabitoreddit（Serenity）— 3 条</h3>
+<p><strong>[09-23 09:07]</strong>
+Elon Musk: "AI will beat [humans] in all fields by the end of next year or maybe 2028, at the latest."</p>
+<p>Kind of maps to Anthropic's economic implications paper where 2026-2028 was the buildout.</p>
+<p>Then 2028-2030 was unprecedented economic growth.</p>
+<p>So we're still early H2 2026. https://t.co/LpGJkHcgn2</p>
+<p><strong>[09-23 09:19]</strong>
+@AI_Supercycle01 No, hard to justify $2T valuation. I'd rather do OpenAI at $1.2T.</p>
+<p>All your Chinese AI labs like DeepSeek or Minimax or Zhipu are much more reasonably valued.</p>
+<p><strong>[09-23 09:23]</strong>
+@ardninja Memory LTAs span until 2031. $AVGO expects 100% supply constrained growth Y/Y for next 2 years.</p>
+<p>$NVDA expects 70% supply constrained growth next year (implying year after that demand keeps up).</p>
+<p>$SIVE CEO said there's a massive demand supply imbalance for lasers for at least the next 3-5 years.</p>
+<p>I think semi supply chain growth needs to be re-accesssed year by year, but at least for the next year and half I see unprecedented growth.</p>
+<h3>@mdzzi（茶不思）— 3 条</h3>
+<p><strong>[09-23 11:00]</strong>
+这个是毋庸置疑的</p>
+<p>看接下来几个季度财报端是否带来增量订单。</p>
+<p><strong>[09-23 13:16]</strong>
+You need to learn“摸奶来财”</p>
+<p><strong>[09-23 20:29]</strong>
+@AntonLaVay 我也不知道这是啥需求……</p>
+<h3>美股名单中窗口内零推文的成员</h3>
+<ul>
+<li>@xiaomustock（川沐｜Trumoo🐮）— 今日无新推文</li>
+<li>@fi56622380（fin）— 今日无新推文</li>
+</ul>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
