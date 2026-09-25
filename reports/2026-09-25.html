@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.09.25</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.09.25</a></h1>
+  <div class="date">2026.09.25</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.09.25</h1>
+<blockquote>
+<p>今日主线：<strong>AI 算力订单继续加码（Akamai 拿下 116 亿美元），但长端利率才是全场共同开关——破 5.5% 就看美股。</strong></p>
+</blockquote>
+<p><strong>本期覆盖：美股博主 12 位（今日有推文 11 位 / 无推文 1 位）。</strong>
+窗口：2026-09-24 19:01 → 2026-09-25 19:00（北京时间），美股名单共 <strong>60 条</strong>原文，附录全量收录。
+名单以实时 API 现拉为准：@aleabitoreddit、@jukan05、@insane_analyst、@xiaomustock、@fi56622380、@0xSleepinRain、@qinbafrank、@LinQingV、@nft_hu、@mdzzi、@labubu_trader、@starzq。</p>
+<hr />
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @labubu_trader（3X Long Labubu）— 今日 14 条</h3>
+<p>今天他 14 条里大部分是回帖，但<strong>回帖里藏了三条实用信息</strong>：他是怎么判加息、怎么定卖出、怎么买期权。整体观点可以浓缩成一句：<strong>债市已经在给 10 月加息定价，股市还没跟上，这就是接下来最大的不对称。</strong></p>
+<p><strong>① 债市已经 price in 10 月再加一次息，股市还没有（09-25 05:00）</strong></p>
+<blockquote>
+<p>原文：「I think bond market is actively pricing in one more hike in Oct but stock market isn't yet.」
+（中文：我认为债券市场已经在积极地给 10 月再加一次息定价了，但股票市场还没有。）</p>
+</blockquote>
+<p><strong>解读</strong>：先把词拆清楚——<strong>hike（加息）</strong>指美联储上调政策利率。债券市场对利率最敏感（因为债券价格和利率是反向的），所以债券交易员往往会<strong>先</strong>把加息预期打进价格；股票市场则习惯性地「先不信、后补跌」。他这句话的意思就是：<strong>如果 10 月真的加息（或预期进一步收紧），美股现在的价格是没算这笔账的</strong>。这是今天他最有价值的一句，因为它给了一个<strong>可观察的时间点（10 月议息）和一个可跟踪的矛盾（股债定价差）</strong>。</p>
+<p><strong>② 真正危险的是债券波动率，不是利率水平本身（09-25 05:11）</strong></p>
+<blockquote>
+<p>原文：「That's true indeed, but as @Z04_A1 mentioned, even AI names can't bear this sudden surge of rates, the bond volatility is more concerning here than the bond rate itself.」
+（中文：确实如此，但就像 @Z04_A1 说的，连 AI 板块也扛不住这种利率的突然飙升；这里真正更让人担心的，是债券的波动率，而不是债券利率本身。）</p>
+</blockquote>
+<p><strong>解读</strong>：这是很成熟的一句判断。<strong>利率高一点不可怕，可怕的是它「跳」</strong>——因为利率是给所有资产定价的分母，分母<strong>在短时间内剧烈摆动</strong>时，机构会被迫降风险敞口（杠杆、保证金、风控模型都会触发），于是<strong>连 AI 这种最强板块也躲不掉</strong>。小白记住这个区别：<strong>看利率的绝对水平（例如 10 年美债到 5.5%）不如看它「涨得多快、晃得多猛」</strong>。</p>
+<p><strong>③ 他的卖出规则：抛物线 + 日线墓碑线，或远离 5 日均线（09-25 05:07）</strong></p>
+<blockquote>
+<p>原文：「TBH, I don't think they have such big impact to move trillions market cap companies. I always sell when price moves parabolically then a daily tombstone candle or took profits when price moves way above 5d MA. Another good rule of thumb is when something gets viral in English community first then buy it, and when it's getting viral in Chinese community then it's time to sell😂」
+（中文：说实话，我不认为它们（某个消息源）有足够影响力去推动万亿美元市值级别的公司。我总是在价格抛物线式上涨、然后出现一根日线「墓碑线」的时候卖出；或者当价格远远高于 5 日均线时止盈。另一条很好用的经验法则是：一个东西先在英文社区火了，就买；等它在中文社区火起来的时候，就该卖了😂）</p>
+</blockquote>
+<p><strong>解读</strong>：两个可复制的技术规则：
+- <strong>抛物线式上涨（parabolic move）</strong>：越涨越陡、几乎垂直的那种走势，通常是情绪末端。
+- <strong>墓碑线（tombstone candle）</strong>：日线实体很小、上影线很长的 K 线，形状像墓碑——意思是<strong>盘中冲得很高但被砸回</strong>，代表上方抛压重。
+- <strong>远离 5 日均线（5d MA）</strong>：短线涨得离 5 日均线太远=短期超买，先落袋。
+最后那条「英文社区先火就买、中文社区火就卖」是他半开玩笑的经验法则，但背后是<strong>信息扩散速度差</strong>——提醒小白：<strong>当你身边所有人开始讨论某个题材时，你已经是最后一棒了</strong>。</p>
+<p><strong>④ 期权怎么买：IV 分位、LEAPS 选 0.65–0.7 delta、翻倍就滚仓（09-25 05:01 / 05:02 / 11:53）</strong></p>
+<blockquote>
+<p>原文：「You can always check the IV rank data」（中文：你可以随时去看 IV rank（隐含波动率分位）的数据。）
+「1 year +, 0.65-0.7 delta for ITM / And sometimes I buy OTMs also: just +10% to the strike price」（中文：一年以上到期，价内期权选 0.65–0.7 delta；有时候我也买价外，行权价只比现价高 10% 左右。）
+「Never, I always roll the leaps of already 100% win」（中文：从不（落袋），已经翻倍的 LEAPS 我一律滚仓。）</p>
+</blockquote>
+<p><strong>解读</strong>：这段术语较多，逐个解释：
+- <strong>IV rank（隐含波动率分位）</strong>：衡量「现在期权贵不贵」的指标。IV rank 高 = 期权很贵，买方吃亏。
+- <strong>LEAPS</strong>：到期时间一年以上的长期期权，用来替代正股做长线。
+- <strong>delta（德尔塔）</strong>：期权价格对标的价格变化的敏感度。0.65–0.7 delta 意味着股价涨 1 元、期权大约涨 0.65–0.7 元——<strong>属于价内（ITM，行权价低于现价）</strong>，跟正股走势比较贴近，时间价值损耗相对可控。
+- <strong>OTM（价外）</strong>：行权价高于现价，便宜但归零风险大；他只用「现价 +10%」这种轻度价外。
+- <strong>roll（滚仓）</strong>：把快到期的仓位平掉、换成更远月的合约，用来<strong>延续仓位而不卖出</strong>。</p>
+<p><strong>⑤ 顺口提到的消费品：3 万美元级的车，质感对标奔驰 GLS580（09-25 07:16）</strong></p>
+<blockquote>
+<p>原文：「I bought two of these this summer for my parents, it's so fucking good and only costs slightly than $30k US dollar each. Super spacious and comfortable, lots of tech features, the driving part was amazing as well. I think the quality is on par with my GLS580…but way cheaper.」
+（中文：这个夏天我给父母买了两台，实在太棒了，每台也就 3 万美元出头。非常宽敞舒服，科技配置很多，驾驶感受也很好。我觉得质感跟我自己的 GLS580 不相上下……但便宜多了。）</p>
+</blockquote>
+<p><strong>解读</strong>：他没点名品牌，所以<strong>不要脑补标的</strong>。不过这条透露一个投资视角：<strong>3 万美元价位能做出对标奔驰 GLS580（奔驰的大型豪华 SUV）的质感和科技配置</strong>——这正是中国车企近几年在海外高端市场抢份额的逻辑。如果你在跟踪中国新能源车出海，这类终端体感值得记一笔。</p>
+<blockquote>
+<p>另 7 条为互动：回俄罗斯炼油厂被炸、韩国身份、表情包，以及「可以在 24 小时市场交易」（指某些标的支持 24 小时交易）。</p>
+</blockquote>
+<hr />
+<h3>2. @qinbafrank（qinbafrank）— 今日 13 条</h3>
+<p>今天他不是在聊个股，而是在<strong>盯「钱的管道」</strong>：交易所被盗怎么兜底、财政部买长债买得够不够狠、链上资产怎么进受监管金融体系。三条主线对美股估值都有间接但关键的影响。</p>
+<p><strong>① 财政部两次回购长债都没买满额度，「决心」打了折扣（09-25 09:29 / 17:38 / 17:42）</strong></p>
+<blockquote>
+<p>原文：「有点没搞清楚贝森特的操作意图？两次回购都未用满额度：1、本周初预告周四回购美债不超过60亿美金，然后昨晚美国财政部针对剩余期限20年至30年的长期国债实际回购了40.78亿美元，市场共提交了约104.68亿美元的卖单（bid-to-cover约2.57倍），财政部只接受了其中12只债券（共35只符合条件），未用满额度；2、9月10号上一次同类长债回购，实际回购约51.87亿美元（上限同样为60亿美元，市场提交约105亿美元卖单），同样也没有用满额度。两次操作都未达到上限，市场普遍解读为财政部在报价不理想时选择克制买入，而非无条件托市。然后两次回购后长端收益率仍继续上行。有点那种表明态度了要干，但就是干的不够彻底，束手束脚的感觉。」</p>
+<p>原文：「价格分歧是技术层面的理由，但想说的既然要买就不要计较那一点价格分歧，应买尽买、每次都买到上限。当下这个时候，回购国债本身就是展示决心和魄力的时候，要买但因为挑剔价格不买满额度，市场自然也会质疑、效果自然会大打折扣。」
+（中文：价格分歧是技术层面的理由，但我的看法是：既然要买，就别在意那一点点价差，应买尽买、每次都买到上限。当下这个时点，回购国债本身就是展示决心和魄力的时候；要买却因为挑剔价格买不满额度，市场自然也会质疑，效果自然大打折扣。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>回购（buyback）</strong>指财政部从市场买回自己发的旧债，目的是给长端（20–30 年期）债券托一点流动性、压一点收益率。两个关键指标：
+- <strong>bid-to-cover（投标倍数）</strong>：市场递交的卖单 ÷ 财政部实际买的量。这次是约 2.57 倍（104.68 亿卖单 / 40.78 亿成交），说明<strong>想卖给财政部的量是它愿意接的两倍半</strong>。
+- <strong>未用满额度</strong>：上限 60 亿，只买了 40.78 亿；上一次（9 月 10 日）也是上限 60 亿只买 51.87 亿。
+关键在于<strong>他引用的原理</strong>：「回购只是解决流动性失序，但没有能力改变债券市场的自然均衡价格。长债收益率最终还是由通胀、财政供给、经济增长和全球资本需求决定。」——这句话是财政部长贝森特在 G20 上说的。所以他的结论是：<strong>长债收益率上行的根子在供需和通胀，回购只能缓冲、不能逆转</strong>。对小白的意义：<strong>长债收益率是美股（尤其高估值成长股）估值公式里的分母</strong>，财政部「托市力度」是重要但非决定性的变量。他 17:42 又补了一句：机构每次提交的需求都在 100 亿美元以上，<strong>回购本身扭转不了局面，但动作更坚决一点，市场反馈会更好</strong>——这是个「姿势问题」，也是信心问题。</p>
+<p><strong>② Bitget 被盗事件解读：定性、资产、兜底能力（09-25 08:38）</strong></p>
+<blockquote>
+<p>原文：「看了下Bitget被盗官方的表态：1）排除"伪造用户提币"和"私钥被直接拿走"，定性更接近"内部系统被入侵后操作提币"；2）XRP 是最大单一被盗资产、大量稳定币被换成 ETH；3）出于资金安全考虑，提币功能暂时关闭……4）用户资金安全。本次损失金额完全在Bitget用户保护基金覆盖范围之内，保护基金当前规模逾4.64亿美元。想起来去年初Bybit被盗15亿美金，Bitget第一时间向Bybit转入了4万个ETH帮助Bybit应急……交易所真正难的不是从没出过事，而是出事之后用户资产能不能兜住、披露够不够及时。按现在的口径看，用户资金安全这一条应该是明确的。」</p>
+</blockquote>
+<p><strong>解读</strong>：背景（来自他引用的官方公告）是<strong>Bitget 热钱包被异常转账，涉事金额约 3.516 亿美元</strong>，用户保护基金规模逾 4.64 亿美元，覆盖得住。他关注三件事：<strong>定性（不是私钥泄露，是内部系统被入侵）、被盗资产结构（XRP 最多、稳定币被换成 ETH）、兜底能力（保护基金 + 历史互助记录）</strong>。对美股小白，这条的价值是<strong>风险意识</strong>：交易所不是无风险场所，<strong>大额资产别长期放在单一交易所</strong>；同时「被盗后大量稳定币换成 ETH」这类动作会在链上形成阶段性抛压/换手，对加密相关标的（稳定币发行方、交易所概念股）是情绪面扰动。</p>
+<p><strong>③ 链上资产正在「钻进」受监管金融体系的后台（09-25 12:49）</strong></p>
+<blockquote>
+<p>原文：「美国正在逐项明确链上资产怎样进入受监管金融体系的日常运作。讨论已经深入到客户资金管理、抵押品、交易组织、资本计量和监管记账这些后台环节。一项资产能在钱包里显示，与它能被期货经纪商计入客户资产、被清算机构接受为抵押品、被银行计入合规资本计算，是不同层次的事情。后面这些环节，才是Market Plumbing（市场管道），是真正在重构金融市场底层运作体系。」
+　（政策梳理要点：9/17 SEC 给代币化证券交易场所创新豁免，允许用自动做市商和流动性池交易代币化的 NMS 股票；9/24 CFTC 新 FAQ 明确「客户资金可投资于获准品种的代币化形式」，并允许链上系统承担合规记录职能；9/24 美联储公布两项稳定币提案，涉及发行人储备/资本/风险管理与银行发行业务程序；更早的 3 月，Fed、OCC、FDIC 已明确合格代币化证券在银行资本规则下与非代币化形式同等待遇。）
+原文：「真正值得关注的，是链上资产的可用范围开始扩大。未来再看代币化趋势，已经不能只看"能不能上链"，而是更要去关注上链以后"多少机构真正接入、多少资金实际使用，以及能节省多少成本"！」</p>
+</blockquote>
+<p><strong>解读</strong>：术语先拆：
+- <strong>Market Plumbing（市场管道）</strong>：指清算、托管、抵押品管理、记账这些「看不见但必须有」的后台基础设施。
+- <strong>NMS 股票</strong>：受美国全国市场体系（National Market System）监管的美股，简单理解就是主板正常交易的股票。
+- <strong>代币化（tokenization）</strong>：把现实资产（国债、股票、基金份额）用链上代币的方式承载。
+他的核心分层很有价值：<strong>「能在钱包里看到」≠「能被券商计入客户资产」≠「能被清算所当抵押品」≠「能计入银行资本」</strong>。只有走到最后一层，链上资产才从「投资品」变成「业务工具」。所以他给小白的研究方向不是「哪个币要涨」，而是：<strong>看哪些机构真的接入、多少资金真的在用</strong>。</p>
+<p><strong>④ AI 基建是美国史上最大的一笔经济押注：10.3 万亿美元（09-25 15:00）</strong></p>
+<blockquote>
+<p>原文：「AI基建正在成为美国历史上最大的经济押注，哥伦比亚商学院教授 Stijn van Nieuwerburgh预计2025–32年这八年间美国在数据中心、电力、网络和AI专用设备上的总投资约10.3万亿美元，年均约占GDP的3.63%。这比历史上规模最大的铁路建设浪潮（2.24%）还高，也明显高于公路和光纤建设。……有趣的是AI基建浪潮下：科技公司发债潮也是推高长债收益率的三个驱动因素，同时AI基建浪潮的资本开支和AI商业化让半导体、AI大科技的盈利（分子端）端抬到了足以抵消分母冲击的程度。」</p>
+</blockquote>
+<p><strong>解读</strong>：这条把今天的两条线（<strong>AI 基建</strong> 和 <strong>长债利率</strong>）串起来了。<strong>3.63% of GDP</strong> 的意思是：美国每年要把超过 3.6% 的经济总量砸进「数据中心 + 电力 + 芯片」这一件事上，比历史上最猛的铁路建设（2.24%）还高。两面性要说清楚：
+- 好的一面：<strong>资本开支直接变成半导体和 AI 大科技的营收</strong>（也就是他说的「分子端」），足以抵消利率上升对估值的压制（「分母」）。
+- 坏的一面：<strong>这么大规模的投入要靠发债融资，科技公司发债潮本身就是推高长债收益率的三个驱动因素之一</strong>——它在给利率「火上浇油」。</p>
+<p>另 4 条为互动/心态：回「你这梳理更详细👍」（关于谁有能力发动大规模攻击）、「桂林🐎，马前炮👍」、以及一条讲<strong>「知止」</strong>的回复——「无论是止盈还是止损，抑或是停止慢下来，都值得好好琢磨」（中文：止盈、止损，或者干脆停下来慢下来，都值得琢磨）。</p>
+<hr />
+<h3>3. @aleabitoreddit（Serenity）— 今日 6 条</h3>
+<p>今天他给了一个<strong>非常清晰的「思考顺序」模板</strong>：大单的头条公司未必是最大受益者，<strong>钱是往上游流的</strong>。</p>
+<p><strong>① $AKAM 与 Anthropic 签下 116 亿美元算力大单，为期 7 年（09-25 05:17）</strong></p>
+<blockquote>
+<p>原文：「$AKAM signs $11.6B compute deal with Anthropic for accelerated CPU workloads demands over 7 years. $AMD to $MU should be happy to hear this… Akamai ests. ~$5.5B of capex to service the $11.6B commitment. Including +$1.7B of 2026 capex specifically to pre-purchase supply chain components like memory. So much for Anthropic/OpenAI calling for an AI slowdown?」
+（中文：$AKAM 与 Anthropic 签下一份 116 亿美元的算力协议，为「加速型 CPU 负载」提供算力，为期 7 年。$AMD 和 $MU 听到这个消息应该会很高兴……Akamai 预计要为这笔 116 亿的承诺投入约 55 亿美元资本开支，其中 2026 年额外增加 17 亿，专门用来<strong>预购内存这类供应链组件</strong>。「Anthropic/OpenAI 说要 AI 放缓」，看来也就那样。）</p>
+</blockquote>
+<p><strong>解读</strong>：先把人和词认清楚：
+- <strong>$AKAM = Akamai</strong>，原本是 CDN（内容分发网络）龙头，现在往云和边缘算力转。
+- <strong>Anthropic</strong> 是 Claude 大模型的公司。
+- <strong>capex（资本开支）</strong>：买设备、建机房的支出。
+- <strong>pre-purchase / 预购内存</strong>：<strong>这是最关键的一句</strong>——它不是等需要的时候再买，而是<strong>提前一年掏 17 亿美元把内存（DRAM）锁下来</strong>。为什么？因为内存现在紧张。最后那句反讽是他在反驳「AI 需求放缓」的叙事：<strong>如果真要放缓，谁会提前一年囤 17 亿美元的内存？</strong></p>
+<p><strong>② 谁会真正受益：上游 CPU / 内存第一优先（09-25 05:22）</strong></p>
+<blockquote>
+<p>原文：「Nope for $AKAM. But if you look at what's needed probably CPUs/Memory #1. So your $ARM / $INTC / $AMD thematically (AMD probably higher beta to this company in specific). Then your Samsung / $MU / SK Hynix are your obvious memory beneficiaries. Component procurement is done through $JBL, which potentially benefits their own supply chain if they're doing networking too.」
+（中文：对 $AKAM 本身来说不是（利好）。但如果看它需要什么，大概 CPU 和内存是第一优先。所以主题上是 $ARM / $INTC / $AMD（其中 $AMD 对这家公司的弹性可能更大）。然后是三星 / $MU / SK 海力士，这是最明显的内存受益方。组件采购是通过 $JBL 做的，如果 Jabil 也做网络部分，可能还会顺带带动它自己的供应链。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>beta（贝塔）</strong>在这里是「弹性」的意思——<strong>AMD 的业绩对这类订单的敏感度比 ARM、Intel 更大</strong>。名单整理一下：
+| 环节 | 公司 | 逻辑 |
+|---|---|---|
+| CPU | $ARM、$INTC、$AMD | 加速型 CPU 负载直接消耗 CPU |
+| 内存 | 三星、$MU（美光）、SK 海力士 | 预购内存 = 直接订单 |
+| 供应链代工 | $JBL（Jabil） | 组件采购通道，可能连带网络设备业务 |</p>
+<p><strong>③ 再次强调：头条的受益方，往往不如上游（09-25 05:37）</strong></p>
+<blockquote>
+<p>原文：「$AKAM gets a big deal over 7 years. But in order to actually execute on the deal: They gotta buy a ton of CPUs and memory… So these upstream component supply chains are probably the larger beneficiaries over the ones in the headline. But can't give advice in terms of buying something」
+（中文：$AKAM 拿到一份 7 年的大单。但为了真正执行这份协议，它必须买一大堆 CPU 和内存……所以上游零部件供应链得到的实惠，很可能比新闻标题里的公司更大。不过我不能给买入建议。）</p>
+</blockquote>
+<p><strong>解读</strong>：这是一个<strong>通用思维模板</strong>，小白可以直接抄：<strong>看到大单新闻，先问「为了交付这个订单，它必须去跟谁买东西」</strong>——钱总是从下游往上游流。他最后一句「不能给买入建议」是免责，也提醒你：<strong>这是他的分析框架，不是买卖信号</strong>。</p>
+<blockquote>
+<p>另 3 条：中秋节快乐 + 感叹自己有 100 万粉丝（还去查了旧金山人口才 82 万，「情绪上有点承受不过来」）+ 一句打招呼。</p>
+</blockquote>
+<hr />
+<h3>4. @jukan05（Jukan）— 今日 6 条</h3>
+<p>今天他很短，但<strong>技术含量集中在一条</strong>：英伟达在玻璃基板上的决心。</p>
+<p><strong>① 英伟达对玻璃基板很认真，铁了心要让 CoPoS 跑通（09-25 11:12）</strong></p>
+<blockquote>
+<p>原文：「What's interesting is that Nvidia seems pretty serious about glass substrates. Looks like they want to make CoPoS work one way or another.」
+（中文：有意思的是，英伟达对玻璃基板似乎相当认真。看起来他们无论如何都想让 CoPoS 跑通。）</p>
+</blockquote>
+<p><strong>解读</strong>：两个术语要解释：
+- <strong>玻璃基板（glass substrate）</strong>：芯片封装时下面那层「底板」，传统用有机树脂（ABF 载板），玻璃的优势是<strong>更平整、热膨胀更稳定、能支撑更大的封装尺寸</strong>——这正是 AI 芯片（越做越大）需要的。
+- <strong>CoPoS（Chip on Panel on Substrate，面板级封装）</strong>：把芯片做在<strong>方形面板</strong>上而不是传统的<strong>圆形晶圆</strong>上。方形能大幅减少边角浪费，是降本增效的路线，但工艺难度极高（玻璃易碎、翘曲难控）。
+他的意思很明确：<strong>英伟达不只是试试，而是把 CoPoS 当成必须拿下的路线</strong>。这对设备、材料、载板环节是中长期方向性利好——但他今天<strong>没点名任何公司</strong>，别自己加料。</p>
+<p><strong>② 补一句：CoPoS 有版本就是用玻璃基板的（09-25 11:44）</strong></p>
+<blockquote>
+<p>原文：「No / There's a version of CoPoS that uses a glass substrate.」（中文：不。CoPoS 是有版本使用玻璃基板的。）</p>
+</blockquote>
+<p><strong>③ 转引「OpenAI 将在 devday 宣布 500 美元/月的 ProMax 计划」，只发了一个「👀」（09-25 17:07）</strong></p>
+<p><strong>解读</strong>：眼睛表情（👀）是「我在看、值得关注」的意思。<strong>500 美元/月</strong>是每月约 3600 元人民币的个人订阅价位，如果成真，意味着<strong>AI 订阅的天花板被大幅抬高</strong>——对「AI 变现能力」这个核心叙事是正面的，也会直接影响 $MSFT（OpenAI 主要合作方）、$GOOGL 等大模型阵营的竞争预期。注意：他<strong>没有确认</strong>，只是转引，属于待验证消息。</p>
+<blockquote>
+<p>另 3 条为互动：换新头像、夸某条内容 masterpiece，以及一个 🤣。</p>
+</blockquote>
+<hr />
+<h3>5. @insane_analyst（Irrational Analysis）— 今日 5 条</h3>
+<p>今天他状态偏「饭局和吐槽」，实质信息只有一条。</p>
+<p><strong>① 亚洲的共识空头是 Cerebras 和 SpaceX，散户正准备被挤空（09-25 11:47）</strong></p>
+<blockquote>
+<p>原文：「Asia consensus short is Cerebras and SpaceX lol. Asia degens asking to get squeezed.」
+（中文：亚洲的共识空头标的是 Cerebras 和 SpaceX，笑死。亚洲的赌徒们这是在求着被挤空。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>consensus short（共识空头）</strong>= 大家都往同一个方向做空；<strong>squeeze（挤空）</strong>= 当空头过于拥挤时，价格反向拉升会逼空头回补，反而推高价格。要说明白一点：<strong>Cerebras 是 AI 芯片公司（正在走上市流程），SpaceX 尚未上市</strong>——所以这里的「做空」应该是指<strong>一级/二级私募份额或 Pre-IPO 市场的押注</strong>，或者是圈内的黑色幽默，不是常规意义的美股做空。别把它当成可直接执行的美股信号。</p>
+<p><strong>② 对冲基金朋友重仓「木头姐式」可疑小票，他喝多了没开喷（09-25 11:17）</strong></p>
+<blockquote>
+<p>原文：「That feeling when you are at free dinner with hedgei friend and he says he long a cathide wood fraudulent shitco but i too drunk to trash them.」
+（中文：当你在一顿免费的饭局上，对冲基金的朋友说他自己做多了一只「木头姐式的、有欺诈嫌疑的垃圾小票」，而你喝得太醉没法喷他——那种感觉。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>cathie wood（木头姐）</strong>在这里已经变成一个形容词，指「故事性感、估值离谱、基本面薄弱的热门小票」。「fraudulent shitco（有欺诈嫌疑的垃圾公司）」是他惯用的毒舌。这条信息量不大，但有一个实用提醒：<strong>即使是专业机构，也会因为「故事好听」而踩雷</strong>——所以别把「机构在买」当安全背书。</p>
+<p><strong>③ 一条只有图片、没有文字的推文（09-25 10:47）</strong></p>
+<p>原文只有一个链接加一张图，<strong>没有配文</strong>，无法确认他想表达什么，不做解读。</p>
+<blockquote>
+<p>另 2 条为互动：给某人「Gold star（金星表扬）」、以及一个 @。</p>
+</blockquote>
+<hr />
+<h3>6. @starzq（Star@Day1Global Podcast）— 今日 5 条</h3>
+<p><strong>今日无实质观点，仅互动。</strong> 5 条全部是回复，内容围绕 <strong>X Money（X 平台的支付产品）与链上域名</strong>：他多次给出自己的 <strong>ENS 域名 starzq.eth 和 Solana 域名 starzq.sol</strong>，最后还贴了一串 ETH 地址（<code>0x8295C7d6...</code>）回复给 @JIMMYEDGAR @X @XMoney，另有一条回「必须的哈哈」。
+<strong>解读</strong>（简要）：<strong>ENS（以太坊域名服务）</strong>和 <strong>SNS（Solana 域名服务）</strong>就是把一长串钱包地址变成「名字」的服务；他反复贴地址，是与 X Money 相关的活动/白名单交互。这些属于加密侧生态动态，<strong>今天没有涉及美股标的的观点</strong>。</p>
+<hr />
+<h3>7. @mdzzi（茶不思）— 今日 3 条</h3>
+<p>今天他只回帖，但<strong>点出了一个正在研究的标的</strong>。</p>
+<p><strong>① 在研究 Alnylam Pharmaceuticals（09-25 11:45 / 12:36）</strong></p>
+<blockquote>
+<p>原文：「Alnylam Pharmaceuticals」（回复「你在研究什么」）
+「在研究哈哈」</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>$ALNY（Alnylam Pharmaceuticals）</strong>是<strong>RNAi（RNA 干扰）疗法</strong>领域的龙头生物科技公司——简单说，它的技术路线不是「用药物去堵蛋白」，而是<strong>从上游直接关掉致病蛋白的「生产指令」</strong>。这类公司的特点：<strong>平台型技术、管线预期驱动、波动大、对临床数据极度敏感</strong>。他目前只是「在研究」，<strong>没有给出任何结论或目标价</strong>，所以不能当推荐看。</p>
+<blockquote>
+<p>另 1 条：建议某人「了解嘉然」（中文互联网虚拟主播/VTuber，与投资无关，属玩笑）。</p>
+</blockquote>
+<hr />
+<h3>8. @0xSleepinRain（雨中狂睡SleepinRain）— 今日 3 条</h3>
+<p><strong>今日无美股观点，仅链上动态。</strong></p>
+<blockquote>
+<p>原文：「我被 marscoin-4:native 困住了，今天刚出来。」（指某个链上资产/合约代号，说自己被卡住、今天才出来）
+「earned much less」（赚得少多了）
+「卖完了」</p>
+</blockquote>
+<p><strong>解读</strong>：从「marscoin-4:native」这种写法看，是<strong>链上铭文/MEME 类资产</strong>的代号，他在做链上小仓位搏杀。对美股没有信息，但可以当<strong>风险偏好的温度计</strong>：这类高风险搏杀如果连老手都在说「赚得少多了」，说明<strong>链上投机情绪处于偏冷阶段</strong>。</p>
+<hr />
+<h3>9. @xiaomustock（川沐｜Trumoo🐮）— 今日 2 条</h3>
+<p><strong>① 拿 AI 当投资军师：$CRM 和 $META 里它选 $META，理由是「吃老本」（09-25 10:23）</strong></p>
+<blockquote>
+<p>原文：「昨天问gpt赛富时crm和meta买一样多，ai推荐meta，俩个一个搞企业agent一个搞个人agent。meta牛逼的点就是业务不依赖新业务爆发，吃老本就很牛逼」
+（中文：昨天问 GPT，赛富时（$CRM）和 Meta（$META）买一样多的话选谁，AI 推荐了 Meta。这两家一个是做企业 agent 的，一个是做个人 agent 的。Meta 厉害的地方在于，它的业务不依赖新业务的爆发，光是「吃老本」就已经很能打了。）</p>
+</blockquote>
+<p><strong>解读</strong>：这条把 AI 落地的两条路线说得很清楚：
+- <strong>企业 agent（agent = 智能体，能自己调工具、跑流程的 AI）</strong>：$CRM（Salesforce，赛富时）走的是卖给企业、按席位/流程收费的路子，<strong>依赖企业 IT 预算和新业务放量</strong>。
+- <strong>个人 agent</strong>：$META 走的是<strong>分发</strong>路线——它有 30 多亿用户，AI 只要提升现有产品的粘性和广告效率（也就是「吃老本」），就能变现，<strong>不需要一个全新的爆款业务</strong>。
+这个「<strong>靠分发变现 vs 靠新业务变现</strong>」的对比，是判断 AI 概念股估值合理性的一个很实用的角度：<strong>分发型公司（有现成用户）犯错成本更低</strong>。</p>
+<p><strong>② 质疑马斯克「6 个月到第一」的说法，并点出国内模型在追（09-25 13:47）</strong></p>
+<blockquote>
+<p>原文：「我不信，现在我觉得推特内置的grok最抽象弱智的事情是我给它链接地址让提炼总结某些推特上的长推文，它居然做不到😅。6个月后的xai可能才有现在gpt6水平，但现在gpt6依然不够完美，而gpt和anthropic不可能纹丝不动。国内的ds，kimi，glm都在追赶。」
+（中文：我不信。现在我觉得推特内置的 Grok 最离谱、最蠢的一件事是：我给它一个链接地址，让它提炼总结某些推特上的长推文，它居然做不到。6 个月后的 xAI 可能才到达现在 GPT-6 的水平，但现在的 GPT-6 也依然不完美。而 GPT 和 Anthropic 也不可能原地不动等你。国内的 DeepSeek、Kimi、GLM 都在追赶。）</p>
+</blockquote>
+<p><strong>解读</strong>：他引用的原话是马斯克宣称「xAI 起步才 3 年，如果二阶导保持强劲，6 个月左右能到第一」。川沐的反驳有三层：<strong>①实测体验差（连总结长推都做不到）；②这是「追逐移动靶」——你在追，对手也在跑；③国内 DeepSeek/Kimi/GLM 也在赶</strong>。对投资的意义：<strong>AI 模型能力的领先优势很难长期维持，靠「模型最聪明」建立的估值溢价是脆弱的</strong>，而<strong>靠算力/分发/成本优势的环节更稳</strong>。</p>
+<hr />
+<h3>10. @LinQingV（Macro_Lin）— 今日 2 条</h3>
+<p><strong>① HBM 短缺已经传导到中国 AI 芯片的定价上（09-25 08:50）</strong></p>
+<blockquote>
+<p>原文：「HBM 短缺传导至中国本土 AI 芯片定价。路透报道，华为、寒武纪等国内 AI 芯片厂商将处理器价格上调最多 50%，存储瓶颈正在影响北京自给自足计划的节奏。」</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>HBM（高带宽内存）</strong>是 AI 芯片旁边那摞「叠起来的高速显存」，英伟达每代 GPU 都靠它喂数据，<strong>没有 HBM 就没有 AI 芯片</strong>。这条新闻的因果链是：<strong>HBM 供应紧张 → 中国芯片厂商拿不到足够的存储 → 处理器成本上升 → 涨价最多 50% → 自给自足进度被拖慢</strong>。对投资者的两层含义：
+- <strong>利好存储侧</strong>（$MU、三星、SK 海力士等的议价权进一步上升）；
+- <strong>对国产 AI 芯片的替代叙事是负面扰动</strong>——涨价会抑制需求、拖慢国产替代节奏。</p>
+<p><strong>② 长端利率的推演：10 年美债 5.5% 是「跑过头」的分界线（09-25 10:32）</strong></p>
+<blockquote>
+<p>原文：「X上的宏观相声演员，天天在那喊长端利率，哪个直接喊这么清楚的判断了？今天，再补一条，如果超过5.5%，这波长端利率定价就跑过头了，冲破5.5%再持续往上走，债券利率波动率会起跳，然后feed in equity volatility，美股会大跌。这种大跌必然会反馈给长端债券，进行 repricing。这就是俺对未来市场dynamics推演。」
+（中文：X 上的宏观「相声演员」天天喊长端利率，但哪个给过这么清楚的判断？今天再补一条：如果超过 5.5%，这波长端利率的定价就跑过头了。冲破 5.5% 之后还持续往上走，债券利率的波动率会起跳，然后传导（feed in）到股票波动率上，美股会大跌。而这种大跌必然又会反过来反馈给长端债券，引发重新定价（repricing）。这就是我对未来市场动态的推演。）</p>
+</blockquote>
+<p><strong>解读</strong>：他引用的前一条是自己的旧话——<strong>「美债 10 年期到 5.5% 应该是没有悬念，也在预期之内」</strong>。今天补的是<strong>超过之后会发生什么</strong>，形成一条完整链条：
+<strong>10Y 破 5.5% 且持续上行 → 债券波动率（利率的「晃动量」）跳升 → 传导到股票波动率（VIX）→ 美股大跌 → 大跌再反馈回长债、引发重新定价</strong>。
+小白记住这个数字：<strong>5.5% 就是他认为的「估值容忍度上限」</strong>。和 labubu_trader「债券波动率比利率水平更危险」的判断互相印证——<strong>今天多位博主都在看同一个变量</strong>。</p>
+<hr />
+<h3>11. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 1 条</h3>
+<p><strong>今日无实质观点，仅互动。</strong> 唯一一条是回帖：</p>
+<blockquote>
+<p>原文：「不贵但目前并不想买。主页还是购物消费，受大环境通缩的影响，利润率很惨。」</p>
+</blockquote>
+<p><strong>解读</strong>：她在评价某家<strong>以购物消费为主页业务的公司</strong>——判断是「<strong>估值不贵，但暂时不想买</strong>」，理由是<strong>通缩环境下消费类业务的利润率很差</strong>。她<strong>没有点名具体公司</strong>，所以不要猜标；但这条提供了一个筛选逻辑：<strong>「便宜」不等于「值得买」，还要看利润率趋势有没有改善的催化</strong>。通缩（物价持续下跌）会压制企业定价能力，是消费类公司最难受的环境之一。</p>
+<hr />
+<h3>12. @fi56622380（fin）— 今日无新推文</h3>
+<p>名单内成员，窗口内没有任何推文。</p>
+<hr />
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>谨慎、火力集中在「利率」而非「选股」</td>
+<td>labubu_trader：债市已给 10 月加息定价、股市没有；Macro_Lin：10Y 破 5.5% 触发连锁大跌；qinbafrank 盯财政部回购力度够不够狠</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>长端利率是唯一主线，财政部托市力度存疑</td>
+<td>两次长债回购都没买满 60 亿上限（40.78 亿 / 51.87 亿），回购后长端收益率继续上行；qinbafrank 认为「要买就该买满」</td>
+</tr>
+<tr>
+<td>产业面</td>
+<td>AI 资本开支仍在加速，但受益顺序在上游</td>
+<td>$AKAM 与 Anthropic 116 亿美元 / 7 年算力大单，含 2026 年额外 17 亿美元预购内存；受益顺序 CPU/内存（$AMD、$MU、三星/SK 海力士）&gt; 头条公司；英伟达认真推玻璃基板 + CoPoS</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>①债券波动率 ②交易所被盗 ③空头过度拥挤</td>
+<td>「债券波动率比利率水平更危险」（labubu_trader）；Bitget 涉 3.516 亿美元、保护基金 4.64 亿；亚洲共识做空 Cerebras/SpaceX 易被挤空</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、给小白的一句话</h2>
+<p><strong>今天全场最值钱的不是哪只票，而是「利率开关」的位置。</strong> 两位博主给了两个可以直接跟踪的数字和判断：<strong>Macro_Lin 说 10 年美债 5.5% 是他的容忍上限</strong>，一旦冲破并持续上行，债券波动率会跳升、传导到美股波动率、引发大跌并反向重定价债券；<strong>labubu_trader 说债券市场已经先给 10 月加息定价、股市还没有</strong>。这两条加起来的意思是：<strong>接下来几周，与其盯着哪只 AI 股又涨了，不如盯着 10 年美债收益率和债券波动率——它们才是所有股票的「集体开关」</strong>。</p>
+<p><strong>产业层面最值得抄的是一个思考顺序</strong>：Serenity 用 $AKAM 与 Anthropic 的 116 亿美元大单提醒你，<strong>看到大单新闻先问「为交付它，得去跟谁买东西」</strong>——这次答案是 CPU 和内存（$AMD、$MU、三星、SK 海力士，采购走 $JBL）。同一逻辑也在 Macro_Lin 的 HBM 短缺新闻里再次出现：存储紧张到中国芯片厂要涨价最多 50%，<strong>瓶颈环节的议价权最强</strong>。</p>
+<p><strong>风险提醒（必读）</strong>：以上全部是博主个人观点，多数是回帖中的片段思考，<strong>没有一条是买入建议</strong>；Serenity 本人也明确说「不能给买入建议」，他给的只是分析框架。另外今天有多条内容涉及<strong>未点名标的（nft_hu、labubu_trader 的消费品）和未证实消息（OpenAI 500 美元 ProMax 只是转引）</strong>，请勿据此直接下单。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<h3>@aleabitoreddit（Serenity）— 6 条</h3>
+<p><strong>[09-25 05:17]</strong>
+$AKAM signs $11.6B compute deal with Anthropic for accelerated CPU workloads demands over 7 years.</p>
+<p>$AMD to $MU should be happy to hear this… </p>
+<p>Akamai ests. ~$5.5B of capex to service the $11.6B commitment. Including +$1.7B of 2026 capex specifically to pre-purchase supply chain components like memory.</p>
+<p>So much for Anthropic/OpenAI calling for an AI slowdown?</p>
+<p><strong>[09-25 05:22]</strong>
+@blkslymn Nope for $AKAM. But if you look at what’s needed probably CPUs/Memory #1.</p>
+<p>So your $ARM / $INTC / $AMD thematically (AMD probably higher beta to this company in specific). Then your Samsung / $MU / SK Hynix are your obvious memory beneficiaries.</p>
+<p>Component procurement is done through $JBL, which potentially benefits their own supply chain if they’re doing networking too.</p>
+<p><strong>[09-25 05:37]</strong>
+@KhalidIshaq85 Okay thing about it for a second:</p>
+<p>$AKAM gets a big deal over 7 years. But in order to actually execute on the deal:</p>
+<p>They gotta buy a ton of CPUs and memory… So these upstream component supply chains are probably the larger beneficiaries over the ones in the headline.</p>
+<p>But can’t give advice in terms of buying something</p>
+<p><strong>[09-25 13:07]</strong>
+我突然意识到, 原来我有这么多粉丝.</p>
+<p>第一次从第三方的视角看了一下自己的主页…感觉好像还有点吓人?</p>
+<p>如果我们办一场派对, 而且所有人都来了, 那应该不是塞满一个小房间的问题, 而是能塞满一整座城市吧?</p>
+<p>总之, 中秋节快乐！</p>
+<p><strong>[09-25 13:13]</strong>
+@JHBECCALEE Tell them I said hi!</p>
+<p><strong>[09-25 13:19]</strong>
+@shanhai188 我刚看了一下旧金山的人口, 感觉已经是个很大的城市了, 结果整个城市也才82万人...</p>
+<p>然后再看看我自己的粉丝数, 居然有100万. 说实话, 这个数字真的让我在情绪上有点承受不过来.</p>
+<h3>@jukan05（Jukan）— 6 条</h3>
+<p><strong>[09-25 11:07]</strong></p>
+<h1>NewProfilePic https://t.co/bYSlzEJg0W</h1>
+<p><strong>[09-25 11:12]</strong>
+What’s interesting is that Nvidia seems pretty serious about glass substrates. Looks like they want to make CoPoS work one way or another.</p>
+<p><strong>[09-25 11:15]</strong>
+@teortaxesTex masterpiece</p>
+<p><strong>[09-25 11:44]</strong>
+@Alex_Intel_ No</p>
+<p>There’s a version of CoPoS that uses a glass substrate.</p>
+<p><strong>[09-25 17:07]</strong>
+👀</p>
+<p><strong>[09-25 17:43]</strong>
+@sssjeffpu 🤣</p>
+<h3>@insane_analyst（Irrational Analysis）— 5 条</h3>
+<p><strong>[09-25 10:47]</strong>
+https://t.co/IKyBIJrNUW</p>
+<p><strong>[09-25 11:10]</strong>
+@OberynJaksho Gold star to u</p>
+<p><strong>[09-25 11:17]</strong>
+That feeling when you are at free dinner with hedgei friend and he says he long a cathide wood fraudulent shitco but i too drunk to trash them.</p>
+<p><strong>[09-25 11:47]</strong>
+Asia consensus short is Cerebras and SpaceX lol. Asia degens asking to get squeezed.</p>
+<p><strong>[09-25 12:29]</strong>
+@alexandr_wang</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 2 条</h3>
+<p><strong>[09-25 10:23]</strong>
+昨天问gpt赛富时crm和meta买一样多，ai推荐meta，
+俩个一个搞企业agent一个搞个人agent。
+meta牛逼的点就是业务不依赖新业务爆发，吃老本就很牛逼 https://t.co/qhjqHH6bWD</p>
+<p><strong>[09-25 13:47]</strong>
+我不信，现在我觉得推特内置的grok最抽象弱智的事情是我给它链接地址让提炼总结某些推特上的长推文，它居然做不到😅
+6个月后的xai可能才有现在gpt6水平，但现在gpt6依然不够完美，
+而gpt和anthropic不可能纹丝不动。
+国内的ds，kimi，glm都在追赶。</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 3 条</h3>
+<p><strong>[09-25 11:38]</strong>
+我被 marscoin-4:native 困住了，今天刚出来。</p>
+<p><strong>[09-25 12:00]</strong>
+@nftmufettisi earned much less</p>
+<p><strong>[09-25 15:16]</strong>
+@0x_livermore 卖完了</p>
+<h3>@qinbafrank（qinbafrank）— 13 条</h3>
+<p><strong>[09-25 08:38]</strong>
+看了下Bitget被盗官方的表态：
+1）排除“伪造用户提币”和“私钥被直接拿走”，定性更接近“内部系统被入侵后操作提币”；
+2）XRP 是最大单一被盗资产、大量稳定币被换成 ETH；
+3）出于资金安全考虑，提币功能暂时关闭，待安全核查完成后有序恢复，已通知执法机构及链上安全机构介入调查。
+给出提现恢复的大致时间窗口（小时到几天）
+4）用户资金安全。本次损失金额完全在Bitget用户保护基金覆盖范围之内，保护基金当前规模逾4.64亿美元。</p>
+<p>想起来去年初Bybit被盗15亿美金，Bitget第一时间向Bybit转入了4万个ETH帮助Bybit应急。事后Bybit老板Ben说Bitget是第一家帮忙的，这笔借款无抵押、无利息、无固定还款期限，连合同都没签。当时能这么做，核心还是自身储备和流动性够厚。</p>
+<p>交易所真正难的不是从没出过事，而是出事之后用户资产能不能兜住、披露够不够及时。按现在的口径看，用户资金安全这一条应该是明确的。</p>
+<p>相信 Bitget 这次也能渡过难关，后面就看完整事故报告和提现恢复的节奏了。</p>
+<p><strong>[09-25 08:48]</strong>
+@Sea_Bitcoin 你这梳理更详细👍，感觉现在有能力大规模攻击就是金将军了，真是加密毒瘤了。</p>
+<p><strong>[09-25 09:29]</strong>
+有点没搞清楚贝森特的操作意图？两次回购都未用满额度：1、本周初预告周四回购美债不超过60亿美金，然后昨晚美国财政部针对剩余期限20年至30年的长期国债实际回购了40.78亿美元，市场共提交了约104.68亿美元的卖单（bid-to-cover约2.57倍），财政部只接受了其中12只债券（共35只符合条件），未用满额度；</p>
+<p>2、9月10号上一次同类长债回购，实际回购约51.87亿美元（上限同样为60亿美元，市场提交约105亿美元卖单），同样也没有用满额度。</p>
+<p>两次操作都未达到上限，市场普遍解读为财政部在报价不理想时选择克制买入，而非无条件托市。然后两次回购后长端收益率仍继续上行。</p>
+<p>有点那种表明态度了要干，但就是干的不够彻底，束手束脚的感觉。</p>
+<p>难道就是为了向市场证明他之前在G20峰会上说的“回购只是解决流动性失序、但没有能力改变债券市场的自然均衡价格。财政部可以处理流动性问题，但长债收益率最终还是由通胀、财政供给、经济增长和全球资本需求决定。”
+ https://t.co/sdJyB8VIYK</p>
+<p><strong>[09-25 09:29]</strong>
+@Guilin_Chen_ 桂林🐎，马前炮👍</p>
+<p><strong>[09-25 12:49]</strong>
+美国正在逐项明确链上资产怎样进入受监管金融体系的日常运作。讨论已经深入到客户资金管理、抵押品、交易组织、资本计量和监管记账这些后台环节。一项资产能在钱包里显示，与它能被期货经纪商计入客户资产、被清算机构接受为抵押品、被银行计入合规资本计算，是不同层次的事情。后面这些环节，才是Market Plumbing（市场管道），是真正在重构金融市场底层运作体系。</p>
+<p>9月17号聊到清晰法案受阻，但是监管机构还是有很多工具来构建“行政班市场结构”，17号晚上SEC就拿出来代币化股票的创新豁免。把9月17号以来SEC、CFTC、FED等监管机构的动作梳理下：</p>
+<p>1、9月17日的SEC动作，比“允许股票做成Token”更具体。它为符合条件的代币化证券交易场所，提供使用自动做市商和流动性池交易代币化NMS股票的路径，并给予特定定义下的豁免。</p>
+<p>这意味着监证券上链以后，可以用不同于传统撮合系统的市场组织方式。底层可以是公开、无需许可的区块链，当然交易参与者仍然需要获得准入。 </p>
+<p>2、9月24日CFTC公告确认，新FAQ开始专门处理“客户资金投资于获准投资品种的代币化形式”，同时让链上系统承担合规记录体系中的实际工作，减少重复录入和核对；机构仍然对记录的完整性和可提供性负责。</p>
+<p>24号CFTC的这次FAQ把“如何利用区块链满足监管记录保存要求”列为新增主题，说明讨论已经触及正式业务系统的建设。</p>
+<p>3、9月24日，美联储确实公布了两项提案：一项处理其监管范围内支付稳定币发行人的储备、资本和风险管理等要求，另一项处理相关银行申请开展发行业务的程序。</p>
+<p>这意味着稳定币作为链上支付工具，其背后的部分储备资产，也可能在满足条件后采用链上形式。</p>
+<p>4、而在更早的3月初
+Fed、OCC、FDIC已经明确：对赋予相同法律权利的合格代币化证券，银行资本规则原则上给予与非代币化形式相同的待遇；满足金融抵押品定义及其他条件时，也可以在资本计算中作为信用风险缓释工具。资本规则不会仅因使用许可链或非许可链而给予不同待遇。</p>
+<p>这里的意义是代币化资产开始获得进入银行风险计量体系的明确路径。</p>
+<p>5、这在未来真正的产业变化可能是链上资产从“投资产品”变成“业务工具”</p>
+<p>从这些政策方向推演，我认为值得关注的是资产用途扩展：
+1）一种代币化国债产品，若只能持有和赎回，其竞争力主要体现为收益、费用和操作便利；
+2）假如同一种合格资产还能进入更多受监管机构的抵押品体系，支持资金管理，并通过合规记录系统完成调拨，那么客户选择它时，就会额外考虑：哪些交易对手接受它，能在哪些业务里使用，紧急情况下能多快调动。</p>
+<p>整体上来看，把这些动作结合起来看：
+美国对链上金融的监管建设，正在从资产发行和交易，深入客户资金、抵押品、银行资本与正式记账体系。政策逐步明确：资产采用链上形式以后，只要权利结构和业务安排满足相应要求，就有机会继续履行原有金融职能。</p>
+<p>真正值得关注的，是链上资产的可用范围开始扩大。未来再看代币化趋势，已经不能只看“能不能上链”，而是更要去关注上链以后“多少机构真正接入、多少资金实际使用，以及能节省多少成本”！</p>
+<p><strong>[09-25 14:14]</strong>
+@hibtc37 知止，无论是止盈还是止损，抑或是停止慢下来，都值得好好琢磨👍</p>
+<p><strong>[09-25 15:00]</strong>
+AI基建正在成为美国历史上最大的经济押注，哥伦比亚商学院教授 Stijn van Nieuwerburgh预计2025–32年这八年间美国在数据中心、电力、网络和AI专用设备上的总投资约10.3万亿美元，年均约占GDP的3.63%。这比历史上规模最大的铁路建设浪潮（2.24%）还高，也明显高于公路和光纤建设。</p>
+<p>美国正把比以往任何一次技术基建都更大比例的经济资源，砸进同一类资产（数据中心 + 电力 + 芯片）。</p>
+<p>有趣的是AI基建浪潮下：科技公司发债潮也是推高长债收益率的三个驱动因素，同时AI基建浪潮的资本开支和AI商业化让半导体、AI大科技的盈利（分子端）端抬到了足以抵消分母冲击的程度。</p>
+<p><strong>[09-25 17:38]</strong>
+价格分歧是技术层面的理由，但想说的既然要买就不要计较那一点价格分歧，应买尽买、每次都买到上限。当下这个时候，回购国债本身就是展示决心和魄力的时候，要买但因为挑剔价格不买满额度，市场自然也会质疑、效果自然会大打折扣。</p>
+<p><strong>[09-25 17:42]</strong>
+@Cato_KT 这个其实不重要，这两次每次机构提交的回购需求已经在100亿美金以上了，回购不能完全扭转局面。但是动作更坚决一些，市场反馈应该会更好一点。</p>
+<p><strong>[09-25 17:44]</strong>
+@Alanhan123 形象到位了👍</p>
+<p><strong>[09-25 17:45]</strong>
+@KuiGas @BlueV1007 羡慕死了</p>
+<p><strong>[09-25 17:47]</strong>
+@Guilin_Chen_ 有点那个意思、你说需要干了，还要抠点价差 😑</p>
+<p><strong>[09-25 17:47]</strong>
+@Guilin_Chen_ 太残忍了，这下都不能偷懒了😅</p>
+<h3>@LinQingV（Macro_Lin）— 2 条</h3>
+<p><strong>[09-25 08:50]</strong>
+HBM 短缺传导至中国本土 AI 芯片定价</p>
+<p>路透报道，华为、寒武纪等国内 AI 芯片厂商将处理器价格上调最多 50%，存储瓶颈正在影响北京自给自足计划的节奏。</p>
+<p><strong>[09-25 10:32]</strong>
+X上的宏观相声演员，天天在那喊长端利率，哪个直接喊这么清楚的判断了？今天，再补一条，如果超过5.5%，这波长端利率定价就跑过头了，冲破5.5%再持续往上走，债券利率波动率会起跳，然后feed in equity volatility，美股会大跌。这种大跌必然会反馈给长端债券，进行 repricing。这就是俺对未来市场dynamics推演。加一句“听懂掌声👏”</p>
+<h3>@nft_hu（Fiona ❤️&amp; ✌️）— 1 条</h3>
+<p><strong>[09-25 13:15]</strong>
+@sanjinlin160573 不贵但目前并不想买。主页还是购物消费，受大环境通缩的影响，利润率很惨。</p>
+<h3>@mdzzi（茶不思）— 3 条</h3>
+<p><strong>[09-25 11:45]</strong>
+@Rubywang Alnylam Pharmaceuticals</p>
+<p><strong>[09-25 12:36]</strong>
+@Rubywang 在研究哈哈</p>
+<p><strong>[09-25 15:28]</strong>
+@Orangew185 @ZLiao3 @nocta_mvp 建议了解嘉然</p>
+<h3>@labubu_trader（3X Long Labubu）— 14 条</h3>
+<p><strong>[09-25 05:00]</strong>
+@Z04_A1 I think bond market is actively pricing in one more hike in Oct but stock market isn’t yet.</p>
+<p><strong>[09-25 05:01]</strong>
+@0xForte124 You can always check the IV rank data</p>
+<p><strong>[09-25 05:02]</strong>
+@areyoureal72 1 year +, 0.65-0.7 delta for ITM
+And sometimes I buy OTMs also: just +10% to the strike price</p>
+<p><strong>[09-25 05:07]</strong>
+@AntonLaVay TBH, I don’t think they have such big impact to move trillions market cap companies.
+I always sell when price moves parabolically then a daily tombstone candle or took profits when price moves way above 5d MA.
+Another good rule of thumb is when something gets viral in English community first then buy it, and when it’s getting viral in Chinese community then it’s time to sell😂</p>
+<p><strong>[09-25 05:09]</strong>
+@alexandr_wang Release it and I will change my user name immediately</p>
+<p><strong>[09-25 05:11]</strong>
+@CyberTruckFan9 @Z04_A1 That’s true indeed, but as @Z04_A1 mentioned, even AI names can’t bear this sudden surge of rates, the bond volatility is more concerning here than the bond rate itself.</p>
+<p><strong>[09-25 05:13]</strong>
+@CRUDEOIL231 Wow didn’t know you were Korean.</p>
+<p><strong>[09-25 06:34]</strong>
+@usakes_zhang 😁</p>
+<p><strong>[09-25 07:16]</strong>
+@kayliatyyy I bought two of these this summer for my parents, it’s so fucking good and only costs slightly than $30k US dollar each.
+Super spacious and comfortable, lots of tech features, the driving part was amazing as well. I think the quality is on par with my GLS580…but way cheaper. https://t.co/ZVJP8Jsfvp</p>
+<p><strong>[09-25 07:21]</strong>
+@AntonLaVay Russia's refinery is destroyed, Mosow people are short of gas fuel for their cars. I guess China is supporting them as well?</p>
+<p><strong>[09-25 07:34]</strong>
+@kayliatyyy Yes if it’s fuel efficient</p>
+<p><strong>[09-25 07:48]</strong>
+@AntonLaVay I see thanks</p>
+<p><strong>[09-25 11:53]</strong>
+@stephenandstuff Never, I always roll the leaps of already 100% win</p>
+<p><strong>[09-25 11:53]</strong>
+@KisekiLogos You can trade them in the 24 hour market</p>
+<h3>@starzq（Star@Day1Global Podcast）— 5 条</h3>
+<p><strong>[09-25 07:59]</strong>
+@JIMMYEDGAR starzq.eth</p>
+<p><strong>[09-25 08:45]</strong>
+@JIMMYEDGAR @X @XMoney starzq.eth
+starzq.sol</p>
+<p><strong>[09-25 08:49]</strong>
+@JIMMYEDGAR What does this mean, sir? https://t.co/4DDTbu1fZq</p>
+<p><strong>[09-25 11:13]</strong>
+@MaiYangAI 必须的哈哈</p>
+<p><strong>[09-25 16:00]</strong>
+@JIMMYEDGAR @X @XMoney 0x8295C7d69e1868310acc1b8789094Ec7F23A4bb4</p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
