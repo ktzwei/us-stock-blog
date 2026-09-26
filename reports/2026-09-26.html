@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.09.26</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.09.26</a></h1>
+  <div class="date">2026.09.26</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.09.26</h1>
+<blockquote>
+<p>今日主线：<strong>全场真正的开关是「利率」——阿克曼的「加息压不住 AI 投资、却推高通胀」被两位博主接力拆解，AI 资本开支与高利率的对撞成了共同话题。</strong></p>
+</blockquote>
+<p><strong>本期覆盖：美股博主 12 位（今日有推文 10 位 / 无推文 2 位）。</strong>
+窗口：2026-09-25 19:01 → 2026-09-26 19:00（北京时间），美股名单共 <strong>49 条</strong>原文，附录全量收录。
+名单以实时 API 现拉为准：@aleabitoreddit、@jukan05、@insane_analyst、@xiaomustock、@fi56622380、@0xSleepinRain、@qinbafrank、@LinQingV、@nft_hu、@mdzzi、@labubu_trader、@starzq。</p>
+<hr />
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @jukan05（Jukan）— 今日 12 条</h3>
+<p>他今天是<strong>「AI 长牛 + 利率是唯一障碍」</strong>的立场：既提醒了半导体产业链上的一个新变化（玻璃基板），又直接把枪口对准了美联储不该加息。他自己强调：<strong>「我是 AI 超级多头」</strong>，但高利率会实质性拖慢 AI 投资。</p>
+<p><strong>① AI 智能体 Muse 不是泡沫，被取代的唯一方式是出现更好的 agent（09-25 19:31）</strong></p>
+<blockquote>
+<p>原文：「Calling it a bubble is wrong. The odds of Muse bursting like a bubble are close to zero. The only way Muse goes away is if a better agent comes along that does everything Muse does and more.」
+（中文：把它叫做泡沫是错的。Muse 像泡沫一样破掉的概率接近零。Muse 消失的唯一途径，是出现一个能做 Muse 所有事、而且做得更多的更好的 agent。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>agent（智能体）</strong>指能自己调用工具、连续完成多步任务的 AI 程序，而不只是聊天框。他的逻辑是——<strong>AI 应用型资产的崩塌，一般不来自估值，而来自被更强的同类替代</strong>。所以判断一个 AI 产品是不是泡沫，看的不是股价，而是<strong>「有没有竞品能全面碾压它」</strong>。这条对小白有用的地方是：<strong>别用「涨太多了」当卖出理由，去找「谁在抢它的位置」</strong>。</p>
+<p><strong>② 只打了一个「👀 $AVGO」+ 一张图（09-26 10:12 / 10:14）</strong></p>
+<blockquote>
+<p>原文：「👀 $AVGO」（另有一条仅含图片链接的无字推文）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>$AVGO 是博通（Broadcom）</strong>，AI 定制芯片（ASIC，专用集成电路）和网络芯片的主要供应商之一。他这种「盯👀 + 标的」的帖子在圈内通常表示<strong>他注意到了某个技术面或消息面的异动</strong>，但<strong>他没有给出结论</strong>——所以这里不要过度解读，只当作「$AVGO 值得放进观察列表」的信号。</p>
+<p><strong>③ 玻璃基板（glass substrate）：中国的量产速度已经快过韩国（09-26 11:55）</strong></p>
+<blockquote>
+<p>原文：「An industry source in Korea's glass substrate sector said, "In Korea, companies are taking a long time to build production lines because they want to validate each process—from glass cleaning in the pretreatment stage to machining, metallization, and CMP—before committing to investment. China, meanwhile, is installing equipment first, making products, and submitting them to customers for evaluation. In terms of commercialization speed alone, China is ahead of Korea." … "Korea and China are currently at roughly the same technological level in glass substrates. While Korea focuses on perfecting individual processes, China is producing actual products and accumulating mass-production experience." … The Elec: China Moving Faster Than Korea Toward Glass Substrate Mass Production」
+（中文：韩国玻璃基板行业的一位业内人士说：「在韩国，企业花很长时间建产线，因为他们想在投入之前把每个环节都验证一遍——从前段预处理的玻璃清洗，到机加工、金属化、CMP（化学机械抛光）。而中国是先装设备、先做产品、先送客户评估。单论商业化速度，中国领先韩国。」他补充：「韩国和中国目前玻璃基板的技术水平大致相当。韩国专注把单个工序做到完美，中国在产出实际产品、积累量产经验。」……来源：《The Elec》：中国比韩国更快走向玻璃基板量产。）</p>
+</blockquote>
+<p><strong>解读</strong>：术语先解释——<strong>玻璃基板（glass substrate）</strong>是先进封装里的「底座」，用来承载 AI 芯片和高带宽内存，比传统有机基板更平、更耐热、能塞更多线路，是下一代 AI 芯片封装的关键材料；<strong>CMP（化学机械抛光）</strong>是芯片制造里把晶圆表面磨到极致平整的工序。这条信息的投资含义是：<strong>玻璃基板是 AI 封装的下一条赛道，而中国厂商在用「先量产、边做边改」的打法抢时间</strong>。对供应链而言，这意味着<strong>国产设备/材料厂商有机会先拿到订单</strong>，同时也给韩系材料厂（以及绑定它们的设备商）敲了警钟。</p>
+<p><strong>④ Meta One：三分之二的早期用户从没用过 LLM，这对整个 AI 极度利好（09-26 18:06）</strong></p>
+<blockquote>
+<p>原文：「If this data is accurate, it's incredibly bullish for AI as a whole. "Two-thirds of early Meta One users had never used an LLM before." Meta is bringing Instagram users who know nothing about AI into the AI market.」
+（中文：如果这个数据准确，那对 AI 整体来说是极度利好的。「Meta One 的早期用户里，有三分之二是从没用过 LLM 的人。」Meta 正在把完全不懂 AI 的 Instagram 用户带进 AI 市场。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>LLM（大语言模型）</strong>就是 ChatGPT 那一类的东西。这条是今天<strong>最有增量价值的一条产业信息</strong>：AI 现在的渗透还处在「圈内人自嗨」阶段，<strong>如果 Meta（$META）能用它的社交产品把几亿普通用户第一次带进 AI</strong>，那 AI 应用层的<strong>潜在用户基数会跳一个量级</strong>——对应的受益方向是算力（$NVDA、$AVGO）、云（$MSFT、$GOOGL、$AMZN）和 Meta 自己的广告变现。他还特意补了一条（09-26 18:10）：这数据出自微信群流传、他自己去溯源才找到，说明<strong>他对未证实的数据保持了怀疑</strong>——小白也要养成这个习惯。</p>
+<p><strong>⑤ 加息 vs 互联网泡沫：他翻出美联储 2000 年 7 月的报告（09-26 18:12 / 18:25）</strong></p>
+<blockquote>
+<p>原文：「I threw this Bill Ackman tweet at GPT 6 Astra, and it came back with something interesting. "The higher cost of business borrowing and more-restrictive credit supply conditions probably will not exert substantial restraint on investment decisions, particularly as long as the costs and potential productivity payoffs of new equipment and software remain attractive." This line comes from the Fed's July 2000 report. … It's interesting that even back in the dotcom era, there was a view that the appeal of technology investment would let business investment hold up relatively well against rising borrowing costs. Don't get me wrong. I'm an AI Super Bull, and GPT 6 Astra is what found this for me.」
+（中文：我把阿克曼那条推文丢给 GPT 6 Astra，它翻出了一段有意思的东西。「企业借贷成本上升、信贷供给条件更紧，大概不会对投资决策形成实质约束，尤其是当新设备和软件的成本与潜在生产率回报依然有吸引力的时候。」这句话出自美联储 2000 年 7 月的报告。……有意思的是，即使在互联网泡沫年代，也已经有人认为技术投资的吸引力会让企业投资在借贷成本上升面前保持相对坚挺。别误会，我是 AI 超级多头，这是 GPT 6 Astra 帮我找到的。）</p>
+</blockquote>
+<p><strong>解读</strong>：他做的是<strong>「历史对照」</strong>——<strong>互联网泡沫顶部前后，美联储也说过「利率上升压不住科技投资」</strong>。后面发生了什么？泡沫破了，资本开支随后腰斩。他用这条提醒自己：<strong>「这次不一样」的说法在历史上出现过，而且出现的时间点很不妙</strong>。注意他最后一句特意澄清<strong>自己仍是 AI 超级多头</strong>，说明他不是转空，而是在<strong>给自己设定风险锚点</strong>。</p>
+<p><strong>⑥ 他的结论：高利率会是 AI 投资的重大障碍，美联储不该加息（09-26 18:27）</strong></p>
+<blockquote>
+<p>原文：「No matter how I look at it, I think high interest rates will be a major obstacle to AI investment. The Fed shouldn't raise rates.」
+（中文：无论怎么看，我都认为高利率会是 AI 投资的重大障碍。美联储不应该加息。）</p>
+</blockquote>
+<p><strong>解读</strong>：把⑤和⑥连起来读，才是他今天完整的观点：<strong>他并不认同「AI 投资对利率免疫」这个流行说法</strong>，而且他明确希望政策转向宽松。这代表一类<strong>「持有 AI 资产、同时担心紧缩政策」的资金心态</strong>——这正是今天全场的共同情绪（见第二节）。</p>
+<p><strong>另 4 条为互动</strong>（09-25 19:40「🫡」、09-26 12:37「🫡」、09-26 14:05 跟 @MediaTek 开玩笑催款、09-26 18:12 向 @BillAckman 追问「今天的加息和互联网时代那会儿有什么不同」）。其中<strong>向阿克曼的追问值得记一笔</strong>——这是今天全场讨论的引线。</p>
+<hr />
+<h3>2. @0xSleepinRain（雨中狂睡SleepinRain）— 今日 12 条</h3>
+<p>他今天<strong>全部是加密资产</strong>，但放在美股博主名册里也有意义：<strong>他挑标的的方法论，和看美股小盘股/困境反转是同一套</strong>。他自己最后一句做了总结（09-26 18:25）：<strong>「这些找的 ticker 大多数都是有预期翻转、估值重估的意思在……配合舆论和价格行为，会有一些参与机会。」</strong> 也就是——<strong>他赚的是「叙事拐点」的钱，不是「好公司」的钱</strong>。</p>
+<p><strong>① 开了一个「看好的币」的持续更新 thread（09-26 00:32）</strong></p>
+<blockquote>
+<p>原文：「来说说自己在看好的币，之前已经讲过的，就不多赘述了，比如 robinhood:0x2e8c... 。这是一个 thread，随时更新。」
+（中文：直接略）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>thread（长帖串）</strong>指一条主帖下面连续追加的系列帖。这条本身没信息量，但它框定了后面 5 条的性质：<strong>这是一份自选的清单，不是一次性喊单</strong>。</p>
+<p><strong>② Grass（$GRASS）：收入从「不可信」变成「可核验」（09-26 00:32）</strong></p>
+<blockquote>
+<p>原文：「solana:Grass7B4... 「AI × Crypto Distribution × 真实外部现金流」9月22日发布了收入报告，独立核验了 Grass 绝大多数收入，并确认 Grass Foundation 在 2025 Q4 的收入超过 $10M。Revenue 从不可信→逐步可验证。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>Grass</strong> 是一个做<strong>数据/带宽网络</strong>的加密项目（把用户闲置带宽卖给 AI 训练方）。他的判断标准很明确：<strong>加密项目最容易造假的就是「收入」，所以关键变量是「能不能被第三方独立核验」</strong>。这条给了个具体的量化锚：<strong>2025 年第四季度收入超 1000 万美元</strong>。对小白来说，这是一个可以复用的筛子——<strong>看一个项目有没有真实外部现金流，而不是看它讲什么故事</strong>。</p>
+<p><strong>③ Renzo（$REZ）改成 Renzo Finance：从「过气的 LRT 协议」翻身为「自动策略执行层」（09-26 00:32 / 12:55 / 16:30 / 16:48）</strong></p>
+<blockquote>
+<p>原文：「ethereum:0x3b50... Rebrand 至 Renzo Finance。虽然 REZ 目前还没有形成能够被市场验证的规模化收入。但已经拥有足够强的产品收入预期（Renzo Basis，类似于 Ethena 但钱是放在自己钱包里操作，而不是交给 Ethena 让其帮你打理）。它的商业模式非常明确：自动执行 Spot + Perp Basis Trade。我交易的是 Renzo 的预期翻转，从一个过气 LRT 协议转型成为一个自动化链上策略执行层。」
+（中文：同左）
+补充（09-26 16:30）：「未来产品的预期还是满足的，现在正在陆续推出 Hyperliquid 相关基差交易，后续还会集成 Lighter 和 Robinhood 来做股票的基差交易。Ethena 与 Binance 的绑定比较深。而得益于链上基础设施的完善（可惜 HyperEVM 代币化股票基建还不完善），Renzo 集成这些东西也比较顺利。」</p>
+</blockquote>
+<p><strong>解读</strong>：术语逐个拆——
+- <strong>LRT（流动性再质押代币）</strong>：把已质押的以太坊再拿去质押一层，换回来的凭证，属于上一轮的热点，现在热度退潮。
+- <strong>Basis Trade（基差交易）</strong>：<strong>买现货 + 空永续合约</strong>，赚两者之间的资金费率差，是一种<strong>市场中性、靠收租</strong>的策略。
+- <strong>Spot + Perp</strong>：现货 + 永续合约（没有到期日的合约）。
+- <strong>Hyperliquid / Lighter / Robinhood</strong>：三个交易场所；他提到 Renzo 后续要<strong>接入 Robinhood 做「股票」的基差交易</strong>——这条<strong>跨到了股票领域</strong>，是本条里最值得记的一句。</p>
+<p><strong>关键信息</strong>：他把 Renzo 定性为<strong>「预期翻转」</strong>——<strong>现在没有收入，但产品方向明确，市场可能会重新给它估值</strong>。他还给了对标物（09-26 16:48）：<strong>「之于 REZ，另一个代币的市值和价格行为是一个很好的对标物。」</strong> 但请注意他的诚实提醒（09-26 17:51）：<strong>「之前的收入回购销毁了一些，不是那种持续性的。」</strong> ——<strong>别把一次性回购当成长期机制。</strong></p>
+<p><strong>④ GSTOCK：踩在「YZi Labs 拿下 BNC 治理权」的叙事上（09-26 00:41）</strong></p>
+<blockquote>
+<p>原文：「gstock:native 刚上线 Binance Alpha。目前的进展是 YZi Labs 已经从外部 Activist Shareholder，进入了 BNC 的核心治理结构（增发股票），如今 Yzi Labs 对公司的治理影响力大幅提升。这段时间发生的事情就是董事会清理+提升 Yzi Labs 对 BNC 的控制权。GSTOCK 正好踩在了这个叙事上，并且模式上还模仿了 Robinhood 的 AI，但又更进了一步。AI 是：Stock → Meme → Liquidity。GSTOCK 则想进一步变成：Meme → Liquidity → Stock → Governance。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>Activist Shareholder（激进股东）</strong>指买进足够股份、然后<strong>主动干预公司治理</strong>（换董事会、改战略）的投资者。他的观察是：<strong>这轮的关键变量不是股价，而是「谁控制了董事会」</strong>。这条信息量在于模式：<strong>Robinhood 那类玩法是「有股票 → 造热度 → 有流动性」，GSTOCK 想反过来「先有热度 → 有流动性 → 再装进股票 → 最后拿到治理权」</strong>。这是<strong>「股票代币化」叙事的一个变体</strong>，值得跟踪，但<strong>属于高风险尝试</strong>。</p>
+<p><strong>⑤ Bittensor（$TAO）：从「排放驱动的子网赌场」转向「真实收入 + 市场化资本配置」（09-26 01:21）</strong></p>
+<blockquote>
+<p>原文：「Bittensor $TAO … 最近真正值得关注的变化，不是 TAO 又多了什么 AI 叙事，而是它正在从「Emission 驱动的子网赌场」往「真实收入 + 市场化资本配置」切。SubConnect 估算：24 个产生外部收入的 subnet，合计年化收入约 $28M–$35M，其中 14 个已经把真实业务收入的一部分用于购买自己的 Alpha；15 个项目的数据被他们列为 high confidence。简单来说，Bittensor 也是预期翻转。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>Bittensor</strong> 是一个去中心化的 AI 网络，下面分成很多<strong>子网（subnet，各自跑一种 AI 任务）</strong>；<strong>Emission（排放）</strong>指协议定期新发代币奖励参与者。他点出的转变是：<strong>过去的子网主要靠「挖矿拿新币」自转，现在开始有真实外部收入进来</strong>——具体量级是 <strong>24 个子网合计年化 2,800 万–3,500 万美元</strong>，其中 14 个已经拿真实收入去<strong>买自己的代币（Alpha）</strong>。这条的价值是<strong>给了个可验证的数字</strong>，而不是又一个 AI 故事。</p>
+<p><strong>⑥ $BEM：新增供给很快，但价格没被砸下去，他判断「庄家控制了大部分产出」（09-26 16:22）</strong></p>
+<blockquote>
+<p>原文：「$BEM 中短期新增流通供给非常快；如果有效 Mining Weight 高度集中，那么真正重要的不是筹码结构，而是谁拥有未来新增筹码（矿机）的控制权。目前看到的是，BEM 价格稳定，没有被新增抛盘砸下来。我觉得是庄家控制大部分代币产出的，否则散户盘撑不下去。我会小额定投一些代币。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>Mining Weight（挖矿权重）</strong>指分到产出奖励的份额。他的推理链是：<strong>如果新增代币的产生权高度集中在少数人手里，那么在供给大量增加的情况下价格还能稳住，说明抛压是被有意控制的</strong>。<strong>注意这只是他的推断，不是事实</strong>，而且他明确说了只<strong>「小额定投」</strong>——<strong>这是高不确定性标的，仓位要小，这是他自己给的示范。</strong></p>
+<p><strong>另 1 条为互动</strong>（09-26 12:02 吐槽 Coinbase）。</p>
+<hr />
+<h3>3. @labubu_trader（3X Long Labubu）— 今日 10 条</h3>
+<p>他今天是<strong>全场最谨慎的一个</strong>：<strong>看好 AI，但认为阻力来自宏观，于是把仓位换成长期期权、进入「待机模式」，等 10 月 FOMC（美联储议息会议）。</strong></p>
+<p><strong>① 主动降暴露：换成 LEAP 期权，进入待机，等 10 月 FOMC（09-26 04:39）</strong></p>
+<blockquote>
+<p>原文：「I've further reduced the exposure by converting into leap calls today and entered the standby mode until Oct FOMC. Also holding few short dated calls to bet OAI dev day next week. I think bond bears might cover shorts before PCE to give the equity market some relief. Be Patient!」
+（中文：我今天通过把仓位换成 LEAP 看涨期权进一步降低了风险暴露，进入待机模式直到 10 月 FOMC。同时也持有少量短期期权，押注下周的 OAI（OpenAI）开发者日。我认为债券空头可能会在 PCE 之前平掉空头，给股市一点喘息。耐心点！）</p>
+</blockquote>
+<p><strong>解读</strong>：术语解释——
+- <strong>LEAP call</strong>：到期一年以上的长期看涨期权，用它替代正股，<strong>最大亏损锁定在权利金</strong>，但保留上涨弹性。
+- <strong>exposure（风险暴露）</strong>：你实际承受市场波动的敞口。他说「降低暴露」= <strong>把仓位变小/变安全</strong>。
+- <strong>PCE</strong>：个人消费支出物价指数，美联储最看重的通胀指标之一，通常在月末公布。
+- <strong>FOMC</strong>：美联储议息会议，10 月的那次是下一个政策转折点。
+<strong>这条是今天最有操作含义的一条</strong>：<strong>他既没清仓也没加仓，而是把「短期赌方向」换成「长期不用管」，把决策权交回给 10 月 FOMC</strong>——这是一种<strong>用小仓位长周期工具对冲不确定性</strong>的做法。</p>
+<p><strong>② 看多 AI，但阻力主要在宏观（09-26 04:45）</strong></p>
+<blockquote>
+<p>原文：「I'm bullish on AI but I think the headwind is mostly from the macro side.」
+（中文：我看多 AI，但我认为阻力主要来自宏观这一边。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>headwind（逆风）</strong>。这句话把他的立场讲得很清楚：<strong>他看空的不是 AI 产业，而是宏观环境（高利率、通胀、地缘）</strong>。对小白的意义是——<strong>别把「宏观不好」误读成「AI 不行」，这两件事要分开记账</strong>。</p>
+<p><strong>③ 美元多头拥挤、债券空头拥挤、罗素空头拥挤——环境对多头有利，只差一根引线（09-26 04:49）</strong></p>
+<blockquote>
+<p>原文：「Dollar bulls are crowded, bond bears are crowded, Russel bears are crowded. We're in a favorable environment for bulls and need a catalyst to ignite the rally. I don't know what it'd be and when it'd be. So I chose leap calls. And when the tide turns, I can chase quickly.」
+（中文：美元多头拥挤，债券空头拥挤，罗素（小盘股）空头拥挤。我们处在一个对多头有利的环境里，只缺一个引爆反弹的催化剂。我不知道它会是什么、什么时候来。所以我选择了 LEAP 看涨期权。等潮水转向时，我能快速跟上。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>crowded（拥挤交易）</strong>指市场里同一个方向的人太多——<strong>人多的地方一旦反向，踩踏最惨</strong>。他的逻辑是：<strong>三个市场同时被空头占满，说明坏消息已经被定价得差不多了，只要有个催化剂就会反弹</strong>。<strong>但他诚实地说「我不知道催化剂是什么，也不知道什么时候来」</strong>——这句话本身就是最好的风险教育：<strong>方向判断正确 ≠ 时间判断正确，所以要用不会归零的工具去等。</strong></p>
+<p><strong>④ 对伊朗协议短期不乐观，而且瓶颈在炼油厂，不在原油（09-26 04:53）</strong></p>
+<blockquote>
+<p>原文：「I'm not very optimistic about making a good Iran deal in the short term. And I think the market might already priced in a lot of it. Also I think the current bottleneck is the refinery not crude oil.」
+（中文：我对短期内达成一份好的伊朗协议不太乐观。而且我认为市场可能已经定价了不少。另外我觉得当前的瓶颈是炼油厂，而不是原油。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>原油跌 ≠ 油价便宜</strong>——如果炼油产能不够，<strong>成品油（汽油/柴油）的紧张程度会大于原油本身</strong>。他把这条单独拎出来，是因为<strong>油价是当前通胀的核心变量之一</strong>（这一点 @qinbafrank 也在讲）。</p>
+<p><strong>⑤ 市场宽度非常差：看 RSP / IWM（09-26 04:56）</strong></p>
+<blockquote>
+<p>原文：「Yes look at RSP/IWM, the breadth is very bad now.」
+（中文：是的，看看 RSP 和 IWM，现在的市场宽度非常差。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>RSP</strong> 是标普 500 <strong>等权重</strong> ETF（每只股票权重相同）；<strong>IWM</strong> 是罗素 2000 小盘股 ETF。<strong>breadth（市场宽度）</strong>指「上涨的股票有多少只」。<strong>指数在涨、但宽度很差 = 涨的只是少数大权重股</strong>（通常是几家 AI 巨头），<strong>后面的股票其实在跌</strong>。这是<strong>最容易被忽略的风险信号之一</strong>：看起来牛市，实际只有几根柱子撑着。</p>
+<p><strong>⑥ 收盘买了 CBRS 的看涨期权（09-26 04:56）</strong></p>
+<blockquote>
+<p>原文：「Bought CBRS calls at the close.」
+（中文：收盘时买了 CBRS 的看涨期权。）</p>
+</blockquote>
+<p><strong>解读</strong>：他给了一个<strong>具体操作</strong>——买入 <strong>CBRS</strong>（一个纳斯达克-100 相关的 ETF/产品）的看涨期权。<strong>注意：这是他的实盘动作，不是投资建议</strong>。它的含义是：<strong>用期权表达「指数级别、方向向上」的观点</strong>，而不是押单一个股。</p>
+<p><strong>⑦ 特朗普喜欢在盘后玩这套施压手段（09-26 08:54）</strong></p>
+<blockquote>
+<p>原文：「Trump loves to play this trick after market close to pressure the opponents. Let's see if any good news before future opens.」
+（中文：特朗普喜欢在盘后玩这套把戏来施压对手。看看期货开盘前会不会有好消息。）</p>
+</blockquote>
+<p><strong>解读</strong>：他指的是<strong>政策/消息经常在美股收盘后发布，制造隔夜波动</strong>。这是小白最容易吃亏的时间段——<strong>盘后消息无法即时反应，只能在第二天开盘被动接受跳空</strong>。</p>
+<p><strong>⑧ 油价长期偏高，是对长端收益率的大支撑（09-26 08:51）</strong></p>
+<blockquote>
+<p>原文：「But I think oil price stays higher for longer will be a big support to the long end yield, right?」
+（中文：但我认为油价长期保持在更高位，会对长端收益率形成很大支撑，对吧？）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>长端收益率</strong>指 10 年、30 年期美国国债的收益率。逻辑链是：<strong>油价高 → 通胀预期高 → 债券被抛售 → 长端收益率上行 → 高估值成长股承压</strong>。他和 @jukan05、@qinbafrank 讲的其实是<strong>同一件事的不同侧面</strong>。</p>
+<p><strong>另 1 条为回应企业结构的讨论（09-26 02:19）</strong>：他认为一家要在美国制造和销售的公司<strong>必须遵守美国规则和隐私标准，且美国公司必须是美方股东控股的合资结构</strong>，「类似 TikTok 现在做的事」。<strong>这条没有点名公司，不要脑补标的。</strong></p>
+<hr />
+<h3>4. @qinbafrank — 今日 6 条</h3>
+<p>他今天写了两篇<strong>长文级拆解</strong>，质量最高：一篇讲<strong>微软把 Copilot 改成 Agent 工作台（$MSFT）</strong>，一篇讲<strong>阿克曼的加息质疑到底站不站得住</strong>。</p>
+<p><strong>① 微软又要往上突破，这一波的引擎是 Agent，不是云（09-26 07:49）</strong></p>
+<blockquote>
+<p>原文：「看起来微软又要往上突破了，上一波突破7月底到8月是因为云业务的爆发和重估，这一波应该是Agent。如纳德拉说"work的新操作系统"：把chat、coding、长时运行agent放进同一个Copilot。有点Copilot "super app"的味道……1）以前 Agent 散落在 Studio、Cowork、Scout、GitHub Copilot 里，用户要自己拼。2）现在微软要把Copilot改造成为"Chat + 造工具 + 持续干活"的统一工作台，对标OpenAI / Anthropic 已经在做的"聊天 + 写代码 + 长任务 Agent"一体应用。纳德拉说Copilot 要覆盖每个模型、每种形态、每类任务。这就是要成为工作系统层。他还表示Autopilot以后会下到消费端。企业先打样，消费者是下一站。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是他今天最值钱的一段。核心有三点：
+- <strong>入口之争</strong>：OpenAI、Anthropic 都在把「聊天 + 写代码 + Agent」收成一个 App，而且<strong>直接卖给微软最核心的企业客户</strong>——微软如果不把分散的入口收回来，<strong>会丢掉「工作入口」这个位置</strong>。所以他判断微软的答案是<strong>让 Copilot 本身成为「工作的操作系统」，Office、GitHub 都变成它的应用层</strong>。
+- <strong>Agent 要分层，不是一个万能机器人</strong>：他拆出三代产品——<strong>Chat（对话型）、Cowork（任务型，有始有终）、Autopilot（岗位型，有身份、有记忆、持续在岗）</strong>，再加上<strong>给企业自己造 Agent 的工具层（Code + Copilot Studio + Managed Runtime）</strong>。
+- <strong>收费模式从「席位」走向「算力」</strong>（他特别强调这点「被功能盖过，但其实更重要」）：<strong>席位费（USL）</strong>覆盖日常 Chat 和 Office 套件里的 Copilot；<strong>按量计费的 Copilot Credits</strong> 覆盖 Cowork、Code、Autopilot 以及 Astra、Fable 这类前沿模型。</p>
+<p><strong>小白版结论</strong>：<strong>如果微软真的把 AI 从「订阅制」变成「用多少算多少」，那 $MSFT 的 AI 收入弹性会明显放大</strong>——这也是他判断「微软又要往上突破」的依据。<strong>同时这条隐含了对 $NVDA 等算力的利多</strong>（用得多 = 算得多）。</p>
+<p><strong>② 阿克曼的加息质疑：哪些站得住，哪些站不住（09-26 14:01，长文）</strong></p>
+<blockquote>
+<p>原文节选：「美联储的加息逻辑是否还适用于当前这个"AI军备竞赛"时代？这是比尔.阿克曼这篇推文的核心思考。……2、阿克曼提出一个"如果"：1）现在对算力和能源的需求，几乎不受利率高低影响。因为谁赢得超级智能（AGI）竞赛，回报接近无限大，ROI高到可以忽略资金成本，所以加息压不下来这块投资；2）但加息会把利息成本嵌进所有商品和服务的价格里……3）结果可能是：加息不但没压通胀，反而推高通胀 → 美联储不得不继续加 → 形成恶性循环。他的结论：旧模型可能已经不适用，美联储这次加息可能是错的。」
+「3、个人角度这个逻辑部分有道理……1）AI资本开支确实有一定利率不敏感。微软、谷歌、亚马逊、Meta等超大规模公司为了抢AGI，正在砸巨资建数据中心……2）利率本身是生产成本的一部分（这叫做货币政策的"成本渠道"cost channel）……3）如果通胀主要来自供给侧短缺（住房、算力、医疗、能源），加息抑制供给的一面，确实可能恶化短缺；当前通胀脉冲很大一部分是能源/地缘政治……」
+「但也有站不住的地方：1）AI投资也是经济的一部分。住房、汽车、耐用品、中小企业投资、消费者信贷，这些对利率非常敏感……2）2022–2023年美联储把利率从接近0加到5%以上，CPI从9%降到3%左右。土耳其当时反向操作……通胀飙到80%。」</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>阿克曼（Bill Ackman）</strong>是知名对冲基金大佬。他的核心质疑是：<strong>AI 竞赛的回报太高，加息压不住 AI 投资；但加息会把利息成本嵌进所有商品价格里，结果可能「加息反而推高通胀」</strong>。@qinbafrank 的评估很公允：
+- <strong>站得住的部分</strong>：AI 资本开支确实对利率不敏感（$MSFT、$GOOGL、$AMZN、$META 为了抢 AGI 不会因为利率贵就停手）；<strong>利率是生产成本（这叫「成本渠道」cost channel）</strong>；当前通胀很大一部分来自<strong>能源/地缘（中东推高油价）和供给侧短缺</strong>，这不是美联储单独能解决的。
+- <strong>站不住的部分</strong>：<strong>AI 投资只是经济的一部分</strong>——住房、汽车、耐用品、中小企业、消费信贷<strong>对利率极度敏感</strong>，加息能压住这些需求；而且历史事实是<strong>2022–2023 年美联储从 0 加到 5% 以上，CPI 从 9% 降到 3% 左右</strong>（反例是土耳其，反向操作把通胀搞到 80%）。
+- <strong>他的落脚点</strong>：这是个<strong>「时间差」问题</strong>——AI 基建<strong>先把钱花出去（当下推高产业链价格）</strong>，<strong>生产率提升后到（长期通缩力量）</strong>。所以争「这次加息对不对」意义不大，<strong>关键盯两件事：短期的能源冲击何时缓解？长期 AI 带来的生产率提升何时到来？</strong></p>
+<p><strong>小白版结论</strong>：这是今天<strong>最能提升认知的一条</strong>。它把「AI 牛」和「通胀/利率」之间的矛盾讲清楚了，也给出了<strong>两个可跟踪的观察指标</strong>。</p>
+<p><strong>③ 顺口评价某个（未点名的）东西「极致的工程能力，吊打一众大科技们」，以及两条互动（09-25 22:02 / 09-26 13:17 / 13:35 / 15:24）</strong>：其中他说纳德拉<strong>「很擅长后发先至」</strong>——这是他对微软竞争策略的定性判断，值得记住。</p>
+<hr />
+<h3>5. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 3 条</h3>
+<p>她今天是<strong>「拆个案」的节奏</strong>，两条把 $AAOI 的下跌原因讲透，一条讲礼来新减肥药。</p>
+<p><strong>① $AAOI 为什么跌跌不休：一年三次 ATM，把股票当提款机（09-25 22:57）</strong></p>
+<blockquote>
+<p>原文：「$AAOI 为什么跌跌不休，在一众光通里走的格外难看？不能说全部原因，但重要原因包括频繁的ATM。1️⃣ 2 月设立、3 月扩额并于 4 月完成第一轮5亿ATM。2️⃣5 月设立第二轮、6 月继续执行6亿ATM。3️⃣8 月再设立第三轮，通过6 亿美元的 ATM。结合其他数字更有感: 目前市值85亿，而他已经卖了超过10亿现金出来。一年三次ATM，且规模如此巨大，再怎么说都说不过去。实在是吃相难看」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>ATM（At-The-Market offering，市价增发）</strong>指公司<strong>在二级市场按市价持续卖新股融资</strong>——它不像一次性增发那样有个明确的定价日，而是<strong>可以慢慢卖，等于给股价头上挂了一个持续的水龙头</strong>。她的算法很直观：<strong>市值 85 亿，一年多融资超过 10 亿 ≈ 又发了相当于市值 12% 的新股</strong>。<strong>供给持续增加，价格自然被压</strong>。这就解释了为什么 <strong>$AAOI（Applied Optoelectronics，光通信模块厂商）</strong> 在<strong>光通信板块（受益于 AI 数据中心互联）</strong>里表现「格外难看」——<strong>板块好 ≠ 每只股票都涨，增发会吃掉你的收益</strong>。小白要学的是：<strong>看一家公司前，先看它过去一年发了多少新股。</strong></p>
+<p><strong>② $AAOI 的钱花到哪去了：设备投入大，但仍在亏钱（09-25 23:02）</strong></p>
+<blockquote>
+<p>原文：「截至 6 月底，前两轮 ATM 合计净募资约 10.28 亿美元。钱花到哪里了呢？Q2据说买设备用了5.6亿，账上现金多了，有超过5亿现金。Q2 营收达 1.919 亿美元，800G 出货量环比翻倍；但同期 GAAP 净亏损仍有 2,280 万美元，GAAP 毛利率为 27.7%。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：数字要这么读——<strong>营收 1.919 亿美元、800G 产品出货翻倍（说明需求端是真的强）</strong>，但<strong>GAAP（美国通用会计准则）下净亏 2,280 万美元、毛利率 27.7%（偏低）</strong>。结论是：<strong>这家公司处在「订单在涨、但赚钱能力还没跟上、同时不停融资」的阶段</strong>。<strong>对小白：这类标的属于「景气度好但财务脆弱」，波动会非常大。</strong></p>
+<p><strong>③ 礼来 $LLY 新药 bimagrumab：减脂同时保住肌肉（09-26 13:49）</strong></p>
+<blockquote>
+<p>原文：「礼来 $LLY 新药 bimagrumab 终于看到一个健身人士想要打的减肥药！bimagrumab（比马格鲁单抗）是礼来正在研发的减重抗体。和现有的司美格鲁肽、替尔泊肽最大的不同，是bimagrumab靶向激活素Ⅱ型受体 ActRIIA/ActRIIB，阻断相关信号。这里就有我想打的原因：减脂的同时尽量保留瘦体重，近似于他可以减脂但是保有尽可能多的肌肉！现在还在测试中，无比期待上市！」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：这是<strong>减肥药赛道的新方向</strong>。现有主流（<strong>司美格鲁肽</strong>=诺和诺德、<strong>替尔泊肽</strong>=礼来 $LLY）主要是<strong>抑制食欲</strong>，副作用之一是<strong>减重时肌肉也一起掉</strong>。<strong>bimagrumab（比马格鲁单抗）靶向 ActRIIA/ActRIIB 受体</strong>——这类受体的作用是<strong>抑制肌肉生长</strong>，把它阻断就相当于<strong>「松开肌肉生长的刹车」</strong>，所以理论上能<strong>减脂同时保肌</strong>。<strong>注意她说了「现在还在测试中」——还在临床阶段，离上市还有距离</strong>，属于<strong>远期期权</strong>而非近期催化。如果成功，<strong>$LLY 在减肥药市场会多一条差异化护城河</strong>（也值得留意同靶点竞争者的动向）。</p>
+<hr />
+<h3>6. @starzq（Star@Day1Global Podcast）— 今日 2 条</h3>
+<p><strong>① Fables 的 TVL 超过 5000 万美元，他第一次发时涨了 12 倍；TGE 还剩一周，做 LP 可以拿积分和空投（09-26 17:05）</strong></p>
+<blockquote>
+<p>原文：「Fables 的 TVL 超过 5000 万美金了，从我第一次发涨了 12 倍。还有最后一周时间就要 TGE 了，做 LP 就可以拿积分和空投。ethereum:native 最近在 2700 上下波动，还挺适合做池子的。截图的池子放了 2 天，价值涨了 100u，还拿了 75u 手续费。想最后补下票的朋友可以用我的邀请码。」
+（中文：同左）</p>
+</blockquote>
+<p><strong>解读</strong>：术语解释——<strong>TVL（总锁定价值）</strong>= 一个 DeFi 协议里锁了多少资产，是它的规模指标；<strong>TGE（代币生成事件）</strong>= 项目正式发币、可交易的时间点；<strong>LP（流动性提供者）</strong>= 你把自己的币放进池子里给别人交易，赚手续费 + 拿项目积分；<strong>空投（airdrop）</strong>= 项目按积分免费发币给早期参与者。他给了个<strong>具体收益体感</strong>：池子放 2 天，<strong>资产价值 +100 美元，手续费 +75 美元</strong>（<strong>注意这是他的截图数据，不是保证收益</strong>）。<strong>同时提醒：他附了邀请码，说明这是带推广性质的内容，属于他个人利益相关，不要当独立研究看。</strong></p>
+<p><strong>另 1 条为互动</strong>（09-26 07:25 祝贺某位）。</p>
+<hr />
+<h3>7. @aleabitoreddit（Serenity）— 今日 1 条</h3>
+<p><strong>① 别再纠结 10 年、30 年期收益率到 5% 了，真正的通胀是「三明治」涨到 20 美元（09-25 22:21）</strong></p>
+<blockquote>
+<p>原文：「People really need to stop thinking about 5% yields over 10 years or 30 years. Even the inflation of my $SUBWAY sandwich has gone up like 12% a year. Today it was like $20 after tax, when it used to be like $5… 12 years ago. The best way to keep up with inflation of the things that matter, like Sandwiches, is equities like $SPY.」
+（中文：大家真的别再纠结 10 年、30 年期到 5% 的收益率了。就连我的 $SUBWAY 三明治，通胀都一年涨 12% 左右了。今天税后差不多 20 美元，而 12 年前大概只要 5 美元……想要跟上那些真正重要东西（比如三明治）的通胀，最好的办法就是持有 $SPY 这样的股票。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>yield（收益率）</strong>指债券的持有回报——<strong>10 年、30 年期美债到 5%</strong> 是市场担心「无风险利率太高、会压制股票估值」的核心话题。他的反讽是：<strong>你盯着 5% 的名义收益率，但真实生活成本涨得比这快得多</strong>（他举例三明治 12 年从约 5 美元涨到税后约 20 美元，折算年化约 12%）。<strong>道理</strong>：如果钱放着不动，<strong>购买力在缩水</strong>；所以他主张<strong>持有 $SPY（标普 500 ETF）这类权益资产来对抗长期通胀</strong>。<strong>这条带有明显的「长期持有派」立场，也要注意它对短期波动风险是不设防的</strong>——它讲的是几十年维度，不是几个月。</p>
+<hr />
+<h3>8. @insane_analyst（Irrational Analysis）— 今日 1 条</h3>
+<p><strong>① 一句反问：你宁愿押单一标的，还是一篮子 100 个牙医？（09-26 14:15）</strong></p>
+<blockquote>
+<p>原文：「Would you prefer a single name or a diversified basket of 100 dentists?」
+（中文：你更愿意押单一标的，还是一组分散的、100 个牙医组成的篮子？）</p>
+</blockquote>
+<p><strong>解读</strong>：这是<strong>在讨论分散与集中的取舍</strong>。「100 个牙医」指的是<strong>一批业务简单、现金流稳定、但分散的小生意（牙科诊所）</strong>——放在投资语境里，代表<strong>低相关性、抗周期的分散组合</strong>；「single name」则是<strong>重仓押一个方向</strong>。<strong>他没有给答案，所以不要替他下结论</strong>。但这个问题对小白的价值是：<strong>你每一次下单前，都该先回答「我是在赌一个名字，还是在买一个篮子」。</strong></p>
+<hr />
+<h3>9. @xiaomustock（川沐｜Trumoo🐮）— 今日 1 条</h3>
+<p><strong>① 今日无实质观点，仅互动（09-25 21:57）</strong></p>
+<blockquote>
+<p>原文：「@yingbinance 真理」</p>
+</blockquote>
+<p><strong>解读</strong>：纯附和他人观点，<strong>未提到任何标的或逻辑</strong>，无投资信息量。</p>
+<hr />
+<h3>10. @mdzzi（茶不思）— 今日 1 条</h3>
+<p><strong>① 今日无实质观点，仅互动（09-26 09:36）</strong></p>
+<blockquote>
+<p>原文：「@lurenbian @what3verman 这集神了」</p>
+</blockquote>
+<p><strong>解读</strong>：在聊影视内容，<strong>与市场、标的无关</strong>。</p>
+<hr />
+<h3>11. @fi56622380（fin）— 今日无新推文</h3>
+<p>窗口内没有抓到他任何推文。<strong>不代表他改变观点，只是今天没说话。</strong></p>
+<hr />
+<h3>12. @LinQingV（Macro_Lin）— 今日无新推文</h3>
+<p>窗口内没有抓到他任何推文。他的账号定位是宏观，<strong>今天缺席，值得留意</strong>——因为今天全场讨论的核心恰好是宏观（利率/通胀）。</p>
+<hr />
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>美股博主</strong></td>
+<td>🟡 <strong>看多产业、忌惮宏观，集体进入「等信号」状态</strong></td>
+<td>@labubu_trader 明确「bullish on AI but headwind mostly from macro」，把仓位换成 LEAP 期权、待机到 10 月 FOMC；@jukan05 自称「AI Super Bull」但直言「高利率会是 AI 投资的重大障碍」；@qinbafrank 判断微软<strong>又</strong>要向上突破（Agent 驱动）；@aleabitoreddit 主张长期持有 $SPY 对抗通胀。<strong>没有一个人在今天喊空产业，但都把钱往「时间更长、风险更小」的工具里挪。</strong></td>
+</tr>
+<tr>
+<td><strong>宏观</strong></td>
+<td>🔴 <strong>利率与通胀是全场共同开关</strong></td>
+<td>阿克曼的「加息压不住 AI 投资、却推高通胀」被 @jukan05 与 @qinbafrank 接力反驳式拆解；@labubu_trader 指「美元多头/债券空头/罗素空头三项拥挤」、并强调「油价长期偏高会支撑长端收益率」；@qinbafrank 归纳为「AI 短期制造需求冲击、长期才有生产率改善」的<strong>时间差</strong>问题。<strong>两个可跟踪变量：短期能源冲击何时缓解、长期 AI 生产率何时兑现。</strong></td>
+</tr>
+<tr>
+<td><strong>风险</strong></td>
+<td>🟠 <strong>市场宽度差 + 增发失血 + 政策消息盘后突袭</strong></td>
+<td>@labubu_trader 明说「breadth is very bad now（RSP/IWM）」——<strong>指数在涨、多数股票在跌</strong>；@nft_hu 拆出 $AAOI 一年三次 ATM、市值 85 亿却融资超 10 亿的「持续抽血」案例；@labubu_trader 提醒「特朗普喜欢盘后动手」= 隔夜跳空风险；@jukan05 翻出美联储 2000 年报告做历史对照，提示「这次不一样」的说法在泡沫顶部出现过。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、给小白的一句话</h2>
+<p><strong>今天最值得带走的是两条：</strong></p>
+<p><strong>第一条，把「产业好不好」和「股价涨不涨」分开算。</strong> 今天所有博主对 AI 产业本身都没意见（@qinbafrank 甚至判断 $MSFT 又要向上突破，理由是 Copilot 从「聊天框」变成「工作操作系统」、收费从席位费改成按算力计费），但<strong>所有人都承认阻力在宏观这一边</strong>。所以你要盯的不是「AI 有没有前途」，而是<strong>长端利率往哪走、油价往哪走</strong>——@labubu_trader 那句「油价长期偏高会支撑长端收益率」就是最直接的传导链条。<strong>研究方向：把 10 年期美债收益率、油价、$SPY 等权（RSP）三条线放在一起看，宽度变好才是真正转势。</strong></p>
+<p><strong>第二条，学 @qinbafrank 那种「拆问题」的方法，而不是接结论。</strong> 他把阿克曼那句「美联储不该加息」拆成「哪些站得住、哪些站不住」，还给出了历史反例（2022 年从 0 加到 5%，CPI 从 9% 降到 3%）。<strong>这就是不被带节奏的核心能力：任何观点，先问它有没有反例、有没有时间差。</strong> 同样地，@nft_hu 讲 $AAOI 时也没停在「板块好」，而是去查<strong>一年三次 ATM</strong>（市价增发）——<strong>股票供给持续放大，再好的板块也扛不住。</strong></p>
+<p><strong>⚠️ 风险提醒（务必看）</strong>：
+1. <strong>今天多位博主给的是「等待策略」而非「买入建议」。</strong> @labubu_trader 明确说不知道催化剂何时来，他选 LEAP 是因为<strong>最大亏损锁定在权利金</strong>；你自己买期权前，先确认能承受权利金全部归零。
+2. <strong>$AAOI、$BEM 这类「订单/叙事在、财务/供给有问题」的标的不适合重仓</strong>，博主本人也都用了「小额定投」这类谨慎措辞。
+3. <strong>@starzq 那条含邀请码，属于利益相关推广</strong>，其收益截图（2 天 +100u 价值、+75u 手续费）不是可复制收益，<strong>DeFi 池子有本金损失风险</strong>。
+4. <strong>所有引用都是博主个人观点，不是投资建议。</strong> 本文只负责把「谁说了什么、依据是什么」摆清楚，买卖决定权在你。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-09-25 19:01 → 2026-09-26 19:00（北京时间）
+时间格式：[MM-DD HH:MM]（北京时间）</p>
+</blockquote>
+<h3>@jukan05（Jukan）— 12 条</h3>
+<pre><code>[09-25 19:31] @InvestorVideos Calling it a bubble is wrong. The odds of Muse bursting like a bubble are close to zero. The only way Muse goes away is if a better agent comes along that does everything Muse does and more.
+
+[09-25 19:40] @iamfabian 🫡
+
+[09-26 10:12] 👀 $AVGO https://t.co/VUWEwviRqQ
+
+[09-26 10:14] https://t.co/qY6dVCE8jQ
+
+[09-26 11:55] An industry source in Korea's glass substrate sector said, &quot;In Korea, companies are taking a long time to build production lines because they want to validate each process—from glass cleaning in the pretreatment stage to machining, metallization, and CMP—before committing to investment. China, meanwhile, is installing equipment first, making products, and submitting them to customers for evaluation. In terms of commercialization speed alone, China is ahead of Korea.&quot;
+
+The source added, &quot;Korea and China are currently at roughly the same technological level in glass substrates. While Korea focuses on perfecting individual processes, China is producing actual products and accumulating mass-production experience.&quot; The source continued, &quot;Securing yield and reliability in mass production is critical for glass substrates, so experience with customer qualification is key to advancing the technology.&quot;
+
+The Elec: China Moving Faster Than Korea Toward Glass Substrate Mass Production
+
+https://t.co/c5vfMzdyir
+
+[09-26 12:37] @magicsilicon 🫡
+
+[09-26 14:05] @MediaTek I haven't received this month's payment yet. Please arrange the transfer as soon as possible.
+
+[09-26 18:06] If this data is accurate, it's incredibly bullish for AI as a whole.
+
+&quot;Two-thirds of early Meta One users had never used an LLM before.&quot;
+
+Meta is bringing Instagram users who know nothing about AI into the AI market. https://t.co/v2KBnXvhH2
+
+[09-26 18:10] This quote was going around my WeChat group chats, so I went looking for the source. None of my AIs could find it in Zuckerberg's podcasts or in any press coverage.. I finally found it, but it took a lot of digging.
+
+[09-26 18:12] @JunDo1050 @BillAckman How do rate hikes today differ from those during the dot-com era? Could you explain?
+
+[09-26 18:25] I threw this Bill Ackman tweet at GPT 6 Astra, and it came back with something interesting.
+
+&quot;The higher cost of business borrowing and more-restrictive credit supply conditions probably will not exert substantial restraint on investment decisions, particularly as long as the costs and potential productivity payoffs of new equipment and software remain attractive.&quot;
+
+This line comes from the Fed's July 2000 report. How did actual corporate investment change after that report came out?
+
+It's interesting that even back in the dotcom era, there was a view that the appeal of technology investment would let business investment hold up relatively well against rising borrowing costs.
+
+Don't get me wrong. I'm an AI Super Bull, and GPT 6 Astra is what found this for me.
+
+[09-26 18:27] No matter how I look at it, I think high interest rates will be a major obstacle to AI investment. The Fed shouldn't raise rates.
+</code></pre>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 12 条</h3>
+<pre><code>[09-26 00:32] 来说说自己在看好的币，之前已经讲过的，就不多赘述了，比如 robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18 。
+
+这是一个 thread，随时更新。
+
+[09-26 00:32] solana:Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs 「AI × Crypto Distribution × 真实外部现金流」
+
+9月22日发布了收入报告，独立核验了 Grass 绝大多数收入，并确认 Grass Foundation 在 2025 Q4 的收入超过 $10M。Revenue 从不可信→逐步可验证。
+
+[09-26 00:32] ethereum:0x3b50805453023a91a8bf641e279401a0b23fa6f9 
+
+Rebrand 至 Renzo Finance
+
+虽然 REZ 目前还没有形成能够被市场验证的规模化收入。但已经拥有足够强的产品收入预期（Renzo Basis，类似于 Ethena 但钱是放在自己钱包里操作，而不是交给 Ethena 让其帮你打理）。
+
+它的商业模式非常明确：自动执行 Spot + Perp Basis Trade。我交易的是 Renzo 的预期翻转，从一个过气 LRT 协议转型成为一个自动化链上策略执行层。
+
+[09-26 00:41] gstock:native 
+
+刚上线 Binance Alpha。
+
+目前的进展是 YZi Labs 已经从外部 Activist Shareholder，进入了 BNC 的核心治理结构（增发股票），如今 Yzi Labs 对公司的治理影响力大幅提升。这段时间发生的事情就是董事会清理+提升 Yzi Labs 对 BNC 的控制权。
+
+GSTOCK 正好踩在了这个叙事上，并且模式上还模仿了 Robinhood 的 AI，但又更进了一步。AI 是：Stock → Meme → Liquidity。GSTOCK 则想进一步变成：
+Meme → Liquidity → Stock → Governance。
+
+[09-26 01:21] Bittensor $TAO
+
+Bittensor 最近真正值得关注的变化，不是 TAO 又多了什么 AI 叙事，而是它正在从「Emission 驱动的子网赌场」往「真实收入 + 市场化资本配置」切。
+
+SubConnect 估算：24 个产生外部收入的 subnet，合计年化收入约 $28M–$35M，其中 14 个已经把真实业务收入的一部分用于购买自己的 Alpha；15 个项目的数据被他们列为 high confidence。
+
+简单来说，Bittensor 也是预期翻转。
+
+[09-26 12:02] @lian_danlu 还在的，沟槽的coinbase，太畜生了
+
+[09-26 12:55] 同样围绕基差收益做产品，Ethena 和之后的大部分项目都是将其策略包装成了一个稳定币。Renzo 是直接将策略嵌套在 Renzo Basis 这个产品中。
+
+从后视镜来看，USDe 并没有太多的采用场景，核心还是持有以赚取收益。Ethena 的竞争力是先发优势、用户心智、产品执行力和背景资源。相较之下，Renzo 是一个小而美的东西，更符合第一性原理，不是一个很复杂的产品。
+
+[09-26 16:22] $BEM
+
+中短期新增流通供给非常快；如果有效 Mining Weight 高度集中，那么真正重要的不是筹码结构，而是谁拥有未来新增筹码（矿机）的控制权。
+
+目前看到的是，BEM 价格稳定，没有被新增抛盘砸下来。我觉得是庄家控制大部分代币产出的，否则散户盘撑不下去。
+
+我会小额定投一些代币。
+
+[09-26 16:30] 未来产品的预期还是满足的，现在正在陆续推出 Hyperliquid 相关基差交易，后续还会集成 Lighter 和 Robinhood 来做股票的基差交易。
+
+Ethena 与 Binance 的绑定比较深。而得益于链上基础设施的完善（可惜 HyperEVM 代币化股票基建还不完善），Renzo 集成这些东西也比较顺利。
+
+Keep moving https://t.co/doIecNeIQX
+
+[09-26 16:48] 之于 ethereum:0x3b50805453023a91a8bf641e279401a0b23fa6f9 ， ethereum:0x57e114b691db790c35207b2e685d4a43181e6061 的市值和价格行为是一个很好的对标物。
+
+[09-26 17:51] @zi_yang8848 之前的收入回购销毁了一些，不是那种持续性的
+
+[09-26 18:25] 这些找的 ticker 大多数都是有预期翻转估值重估的意思在，倒不是说它们都是像 Hyperliquid 那样的好项目，只是说他们这么搞，配合舆论和价格行为，会有一些代币上的参与机会。
+</code></pre>
+<h3>@labubu_trader（3X Long Labubu）— 10 条</h3>
+<pre><code>[09-26 02:19] @btc__gabriel @kayliatyyy I think if they manufacture and sell in US, they have to follow the US rules and privacy standards , and the US company must be a co-owned structure with US shareholders taking the main control of the board. it would be similar to what TikTok is doing and its structure now
+
+[09-26 04:39] I've further reduced the exposure by converting into leap calls today and entered the standby mode until Oct FOMC.
+Also holding few short dated calls to bet OAI dev day next week.
+I think bond bears might cover shorts before PCE to give the equity market some relief.
+Be Patient!
+
+[09-26 04:45] @bubbleboi I'm bullish on AI but I think the headwind is mostly from the macro side.
+
+[09-26 04:49] @Z04_A1 Dollar bulls are crowded, bond bears are crowded, Russel bears are crowded.
+We're in a favorable environment for bulls and need a catalyst to ignite the rally.
+I don't know what it'd be and when it'd be. So I chose leap calls
+And when the tide turns, I can chase quickly.
+
+[09-26 04:53] @bubbleboi I'm not very optimistic about making a good Iran deal in the short term. And I think the market might already priced in a lot of it.
+Also I think the current bottleneck is the refinery not crude oil.
+
+[09-26 04:56] @Hauge319 Yes look at RSP/IWM, the breadth is very bad now
+
+[09-26 04:56] Bought CBRS calls at the close
+
+[09-26 08:42] https://t.co/JhhKhe35xV
+😓😓😓
+
+[09-26 08:51] @Z04_A1 But I think oil price stays higher for longer will be a big support to the long end yield, right?
+
+[09-26 08:54] Trump loves to play this trick after market close to pressure the opponents. Let's see if any good news before future opens.
+</code></pre>
+<h3>@qinbafrank — 6 条</h3>
+<pre><code>[09-25 22:02] @iamai_omni 极致的工程能力，吊打一众大科技们
+
+[09-26 07:49] 看起来微软又要往上突破了，上一波突破7月底到8月是因为云业务的爆发和重估，这一波应该是Agent。如纳德拉说&quot;work的新操作系统&quot;：把chat、coding、长时运行agent放进同一个Copilot。有点Copilot &quot;super app&quot;的味道，当然微软很早也做Agent，这次是正式把Agent抬成Copilot的主产品形态。这次是把分散能力收成一个入口，Copilot不再只是聊天框。
+1）以前 Agent 散落在 Studio、Cowork、Scout、GitHub Copilot 里，用户要自己拼。
+2）现在微软要把Copilot改造成为&quot;Chat + 造工具 + 持续干活&quot;的统一工作台，对标OpenAI / Anthropic 已经在做的&quot;聊天 + 写代码 + 长任务 Agent&quot;一体应用。
+
+纳德拉说Copilot 要覆盖每个模型、每种形态、每类任务。这就是要成为工作系统层。他还表示Autopilot以后会下到消费端。企业先打样，消费者是下一站。
+这其实就是是把三场战争叠在一起
+1）战争一：入口之争
+OpenAI、Anthropic 都在把聊天、写代码、Agent 收成一个 App，并且直接卖给微软最核心的企业客户。微软如果还让用户在 Word 里开一个侧栏、GitHub 里开一个编程助手、Studio 里再配一个 Agent，入口会丢。
+
+微软给的答案是Copilot 本身成为工作 OS。Office、GitHub 技术、Agent 运行时都给它供血。
+
+2）战争二：Agent要分层，而不是一个万能机器人
+微软实际上画了三代产品，只是这次放进同一张皮：
+对话Agent：Chat
+任务Agent：Cowork（有始有终）
+岗位Agent：Autopilot（有身份、有记忆、持续在岗）
+造 Agent / 造工具的人：Code + Copilot Studio + Managed Runtime
+
+To B场景里以后会同时存在人、一次性任务机器人、常驻数字同事、以及员工自己生成的内部小软件。
+
+3）战争三：收费从&quot;席位&quot;走向&quot;算力&quot;
+这件事被功能盖过，但其实更重要。
+席位费（USL）：覆盖日常 Chat，以及 Word / Excel / PowerPoint / Outlook / Teams 里的 Copilot。
+按量（Copilot Credits）：Cowork、Code、Autopilot，以及 Astra、Fable这类前沿模型。
+
+简单说微软这次掏出了一套能聊天、能造工具、能替你盯事的 Agent 运行时，Office 变成其中的应用层。
+
+[09-26 13:17] @KuiGas 真是没想到😭
+
+[09-26 13:35] @pmbian 是呐、而且纳德拉也很擅长后发先至
+
+[09-26 14:01] 美联储的加息逻辑是否还适用于当前这个&quot;AI军备竞赛&quot;时代？这是比尔.阿克曼这篇推文的核心思考。阿克曼想表达什么？
+1、传统央行逻辑是：
+加息 → 借款成本上升 → 消费和投资下降 → 总需求降温 → 通胀回落。
+
+2、阿克曼提出一个&quot;如果&quot;：
+1）现在对算力和能源的需求，几乎不受利率高低影响。因为谁赢得超级智能（AGI）竞赛，回报接近无限大，ROI高到可以忽略资金成本，所以加息压不下来这块投资；
+2）但加息会把利息成本嵌进所有商品和服务的价格里（企业融资更贵、政府债务利息更高，最终转嫁给消费者）；
+3）结果可能是：加息不但没压通胀，反而推高通胀 → 美联储不得不继续加 → 形成恶性循环；
+
+他的结论：旧模型可能已经不适用，美联储这次加息可能是错的。当然他也只是一个思考和设问。
+
+3、个人角度这个逻辑部分有道理
+有道理的地方：
+1）AI资本开支确实有一定利率不敏感。微软、谷歌、亚马逊、Meta等超大规模公司为了抢AGI，正在砸巨资建数据中心、买芯片、扩能源，预期回报极高时，资金成本上升不会立刻让他们停手。能源需求也被AI拉动；
+
+2）利率本身是生产成本的一部分（这叫做货币政策的&quot;成本渠道&quot;cost channel）。企业借钱囤库存、建数据中心，利率升高会推高边际成本，部分会转嫁到价格上；
+
+3）如果通胀主要来自供给侧短缺（住房、算力、医疗、能源），加息抑制供给的一面，确实可能恶化短缺；
+
+当前通胀脉冲很大一部分是能源/地缘政治（中东冲突推高油价），不完全是美联储能单独解决的，也不是单纯需求过热。
+
+但也有站不住的地方：
+1）AI投资也是经济的一部分。 住房、汽车、耐用品、中小企业投资、消费者信贷，这些对利率非常敏感。加息会冷却这些领域的需求；
+
+2）2022–2023年美联储把利率从接近0加到5%以上，CPI从9%降到3%左右。土耳其当时反向操作（土耳其央行认为高利率导致通胀，随意大幅度降息），通胀飙到80%。
+
+当然21-22年大通胀首要事来自疫情的供给（海运成本飙升）+无限量量化宽松带来的需求飙升+还有22年上半年俄乌战争导致油价走高又加了一棒；
+
+4、应该怎么理解
+可以把阿克曼说的当成一个有启发性的问题
+当前宏观环境的特殊性在于：AI正在同时制造短期需求冲击（建数据中心、抢电力、抢芯片）和潜在长期供给改善（生产率提升）。沃什之前也强调AI长期是通缩力量，但短期需求先到、生产率后到，所以通胀粘性更强。
+
+这核心是一个时间差的逻辑，AI基建浪潮是钱先花出去，推高整个AI基建产业链上所有环节的价格（当下正在发生的）+叠加今年的能源问题（也是之前说的今年通胀的核心问题是油价），确实会让美联储短期内很难精准调控。加息不能让AI基建冷却下来、但是可以让非AI需求冷却，那么对冲下来则会让通胀不那么强。
+
+未来如果AI最终带来巨大生产率提升，通胀压力也会自己缓解。所以争辩联储当下的加息可能意义也不大（毕竟已经发生了），核心是去看两点：
+短期的能源冲击合适会缓解？
+长期AI带动全社会生产率的提升何时到来？
+
+之前8月底聊过AI存在四个时钟（时间差）、宏观生产率的提升恰恰就是最后一个兑现的时钟。 https://t.co/GqUQgBZxs3
+
+[09-26 15:24] @Ivytomoon @Cato_KT 是这样的，&quot;欲戴王冠，必承其重&quot;
+</code></pre>
+<h3>@nft_hu（Fiona ❤️&amp; ✌️）— 3 条</h3>
+<pre><code>[09-25 22:57] $AAOI 为什么跌跌不休，在一众光通里走的格外难看？
+
+不能说全部原因，但重要原因包括频繁的ATM。
+1️⃣ 2 月设立、3 月扩额并于 4 月完成第一轮5亿ATM。
+2️⃣5 月设立第二轮、6 月继续执行6亿ATM。
+3️⃣8 月再设立第三轮，通过6 亿美元的 ATM 。
+
+结合其他数字更有感:
+目前市值85亿，而他已经卖了超过10亿现金出来。
+
+一年三次ATM，且规模如此巨大，再怎么说都说不过去。实在是吃相难看
+
+[09-25 23:02] 截至 6 月底，前两轮 ATM 合计净募资约 10.28 亿美元。
+
+钱花到哪里了呢？Q2据说买设备用了5.6亿，账上现金多了，有超过5亿现金。
+
+Q2 营收达 1.919 亿美元，800G 出货量环比翻倍；但同期 GAAP 净亏损仍有 2,280 万美元，GAAP 毛利率为 27.7%。
+
+[09-26 13:49] 礼来 $LLY 新药 bimagrumab 
+
+终于看到一个健身人士想要打的减肥药！
+bimagrumab（比马格鲁单抗）是礼来正在研发的减重抗体。
+
+和现有的司美格鲁肽、替尔泊肽最大的不同，是bimagrumab靶向激活素Ⅱ型受体 ActRIIA/ActRIIB，阻断相关信号。
+
+这里就有我想打的原因：减脂的同时尽量保留瘦体重，近似于他可以减脂但是保有尽可能多的肌肉！
+
+现在还在测试中，无比期待上市！
+</code></pre>
+<h3>@starzq（Star@Day1Global Podcast）— 2 条</h3>
+<pre><code>[09-26 07:25] @AlbertCoinGlass 恭喜🎉
+
+[09-26 17:05] Fables 的 TVL 超过 5000 万美金了，从我第一次发涨了 12 倍
+
+还有最后一周时间就要 TGE 了，做 LP 就可以拿积分和空投
+
+ethereum:native 最近在 2700 上下波动，还挺适合做池子的。截图的池子放了 2 天，价值涨了 100u，还拿了 75u 手续费
+
+想最后补下票的朋友可以用我的邀请码
+
+https://t.co/2xTjGTakie
+</code></pre>
+<h3>@insane_analyst（Irrational Analysis）— 1 条</h3>
+<pre><code>[09-26 14:15] @citrini Would you prefer a single name or a diversified basket of 100 dentists?
+</code></pre>
+<h3>@aleabitoreddit（Serenity）— 1 条</h3>
+<pre><code>[09-25 22:21] People really need to stop thinking about 5% yields over 10 years or 30 years.
+
+Even the inflation of my $SUBWAY sandwich has gone up like 12% a year.
+
+Today it was like $20 after tax, when it used to be like $5… 12 years ago.
+
+The best way to keep up with inflation of the things that matter, like Sandwiches, is equities like $SPY.
+</code></pre>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 1 条</h3>
+<pre><code>[09-25 21:57] @yingbinance 真理
+</code></pre>
+<h3>@mdzzi（茶不思）— 1 条</h3>
+<pre><code>[09-26 09:36] @lurenbian @what3verman 这集神了
+</code></pre>
+<h3>@fi56622380（fin）— 今日无新推文</h3>
+<pre><code>（窗口内无推文）
+</code></pre>
+<h3>@LinQingV（Macro_Lin）— 今日无新推文</h3>
+<pre><code>（窗口内无推文）
+</code></pre>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
