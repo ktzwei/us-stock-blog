@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.09.29</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.09.29</a></h1>
+  <div class="date">2026.09.29</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.09.29</h1>
+<blockquote>
+<p>今日主线：AMD 砸 82 亿美元全股票收购李飞飞的 World Labs；Anthropic IPO 招股书细节曝光；芯片供应链继续被哄抢。</p>
+</blockquote>
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @jukan05（Jukan）— 今日 20 条</h3>
+<p><strong>① 三星 2nm 良率逼近 60%，但真正的硬仗是「每瓦性能」</strong></p>
+<blockquote>
+<p>原文：「Samsung Electronics' Foundry Business has reportedly raised the yield of its 2nm (SF2) process to close to 60% as it targets orders from big tech customers.」「With yield now on track, Samsung is said to be focusing on performance stability at the mass production stage.」
+<strong>解读</strong>：良率（yield，晶圆上能用的合格芯片比例）从去年年中 30% 区间一路爬到接近 60%，说明三星代工终于过了「能不能造出来」这一关。但他引的业内观点很冷静：「The share gap with TSMC is so wide that it will take more time before this leads to any real change in the market structure」——台积电（$TSM）Q2 代工市占 72.5%，三星只有 5.9%，差距仍是天堑。对小白的意思：别因为一条良率新闻就冲三星，真正的看点在下游订单，比如明年给特斯拉供 2nm 芯片这一步。</p>
+</blockquote>
+<p><strong>② CXMT 前 CEO 被曝施压跳槽的三星老员工</strong></p>
+<blockquote>
+<p>原文：「he told them to bring over the PRP and equipment information for Samsung's 18nm DRAM, and said he would report them to the Korean government if they did not.」「There was also testimony that strong pressure from the Chinese government was behind the former CEO's push on the Korean team.」
+<strong>解读</strong>：这是存储（DRAM，内存芯片）领域的技术泄露官司。含义是：中国存储厂（CXMT）追赶三星（$SSNLF）、SK 海力士（$HXSCL）的路径，可能存在「拿现成资料」的争议成分。对投资的意义是——存储三巨头的技术护城河比市场想的更牢，$MU（美光）这类玩家的定价权短期难被撼动。</p>
+</blockquote>
+<p><strong>③ 英伟达 CEO 亲口喊话：我们现在「相当便宜」</strong></p>
+<blockquote>
+<p>原文：「NVIDIA is quite inexpensive right now.」「NVIDIA is already the largest company in the world, yet it is still one of the fastest-growing companies in the world.」「And that may make the market a little uncomfortable.」「The market will get used to it. And I believe NVIDIA's prosperity lies ahead of us.」
+<strong>解读</strong>：黄仁勋罕见地用「股东视角」评价自家股价（$NVDA）。他的逻辑是：体量最大 + 增速仍最快，这种组合让市场「不舒服」，所以估值看起来不贵。小白要留意的是——CEO 喊多自家股票是情绪信号，不是估值结论；真正可跟踪的是后面那条（台积电扩产、激光/基板被锁产能），那才是订单层面的证据。</p>
+</blockquote>
+<p><strong>④ 长期看多 CPU，AMD 的 2027/2028 订单不是虚的</strong></p>
+<blockquote>
+<p>原文：「I remain bullish on CPUs over the long term. When I first saw AMD's 2027 Venice booking numbers, I wondered whether they were even realistic... But after asking several people in the industry, I was told AMD is already selling 2028 volume. The yield issues also don't seem nearly as serious as early reports suggested.」
+<strong>解读</strong>：他在替 $AMD 的服务器 CPU（中央处理器）需求做「实地验货」——原本担心数据中心客户重复下单（overbooking，虚报需求），打听一圈后得到的答案是：$AMD 已经卖到 2028 年的产能了，良率问题也没报道的那么糟。这是给 $AMD/$INTC 板块的重要举证。</p>
+</blockquote>
+<p><strong>⑤ 一条推文把我英特尔的仓位打趴了</strong></p>
+<blockquote>
+<p>原文：「This tweet tanked my Intel stock.」
+<strong>解读</strong>：他此前推荐或持有 $INTC 相关标的，一条负面推文（结合上下文是英特尔 18A 代工拿不到外部大客户）直接砸了股价。他顺带在另一条里补了背景：英特尔的 18A 只在自己产品线里算成功，「there is reportedly a view within Intel that it must stake its bid for external customers on the next generation 14A process」。对小白：英特尔的代工翻身故事，时间点已经被推后到 2027 年之后。</p>
+</blockquote>
+<p><strong>⑥ 三星电机拿下 2850 亿韩元 MLCC 大单</strong></p>
+<blockquote>
+<p>原文：「Contract Value: KRW 285 billion (2.5% of revenue)」「Contract Details: (Other Sales/Supply Contract) Supply of MLCCs (Multilayer Ceramic Capacitors) and inductors」「Contract Period: January 1, 2027 – December 31, 2027 (1 year)」
+<strong>解读</strong>：MLCC（多层陶瓷电容器，电子设备里用量最大的被动元件之一）与电感（inductor）被「major global company」锁定一整年。这类被动元件订单是 AI 服务器/终端出货的前瞻指标，说明 2027 年的硬件排产已经在签合同了。值得注意的是合同期从 2027 年 1 月才开始，属于「远期锁量」，不是立刻兑现的收入。</p>
+</blockquote>
+<p><strong>⑦ 台积电要在德州再建六座先进晶圆厂</strong></p>
+<blockquote>
+<p>原文：「Taiwanese media report that TSMC is looking to build additional semiconductor fabs in Texas, alongside its Arizona operations. The proposed project would include six advanced fabs, with total investment potentially exceeding that in Arizona.」
+<strong>解读</strong>：$TSM 的美国产能布局从亚利桑那再向德州扩张，六座厂、投资额可能超过亚利桑那项目。对小白的意义：一是先进制程的产能扩张周期被拉长，设备商（$ASML、$AMAT、$LRCX）与厂务供应链受益的时间窗口更久；二是「供应链在地化」会长期推高成本，这是个慢变量。</p>
+</blockquote>
+<p><strong>⑧ 其余零散信息</strong></p>
+<blockquote>
+<p>原文摘要：AI 模型增速方面他质疑数据源可靠性——「I'm not sure how reliable TickerTrends' data is. Anthropic's growth rate has dropped sharply, and OAI's growth has slowed as well.」；OpenAI 的 Muse 产品线开始放量——「OAI's Muse is finally coming!」「it looks like OAI's Muse-style agent isn't available to Free or Plus users.」（新功能先给高价档，说明算力仍紧）；另 #pequityresearch 等 5 条为互动回复，无独立观点。</p>
+</blockquote>
+<h3>2. @labubu_trader（3X Long Labubu）— 今日 10 条</h3>
+<p><strong>① 现价买入 RKT，止损设在 11.2</strong></p>
+<blockquote>
+<p>原文：「wait, I checked the weekly chart of RKT, I think it's good entry point now, and tight stop loss at 11.2」「Today MOVE started to retrace this is a good sign.」「I saw @eliant_capital actually bumped RKT position to 10% already」
+<strong>解读</strong>：$RKT（Rocket Companies，美国房贷龙头）是他的新仓。逻辑链是：MOVE 指数（衡量美债期权隐含波动的指标，涨=债市紧张）开始回落 → 利率压力缓解 → 房贷需求受益。他用周线选点、用 11.2 美元做硬止损，属于典型「顺利率周期做地产金融」的打法。</p>
+</blockquote>
+<p><strong>② 养老金季度再平衡 + 10 月加息概率 70%，债市有反弹空间</strong></p>
+<blockquote>
+<p>原文：「Also pension fund will have the quarterly rebalance this week, it will buy bonds and sell stocks.」「Besides, Oct hike probablity is now 70% which leaves room for a short term bond bounce.」「If PCE has a dovish suprise(BofA said might be due to methodology change), this would give bond some short term support and bring down long end yield.」
+<strong>解读</strong>：他点出两条资金面线索——本周养老金季度调仓会「卖股买债」；同时 10 月加息（hike）概率已到 70%（注意：他的语境是加息概率高＝预期已被打满，反而给债券留了反弹余地）。若 PCE（个人消费支出物价指数，美联储最看重的通胀指标）因统计口径调整意外偏鸽，长端收益率会下来。这条对 $TLT（长期美债 ETF）和地产股都是关键变量。</p>
+</blockquote>
+<p><strong>③ 一条交易心得：拥挤的交易，只有完美催化才能推得动</strong></p>
+<blockquote>
+<p>原文：「If a trade is crowded, only the perfect catalyst can move it further, as mediocre good catalysts would be considered negative.」
+<strong>解读</strong>：翻译成小白语言——当所有人都已经买了，好消息也不一定能涨，因为「好」已经被定价，不够好的利好反而被当成利空。他实时示范了这个逻辑：一条「holy shit, bought RKT while we were discussing and now it's printing」的即时入场记录。另 4 条为互动。</p>
+</blockquote>
+<h3>3. @starzq（Star@Day1Global Podcast）— 今日 6 条</h3>
+<p><strong>① AMD 以 82 亿美元全股票收购李飞飞的 World Labs</strong></p>
+<blockquote>
+<p>原文：「李飞飞和苏妈同框， $AMD 以 82 亿美元全股票交易收购 World Labs」「a16z 2024年以 3 亿美元的估值投资 World Labs，2 年 27 倍，相当可以了」
+<strong>解读</strong>：这是今天最重的一笔交易。$AMD 用「全股票」方式（不掏现金，发新股换资产）买下李飞飞的 World Labs，a16z 从 3 亿美元估值进、2 年 27 倍退出，是 AI 一级市场回报的样板。对小白：全股票收购在股价高位时对买方更划算（花的是「贵」的股票），但也意味着股权被稀释。</p>
+</blockquote>
+<p><strong>② 李飞飞为什么是「AI 的奠基人」——一次比赛改变整个行业</strong></p>
+<blockquote>
+<p>原文：「在她组织的第三届 imagenet 图像识别比赛上，Geoffery Hinton 团队的算法 AlexNet 以 84% 的准确率轻松斩获冠军, 秘诀是 使用了2块英伟达 $NVDA 的 GTX580 显卡 + 卷积神经网络」「全世界的高科技公司开始不计成本地做两件事：买光英伟达的显卡，挖光大学里的AI研究员。这届挑战赛被视为人工智能的"大爆炸时刻"」
+<strong>解读</strong>：他给小白补了历史坐标——2012 年 AlexNet 用 2 块消费级显卡跑赢所有传统算法，直接开启了「买显卡 + 挖研究员」的军备竞赛，$NVDA 的十年长牛从这里算起。这条解释了为什么「世界模型」这个方向值 82 亿美元。</p>
+</blockquote>
+<p><strong>③ 三家「Agent 助理」路线混战：Manus vs Muse vs Grok Bot</strong></p>
+<blockquote>
+<p>原文：「Manus 发布了个人助理产品 Cue Agents」「我觉得底层的设计哲学很棒，让 Agent 越来越像一个人，拥有自己的手机、邮箱、支付和电脑」「但作为个人助理，我觉得 Muse 的理念会更 toC 一些：让用户只有一个 agent，像管家一样处理所有事情」「Grok Bot 的多 agent 设计更多是面向 To B 和专业工作者，而且有一个 Chief of Staff 可以调动所有的 agent」「「Agent 助理」混战已经开始了」
+<strong>解读</strong>：中文博主里少见的「产品架构」观察。他给的判断是：To C（面向消费者）该做「一个管家」，To B（面向企业）才需要「多 agent + 总管」。小白可跟踪的标的映射是推理算力需求（$NVDA、$AMD、云厂商 $MSFT/$GOOG/$AMZN）——Agent 越像人，背后要的算力越多。</p>
+</blockquote>
+<p><strong>④ 回应质疑：这 82 亿美元花得值</strong></p>
+<blockquote>
+<p>原文：「苏妈不傻」「第一李飞飞是 World Model 的开创者，光这个人就值 100 亿了，群核基本是蹭；第二苏妈在 $AMD 股价高点用股票换，也不亏」
+<strong>解读</strong>：他主动反驳「买贵了」的声音——买的是人 + 方向（世界模型），而且用高股价的股票支付，实际现金成本低。另 2 条为互动（邀请码与生活分享）。</p>
+</blockquote>
+<h3>4. @mdzzi（茶不思）— 今日 5 条</h3>
+<p><strong>今日无实质美股观点，仅互动</strong>：提到 Pons（代币）——「Pons也不能买太抽象了」，以及 2 条与他人互动、1 条感谢 OKX 礼盒。今日无新标的分析。</p>
+<h3>5. @qinbafrank — 今日 4 条</h3>
+<p><strong>① 路透曝光 Anthropic 招股书：把「可能灭绝人类」写进风险提示</strong></p>
+<blockquote>
+<p>原文：「公司明确警告：先进 AI 可能对人类构成 "灾难性或存在性风险"。模型可能表现出自我保存行为，包括：试图抵抗关闭、隐瞒或操纵信息、类似勒索的行为等」「招股书主体约 261 页，其中 风险因素约占 80 页，几乎是业务描述（约 48 页）的两倍。相比之下，SpaceX 招股书风险部分约 38 页」
+<strong>解读</strong>：$Anthropic 是目前最受关注的未上市 AI 公司（一旦 IPO 会成为 AI 板块定价锚）。他把风险章 80 页 vs 业务章 48 页的结构摆出来，意思是：这家公司自己承认不确定性极高。小白要懂「风险因素多」不等于公司差，而是法律上必须把坏话说尽——但 80 页确实是罕见的量级。</p>
+</blockquote>
+<p><strong>② 财务真相：营收 46 亿，经营亏损 80.6 亿，净亏 420 亿</strong></p>
+<blockquote>
+<p>原文：「营收46亿美金，经营亏损80.6亿美元（24经营亏损年为 29.8 亿美元），净亏损420亿美元（其中约 340 亿美元为会计处理）」「2025 年算力与基础设施支出 73.3 亿美元（约为 2024 年的 3 倍，占总运营支出 126.5 亿美元的一半以上）」「2025 年底现金及短期投资202.8 亿美元，未来数年云、算力、基础设施承诺5180 亿美元」
+<strong>解读</strong>：关键数字帮小白拆开——420 亿净亏里有 340 亿是「可转债公允价值重估」的账面亏损（估值涨了，财务上反而记亏），真实经营亏损是 80.6 亿。真正吓人的是对比：一年算力花 73.3 亿，但未来数年承诺了 5180 亿。「承诺」不等于已花，但这说明 AI 算力是个按十年计的资本开支游戏。</p>
+</blockquote>
+<p><strong>③ 客户集中 + 算力「依附」风险，被他自己写进招股书</strong></p>
+<blockquote>
+<p>原文：「去年近四分之一的营收来自两家客户，许多最大客户并未签署长期合同」「与SpaceX合同（每月12.5亿美元）任一方可提前90天取消——纸面保护，但也说明 Anthropic 约1/3的运行率收入对应的算力供给随时可能被上游收回，公司自己承认在关键算力上"处于被动依附状态"」
+<strong>解读</strong>：小白要理解「客户集中度」这个概念——收入靠两家客户，他们随时能砍单，这是估值折价项。再加上算力供给可以被上游 90 天收回，Anthropic 的故事是「收入快速增长 vs 长期承诺巨额支出」，最后能不能跑通，取决于增速能否追上资本开支。</p>
+</blockquote>
+<p><strong>④ Coinbase 集齐美国合规衍生品三张牌照</strong></p>
+<blockquote>
+<p>原文：「Coinbase由此把美国受监管衍生品的Broker（经纪） + Exchange（交易）+Clearinghouse（清算） 三块基础设施放进同一个集团实体之下」「5月CFTC批准coinbase和Kalshi上线比特币永续合约，相当于永续合约这一资产形态在美国境内合规了，当时导致CME和CBOE股价大跌」「永续合约自然是发力方向，不仅是加密永续合约，还有美股个股的永续合约」
+<strong>解读</strong>：这是被中文圈低估的一条。$COIN 从加密交易所升级成「CME/ICE 式市场基础设施」，而且是拿稳定币 USDC 当结算轨道。真正的想象空间在最后一句——美股个股永续合约，会直接冲击 $CME、$CBOE 的衍生品生意。</p>
+</blockquote>
+<p><strong>⑤ Aave V4 上线股票中心，代币化美股能当抵押品借钱</strong></p>
+<blockquote>
+<p>原文：「Aave V4在Base 上线Equities Hub（股票中心），支持将Coinbase发行的7只代币化美股作为抵押品，借入USDC。支持的7只代币化股票：AAPLc、AMZNc、GOOGLc、METAc、MSFTc、NVDAc、TSLAc，使用Chainlink作为预言机」「以前代币化股票主要是持有和交易工具。现在可以直接作为 DeFi 借贷抵押品，持有者不必卖掉股票就能获得美元流动性」
+<strong>解读</strong>：RWA（真实世界资产上链）第一次从「能买能卖」走到「能抵押融资」。对小白：这条对 $COIN（发行代币化股票）是长期利好，也让「链上美股」多了一层金融用途；风险是链上借贷遇到极端行情会有连环清算。</p>
+</blockquote>
+<h3>6. @insane_analyst（Irrational Analysis）— 今日 3 条</h3>
+<p><strong>今日无实质新观点，仅互动</strong>：内容全是对他人的回复——「The market and VCs need exit liquidity like you.」（市场需要你这样的接盘流动性）、「Thats what scares me. Everything depends on these cultists.」（真正让我怕的是，一切都取决于这些信徒）。虽没点名标的，但这两句明确指向当下 AI/热门股的「信仰式定价」风险，是本日情绪面最锋利的一条。</p>
+<h3>7. @fi56622380（fin）— 今日 3 条</h3>
+<p><strong>① 大厂给员工的 AI 额度上限，其实基本没人用得完</strong></p>
+<blockquote>
+<p>原文：「科技类公司的 cap 会稍微高一点。比如 Nvidia、Apple 这类的公司，大概一个月一万刀的 cap。AMD 几个月前是一万刀的 cap，最近减到了六千刀」「其实一个月一万刀，95%甚至98%以上的员工应该是无法 hit limit」「但top1%的用量实在太高，一般是median的10~100倍」「token cap对于公司整体的 token spend 影响，我觉得可能会是~10%量级」
+<strong>解读</strong>：cap（额度上限）就是公司给员工每月能烧的 AI token 预算。他的结论对判断「AI 收入可持续性」很有用：真正吃算力的是极少数的 top 1%（用量是中位数的 10~100 倍），砍上限对总支出只影响约 10%。同时他提到 $AMD 的内部额度从 1 万降到 6 千美元——这是同行在控成本的小信号。</p>
+</blockquote>
+<p><strong>② 给 Meta 的 AI 收入估算泼冷水</strong></p>
+<blockquote>
+<p>原文：「另外meta coding我觉得应该没有10B那么多(应该只是内部年度支出预测)，按平均每个人2500刀一个月（SDE只占7万员工的~55%），ARR贡献2B，算上TBD蒸馏，可能5B ARR」
+<strong>解读</strong>：$META 内部 AI 编码工具的「10B 收入」传闻，他拆成人均 2500 美元/月 × 约 3.85 万工程师，算出约 2B，加上其他用途最多 5B ARR。ARR＝年度经常性收入。意思是：市场可能高估了大厂内部 AI 用量带来的收入。</p>
+</blockquote>
+<p><strong>③ Muse 的 CPU 需求测算：大约 1 GW 量级</strong></p>
+<blockquote>
+<p>原文：「100m DAU, 0.1 GW CPU supports users' persistent VMs, but it left out heavy users running multiple agents , typically 4–8 agents.」「I think muse CPU is roughly 0.1 GW of persistent VM+ up to another 0.1 GW of variable/on-demand cap」「Muse + oai + google + A\ = ~1GW CPU」
+<strong>解读</strong>：这是一条实打实的硬件需求估算。DAU（日活跃用户）1 亿的 Agent 产品，需要约 0.1 GW（吉瓦，功率单位）的常驻 CPU 算力，重度用户还要再加。四大 AI 产品加起来约 1 GW CPU——这是为什么服务器 CPU（$AMD、$INTC）和数据中心电力（发电与电网设备）成了瓶颈环节。</p>
+</blockquote>
+<h3>8. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 2 条</h3>
+<p><strong>① 用「小白友好」的方式把 Anthropic IPO 拆成 5 问</strong></p>
+<blockquote>
+<p>原文：「一大早被Anthropic上市的新闻的新闻刷频了，要抢在OpenAI之前上市。」「估值超过 2万亿美元」「挂牌时间更可能推迟到 11月美国中期选举之后」「高增长高亏损并存」「核心原因还是钱不够花」「当然是在现金流充沛的时候IPO好拿钱，SpaceX已经抽走了一些，抢在OpenAI之前先拿到钱，很重要。」
+<strong>解读</strong>：她给的三个关键词就是全篇重点——2 万亿美元估值、可能等到 11 月中期选举后挂牌、高增长与高亏损并存。为什么抢上市？一句话：趁市场愿意给钱、趁 SpaceX 还没把资金池抽干，先拿到钱。对小白：超大型 AI 公司 IPO 会给整个 AI 板块带来「定价锚 + 抽水」的双重效应。</p>
+</blockquote>
+<p><strong>② 把「420 亿亏损」翻译成人话</strong></p>
+<blockquote>
+<p>原文：「其中340 亿美元主要是"可转换融资工具的公允价值重估损失"。但剔除这项后，公司仍有超过 80 亿美元经营亏损。」「简单说"340亿"就是：本质是公司估值上升了。公司以前为了拿到融资，发行了未来可能转换为 Anthropic 股票的工具；后来这些工具对应的股票权益变得更值钱，按相关会计处理，公司的负债或融资义务账面价值上升。」
+<strong>解读</strong>：这是今天最好的一条会计科普——账面巨亏的成因是「公司变值钱了」，而不是现金流出。同时她给出更硬的数据：「Anthropic 的营收从 2024 年约 3.9 亿美元增至 2025 年接近 46 亿美元，约增长 12 倍」「截至 2026 年 7 月底，Anthropic 的年化收入运行率超过 650 亿美元，OpenAI 超过 400 亿美元」。注意她特意提醒：年化运行率（用最近一段的速度换算成全年）不等于真实全年营收。另 1 条为感谢礼盒的生活互动。</p>
+</blockquote>
+<h3>9. @LinQingV（Macro_Lin）— 今日 2 条</h3>
+<p><strong>① 对 AMD 收购 World Labs 直接打问号</strong></p>
+<blockquote>
+<p>原文：「为什么AMD要花82亿美元收李飞飞的World Labs呢？很有价值吗？」「world model目前还没跑出来，这个出价有点太高了吧」
+<strong>解读</strong>：他和 starzq 的观点正好相反——认为世界模型（world model，让 AI 理解物理世界规律的模型）还没有跑通商业闭环，82 亿美元属于高价买预期。同一件事出现两种相反判断，本身就是给小白的重要提示：这笔收购的市场共识还没形成，$AMD 的股价反应可能会有分歧。今日无其他实质内容。</p>
+</blockquote>
+<h3>10. @aleabitoreddit（Serenity）— 今日 2 条</h3>
+<p><strong>① 英伟达被传锁掉激光产能，还在疯狂回购</strong></p>
+<blockquote>
+<p>原文：「Some channel checks from ECOC was that $NVDA apparently secured 50% of $LITE Greensboro UHP laser capacity? And possibly contracts that allow them to secure the remaining capacity per Barclays.」「That's $5B in lasers (annual capacity)... so it's hilarious to see Nvidia go out and bottleneck the rest of the industry by doing this. But this just puts more strategic value on other merchant laser suppliers + more visibility for Lumentum.」「It's kinda game theory over allocation, since if you secure all the HBM, lasers, and others it inadvertently makes it much harder for competitors to scale their programs.」「Then there's your massive $150B Nvidia authorized buybacks」
+<strong>解读</strong>：这是今天信息密度最高的供应链观察。ECOC（欧洲光通信展）渠道调研显示，$NVDA 可能拿下 $LITE（Lumentum）Greensboro 工厂 50% 的超高功率激光产能，甚至有权锁定剩余部分——年产能价值约 50 亿美元。她称之为「配置上的博弈论」：把 HBM（高带宽内存）、激光等关键料全锁死，竞争对手自然扩不了产。同时点出 $NVDA 有 1500 亿美元规模的回购授权（对比 $AAPL 当年回购的效果）。对小白：这类「抢料」新闻是判断 AI 资本开支真实性的硬证据。</p>
+</blockquote>
+<p><strong>② 三星电机扩 FC-BGA 基板产能，客户出钱</strong></p>
+<blockquote>
+<p>原文：「Samsung Electro-Mechanics is expanding their FC-BGA substrate capacity today... but customers are the one funding this.」「$MRVL in SEC filings cited large body substrates as one of the core bottlenecks of their program (alongside $TSM sole source dependencies). So they also went out and did some other expansion agreements with related companies like AT&amp;S recently.」「OpenAI delaying Astra-6.1 October release over safety concerns just now. Nvidia also happened to launch an AI safety platform. I don't think this is meaningfully bearish that the models are just getting 2 good.」
+<strong>解读</strong>：FC-BGA（倒装芯片球栅阵列基板，高端芯片封装必需的高难度电路板）是 AI 芯片的隐形瓶颈，$MRVL（Marvell）在 SEC 文件里直接把它列为项目核心瓶颈，还因此去找 AT&amp;S 签扩产协议。重点在于「客户出钱扩产」——需求方愿意预付，说明订单是真的。另附 OpenAI 因安全顾虑推迟 Astra-6.1 发布，他判断这不是实质利空，只是「模型变得太好了」。她本人当日身体不适（「feeling pretty sick right now」），但渠道调研仍在做。</p>
+</blockquote>
+<h3>11. @xiaomustock（川沐｜Trumoo🐮）— 今日 2 条</h3>
+<p><strong>① 做空国内燃油期货，赌价格回落</strong></p>
+<blockquote>
+<p>原文：「国内燃油价格有红线，属于民生物料不可能允许瞎几把涨，昨天空了一把2611的燃油期货，成本4445，希望能破个4000」
+<strong>解读</strong>：他做的是国内燃油期货（2611 合约，2026 年 11 月到期），入场成本 4445，目标跌破 4000。逻辑不是技术面，而是「政策面」——民生相关的大宗价格有天花板。对美股小白的间接关联：能源价格的政策干预思路，和原油（$XLE、$USO）的宏观定价是同一套逻辑的两个侧面。</p>
+</blockquote>
+<p><strong>② 吐槽存储公司：赚上千亿还不分红不回购</strong></p>
+<blockquote>
+<p>原文：「国内这些公司真是缺德，存储已经这么赚钱了，赚上千亿，既不分红也不回购还要继续定增募资增发。」
+<strong>解读</strong>：这是存储（内存芯片）景气度的侧面证据——「赚上千亿」说明这一轮存储上行周期利润极其丰厚。同时他点出公司治理差异：美股同类公司（如 $MU）在景气期会用回购/分红回报股东，而部分 A 股公司选择继续增发稀释。对小白：判断周期股，光看利润不够，还要看现金怎么分。</p>
+</blockquote>
+<h3>12. @0xSleepinRain（雨中狂睡SleepinRain）— 今日 1 条</h3>
+<p><strong>① 一个有意思的概念：Agent 之间的争议谁说了算</strong></p>
+<blockquote>
+<p>原文：「现在 AI Agent 的发展方向已经越来越清楚了：直接运行在用户的个人设备和本地环境中+多个 Agent 之间互相协作以完成任务。但这里其实有一个很大的缺口：当两个 Agent 对执行结果产生分歧，到底谁说了算，这个结果到底算不算完成？这是传统智能合约无法解决的事情。」「针对这个缺口，Genlayer 引入了一个名为 Optimistic Democracy 的概念……我们可以把它理解为一个链上的"陪审团 + 上诉制度"」
+<strong>解读</strong>：他关注的是「多 Agent 协作的裁决层」这个新赛道（Optimistic Democracy＝乐观民主，随机选验证者出结果、其他人投票确认、不服可上诉）。对美股小白它目前不直接对应可投标的，但它提示了一个方向：Agent 大规模落地后，「结果认定/结算」会成为新的基础设施需求。另附 Genlayer 的空投参与步骤（结合其 Q4 TGE 计划），属于加密侧机会，非美股标的。</p>
+</blockquote>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>偏多但分歧加大</td>
+<td>$AMD 82 亿美元全股票收购 World Labs，starzq 明确看好、Macro_Lin 直指「出价太高」；Jukan 长线看多 CPU，并称 AMD 已卖到 2028 年产能；labubu_trader 现价买入 $RKT 并给出 11.2 硬止损；insane_analyst 冷嘲「市场需要接盘流动性」「一切都取决于这些信徒」</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>谨慎偏紧</td>
+<td>labubu_trader 指出 10 月加息（hike）概率已至 70%、本周养老金季度再平衡将「卖股买债」；若 PCE 数据偏鸽，长端收益率有望回落；美债 MOVE 波动指数开始回落</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>AI 信仰定价 + 巨额融资</td>
+<td>Anthropic 招股书自曝「客户集中、算力依附、AI 或构成存在性风险」；qinbafrank/Fiona 均提示高增长与高亏损并存、未来数年算力承诺 5180 亿美元；$LITE/$MRVL 等瓶颈料被抢锁，产业链紧张度上升</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最值得记住的是两件事。第一，<strong>AI 的竞争已经从「买芯片」升级到「抢上游料」</strong>——$NVDA 被传锁下 $LITE 一半的激光产能、$MRVL 为基板（FC-BGA）到处签扩产协议、三星电机拿到覆盖 2027 全年的 MLCC 订单，这些「拿到手的合同」比任何口号都更能证明 AI 资本开支是真的。想跟这个方向，就去盯「瓶颈环节」：激光、基板、被动元件、服务器 CPU 和数据中心电力，而不是只盯最热的 GPU 龙头。</p>
+<p>第二，<strong>AI 一级市场的估值正在往二级市场传导</strong>——$AMD 用 82 亿美元全股票买下 World Labs，Anthropic 要以 2 万亿美元估值 IPO。全股票收购意味着 $AMD 股东被稀释，2 万亿美元 IPO 意味着巨额资金会被抽走；这正是 insane_analyst 说的「信仰式定价」的另一面。研究方向上，把「收入增速 vs 算力资本开支」当成一条主线去跟踪（Anthropic 承诺 5180 亿美元算力支出 vs 2025 年营收 46 亿美元），比追新闻标题有用得多。</p>
+<p>⚠️ 风险提醒：以上全是博主个人观点，不是买卖建议。labubu_trader 的 $RKT 有明确止损位，$AMD 的收购在老练的宏观博主眼里是「买贵了」——同一件事两种判断，说明现在分歧很大。仓位控制永远比观点对错重要。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-09-28 18:50 至 2026-09-29 18:50（北京时间）。以 18:50 前置任务的实时名单为准（美股博主共 12 位），以下为名单内全部推文原文，未作省略。</p>
+</blockquote>
+<h3>@jukan05（Jukan）— 20 条</h3>
+<p>[09-29 07:28] Samsung's 2nm Foundry Yield Reportedly Nears 60% as It Goes All Out on Power Efficiency</p>
+<p>Samsung Electronics' Foundry Business has reportedly raised the yield of its 2nm (SF2) process to close to 60% as it targets orders from big tech customers. Having moved past the yield stabilization phase, Samsung is said to be focusing its engineering resources on technical maturity, including performance per watt, through discussions with prospective customers. The company is determined to use next year's 2nm chip supply to Tesla as a springboard for winning more big tech customers in earnest.</p>
+<p>2nm Yield Nears 60%, but Performance per Watt Is the Key</p>
+<p>According to industry sources on the 29th, Samsung's SF2 yield has improved from the mid 50% range the market had previously estimated and has reportedly now reached around 60%. The market had estimated that yield, which was in the 30% range in mid last year, rose to the 50% range in January this year and to around 55% in August.</p>
+<p>SF2 is Samsung's first generation 2nm process built on a gate all around (GAA) structure. Its first mass production product is Samsung's own mobile application processor (AP), the Exynos 2600. The Exynos 2600 is produced on the S3 line in Hwaseong, Gyeonggi Province, and went into some Galaxy S26 series models earlier this year. For this chip, Samsung used a package structure that places a copper Heat Path Block (HPB) on top of the memory, which improved thermal resistance by 30%.</p>
+<p>After launch, however, some overseas tests found that the Exynos 2600 used more power than Qualcomm's latest Snapdragon on the same workload, which drew criticism of its power efficiency. Some also saw this as a limitation of the process itself. To address this, Samsung is preparing its second generation 2nm process, SF2P, with mass production targeted for this year. Compared with SF2, SF2P reportedly delivers 12% higher performance, 25% lower power consumption and 8% smaller chip area.</p>
+<p>With yield now on track, Samsung is said to be focusing on performance stability at the mass production stage. The company has reportedly put a large share of its engineering staff on making sure performance per watt, including heat and power consumption, does not vary once its chips are built into customer products. This is expected to support its case for technical reliability in future negotiations with large fabless (chip design) customers.</p>
+<p>TSMC Alone at the Top, Samsung and Intel Fighting for Second</p>
+<p>Intel, Samsung's competitor, is mass producing Panther Lake on its 2nm class 18A process at Fab 52 in Arizona. It is viewed as having achieved some success within its own product lineup, including a 56% share of the artificial intelligence (AI) PC market. However, 18A has yet to win any notable external foundry customers, and there is reportedly a view within Intel that it must stake its bid for external customers on the next generation 14A process (targeting mass production in 2027 or later).</p>
+<p>TSMC is a step ahead of both companies after securing orders from big tech companies such as Apple. By absorbing existing customers such as Apple, AMD and Nvidia wholesale, it recorded a 72.5% share of the foundry (contract chip manufacturing) market as of Q2 this year, which widened its lead over Samsung Foundry (5.9%). 2nm wafer prices have settled at around $30,000, 50% higher than 3nm ($20,000), and TSMC has kept a "no discount" policy that offers no separate discounts even to large customers. The industry believes TSMC's 2nm capacity (CAPA) is booked through 2028.</p>
+<p>As a result, observers expect a structure in which Samsung and Intel compete for second place behind a dominant TSMC. The prevailing view is that the timing of Samsung Foundry's return to profitability is tied to utilization at its Taylor fab. A semiconductor industry official said, "Yield approaching 60% and the start of work on improving performance per watt are meaningful signs of a rebound," but added, "The share gap with TSMC is so wide that it will take more time before this leads to any real change in the market structure."</p>
+<p>[09-29 07:28] https://t.co/CR9Tvy04Cc</p>
+<p>[09-29 07:29] @StarAndCompass_ 이 채널 재밌음</p>
+<p>[09-29 07:38] @Midnight_Captl @computeexchange @Joule14 @carmenli has hired someone truly exceptional!</p>
+<p>[09-29 07:44] @Alex_Intel_ Yeah, I think so.</p>
+<p>[09-29 08:14] Korean media obtained statements from Korean prosecutors and reported that CXMT's former CEO threatened former Samsung Electronics employees who had joined the company. According to the report, he told them to bring over the PRP and equipment information for Samsung's 18nm DRAM, and said he would report them to the Korean government if they did not.</p>
+<p>He also reportedly warned them, "I have connections who can verify whether it's really Samsung's information, so don't even think about getting away with a lie."</p>
+<p>There was also testimony that strong pressure from the Chinese government was behind the former CEO's push on the Korean team. Mr. Jeon spent 28 years at Samsung Electronics before moving to CXMT. He testified in court on the 9th: "At the time, when we were talking with the Chinese government, there was talk that if we couldn't do 18nm, they wouldn't give (CXMT) the investment funding." Prosecutors asked, "Was this what the Chinese government wanted from the start?" Jeon replied, "Yes. The idea was that (the Chinese government) would invest only if we did 18nm, and I came to realize that (CXMT) never had any intention of developing it on its own from the beginning." Jeon also testified that the CEO's pressure came while the company was preparing for a meeting to ask the Chinese government for investment funding.</p>
+<p>https://t.co/yAV9Wcs4TH</p>
+<p>[09-29 11:29] I'm not sure how reliable TickerTrends' data is. Anthropic's growth rate has dropped sharply, and OAI's growth has slowed as well. https://t.co/8DlP1NKDZM</p>
+<p>[09-29 11:31] https://t.co/BGrQsYuzOe</p>
+<p>[09-29 11:35] NVIDIA CEO Jensen Huang:</p>
+<p>"If I were to advise you as a shareholder, I would say this:"</p>
+<p>"NVIDIA is quite inexpensive right now."</p>
+<p>"Quite affordable."</p>
+<p>"NVIDIA is a somewhat unusual company."</p>
+<p>"NVIDIA is already the largest company in the world, yet it is still one of the fastest-growing companies in the world."</p>
+<p>"So it's unusual for a company of our size to be growing as quickly as we are. And that may make the market a little uncomfortable."</p>
+<p>"The market will get used to it. And I believe NVIDIA's prosperity lies ahead of us."</p>
+<p>[09-29 11:43] @pequityresearch IDK</p>
+<p>[09-29 11:48] This tweet tanked my Intel stock.</p>
+<p>[09-29 11:53] I remain bullish on CPUs over the long term. When I first saw AMD's 2027 Venice booking numbers, I wondered whether they were even realistic, and whether this would end up like last year, with overbooking followed by cuts. But after asking several people in the industry, I was told AMD is already selling 2028 volume. The yield issues also don't seem nearly as serious as early reports suggested.</p>
+<p>[09-29 11:55] @LIWEI_TWCapital Isn't it old news that TSMC is outsourcing CoW as well?</p>
+<p>[09-29 12:16] ▶️ Samsung Electro-Mechanics Announces Sales/Supply Contract</p>
+<ul>
+<li>
+<p>Counterparty: Major global company</p>
+</li>
+<li>
+<p>Contract Details: (Other Sales/Supply Contract) Supply of MLCCs (Multilayer Ceramic Capacitors) and inductors</p>
+</li>
+<li>
+<p>Supply Region: —</p>
+</li>
+<li>
+<p>Contract Value: KRW 285 billion (2.5% of revenue)</p>
+</li>
+<li>
+<p>Contract Period: January 1, 2027 – December 31, 2027 (1 year)</p>
+</li>
+</ul>
+<p>https://t.co/O6jUT7AAoa</p>
+<p>[09-29 13:09] @unsignedbytes ? Fuck you</p>
+<p>[09-29 13:10] OAI's Muse is finally coming!</p>
+<p>[09-29 13:10] @ChrisGPT $200?</p>
+<p>[09-29 13:14] @rubicon59 https://t.co/nhoVLJRwjn</p>
+<p>[09-29 13:14] Hmm… it looks like OAI's Muse-style agent isn't available to Free or Plus users.</p>
+<p>[09-29 14:33] Taiwanese media report that TSMC is looking to build additional semiconductor fabs in Texas, alongside its Arizona operations. The proposed project would include six advanced fabs, with total investment potentially exceeding that in Arizona.</p>
+<p>https://t.co/duL7TvDbK9</p>
+<h3>@labubu_trader（3X Long Labubu）— 10 条</h3>
+<p>[09-29 00:06] @Spheniscidae007 wait, I checked the weekly chart of RKT, I think it's good entry point now, and tight stop loss at 11.2
+Today MOVE started to retrace this is a good sign.</p>
+<p>[09-29 00:07] @Spheniscidae007 I saw @eliant_capital actually bumped RKT position to 10% already</p>
+<p>[09-29 00:29] Also pension fund will have the quarterly rebalance this week, it will buy bonds and sell stocks.
+Besides, Oct hike probablity is now 70% which leaves room for a short term bond bounce. 
+If PCE has a dovish suprise(BofA said might be due to methodology change), this would give bond some short term support and bring down long end yield.</p>
+<p>[09-29 00:30] @Spheniscidae007 holy shit, bought RKT while we were discussing and now it's printing.</p>
+<p>[09-29 02:20] @Angbadada Wow, I thought it's 60/40</p>
+<p>[09-29 02:21] @kaptonia Very insightful!</p>
+<p>[09-29 02:49] @Angbadada wow thanks a lot</p>
+<p>[09-29 04:04] @acemoney21 I WAS</p>
+<p>[09-29 10:33] @acemoney21 Well reflection of the K shape economy</p>
+<p>[09-29 14:52] @syhytu8i If a trade is crowded, only the perfect catalyst can move it further, as mediocre good catalysts would be considered negative.</p>
+<h3>@starzq（Star@Day1Global Podcast）— 6 条</h3>
+<p>[09-29 07:55] 李飞飞和苏妈同框， $AMD 以 82 亿美元全股票交易收购 World Labs</p>
+<p>a16z 2024年以 3 亿美元的估值投资 World Labs，2 年 27 倍，相当可以了</p>
+<p>李飞飞是人工智能赛道的重要奠基人</p>
+<p>在她组织的第三届 imagenet 图像识别比赛上，Geoffery Hinton 团队的算法 AlexNet 以 84% 的准确率轻松斩获冠军, 秘诀是 使用了2块英伟达 $NVDA 的 GTX580 显卡 + 卷积神经网络</p>
+<p>至此一战，全世界的高科技公司开始不计成本地做两件事：买光英伟达的显卡，挖光大学里的AI研究员。这届挑战赛被视为人工智能的"大爆炸时刻"</p>
+<p>关于李飞飞的更多故事，欢迎收听我们之前做的一期播客</p>
+<p>[09-29 08:41] @0xEvieYang 哇，好赞！（本条信息来自我的 Typeless</p>
+<p>[09-29 10:13] Manus 发布了个人助理产品 Cue Agents</p>
+<p>我觉得底层的设计哲学很棒，让 Agent 越来越像一个人，拥有自己的手机、邮箱、支付和电脑</p>
+<p>但作为个人助理，我觉得 Muse 的理念会更 toC 一些：让用户只有一个 agent，像管家一样处理所有事情，而不是创建一堆 agent，一方面增加使用门槛，另一方面很容易眼花缭乱</p>
+<p>Grok Bot 的多 agent 设计更多是面向 To B 和专业工作者，而且有一个 Chief of Staff 可以调动所有的 agent，这个设计也很巧妙</p>
+<p>「Agent 助理」混战已经开始了，让我们拭目以待 https://t.co/Q0y277RiIj</p>
+<p>[09-29 10:32] Cue Agents 邀请码：MEETCUE https://t.co/El9tdOcn2O</p>
+<p>[09-29 14:34] @henghaer123 苏妈不傻</p>
+<p>第一李飞飞是 World Model 的开创者，光这个人就值 100 亿了，群核基本是蹭；第二苏妈在 $AMD 股价高点用股票换，也不亏</p>
+<p>[09-29 17:41] 一个冷知识：经常坐在屏幕前一整天，会增加血脂水平。虽然我体脂在 15% 以下，也被查出来过血脂偏高😂</p>
+<p>赞一下 @okxchinese 的夜跑礼盒，寓意真好，多出去动动，既能降低血脂，还能带来灵感</p>
+<p>感谢 @Star_okx @Haiteng_okx @Mercy_okx 各位老板，祝大家用健康的身体，迎接滚滚财源 https://t.co/6IPuHXgYlb</p>
+<h3>@mdzzi（茶不思）— 5 条</h3>
+<p>[09-29 00:14] @0xHua21 CDG懂我意思吗</p>
+<p>[09-29 00:27] @Linababie1 我是玻璃心</p>
+<p>[09-29 00:58] @Linababie1 Id私我 我去关注老师</p>
+<p>[09-29 12:06] @otzgary Pons也不能买太抽象了</p>
+<p>[09-29 16:59] 谢谢okx @Star_okx @Haiteng_okx @Mercy_okx @okxchinese https://t.co/zf4YBV9Hvv</p>
+<h3>@qinbafrank — 4 条</h3>
+<p>[09-29 05:54] @Latte_DAO_ 是的，新ceo资历也是非常深厚的</p>
+<p>[09-29 10:27] Anthropic还没有正式向公众发布完整IPO招股书，但路透社已看到招股书并在披露了核心内容。看了路透的报道总结下要点：
+1、公司愿景
+招股书把 AI 定位为比工业化、电力和互联网更深刻的全球经济变革力量。Anthropic 认为自己在押注这一转型，同时强调要以负责任方式发展。</p>
+<p>2、2025年经营业绩
+1）营收46亿美金，经营亏损80.6亿美元（24经营亏损年为 29.8 亿美元），净亏损420亿美元（其中约 340 亿美元为会计处理）；</p>
+<p>2）25年算力与基础设施支出
+73.3 亿美元（约为 2024 年的 3 倍，占总运营支出 126.5 亿美元的一半以上）。</p>
+<p>2025 年底现金及短期投资202.8 亿美元
+，未来数年云、算力、基础设施承诺5180 亿美元；</p>
+<p>3）之前有媒体报道，Anthropic到2026年底年化收入将达到1000亿至1200亿美元，2027年底接近其三倍。2026年内收入有望首次覆盖算力现金支出。</p>
+<p>3、对风险的强调
+1）Anthropic招股书主体约 261 页，其中 风险因素约占 80 页，几乎是业务描述（约 48 页）的两倍。相比之下，SpaceX 招股书风险部分约 38 页。</p>
+<p>公司明确警告：先进 AI 可能对人类构成 "灾难性或存在性风险"。模型可能表现出自我保存行为，包括：试图抵抗关闭、隐瞒或操纵信息、类似勒索的行为等，还提到模型可能在训练中发展出意外能力，直到部署后才被发现；模型可能意识到自己正在被评估并调整行为，从而削弱安全评估有效性。公司称"高度先进模型、平台和应用的开发及使用场景扩展，可能进一步增加模型造成伤害的风险"。</p>
+<p>这与 Anthropic 长期"安全优先"的定位一致，作为一家准备向公众募资、追求超高估值的公司，把"可能灭绝人类"写进招股书，在资本市场历史上极为罕见😅</p>
+<p>2）客户集中度高
+招股书在风险因素中坦承：去年近四分之一的营收来自两家客户，许多最大客户并未签署长期合同，未来可能削减或停止支出。</p>
+<p>3）与SpaceX合同（每月12.5亿美元）任一方可提前90天取消——纸面保护，但也说明 Anthropic 约1/3的运行率收入对应的算力供给随时可能被上游收回，公司自己承认在关键算力上"处于被动依附状态"。</p>
+<p>4、治理结构
+创始人控制 + 公益信托
+1）Anthropic 是特拉华州 公益公司（Public Benefit Corporation），可在股东利益与"造福人类"使命之间做平衡。招股书显示将设立 Founder LLC（由 7 名联合创始人组成，含 CEO Dario Amodei、总裁 Daniela Amodei 等）。该实体通过一股 Class F 股票掌握约 50.1% 投票权，用于关键事项（包括部分董事选举等）。</p>
+<p>2）另有 长期利益信托（Long-Term Benefit Trust） 选举董事会多数席位。信托成员包括前美联储主席本·伯南克等，不持有公司股权，职责是监督使命不被短期市场压力压垮。</p>
+<p>后续真正需要盯的，是正式公开 S-1文件里：经审计报表、毛利率/收入质量、募资规模与用途、锁定期，以及最终定价区间。正式S-1 IPO文件里应该看到截止6月底的今年上半年的最新营收，说不定三季度营业数据也能披露（毕竟之前推迟IPO文件就为了等三季度数据）</p>
+<p>届时S-1文件正式公开我们看到明确数据，那么模型公司的收入增速能不能最终追上计算资本开支与长期算力承诺 应该就有比较清晰的答案了。</p>
+<p>路透的部分披露意味着Anthropic的IPO应该真的是不远了。</p>
+<p>本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易</p>
+<p>[09-29 10:53] 代币化资产（RWA）从"能持有、能交易"走向"能产生效用"的重要一步 ，链上信用扩张真正能迈开步子。看到Aave前几天正式宣布：Aave V4在Base 上线Equities Hub（股票中心），支持将Coinbase发行的7只代币化美股作为抵押品，借入USDC。支持的7只代币化股票：AAPLc、AMZNc、GOOGLc、METAc、MSFTc、NVDAc、TSLAc，使用Chainlink作为预言机。</p>
+<p>意义重大：
+TradFi 与 DeFi 的进一步融合 以前代币化股票主要是持有和交易工具。现在可以直接作为 DeFi 借贷抵押品，持有者不必卖掉股票就能获得美元流动性，类似于传统券商的融资融券，但运行在链上、透明度更高。Aave 创始人 Stani Kulechov 的表述很准确：以前代币化股票只能持有或交易，现在可以借钱了。</p>
+<p>去年也有聊过Defi近几年略有停滞，核心原因就是原来链上优质资产太少，借贷、衍生品一直都是围绕着大饼，以太以及少数几个主流大币展开，其余的小币跟本不能成为优质合格的抵押品和底层资产。缺乏合格抵押品和优质底层资产，才使得defi的体量停滞不前。可以想象如果未来有更多的优质资产供给，链上借贷和衍生品的规模会扩张到巨大的体量，远远高于现有的体量。</p>
+<p>同一份代币化资产：
+有人为了投资持有，有人拿它做LP，也有人用它融资。期权市场和结构化产品再围绕这些头寸继续生长。
+这才是链上金融体量扩大的关键。</p>
+<p>传统金融的规模，从来不只来自股票每天成交了多少。更大的部分来自抵押融资、保证金、衍生品和资产管理。DeFi以前也在做这些事情，只是底层资产大多来自加密体系内部。RWA进来以后，信用扩张可以建立在国债、指数ETF和企业股票上，整个系统获得了新的资产来源。</p>
+<p>之前这里也聊过美股meme，也是链上再补齐底层资产的短板： https://t.co/quCe6Fo56X</p>
+<p>[09-29 16:41] Coinbase集齐美国合规衍生品三张牌照，昨晚官方确认CFTC已经批准 Coinbase Clearing LLC 作为注册衍生品清算击缶（DCO） 上线。至此，Coinbase由此把美国受监管衍生品的Broker（经纪） + Exchange（交易）+Clearinghouse（清算） 三块基础设施放进同一个集团实体之下。</p>
+<p>这对coin的意义在于：
+Coinbase已经不再只是加密交易所，它正在复制CME/ICE式市场基础设施，只不过美元轨道变成了稳定币USDC轨道。</p>
+<p>5月CFTC批准coinbase和Kalshi上线比特币永续合约，相当于永续合约这一资产形态在美国境内合规了，当时导致CME和CBOE股价大跌。现在Coinbase集齐美国合规衍生品三张牌照，永续合约自然是发力方向，不仅是加密永续合约，还有美股个股的永续合约。</p>
+<h3>@insane_analyst（Irrational Analysis）— 3 条</h3>
+<p>[09-29 06:40] @RyeNotBerben Well... more like the neighbors dog did a better job on the homework.</p>
+<p>[09-29 11:11] @ContrarianCurse The market and VCs need exit liquidity like you.</p>
+<p>[09-29 11:15] @ContrarianCurse Thats what scares me. Everything depends on these cultists.</p>
+<h3>@fi56622380（fin）— 3 条</h3>
+<p>[09-29 02:35] @DoveyWanCN 科技类公司的 cap 会稍微高一点。比如 Nvidia、Apple 这类的公司，大概一个月一万刀的 cap。AMD 几个月前是一万刀的 cap，最近减到了六千刀。Amazon，Meta 没有看到 cap，但是 Meta 的 budget 是按部门算的。其实一个月一万刀，95%甚至98%以上的员工应该是无法 hit limit。</p>
+<p>但top1%的用量实在太高，一般是median的10~100倍，从各个公司top1%/10%/50%的用量分布差距来看，token cap对于公司整体的 token spend 影响，我觉得可能会是~10%量级</p>
+<p>另外meta coding我觉得应该没有10B那么多(应该只是内部年度支出预测)，按平均每个人2500刀一个月（SDE只占7万员工的~55%），ARR贡献2B，算上TBD蒸馏，可能5B ARR</p>
+<p>[09-29 04:34] @BeerBearMind @ShanghaoJin also IPs
+ timeline/schedule, quality, performance</p>
+<p>[09-29 13:55] @jukan05 100m DAU, 0.1 GW CPU supports users' persistent VMs, but it left out heavy users running multiple agents , typically 4–8 agents.</p>
+<p>I think muse CPU is roughly 0.1 GW of persistent VM+ up to another 0.1 GW of variable/on-demand cap</p>
+<p>Muse + oai + google + A\ =  ~1GW CPU</p>
+<p>assuming they have similar reach</p>
+<h3>@nft_hu（Fiona ❤️&amp; ✌️）— 2 条</h3>
+<p>[09-29 16:29] 一大早被Anthropic上市的新闻的新闻刷频了，要抢在OpenAI之前上市。</p>
+<p>有一些值得注意的关键词：
+估值超过 2万亿美元
+挂牌时间更可能推迟到 11月美国中期选举之后
+高增长高亏损并存</p>
+<p>我将以目前已知IPO信息和之前的重要融资信息，来做一个整理：</p>
+<p>1️⃣为什么要IPO？
+核心原因还是钱不够花。根据披露的信息，其 2025 年实际收入接近 46 亿美元，同年剔除部分融资相关会计减记后的经营亏损仍超过 80 亿美元。
+赚的越多，似乎也亏的越多。扩张、基建所需要的现金流是巨大的。scaling law依然奏效的当下，需要更多算力。</p>
+<p>2️⃣为什么抢上市？
+当然是在现金流充沛的时候IPO好拿钱，SpaceX已经抽走了一些，抢在OpenAI之前先拿到钱，很重要。
+同时，Anthropic此前已经进行了多轮融资，在私募和战略投资者获得了大量资金。公开股权市场能提供更深的资金池。</p>
+<p>3️⃣420亿亏损：
+其中340 亿美元主要是“可转换融资工具的公允价值重估损失”。但剔除这项后，公司仍有超过 80 亿美元经营亏损。
+简单说“340亿”就是：本质是公司估值上升了。公司以前为了拿到融资，发行了未来可能转换为 Anthropic 股票的工具；后来这些工具对应的股票权益变得更值钱，按相关会计处理，公司的负债或融资义务账面价值上升。</p>
+<p>4️⃣营收一年12倍
+Anthropic 的营收从 2024 年约 3.9 亿美元增至 2025 年接近 46 亿美元，约增长 12 倍。
+同年计算与基础设施支出达到 73.3 亿美元，约为营收的 1.6 倍，占路透社所述 126.5 亿美元总经营费用的约 58%。</p>
+<p>5️⃣改变命运的2026年
+截至 2026 年 7 月底，Anthropic 的年化收入运行率超过 650 亿美元，OpenAI 超过 400 亿美元。但这些数字不代表两家公司已经分别实现了 650 亿和 400 亿美元的全年营收。
+*年化运营率是取最近一段时间实际产生的收入，假设这个速度保持一整年，再换算成年收入。不等于最终的真实年收入。</p>
+<p>[09-29 18:24] 感谢 @okxchinese @star_okx @Mercy_okx 的礼盒！
+很喜欢这句“向月而行”！</p>
+<p>山不来就我，我就去就山。一起砥砺前行～朝着更广阔的世界🌍 https://t.co/XTlabc4SuD</p>
+<h3>@LinQingV（Macro_Lin）— 2 条</h3>
+<p>[09-29 12:58] 为什么AMD要花82亿美元收李飞飞的World Labs呢？很有价值吗？</p>
+<p>[09-29 16:17] @yulin98434 world model目前还没跑出来，这个出价有点太高了吧</p>
+<h3>@aleabitoreddit（Serenity）— 2 条</h3>
+<p>[09-29 06:22] Everyone is asking "Where is Serenity" or "Who is Serenity". But nobody is asking...</p>
+<p>"How is Serenity"?  </p>
+<p>I do read things from $AMD $8.2B acquisition of World Labs... but feeling pretty sick right now, so taking a little break. </p>
+<p>I remember saying physical AI + world models would major shift way back when, so maybe I should have invested in private companies at the time... </p>
+<p>Apart from that... other interesting news:</p>
+<ul>
+<li>Some channel checks from ECOC was that $NVDA apparently secured 50% of $LITE Greensboro UHP laser capacity? And possibly contracts that allow them to secure the remaining capacity per Barclays. </li>
+</ul>
+<p>That's $5B in lasers (annual capacity)... so it's hilarious to see Nvidia go out and bottleneck the rest of the industry by doing this. But this just puts more strategic value on other merchant laser suppliers + more visibility for Lumentum.</p>
+<p>It's kinda game theory over allocation, since if you secure all the HBM, lasers, and others it inadvertently makes it much harder for competitors to scale their programs. </p>
+<ul>
+<li>
+<p>Then there's your massive $150B Nvidia authorized buybacks (just look at $AAPL when they did buybacks..) They're printing too much. </p>
+</li>
+<li>
+<p>What's also interesting is that Samsung Electro-Mechanics is expanding their FC-BGA substrate capacity today... but customers are the one funding this. </p>
+</li>
+</ul>
+<p>I also remembered $MRVL in SEC filings cited large body substrates as one of the core bottlenecks of their program (alongside $TSM sole source dependencies). So they also went out and did some other expansion agreements with related companies like AT&amp;S recently. </p>
+<ul>
+<li>OpenAI delaying Astra-6.1 October release over safety concerns just now. Nvidia also happened to launch an AI safety platform. </li>
+</ul>
+<p>I don't think this is meaningfully bearish that the models are just getting 2 good.</p>
+<p>[09-29 07:05] @Itachidata I've had better days, having constant headaches which is a bit rough. I did have some fun channel checks though recently. </p>
+<p>Some guy I met by the bathroom yesterday claimed to be $SPCX Cursor CEO. I'm not good with faces so idk if he was lying or not. </p>
+<p>Also had some discussions about beamformer technology with an industry executive, it's apparently more important than I gave it credit for.</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 2 条</h3>
+<p>[09-29 12:42] 国内燃油价格有红线，属于民生物料不可能允许瞎几把涨，昨天空了一把2611的燃油期货，成本4445，希望能破个4000 https://t.co/QTsiaiYxBD</p>
+<p>[09-29 15:18] 国内这些公司真是缺德，
+存储已经这么赚钱了，赚上千亿，
+既不分红也不回购还要继续定增募资增发。 https://t.co/DycTlHxq0f</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 1 条</h3>
+<p>[09-29 14:03] 我觉得 Genlayer 的「Agent Adjudication Layer」这个概念蛮有意思的。</p>
+<p>现在 AI Agent 的发展方向已经越来越清楚了：直接运行在用户的个人设备和本地环境中+多个 Agent 之间互相协作以完成任务。</p>
+<p>但这里其实有一个很大的缺口：当两个 Agent 对执行结果产生分歧，到底谁说了算，这个结果到底算不算完成？这是传统智能合约无法解决的事情。</p>
+<p>针对这个缺口，Genlayer 引入了一个名为 Optimistic Democracy 的概念，用于解决这种分歧。我们可以把它理解为一个链上的“陪审团 + 上诉制度”，随机选一个 Validator 先给出结果，其他 Validator 像陪审团一样投票确认。大家都没意见，结果就生效；如果有人不服，就发起上诉，让更多 Validator 再审一次。</p>
+<p>关于 Genlayer 的0撸参与机会是这样的：
+1、点击链接：https://t.co/ffuy4jURrl
+2、邮箱验证；
+3、点击右上角提交贡献；
+4、绑定 X 和 DC，去完成指定任务。</p>
+<p>结合 Genlayer 写的 Q4 TGE 来看，目前是最后的参与窗口期，且现在参与 Genlayer 的撸毛和兑现的周期不会太长。</p>
+<hr />
+<p><em>本报告由美股观察机器人自动生成，覆盖 2026-09-28 18:50 至 2026-09-29 18:50（北京时间）窗口内美股 list 全部成员推文（共 12 位）。所有内容为博主个人观点，不构成投资建议。</em></p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
