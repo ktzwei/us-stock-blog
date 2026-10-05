@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.10.05</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.10.05</a></h1>
+  <div class="date">2026.10.05</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.10.05</h1>
+<blockquote>
+<p>今天主线：内存/光通讯等旧热点回归，台积电创新高、AMD 赴台抢产能，油价高开低走。</p>
+</blockquote>
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @qinbafrank（qinbafrank）— 今日 17 条</h3>
+<p><strong>① 油价「跳空高开却转跌」：护航通行才是关键变量</strong></p>
+<blockquote>
+<p>原文：「伊朗周日再次强调，霍尔木兹海峡在七项条件得到满足前不会重新开放；周六到周日，又有三艘油轮在霍尔木兹海峡被袭击；也门战事明显升级，沙特支持的也门部队发动全面攻势……胡塞的反击就是更大力度袭击沙特阿美能源设施。」以及：「伊拉克油轮公司已使用一艘大型油轮将 200 万桶原油运出霍尔木兹海峡……这是这家国营公司几十年来首次通过这种办法交货。」最后结论：「如果护航持续进行，那么对于油价来说向上的动力就会减弱。」</p>
+</blockquote>
+<p><strong>解读</strong>：中东（沙特、也门、伊朗一带）局势在升级，但他指出市场真正在交易的不是「会不会打」，而是「油还能不能运出来」。只要有船能靠护航把油运出海峡，供给就没断，油价上涨的动力就有限。这对普通投资者意味着：<strong>别看到地缘新闻就冲进能源股/原油 ETF（追踪油价的基金）</strong>，要盯「油价和美债收益率是否继续向下试探」——这两项一起走弱，通常代表避险情绪在退潮。</p>
+<p><strong>② 加密项目「随意取消吐槽者账号」，行业机制缺失</strong></p>
+<blockquote>
+<p>原文：「看 @jason_chen998 和 @PhyrexNi 只是因为吐槽项目几句代币解锁就被取消了，已经跟明抢也差不多了……项目团队权力很大、约束很小、作恶成本很低、道德风险贼高。所以加密领域要进一步发展，不仅是创新和价值落地，还要对应的组织架构变化。」</p>
+</blockquote>
+<p><strong>解读</strong>：他吐槽的是加密行业治理问题（项目方说封你就封你）。这条本身偏行业评论，但对美股投资者有一层提示——<strong>治理结构差、权力无约束的公司/项目，风险不在于经营而在「规则可以被随手改」</strong>，这是估值里最容易被忽略的隐性折价。同批还有 4 条回应（约「跟明抢差不多」「还计划在新加坡路演」「一声叹息」等），均围绕同一事件。</p>
+<p><strong>③ 太空经济：RKLB 相对 SpaceX 反而「便宜」</strong></p>
+<blockquote>
+<p>原文：「不是说有龙一（行业第一）就不能买龙二（行业第二）了，各有各的价值。要说估值 SpaceX 现在 PS-TTM（市销率，用市值除以过去四个季度营收）90 多倍，RKLB 现在差不多 60 倍。」</p>
+</blockquote>
+<p><strong>解读</strong>：他的核心逻辑是<strong>用「同类公司的估值锚」来判断便宜还是贵</strong>。SpaceX 是火箭发射行业老大，估值极高；$RKLB（Rocket Lab，美国小型火箭与航天零部件公司）作为「龙二」，PS 倍数明显更低。这不构成买入建议，但提供了一个对比框架：一家公司贵不贵，要放到同行里去比。</p>
+<p><strong>④ Blue Origin 融资 100 亿美元、估值 1400 亿——RKLB 显得「眉清目秀」</strong></p>
+<blockquote>
+<p>原文：「蓝色起源（Blue Origin，亚马逊贝索斯旗下航天公司）刚刚完成一轮 100 亿美金的融资，估值超过 1400 亿美金。现在蓝色起源主力火箭 New Glenn 才飞过三次……就这样都估值 1400 亿美金，这么看 RKLB 现在 400 多亿美金的市值相当眉清目秀了。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是上一条的加强版。他用了「一二级市场比价」的方法——<strong>一级市场（未上市的私募融资）给同行的高估值，会反过来衬托二级市场（股票市场）里可比公司的估值</strong>。$RKLB 市值 400 多亿 vs 蓝色起源 1400 亿，模式相似的公司在两个市场出现巨大价差，是他看多太空板块估值的理由。</p>
+<p><strong>⑤ SEC 代币化创新豁免首例：OKX 与 ICE 合资公司申请代币化股票平台</strong></p>
+<blockquote>
+<p>原文：「这是 SEC 代币化创新豁免政策框架下的首例申请……也是 6 月 OKX、ICE 正式成立后，首次公布业务进展。传统交易所运营商与大型加密交易所共同推动链上股票交易，推动 AMM 模式进入受监管证券交易，这会加速代币化从概念走向受监管试点，也会进一步模糊加密与股票市场边界。」</p>
+</blockquote>
+<p><strong>解读</strong>：ICE 是纽交所母公司，$ICE 是它的股票代码。这条对美股投资者的意义是：<strong>传统大交易所开始认真做「链上股票」</strong>（把股票变成可 24 小时交易的代币）。如果落地，股票的交易时段、结算方式都可能长期改变，利好交易所基础设施类公司，但也意味着监管边界会重划。</p>
+<p><strong>⑥ 其余 7 条为互动/转推</strong>：包括回应「把资产价格打下来好抄底嘛😎」（调侃）「它爹为了它已经砸进去 260 亿美金，还主要是卖大儿子股票来筹资的😅」（谈某公司为子公司输血，与太空板块语境一致），以及转推 Michael Jensen 音乐作品被马斯克评论一事。无新增标的观点。</p>
+<h3>2. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 13 条</h3>
+<p><strong>① 股票账户三个月回本：给贪婪与杠杆的一课</strong></p>
+<blockquote>
+<p>原文：「历经 3 个月的下跌，股票账户终于都回来了。有些股票涨到了新高，有的 2X 产品（两倍杠杆 ETF）因为磨损还在回本的路上。贪婪/FOMO（错失恐惧）真的是交易最大的敌人。本可以在 6 月潇洒离场，却因为贪婪和杠杆，经历了巨大的回撤……不要怕卖飞，也不要怕套牢。没有只涨不跌的市场，要感知情绪/感知杠杆，当卖则卖。也要有更多的耐心来抄底，永远留有子弹。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是今天最诚实的一条「复盘」。她点出两类损失来源：<strong>贪婪（该卖不卖）和杠杆（2X 产品有「磨损」，即杠杆 ETF 长期持有会因每日再平衡而损耗净值，即使标的回到原位你也回不了本）</strong>。对小白最实用的一句是「永远留有子弹」——满仓的人在回调时只能干等。</p>
+<p><strong>② 市场轮回：内存、光通讯等旧瓶颈被重新炒一遍</strong></p>
+<blockquote>
+<p>原文：「其实最近大家应该发现了，还是我们之前炒作过的那些板块。内存、光通讯、设备厂商、关键材料、晶圆厂和先进封装、检测……就好像故事的轮回一样，跌了一圈，我们又回到了曾经的起点，把 4-6 月的故事重新进行一次，把曾经那些瓶颈重新炒一遍。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是今天最有价值的<strong>板块地图</strong>。她列出的链条是半导体产业链：内存（存储芯片）、光通讯（光纤/光模块）、设备厂商（造芯片的机器）、关键材料、晶圆厂（代工制造）、先进封装（把芯片堆叠起来）、检测（良率把关）。理解这条链，就理解了当下 AI 硬件行情的资金流向——<strong>从上游到下游的顺序轮动</strong>。</p>
+<p><strong>③ 她的持仓调整：降低内存、仍持光通讯、采用杠铃法则</strong></p>
+<blockquote>
+<p>原文：「内存交易的拥挤程度太过于惊人，所以我降低了大部分的内存持仓，我也卖出了光通讯的一些环节（有很多大概率是卖飞）。但仍然持有光通讯可观的仓位。我会重新平衡自己的仓位，不单纯追求最高收益率，而是在追求收益率的同时做到尽可能少的回撤。因此我的交易会更向两端倾斜——杠铃法则（到了保守的年纪了）。」</p>
+</blockquote>
+<p><strong>解读</strong>：两条关键信息。一是<strong>「拥挤程度」是她减仓内存的唯一理由</strong>——不是看空基本面，而是人太多、波动大、回撤风险高。二是<strong>「杠铃法则」</strong>（Barbell Strategy，把资产放在最保守和最激进两端，放弃中间），她在追求收益的同时压低回撤。小白可以学这个思路：不必总是满仓押「最热赛道」。</p>
+<p><strong>④ 其余 7 条为互动与生活观察</strong>：包括「预售屋时代，买房子就是抽盲盒……支持现房时代，也支持买二手房，起码所见即所得」（房地产评论）、「俄罗斯疑似有鼠疫爆发」、「AI 与生物学/医药的结合似乎是火热的下一站了～」（她提到 AI+医药是下一个热点）、「最近的台股才是吓人」（暗示台股波动大）。其中「AI+医药」与她之前提的 ARKG（见下节茶不思）呼应。</p>
+<h3>3. @jukan05（Jukan）— 今日 13 条</h3>
+<p><strong>① SPCX 的 10GW 产能 60% 自用，只为 Grok Bot 服务？</strong></p>
+<blockquote>
+<p>原文：「Apparently 60% of $SPCX's 10GW goes to its own demand, and only 40% is for external customers. Could it be because Grok Bot has been a hit?」（译：SPCX 的 10GW（吉瓦，算力功耗单位）产能中，60% 用于自己的需求，只有 40% 供外部客户。是不是因为 Grok Bot 火了？）</p>
+</blockquote>
+<p><strong>解读</strong>：$SPCX 是 SpaceX 相关标的代码的用法（此处指他追踪的 SpaceX 系话题）。他抛出的信号是：<strong>算力正在从「卖给别人」变成「自己吃掉」</strong>——如果一家公司自用比例这么高，说明它自己的 AI 需求（Grok Bot 是马斯克旗下 xAI 的聊天机器人）已经吃掉了大部分产能。这对 AI 算力链是强烈的需求确认。</p>
+<p><strong>② SPCX 竟自己搞光纤，还在激进「逆工程」绕开瓶颈</strong></p>
+<blockquote>
+<p>原文：「WTF. SPCX is developing its own optical fiber too?」（译：SPCX 还在自己开发光纤？）以及「SPCX is aggressively pushing reverse engineering to get around bottlenecks... Racks, chillers, etc... So they're going to vertically integrate everything they possibly can.」（译：SPCX 正在激进推进逆向工程来绕过瓶颈……机架、冷却设备等等……他们打算把能垂直整合的一切都自己干。）</p>
+</blockquote>
+<p><strong>解读</strong>：<strong>「垂直整合」</strong>（Vertical Integration，从零件到系统全自己做，不依赖外部供应商）是他这条的关键词。含义有两面：对 SPCX 自己利好（成本可控、不被卡脖子），对现有供应链厂商是威胁（蛋糕被自家人吃掉）。这也是今天贯穿内存/光通讯同一条逻辑线的注脚。</p>
+<p><strong>③ 长江存储（YMTC）预计 NAND 短缺还要持续三年</strong></p>
+<blockquote>
+<p>原文：「According to The Wire China, China's YMTC expects this NAND shortage to last another three years. Folks, even YMTC, a Chinese NAND maker, thinks this boom will run for three more years. And you're still modeling NAND oversupply by the end of next year?」（译：据 The Wire China 报道，中国长江存储预计这轮 NAND（闪存芯片）短缺还会持续三年。各位，连中国的 NAND 厂商 YMTC 都认为这波景气还能走三年，你还在预测明年年底 NAND 就供过于求？）</p>
+</blockquote>
+<p><strong>解读</strong>：这是今天最硬的<strong>基本面数据点</strong>。NAND（Flash，断电不丢数据的存储芯片）眼下是「缺货」。他的意思是：连供给方（中国厂商）都说短缺还要三年，那么看空存储板块、预测明年就过剩的模型可能是错的。<strong>这直接呼应 Fiona 提的「内存板块」——供给紧张=价格坚挺=相关公司业绩有支撑。</strong></p>
+<p><strong>④ 台积电台股创历史新高；AMD 苏姿丰亲赴台湾抢产能</strong></p>
+<blockquote>
+<p>原文：「Alert: TSMC's Taiwan-listed shares hit a new all-time high today. $TSM」以及「Taiwanese media report that AMD CEO Lisa Su personally visited Taiwan today to secure the company's packaging, testing, and substrate supply chain.」（译：据台媒报道，AMD 首席执行官苏姿丰今日亲赴台湾，为公司的封装、测试和基板供应链锁定产能。）</p>
+</blockquote>
+<p><strong>解读</strong>：$TSM（台积电）是 AI 芯片唯一的先进代工厂，台股创新高=<strong>亚洲资金对 AI 硬件景气度的投票</strong>。而 AMD 老板亲自飞台湾抢「封装、测试、基板」，正说明<strong>瓶颈不在设计，而在制造和封装的产能</strong>——这正好印证 Fiona 说的「把曾经的瓶颈重新炒一遍」。</p>
+<p><strong>⑤ 其余 5 条为互动/技术细节</strong>：包括「Fab 3 的产能会在 DRAM 和 NAND 之间平均分配」（工艺厂产能分配）、吐槽美国人把 Ibiden（揖斐电，日本 IC 基板大厂）念成「I-Biden」，以及 3 条仅带链接的回复。其中 Ibiden 的发音梗与他判断「基板是关键瓶颈」一脉相承。</p>
+<h3>4. @starzq（Star@Day1Global Podcast）— 今日 7 条</h3>
+<p><strong>① 不要预测短期股价：巴菲特、芒格、林奇三连引</strong></p>
+<blockquote>
+<p>原文：「巴菲特：对股价或债券价格的短期预测没有用，预测只能让你更了解预测者本人，对未来几乎没有帮助。芒格：我们走到今天不靠预测利率和经济周期，也从没靠预测宏观赚到过钱。彼得·林奇：试图预测市场高低点是没有产出的；花在经济预测上的时间大多是浪费。为了等回调而错过的钱，往往比回调本身亏掉的还多。另外从时间 ROI（投入产出比）来看，每个月花几分钟来执行定投，剩下的时间都可以用来享受生活。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是他今天的主旨——<strong>别做宏观预测，做定投（每月固定金额买入）</strong>。三位大师的共同结论是「预测没用」，林奇那句「为了等回调而错过的钱，比回调亏的还多」尤其适合小白：总想抄最低点的人，往往踏空整段上涨。</p>
+<p><strong>② AI 上涨能否转化为 GDP 增长，是最大的未知数</strong></p>
+<blockquote>
+<p>原文：「AI 股票上涨了，但是否能持续带来 GDP 增长还是一个未知数。过去 24 年，中国的人均 GDP 涨了将近 8 倍（扣除通胀后也涨了 4 倍）……相比之下，美国的人均 GDP 涨了 2 倍（扣除通胀后只涨了 29%，每年只有 1.3%）。近年来，美国 GDP 增长的 92% 都来自于 AI 相关投资。去掉这部分，年化增长只有 0.1%。所以，现在大家对 AI 最大的疑虑是：它是否能够带来人均 GDP 的持续上涨，而不只是股票的上涨？不然，这又会变成一个金融游戏。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是今天最深刻的一条<strong>风险提示</strong>。他用数据说明：<strong>美国经济增长几乎全靠 AI 投资拉动（92%）</strong>，去掉 AI 就只剩 0.1%。这意味着 AI 行情有「自我循环」的风险——股价涨→企业投资→GDP 涨→股价再涨。如果 AI 最终不能提高普通人的生产效率（人均 GDP），那这可能只是「金融游戏」而非真实繁荣。对小白的意义：<strong>AI 板块的估值里，隐含了对未来真实产出的乐观假设，一旦证伪，回撤会很猛。</strong></p>
+<p><strong>③ 加密募资 DAO 回归：PaperDAO 筹资在无 VC 的永续合约 DEX 上交易</strong></p>
+<blockquote>
+<p>原文：「随着加密市场复苏，上一轮很火的募资 DAO @daosdotworld 也回归了。第一个项目是 @paperdao_xyz，筹集资金在没有 VC（风险投资）、没有 LP（有限合伙人）的 perp dex（永续合约去中心化交易所）@papertrade_xyz 上交易并 farm $PAPER。投资人获得 DAO 代币 $PULP，按比例分享国库的 $PAPER、质押收入和交易盈亏。筹资分 2 阶段，白名单 + FCFS（先到先得），10.8 开始。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是加密圈的融资新玩法（DAO 众筹），属于<strong>高风险、非美股</strong>话题。他提到「随着加密市场复苏」——这是他今天唯一一次对加密整体氛围表态，可作为风险偏好回升的一个侧面信号。另 3 条为「Congrats!」「💯」等纯互动。</p>
+<h3>5. @mdzzi（茶不思）— 今日 5 条</h3>
+<p><strong>① 看好 ARKG：木头姐的「上个版本概念神」要回归</strong></p>
+<blockquote>
+<p>原文：「叽叽咕咕说了一大堆，说实话买木头姐的 ARKG 就行了，上个版本的概念神要回归了。」以及回复：「ARKG 持仓分布很好，涉及到方方面面。」</p>
+</blockquote>
+<p><strong>解读</strong>：ARKG 是「木头姐」（Cathie Wood，$ARKK 操盘手）旗下<strong>基因与医疗科技主题 ETF</strong>。他的判断是：与其挑个股，不如买这只<strong>一篮子生物科技/基因股</strong>——因为它的持仓足够分散、覆盖「方方面面」。结合 Fiona 说的「AI 与生物学/医药的结合是火热的下一站」，两位博主今天不约而同把目光投向 <strong>AI+医药</strong> 这个方向，是一个值得记录的信号。</p>
+<p><strong>② 其余 4 条为互动</strong>：「黑客帝国生化危机马上照进现实」（对 AI/生物话题的调侃）、两条英文回复「lol」，以及一条回复里直接点出「Hyperliquid」（$HYPE 所依托的去中心化交易所），仅建议性质，无展开。</p>
+<h3>6. @insane_analyst（Irrational Analysis）— 今日 2 条</h3>
+<p><strong>① 内部激光方案的硬伤：稳定性与热串扰</strong></p>
+<blockquote>
+<p>原文：「Yes internal laser has many severe downsides. Stability and thermal crosstalk main issues.」（译：是的，内部激光方案有很多严重缺点，稳定性和热串扰是主要问题。）</p>
+</blockquote>
+<p><strong>解读</strong>：这是<strong>光通讯技术路线</strong>的专业细节。他在讨论「把激光器集成到内部」这种方案的技术缺陷——<strong>稳定性差、热串扰</strong>（thermal crosstalk，一个通道发热干扰到隔壁通道）。小白不必记术语，重点是：光通讯里不同技术路线有优劣，博主的分歧往往就藏在这种细节里。</p>
+<p><strong>② 「Ibiden 还是 I-Biden?」</strong></p>
+<blockquote>
+<p>原文：「Ibiden or I-Biden?」</p>
+</blockquote>
+<p><strong>解读</strong>：与 Jukan 同款的段子，指向日本 IC 基板厂商 Ibiden（揖斐电）。两人同时提到，说明<strong>基板（芯片的承载体）供应是这一轮被反复讨论的瓶颈环节</strong>。</p>
+<h3>7. @labubu_trader（3X Long Labubu）— 今日 1 条</h3>
+<p><strong>今日无实质观点，仅互动</strong>。唯一一条为英文回复「Yes as it's much harder to distill now 😂」（译：是的，因为现在蒸馏难多了），涉及 AI 模型「蒸馏」（distillation，用小模型模仿大模型以压缩成本）难度上升的话题，未点名标的。</p>
+<h3>8. @LinQingV（Macro_Lin）— 今日 1 条</h3>
+<p><strong>今日无实质观点，仅互动</strong>。唯一一条为「MiniMax 的 H3？」，指向国产大模型公司 MiniMax 的新模型传闻，未涉及具体美股标的。</p>
+<h3>9. @0xSleepinRain（雨中狂睡SleepinRain）— 今日 1 条</h3>
+<p><strong>今日无实质观点，仅一句态度</strong>。原文：「新周期，就要用和之前不一样的视角去看待这个市场。」他配了一份图表链接但未在正文展开观点。可理解为<strong>提醒大家换框架看市场</strong>，但没有给出具体板块或标的。</p>
+<h3>10. @aleabitoreddit（Serenity）— 今日无新推文</h3>
+<p>窗口内（2026-10-04 18:50 至 2026-10-05 18:50 北京时间）没有发布任何推文，无可总结观点。</p>
+<h3>11. @xiaomustock（川沐｜Trumoo🐮）— 今日无新推文</h3>
+<p>窗口内没有发布任何推文，无可总结观点。</p>
+<h3>12. @fi56622380（fin）— 今日无新推文</h3>
+<p>窗口内没有发布任何推文，无可总结观点。</p>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主情绪</td>
+<td>偏乐观但谨慎、内部有分歧</td>
+<td>qinbafrank 看多太空（RKLB）、jukan05 连发 NAND 短缺与台积电新高偏多；但 Fiona 主动降内存仓位、starzq 引大师劝别做预测，属「涨得怕、又舍不得走」</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>偏多但依赖 AI 单一引擎</td>
+<td>starzq 引用数据：美国 GDP 增长的 92% 来自 AI 相关投资，去掉后仅 0.1%，结构脆弱</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>中高</td>
+<td>油价与地缘（霍尔木兹海峡/也门）扰动；AI 估值隐含高预期；存储/光通讯「拥挤度惊人」（Fiona 原话），回撤风险上升</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最值得记的两条结论：一是<strong>半导体产业链的「老瓶颈」被重新定价</strong>——内存（NAND 缺货或持续三年）、光通讯、封装基板是博主们聚焦的核心环节，想研究可以从 $TSM（台积电）、以及 Jukan 反复提的基板厂 Ibiden 这类「卡脖子」公司入手，先搞懂它们在链条里的位置；二是<strong>别把全部身家押在一个最热的赛道上</strong>——Fiona 用三个月的回撤换来「拥挤就要减仓」的教训，starzq 用「美国 GDP 增长 92% 靠 AI」提醒你，这轮行情有自我循环的成分。研究方向给了，但请自己验证，别照抄博主仓位；AI 板块的回撤可能来得又快又猛。</p>
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-10-04 18:50 ～ 2026-10-05 18:50（北京时间），时间戳为 [MM-DD HH:MM]。</p>
+</blockquote>
+<h3>@qinbafrank（共 17 条）</h3>
+<p><strong>[10-04 22:40]</strong> 看 @jason_chen998 和 @PhyrexNi 只是因为吐糟项目几句代币解锁就被取消了，已经跟明抢也差不多了。这也是之前一直在聊加密领域核心症结之一：项目团队权力很大、约束很小、作恶成本很低、道德风险贼高。所以加密领域要进一步发展、不仅是创新和价值落地，还要对应的组织架构变化。去年 A16Z 呼吁用更优的激励机制、问责机制和规模化方式构建新体系，也是为了解决这个问题</p>
+<p><strong>[10-04 22:50]</strong> @BtcForester @jason_chen998 @PhyrexNi 就这还计划在新加坡路演嘛，到时让大家去现场维权？🤣</p>
+<p><strong>[10-04 22:50]</strong> @jason_chen998 @PhyrexNi 唉，一声叹息</p>
+<p><strong>[10-04 22:56]</strong> @TraderS18 我推文下有人说 opn 还计划要在新加坡搞路演</p>
+<p><strong>[10-04 23:05]</strong> @KuiGas @jason_chen998 @PhyrexNi 真🐶呐</p>
+<p><strong>[10-05 08:54]</strong> 今天油价走势值得关注，周末中东消息还是比较多的：1）伊朗周日再次强调，霍尔木兹海峡在七项条件得到满足前不会重新开放；2）周六到周日，看报道又有三艘油轮在霍尔木兹海峡被袭击；3）同时也门战事明显升级，沙特支持的也门部队发动全面攻势，试图夺回胡塞武装控制的所有地区：看报道沙特过去两天对胡塞发动了数百次空袭，也门政府军也开始计划加大对胡塞的攻击力度，以期收复被胡塞占领的地区；然后胡塞的反击就是更大力度袭击沙特阿美能源设施；4）更早之前，美国高级国家安全官员还在戴维营秘密开会，讨论伊朗战争以及沙特-胡塞冲突下一步怎么办。
+按理说周末的新闻出来，今天早上油价应该飙升才对，反倒是油价“跳空高开”后迅速转跌。个人角度是另一方面个更值得重视的事件则：
+伊拉克油轮公司前天证实，已使用一艘大型油轮将 200 万桶原油运出霍尔木兹海峡，向在海峡外等候的买家交货。按公司高管的说法，这是这家国营公司几十年来首次通过这种办法交货。据悉，其他海湾产油国早已采取船对船转运的方式，在海峡外交货，伊拉克已经“来晚了”。
+还是之前聊到的油价除了反应美伊、沙特胡塞之间的紧张态势，现在越来越多在交易“博弈还在继续，但是在护航下还是有油轮能从海峡通行”，因为对于市场来说，边际变化是最关键。如果护航持续进行，那么对于油价来说向上的动力就会减弱。
+那么只要伊朗没能把护航完全打掉，油价还是会在“航线运输可能恢复”和“局势升级”之间摇摆。
+因为油价转跌，美债收益率也小幅转跌。今天关注“油价和美债收益率”是否继续向下试探？
+本条由 @bitget_zh 赞助，「Bitget 买美股：秒级入场，丝滑交易</p>
+<p><strong>[10-05 08:57]</strong> @PhyrexNi @jason_chen998 不仅这个周期，前两个周期也是，见过很多了。从个人和机构角度来看，是要提高话语权影响力，让人不敢动；不过从产业角度看，还是机制缺失，约束没有、长期损害的就是行业信誉度，不然最后就都没得玩了。</p>
+<p><strong>[10-05 12:46]</strong> @tigeryu2001 没说不能买 spacex、而且之前我也聊过 spacex 也很有空间。太空经济板块未来会很大，容得下好几家。不是说有龙一就不能买龙二了，各有各的价值。要说估值 spacex 现在 PS-TTM 90 多倍，RKLB 现在 PS-TTM 差不多 60 倍（用当下市值除以过去四个季度累计营收）。</p>
+<p><strong>[10-05 12:54]</strong> 才发现 BlueOrigin 蓝色起源刚刚完成一轮 100 亿美金的融资，估值超过 1400 亿美金。现在蓝色起源主力火箭 New Glenn 才飞过三次第一次失败、第二次完成了政府科学任务、第三次真正商业飞行一级复用并成功回收但把卫星送进了错误轨道任务按失败计，过往的营收主要是 NASA 的科研订单。就这样都估值 1400 亿美金，这么看 RKLB 现在 400 多亿美金的市值相当眉清目秀了。</p>
+<p><strong>[10-05 13:04]</strong> @Guilin_Chen_ 哈哈，把资产价格打下来好抄底嘛😎</p>
+<p><strong>[10-05 13:05]</strong> @thulynnn 那绝对了，它爹为了它已经砸进去 260 亿美金，还主要是卖大儿子股票来筹资的😅</p>
+<p><strong>[10-05 15:50]</strong> @laomo198 @jason_chen998 @PhyrexNi 不能要求太低了😂</p>
+<p><strong>[10-05 15:51]</strong> @lizmoneyprinter 毕竟在川普身边呆久了嘛</p>
+<p><strong>[10-05 16:36]</strong> SEC 公代币化创新豁免政策框架下的首例申请，这是今天 OKX 与 ICE 的合资公司向 SEC 提交申请计划提出代币化股票交易平台的这个公告的意义。也是 6 月 OKXICE 正式成立后，首次公布业务进展状况，当时成立的官方就宣布 OKX 与 ICE 要共同开发代币化证券等金融产品、机构级数字资产衍生品和 24/7 交易基础设施。相当于 OKXICE 的动作是 SEC 创新豁免该框架下最早的高调实践，估计 SEC 主席 Atkins 看到这个申请很开心“我的政策终于有第一个螃蟹的了”。
+传统交易所运营商与大型加密交易所共同推动链上股票交易，推动 AMM 模式进入受监管证券交易，这会加速代币化从概念走向受监管试点，也会进一步模糊加密与股票市场边界。
+很好奇这个“受监管链上资本市场基础设施”未来会长成什么样子。🤔</p>
+<p><strong>[10-05 18:10]</strong> @Wendy000120 好想法👍</p>
+<p><strong>[10-05 18:24]</strong> @Bqlsj2023 牛逼了</p>
+<p><strong>[10-05 18:32]</strong> Michael Jensen 力作《Just AI》，老司机这条被老马翻牌子了，老马不仅评论还转发了。音乐不分国界！🤣</p>
+<h3>@nft_hu（共 13 条）</h3>
+<p><strong>[10-04 22:23]</strong> @zenzao95 谢谢！</p>
+<p><strong>[10-04 22:23]</strong> @ShiGuangYuYanJi 是的，而且我自己也很爱看 AI 做的更多猫咪视频...</p>
+<p><strong>[10-04 22:24]</strong> @qzhxjhj 去找来读读看</p>
+<p><strong>[10-04 22:32]</strong> @aoxnduhs 蛮好的，再也不能挪用款项然后把房子乱建一通</p>
+<p><strong>[10-04 22:34]</strong> 预售屋时代，买房子就是抽盲盒。大多数时候大家都是看了漂亮的样板屋，掏空了爸妈的银行账户，最后等待 2 年，收获一个验房有问题 100 处的“货不对版”房。
+极少数时候，你可以买到一个棒棒的房子（和隐藏款一样），但不好抽。
+支持现房时代，也支持买二手房，起码所见即所得。</p>
+<p><strong>[10-04 22:47]</strong> 支持⬆️</p>
+<p><strong>[10-04 23:57]</strong> @sanjinlin160573 赞同。我感觉比起买房确实不如读私立了</p>
+<p><strong>[10-05 10:50]</strong> 历经 3 个月的下跌，股票账户终于都回来了。有些股票涨到了新高，有的 2X 产品因为磨损还在回本的路上。
+贪婪/FOMO 真的是交易最大的敌人。本可以在 6 月潇洒离场，却因为贪婪和杠杆，经历了巨大的回撤。在自责/压力中度过了人生珍贵的时间。
+不过我很感谢这一刻，成为了更成熟的交易员。不要怕卖飞，也不要怕套牢。没有只涨不跌的市场，要感知情绪/感知杠杆，当卖则卖。也要有更多的耐心来抄底，永远留有子弹。
+保持研究，保持耐心。</p>
+<p><strong>[10-05 11:11]</strong> 来聊一下未来对市场的看法：
+其实最近大家应该发现了，还是我们之前炒作过的那些板块。内存、光通讯、设备厂商、关键材料、晶圆厂和先进封装、检测...
+就好像故事的轮回一样，跌了一圈，我们又回到了曾经了起点，把 4-6 月的故事重新进行一次，把曾经那些瓶颈重新炒一遍。
+很有意思是我们的态度，拿内存来说，基本一到两个月，我们就要在内存牛逼和内存要完这样的心态里完成切换。
+光通讯也是如此。
+从去年 10 月到今年 10 月，我已经持有光通讯/内存一整年了。我对基本面的想法没有什么改变，但是我的仓位发生了一些变化。
+内存交易的拥挤程度太过于惊人，所以我降低了大部分的内存持仓，我也卖出了光通讯的一些环节（有很多大概率是卖飞）。但仍然持有光通讯可观的仓位。
+我会重新平衡自己的仓位，不单纯追求最高收益率，而是在追求收益率的同时做到尽可能少的回撤。因此我的交易会更向两端倾斜——杠铃法则（到了保守的年纪了）。
+具体标的会在我的付费频道公布。</p>
+<p><strong>[10-05 11:23]</strong> @FxLz1bg1wrWi 40%</p>
+<p><strong>[10-05 11:23]</strong> 俄罗斯疑似有鼠疫爆发...</p>
+<p><strong>[10-05 11:24]</strong> 不知道是我的算法推荐还是确实如此，AI 与生物学/医药的结合似乎是火热 的下一站了～</p>
+<p><strong>[10-05 17:48]</strong> @deersilxu 哈哈哈，最近的台股才是吓人</p>
+<h3>@jukan05（共 13 条）</h3>
+<p><strong>[10-05 08:42]</strong> Apparently 60% of $SPCX's 10GW goes to its own demand, and only 40% is for external customers. Could it be because Grok Bot has been a hit?</p>
+<p><strong>[10-05 08:48]</strong> WTF. SPCX is developing its own optical fiber too?</p>
+<p><strong>[10-05 08:52]</strong> SPCX is aggressively pushing reverse engineering to get around bottlenecks...
+Racks, chillers, etc...
+So they're going to vertically integrate everything they possibly can.
+How do they get around patents and IP with this? Don't they get sued?</p>
+<p><strong>[10-05 08:53]</strong> @CarlL46745648 https://t.co/pJqcCvlW0k</p>
+<p><strong>[10-05 09:19]</strong> @insane_analyst It makes me so sad when I hear Americans pronounce Ibiden as "I-Biden."</p>
+<p><strong>[10-05 10:28]</strong> @TeslaPaul1 https://t.co/i8II3oAUql</p>
+<p><strong>[10-05 10:52]</strong> According to The Wire China, China's YMTC expects this NAND shortage to last another three years.
+Folks, even YMTC, a Chinese NAND maker, thinks this boom will run for three more years. And you're still modeling NAND oversupply by the end of next year?</p>
+<p><strong>[10-05 10:52]</strong> https://t.co/TWFFq7qc5g</p>
+<p><strong>[10-05 11:08]</strong> @humblelad16 I think Fab 3's capacity will be split evenly between DRAM and NAND.</p>
+<p><strong>[10-05 14:49]</strong> Alert: TSMC's Taiwan-listed shares hit a new all-time high today.
+$TSM</p>
+<p><strong>[10-05 15:28]</strong> Taiwanese media report that AMD CEO Lisa Su personally visited Taiwan today to secure the company's packaging, testing, and substrate supply chain.
+https://t.co/RNGjhyKW4L</p>
+<p><strong>[10-05 15:45]</strong> @buccocapital https://t.co/1PHxOZvkFq</p>
+<p><strong>[10-05 16:22]</strong> @jake_ayes @HiCagr 💯</p>
+<h3>@starzq（共 7 条）</h3>
+<p><strong>[10-05 09:18]</strong> @tengyanAI Congrats!</p>
+<p><strong>[10-05 09:46]</strong> 不要试图预测股票短期的价格
+巴菲特：对股价或债券价格的短期预测没有用，预测只能让你更了解预测者本人，对未来几乎没有帮助
+芒格：我们走到今天不靠预测利率和经济周期，也从没靠预测宏观赚到过钱
+彼得·林奇：试图预测市场高低点是没有产出的；花在经济预测上的时间大多是浪费。为了等回调而错过的钱，往往比回调本身亏掉的还多
+另外从时间 ROI 上来看，每个月花几分钟来执行定投，剩下的时间都可以用来享受生活，这可能是最幸福的做法</p>
+<p><strong>[10-05 09:56]</strong> AI 股票上涨了，但是否能持续带来 GDP 增长还是一个未知数
+过去 24 年，中国的人均 GDP 涨了将近 8 倍（扣除通胀后也涨了 4 倍），普通家庭的收入则涨了 5.4 倍
+相比之下，美国的人均 GDP 涨了 2 倍（扣除通胀后只涨了 29%，每年只有 1.3%），家庭收入的中位数扣除通胀后也只涨了 20%
+近年来，中国的 GDP 已经增长放缓，而美国 GDP 增长的 92% 都来自于 AI 相关投资。去掉这部分，年化增长只有 0.1%
+所以，现在大家对 AI 最大的疑虑是：它是否能够带来人均 GDP 的持续上涨，而不只是股票的上涨？不然，这又会变成一个金融游戏</p>
+<p><strong>[10-05 09:59]</strong> @Sea_Bitcoin 💯</p>
+<p><strong>[10-05 13:48]</strong> @powerpig 是的。这方面美国有优势，知识工作者占比高</p>
+<p><strong>[10-05 18:11]</strong> 随着加密市场复苏，上一轮很火的募资 Dao @daosdotworld 也回归了
+第一个项目是 @paperdao_xyz , 筹集资金在没有 VC，没有 LP 的 perp dex @papertrade_xyz 上交易并 farm $PAPER
+投资人获得 DAO 代币 $PULP，按比例分享国库的 $PAPER、质押收入和交易盈亏
+筹资分 2 阶段, 白名单 + FCFS, 10.8 开始
+感兴趣的朋友可以去申请白单，我把链接放在评论区</p>
+<p><strong>[10-05 18:11]</strong> PaperDao 白名单申请链接
+https://t.co/LgOCD7h7Rv</p>
+<h3>@mdzzi（共 5 条）</h3>
+<p><strong>[10-05 01:30]</strong> @Web3Feng 黑客帝国生化危机马上照进现实</p>
+<p><strong>[10-05 15:19]</strong> 叽叽咕咕说了一大堆
+说实话买木头姐的 ARKG 就行了，上个版本的概念神要回归了</p>
+<p><strong>[10-05 16:04]</strong> @Rubywang ARKG 持仓分布很好，涉及到方方面面</p>
+<p><strong>[10-05 17:21]</strong> @ZKhedge @alc2022 lol</p>
+<p><strong>[10-05 17:22]</strong> @0xRay518 Hyperliquid</p>
+<h3>@insane_analyst（共 2 条）</h3>
+<p><strong>[10-05 05:07]</strong> @risk_return Yes internal laser has many severe downsides. Stability and thermal crosstalk main issues</p>
+<p><strong>[10-05 09:08]</strong> Ibiden or I-Biden? https://t.co/FH8xq0oBj4</p>
+<h3>@labubu_trader（共 1 条）</h3>
+<p><strong>[10-05 12:02]</strong> Yes as it's much harder to distill now 😂</p>
+<h3>@LinQingV（共 1 条）</h3>
+<p><strong>[10-04 22:39]</strong> @lizmoneyprinter MiniMax 的 H3？</p>
+<h3>@0xSleepinRain（共 1 条）</h3>
+<p><strong>[10-05 15:24]</strong> 新周期，就要用和之前不一样的视角去看待这个市场。 https://t.co/yfMqTu682K</p>
+<h3>零推文成员</h3>
+<ul>
+<li>@aleabitoreddit（Serenity）— 窗口内无推文</li>
+<li>@xiaomustock（川沐｜Trumoo🐮）— 窗口内无推文</li>
+<li>@fi56622380（fin）— 窗口内无推文</li>
+</ul>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
