@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.10.06</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.10.06</a></h1>
+  <div class="date">2026.10.06</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.10.06</h1>
+<blockquote>
+<p>今天最集中的话题：AI 硬件与内存的高估值之争、霍尔木兹油价为何不跌、以及 AI4S（人工智能驱动药物研发）涨太猛开始有人减仓。</p>
+</blockquote>
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @insane_analyst（Irrational Analysis）— 今日 16 条</h3>
+<p><strong>① Anthropic 的订阅是被重度补贴出来的，别被 ARR（年度经常性收入）增速骗了</strong></p>
+<blockquote>
+<p>原文：「Monthly subs are still heavily subsidized. Take a moment and think through (yourself, don't use fucking AI) what this means. Why do subsidies exist? Are higher subsidies good or bad in a severely supply-limited market? Would ARR have grown at same rate without subsidies?」（月订阅仍在被重度补贴。自己动脑想想这意味着什么——为什么要有补贴？在一个供给严重受限的市场里，补贴越高是好还是坏？没有补贴，ARR 还能涨这么快吗？）
+<strong>解读</strong>：他在质疑 AI 公司（尤其 Anthropic）漂亮的收入增速是「用补贴买来的」。对小白的意义：看 AI 公司别只看收入增速，要看每一块钱收入背后贴了多少。他是硬件圈最挑剔的研究者之一，这条偏空 AI 应用层估值。</p>
+</blockquote>
+<p><strong>② 暗讽 SemiAnalysis 帮 Anthropic 拉订阅</strong></p>
+<blockquote>
+<p>原文：「I was wondering why SemiAnalysis attempted to pump Anthropic subscriptions today. LOL」（我还在纳闷 SemiAnalysis 今天怎么突然帮 Anthropic 拉订阅。笑）
+<strong>解读</strong>：同业互喷。提醒你：AI 圈的「研究机构 + 订阅推广」存在利益关联，读研报时多留个心眼。</p>
+</blockquote>
+<p><strong>③ Anthropic 把未来训练成本剔出去，招股书会很「好看」</strong></p>
+<blockquote>
+<p>原文：「Anthro is backing out future training costs. Not profitable. S-1 gona be fun.」（Anthropic 把未来的训练成本剔出去了。不盈利，招股书（S-1）会很好看。）
+补充原文：「Say you spent 1B to train currently served model but have spent 2B over last three months to partially train a future in progress model. The 2B does not count. 1B does.」（假设你花 10 亿美元训练当前在售模型，又花 20 亿美元在过去三个月训练一个还没发布的未来模型，那 20 亿不算，10 亿才算。）
+<strong>解读</strong>：他点出会计口径的「可操作空间」——正在训练中的模型成本不进当期报表。若 Anthropic 真的 IPO，这份招股书会被市场拿放大镜看。</p>
+</blockquote>
+<p><strong>④ 下一个研究项目：《3D XPoint 的悲剧》</strong></p>
+<blockquote>
+<p>原文：「Next project: "The Tragedy of 3D XPoint". Fun fact: David Zinsner was involved on both the Micron and Intel leg of this unfortunate calamity of lost engineering opportunity.」（下一个项目：《3D XPoint（英特尔与美光联合研发的一种新型存储芯片）的悲剧》。冷知识：David Zinsner（现任英特尔 CFO）在美光和英特尔这两段都参与过这桩工程机会的损失。）
+<strong>解读</strong>：3D XPoint 是当年被寄予厚望、最终被放弃的存储技术。他要把这段历史写成文章，属于产业史研究，不影响短期交易，但说明他关注存储技术路线的长期演进。</p>
+<p><strong>另 11 条为互动/玩笑</strong>：主要与 @dylan522p 就 Anthropic API（应用程序接口）成本计算（8.6K 美元/月 vs 11.7K 美元/月）、以及 Dwarkesh 播客中「999/1000 个现实里 Anthropic 统治世界」的梗争论。无新增标的观点。</p>
+</blockquote>
+<h3>2. @jukan05（Jukan ✈️OCP 2026）— 今日 12 条</h3>
+<p><strong>① 内存股给到 20 倍 2028 年 EPS（每股收益）的目标价，他说「小丑」</strong></p>
+<blockquote>
+<p>原文：「Even with the situation this clear, some are still setting their price targets at 20x 2028 EPS.🤡」（情况已经这么清楚了，还有人把目标价定在 2028 年 EPS 的 20 倍。）
+<strong>解读</strong>：他认为内存（DRAM，动态随机存取内存）是强周期行业，景气高点时就该给低倍数，用「2028 年明年的盈利 × 20 倍」来估值是典型的周期股顶部陷阱。小白要记住：周期股不能拿高倍数 × 高盈利，那是双重乐观。</p>
+</blockquote>
+<p><strong>② 与其他分析师的来回：内存高价能撑到 2028，P/E（市盈率）却很低</strong></p>
+<blockquote>
+<p>原文：「Wouldn't the current surge in demand be enough to absorb all the memory supply in 2028? If so, why are memory stocks trading at such low P/E multiples, while HDD（机械硬盘）stocks trade at such high multiples?」（当前这波需求爆发难道不足以吸收 2028 年全部的内存供给吗？如果是，为什么内存股给这么低的市盈率，而机械硬盘股却给这么高的倍数？）
+<strong>解读</strong>：他拿 HDD（希捷、西部数据）和内存对比，暗示市场对两者周期位置判断不一致——这是他的核心辩论点，也提示 HDD 板块可能被高估。</p>
+</blockquote>
+<p><strong>③ 东京电子（Tokyo Electron）预计 FY2027 营业利润冲 1 万亿日元</strong></p>
+<blockquote>
+<p>原文：「Nikkei reported that Tokyo Electron, Japan's largest semiconductor equipment maker, is expected to post operating profit of ¥1 trillion for the fiscal year ending March 2027 (April 2026–March 2027), up approximately 60% year over year.」（日经报道，日本最大半导体设备商东京电子预计在 2027 年 3 月止财年（2026 年 4 月—2027 年 3 月）录得 1 万亿日元营业利润，同比增长约 60%。）
+<strong>解读</strong>：设备商利润暴增 = 晶圆厂在大规模扩产。这是 AI 硬件景气度的上游确认信号，利好 $TEL（东京电子）及整个半导体设备链。</p>
+</blockquote>
+<p><strong>④ DeepSeek 融资至少 120 亿美元，目标 2027 年初 IPO</strong></p>
+<blockquote>
+<p>原文：「BBG: DeepSeek has secured at least $12 billion in a funding round, with the final amount potentially approaching RMB 100 billion. BBG: DeepSeek is targeting an IPO in early 2027.」（彭博：DeepSeek 已在一轮融资中锁定至少 120 亿美元，最终金额可能逼近 1000 亿人民币；DeepSeek 目标 2027 年初 IPO。）
+<strong>解读</strong>：中国 AI 大模型拿到天量资金将直接拉动算力采购。小白视角：对英伟达/国产算力链都是需求侧利好，也意味着中美 AI 竞赛继续升温。</p>
+</blockquote>
+<p><strong>⑤ 希捷绝不能让这项资产落到东芝手里</strong></p>
+<blockquote>
+<p>原文：「Seagate cannot afford to let this fall into Toshiba's hands under any circumstances. If Toshiba acquires it, it will see tremendous growth, just as Micron did after acquiring Elpida.」（$STX 希捷在任何情况下都不能让这项资产落到东芝手里。如果东芝收下，它会迎来巨大增长，就像美光当年收购尔必达之后那样。）
+<strong>解读</strong>：用「美光买尔必达（Elpida）」的历史类比——当年美光靠这笔收购从二线跃升为存储巨头。他是在说行业内某笔潜在收购若被东芝拿到，会改变竞争格局，利好/利空 $STX。</p>
+</blockquote>
+<p><strong>⑥ 不要建议英特尔加入 Terafab</strong></p>
+<blockquote>
+<p>原文：「Look into the Tesla–Panasonic case… Tesla stole Panasonic's technology and brought it in-house. I don't think Intel should join Terafab.」（去查查特斯拉与松下的案例……特斯拉把松下的技术拿走后自己干了。我不认为 $INTC 英特尔应该加入 Terafab。）
+<strong>解读</strong>：Terafab 是特斯拉与三星合作的晶圆厂项目。他提醒英特尔别重蹈松下覆辙（出技术、被踢开）。对 $INTC 是战略建议，非买卖建议。</p>
+<p><strong>另 6 条为互动/转发链接</strong>：含询问是否该退订 Codex 换 Claude、以及一条「CoPoS？」的芯片封装技术缩写猜测。无实质新观点。</p>
+</blockquote>
+<h3>3. @qinbafrank（qinbafrank）— 今日 7 条</h3>
+<p><strong>① 每年都有几次绝佳入场机会，难的是耐心和决断力</strong></p>
+<blockquote>
+<p>原文：「大乐写的很好，其实每年都有几次绝佳入场良机，关键有没有耐心能去等？等到了有没有认知和决断力去抓得住？」
+<strong>解读</strong>：这是他今天最有「心法」性质的一条。对小白：机会稀缺但会出现，输在「等不到」和「等到了不敢下手」。属于交易纪律层面，没有具体标的。</p>
+</blockquote>
+<p><strong>② 霍尔木兹海峡原油恢复 80%，为何 Brent 还在 100 美元？（长文拆解）</strong></p>
+<blockquote>
+<p>原文节选：「霍尔木兹海峡原油运输量确实在恢复、为何油价还没大幅回落？答案是在成本上……综合 Kpler/Vortexa 等几方的数据，9 月海湾地区原油和凝析油出口已出现非常明显恢复……目前穿越霍尔木兹的原油流量约 1420 万桶，已经恢复到战前约 80% 左右。」「目前中东→亚洲 VLCC（超大型油轮）报价一度达到：约 120 万美金一天，而战争前差不多 3 万美金一天……物流费用已经能占到交付原油价格约 27%。」「霍尔木兹海峡原油物理供应已经恢复了很多，Brent 仍然在 100 美元附近。」
+<strong>解读</strong>：这是今天信息密度最高的一条。他讲清了三条逻辑：(1) 供应恢复了，但运输被拆成「战时高风险段 + 正常远洋段」两段，成本暴增 40 倍；(2) 阿曼湾的船对船 STS 转运（把原油从一艘船倒到另一艘船）已接近容量上限，一轮从 5—7 天拖到 10 天；(3) 所以决定油价的关键变量从「海峡开不开」变成了「转运成本」。对小白：想判断油价，盯运输成本比盯新闻标题有用。</p>
+</blockquote>
+<p><strong>③ 他给出的五个「真实供给」观测指标</strong></p>
+<blockquote>
+<p>原文：「'每日 Hormuz VLCC 实际通过数、Sohar/Fujairah STS（苏哈尔/富查伊拉船对船转运）吞吐量、Saudi Ras Tanura（沙特拉斯塔努拉）装船量、Yanbu/East-West Pipeline（延布/东西输油管道）流量、VLCC 日租金'，比单纯看'海峡是否关闭'的新闻标题更能告诉我们真实供给有没有重新恶化。」
+<strong>解读</strong>：直接给了一份可跟的监测清单。小白可以先收藏，去查这几个指标的公开数据来验证油价叙事，而不是被标题党牵着走。</p>
+</blockquote>
+<p><strong>④ 运输量 1420 万桶/日 ≈ 7 艘 VLCC 的运量</strong></p>
+<blockquote>
+<p>原文：「日 1420 万桶、其实也就是 7 艘 VLCC 的运输量。」
+<strong>解读</strong>：他用一个直观换算说明「恢复的流量」其实很脆弱——一旦几艘船出问题，供给就会再次收紧。</p>
+<p><strong>另 3 条为互动</strong>：赞同「益友」、认可某关注点、同意「只要运输量起来，成本迟早会下去」。均为补充讨论，无新标的。</p>
+</blockquote>
+<h3>4. @mdzzi（茶不思）— 今日 7 条</h3>
+<p><strong>① 别私信问我观点，我没有义务分享</strong></p>
+<blockquote>
+<p>原文：「不要私信问我任何观点。我没有义务告知我的想法，也没有义务分享，没有收费群（免费的也没有）没有社区没有私人联系方式。做自己的研究，然后试着去相信。」
+<strong>解读</strong>：明确的边界声明。对小白：他反对「抄作业」式提问，主张自己研究——这也解释了他的推文为何常是碎片线索而非完整结论。</p>
+</blockquote>
+<p><strong>② SDGR（Schrödinger，AI 制药公司）今晚公布 AI Agent 细节，业务从药物发现拓展到材料学</strong></p>
+<blockquote>
+<p>原文：「SDGR 的 AI Agent 更详细信息在今晚会公布。我认为最值得关注，也最重要的是：SDGR 的业务正从药物发现拓展到材料学。」
+<strong>解读</strong>：这是今天最具体的一条个股观点。$SDGR 是 AI4S（AI for Science，AI 驱动科学研究）的代表公司。他指出公司把 AI 平台从「找药」扩到「找材料」，潜在市场（TAM）变大——这是估值重估的关键。对小白：AI 制药/材料这条线今天很热，但注意热度和风险成正比。</p>
+</blockquote>
+<p><strong>③ 聊估值很现实，更现实的是看未来增长点在哪</strong></p>
+<blockquote>
+<p>原文：「聊估值是一件现实的事，更现实的是需要关注未来增长点在哪里。」
+<strong>解读</strong>：他的估值观——别纠缠当前贵还是便宜，先找「增长从哪来」。呼应上一条对 $SDGR 新业务的强调。</p>
+<p><strong>另 4 条为闲聊</strong>：回复「凉面」「微信是用来生活的」「天天问问的心烦」「下次香港约」。无标的。</p>
+</blockquote>
+<h3>5. @LinQingV（Macro_Lin）— 今日 6 条</h3>
+<p>今日无实质投资观点，仅生活/闲聊互动：</p>
+<blockquote>
+<p>原文：「国内个税实在是太高了。」「年薪 100 万往上性价比就开始变低了。」「难得出一个晴天，成都喝茶的人就格外勤快……靠河那排已经坐满了。」
+<strong>解读</strong>：他今天没有输出市场观点，主要是成都茶馆日常与个税吐槽。对小白：无操作参考，可略过。</p>
+</blockquote>
+<h3>6. @labubu_trader（3X Long Labubu）— 今日 5 条</h3>
+<p><strong>① AI4S（AI 驱动科学研究）我已经减掉大部分仓位，抛物线走势我不喜欢</strong></p>
+<blockquote>
+<p>原文：「I was one of the early bulls of AI4S back in June, and had stepped in with big positions in early Aug. However I have reduced most of AI4S position already in the last week given the parabolic move. From fundamentals perspective, it still look exciting but I believe clinical trials stage is the bottleneck in US so question mark on the final economic value. From trading perspective, I don't like the parabolic move. Especially the short term euphoric sentiment from Chinese sell side analysts in the last few weeks. This type of FOMO price action regardless of 5D MA also suggests that CN/HK HF are rushing into them, which probably will be a volatile pump and dump setup in the end.」（我从 6 月起就是 AI4S 的早期多头，8 月初建了大仓位。但过去一周因为走成了抛物线，我已经减掉大部分 AI4S 仓位。基本面看仍然 exciting，但我认为美国临床阶段是瓶颈，最终经济价值存疑。交易层面我不喜欢抛物线，尤其是最近几周中国卖方分析师的短期亢奋情绪。这种无视 5 日均线（MA）的 FOMO（害怕错过）式价格行为，说明中港对冲基金（HF）在抢筹，最后很可能是一波剧烈的拉高抛售。）
+<strong>解读</strong>：这是今天最重要的「操作披露」。他公开说自己已经从 AI4S 减仓——理由有两条：一是基本面卡在临床（新药人体试验）阶段；二是走势太陡、情绪过热。对小白：这是「聪明钱在高潮时减仓」的教科书案例，值得对照 $SDGR、$RXRX 这类标的感受风险。</p>
+</blockquote>
+<p><strong>② 有朋友在追 $RXRX 这只「垃圾」，他保持警惕</strong></p>
+<blockquote>
+<p>原文：「I even have friends are longing this garbage $RXRX and it's flying... I'm staying vigilant on this.」（我甚至有朋友在做多 $RXRX（Recursion，AI 制药公司）这只垃圾，而且它还在飞……我对此保持警惕。）
+<strong>解读</strong>：情绪与基本面背离时，他选择站边「不参与」。$RXRX 是 AI 制药里波动最凶的股票之一。</p>
+<p><strong>另 3 条为互动/玩笑</strong>：称赞某人早期看对炼油厂（refinery）交易；对某人说「等日线先收一根墓碑线（tombstone candle，指长上影的见顶 K 线）再动」——这条虽是回复，但透露了他对追高的态度：<strong>等日线确认见顶信号再等机会，别追</strong>。</p>
+</blockquote>
+<h3>7. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 4 条</h3>
+<p><strong>① 谷歌接近与核电运营商 Constellation Energy 签百亿级核电采购协议</strong></p>
+<blockquote>
+<p>原文：「谷歌正接近与美国核电运营商 Constellation Energy $CEG 达成一份多年期核电采购协议，合同累计金额可能达到或超过 10 亿美元，目的是为数据中心扩张保障电力。除了 CEG，$VST（Vistra）也拥有核电。」
+<strong>解读</strong>：AI 数据中心耗电爆炸，科技巨头直接锁定核电电源。对小白：$CEG、$VST 是「AI 电力」主题的核心标的——这条把 AI 算力和核电串成一条投资链，值得单独研究。</p>
+</blockquote>
+<p><strong>② 感谢这波浪潮，新药测试股（CRDM）大涨</strong></p>
+<blockquote>
+<p>原文：「不过还是感谢这浪潮，新药测试股们（CRDM）迎来大涨！」
+<strong>解读</strong>：她点出今天 AI 制药/新药测试板块的强势，与 @labubu_trader 的减仓形成对照——有人在庆祝，有人在减仓。典型的情绪分歧点。</p>
+</blockquote>
+<p><strong>③ 市场广度在变差：只有科技在涨，站上 50 日均线的标普成分股仅约 25%</strong></p>
+<blockquote>
+<p>原文：「有一个最近越来越多被提到的指标是'市场广度'……9 月的反弹行情中，广度在变差。标普 500 站上 50 日均线比例约为 25%，也就是说这一轮上涨，并非多数股票都参与到了。如果以行业来说的话，只有科技行业上涨。10 月初有初步反弹迹象，但不足以说广度反转。最近 5 个交易日，Russell 2000 上涨约 0.95%，显示小盘股也有反弹趋势。」
+<strong>解读</strong>：这是今天最有「判断大盘」价值的一条。市场广度（涨的股票占多数的程度）收窄 = 只有少数龙头在拉指数，这是脆弱信号。她同时给出希望：Russell 2000（罗素 2000，小盘股指数）近 5 日涨约 0.95%，小盘开始补涨。对小白：别被指数新高骗，要问「有多少股票真在涨」。</p>
+</blockquote>
+<p><strong>④ $AAOI 的 6 亿美元 ATM 卖完了</strong></p>
+<blockquote>
+<p>原文：「$AAOI（Applied Optoelectronics，光模块公司）的 6 亿 ATM 终于卖完了。」
+<strong>解读</strong>：ATM（At-The-Market，按市价增发融资）会持续压制股价，卖完意味着抛压解除。呼应下方 @aleabitoreddit 的观点，两人都盯 $AAOI。</p>
+</blockquote>
+<h3>8. @aleabitoreddit（Serenity）— 今日 1 条</h3>
+<p><strong>① $AAOI 的 ATM 长期压着股价，现在抛压解除</strong></p>
+<blockquote>
+<p>原文：「I think we'll go back to regularly scheduled programming now. It's just that ATM was holding $AAOI back for the longest time.」（我觉得现在可以回到正常节奏了。只是因为按市价增发（ATM）压了 $AAOI 太久。）
+<strong>解读</strong>：与 Fiona 同调——$AAOI 长期受增发抛压拖累，融资卖完是利好催化剂。对小白：这类「增发压制解除」是常见的事件驱动机会，但也要看公司基本面是否真支撑。</p>
+</blockquote>
+<h3>9. @starzq（Star@Day1Global Podcast）— 今日 1 条</h3>
+<p><strong>① 「谁是生物科技界的 SemiAnalysis？」</strong></p>
+<blockquote>
+<p>原文：「Who is SemiAnalysis of Biotech?」（谁是生物科技领域的 SemiAnalysis？）
+<strong>解读</strong>：SemiAnalysis 是半导体行业最有影响力的独立研究机构。他在找「同等深度、同等影响力的生物科技硬核研究源」。对小白：这是个信号——今天 AI 制药/生物科技热到有人开始找「行业级硬核研究」，说明这条线正在从冷门变热门（也意味着拥挤度上升）。</p>
+</blockquote>
+<h3>10. @xiaomustock（川沐｜Trumoo🐮）— 今日 1 条</h3>
+<p>今日无实质观点，仅互动：</p>
+<blockquote>
+<p>原文：「@mia_okx 牛」（回复他人，表示称赞。）
+<strong>解读</strong>：今日只在回复区冒了个泡，没有任何行情或标的观点可参考。</p>
+</blockquote>
+<h3>零推文成员</h3>
+<ul>
+<li><strong>@fi56622380（fin）— 今日无新推文。</strong></li>
+<li><strong>@0xSleepinRain（雨中狂睡SleepinRain）— 今日无新推文。</strong></li>
+</ul>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>分歧加大（硬件偏空/医药偏多减仓）</td>
+<td>@jukan05 讽内存高估值、@insane_analyst 质疑 AI 公司补贴收入；@labubu_trader 已减 AI4S，@nft_hu 称新药股大涨</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>偏谨慎（广度收窄 + 油价黏性）</td>
+<td>标普 500 仅约 25% 成分股站上 50 日均线、只有科技上涨；霍尔木兹恢复 80% 但 Brent 仍约 100 美元，因运输成本暴增</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>中高（情绪过热 + 估值双重乐观）</td>
+<td>AI4S/新药股「抛物线」+ 中国卖方亢奋 + 中港对冲基金抢筹，@labubu_trader 明言可能是「拉高抛售」，@nft_hu 警告市场广度变差</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天真正值得跟的两条线：<strong>第一，若想看 AI 硬件与内存的真实景气，别盯股价，去盯上游——东京电子预计 FY2027 营业利润 +60%，这才是晶圆厂扩产的确认；同时警惕「用 2028 年盈利乘以 20 倍」的内存股估值陷阱。第二，AI4S/AI 制药今天出现了明确的「多空分歧」：@labubu_trader 已减掉大部分仓位、只留警惕，而 @mdzzi 强调 $SDGR 从药物发现扩到材料学的新增长点——这正是行情的分歧点，也是风险最集中的地方，新手别在抛物线顶点追。</strong></p>
+<p>风险提醒：AI 制药股多数还在临床（人体试验）阶段，流动性差、波动大，盈亏可以在一夜之间；指数层面只有约 25% 的标普成分股站上 50 日均线，说明「指数新高 ≠ 普涨」，追高要格外小心。以上都是博主的个人观点与操作，<strong>不构成任何买卖建议，请自行研究后再决定</strong>。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-10-05 18:50 BJ 至 2026-10-06 18:50 BJ｜时间均为北京时间</p>
+</blockquote>
+<h3>Irrational Analysis @insane_analyst（16 条）</h3>
+<pre><code>[10-06 06:34] I was wondering why SemiAnalysis attempted to pump Anthropic subscriptions today. LOL
+
+[10-06 07:01] Monthly subs are still heavily subsidized. 
+
+Take a moment and think through (yourself, don't use fucking AI) what this means.
+
+Why do subsidies exist?
+Are higher subsidies good or bad in a severely supply-limited market?
+Would ARR have grown at same rate without subsidies? https://t.co/BUxVm3ZaMG
+
+[10-06 07:16] @Jerkstore212 You forgot making PowerPoints, a key internal Microsoft use case.
+
+[10-06 07:28] @dylan522p It takes a month to calculate basic info that a mutual friend of ours did out of curiosity some time ago with a single AI agent in less than a day?
+
+[10-06 07:43] @dylan522p Dont worry plenty of other people accuse you of much more unethical things these days. Snide remarks from me are least of your problems.
+
+And our mutal friend got $8.6K/month API cost of $200/month sub instead of your $11.7K. Likely due to more optimistic caching assumptions.
+
+[10-06 08:00] @dylan522p Because there are many underlying assumptions? Everyone code workflow slightly diff. 
+
+IDK man I tried to warn you and Doug over a year ago. Really, my moderatly mean joke tweet is nothing compared to what ppl say in private. You pissed lot of ppl off, friends included.
+
+[10-06 08:54] @realmemes6 @dylan522p It was just a joke. Reasonable one too given that Dwarkesh podcast where Dylan sees Ant ruling the world in 999 out of thousand realities or something to that effect.
+
+[10-06 08:58] @learnwdaniel I would like to learn more. NDA no problem.
+
+[10-06 09:03] @learnwdaniel Looking forward to it.
+
+[10-06 09:56] @realmemes6 @dylan522p Good points. Thank you for being a thoughtful volunteer moderator.
+
+[10-06 10:45] @DratchCap Loool very creative
+
+[10-06 10:46] @3721and3824 Hey i like sean
+
+[10-06 11:56] @ChrisGPT Anthro is backing out future training costs. Not profitable. S-1 gona be fun.
+
+[10-06 12:21] @RHouseResearch @ChrisGPT Poorly worded on my part. Say you spent 1B to train currently served model but have spent 2B over last three months to partially train a future in progress model. The 2B does not count. 1B does.
+
+[10-06 12:22] @DMTCapital @ChrisGPT Poorly worded on my part. Say you spent 1B to train currently served model but have spent 2B over last three months to partially train a future in progress model. The 2B does not count. 1B does.
+
+[10-06 14:11] Next project: &quot;The Tragedy of 3D XPoint&quot;
+
+Fun fact: David Zinsner was involved on both the Micron and Intel leg of this unfortunate calamity of lost engineering opportunity. 
+
+I love you Zinsner. Please bring back 3D XPoint. Repent!
+</code></pre>
+<h3>Jukan ✈️OCP 2026 @jukan05（12 条）</h3>
+<pre><code>[10-06 07:55] Even with the situation this clear, some are still setting their price targets at 20x 2028 EPS.🤡 https://t.co/y522hBQieO
+
+[10-06 07:58] @dylan522p Should I cancel Codex and switch to Claude?
+
+[10-06 08:16] @TShirtnJeans2 @dylan522p 🤣
+
+[10-06 09:42] @VoiceOfAFool Wouldn’t the current surge in demand be enough to absorb all the memory supply in 2028? If so, why are memory stocks trading at such low P/E multiples, while HDD stocks trade at such high multiples?
+
+[10-06 10:20] @AGF_Korea 너무 기대됩니다~
+
+[10-06 13:12] Nikkei reported that Tokyo Electron, Japan’s largest semiconductor equipment maker, is expected to post operating profit of ¥1 trillion for the fiscal year ending March 2027 (April 2026–March 2027), up approximately 60% year over year.
+
+https://t.co/LGGDacFgCv
+
+[10-06 13:17] BBG: DeepSeek has secured at least $12 billion in a funding round, with the final amount potentially approaching RMB 100 billion.
+
+BBG: DeepSeek is targeting an IPO in early 2027. https://t.co/FKGEtVAkok
+
+[10-06 13:17] https://t.co/2RmUsuaey2
+
+[10-06 13:20] Hmm...CoPoS?
+
+[10-06 13:41] Seagate cannot afford to let this fall into Toshiba’s hands under any circumstances. If Toshiba acquires it, it will see tremendous growth, just as Micron did after acquiring Elpida. https://t.co/HSjs433Zpb
+
+[10-06 13:43] @Alex_Intel_ Look into the Tesla–Panasonic case… Tesla stole Panasonic’s technology and brought it in-house. I don’t think Intel should join Terafab.
+
+[10-06 17:53] @zephyr_z9 Yup
+</code></pre>
+<h3>qinbafrank @qinbafrank（7 条）</h3>
+<pre><code>[10-06 08:07] 大乐写的很好，其实每年都有几次绝佳入场良机，关键有没有耐心能去等？等到了有没有认知和决断力去抓得住？
+
+[10-06 14:49] @Guilin_Chen_ 益友益友🫶
+
+[10-06 15:10] @lizmoneyprinter @chameleon_jeff 这个关注点可以的👍
+
+[10-06 17:23] 霍尔木兹海峡原油运输量确实在恢复、为何油价还没大幅回落？答案是在成本上。聊聊这块：1、现在恢复了多少？
+综合Kpler/Vortexa等几方的诗句，9月海湾地区原油和凝析油出口已经出现非常明显恢复。Kpler统计：沙特、UAE、伊拉克、阿曼、科威特、卡塔尔几国9月原油+凝析油出口约1470万桶。
+
+Reuters最新评论文章估算，目前穿越霍尔木兹的原油流量约1420万桶已经恢复到战前约80%左右。
+
+个人觉得这些数据可信度还是可以的。
+
+2、这形成了一个什么体系？
+如果深入去看，其实在霍尔木兹海峡现在已经形成一个很成熟的“战时出口转运体系”：
+海湾内装货 → 由生产国自己控制、租用或指定的高风险油轮穿过霍尔木兹 → 到阿曼Sohar、阿联酋Fujairah附近或阿曼湾外海 → 船对船STS转给买方正常远洋油轮 → 接驳船再返回海湾内继续装货。
+
+这个体系里：
+1）沙特、阿联酋：体系最成熟，已经是规模化、连续循环运行；
+2）科威特：也在参与，但规模明显小于沙特/UAE；
+3）伊拉克：正在从“买家自己派船来Basra提货”，转成IOTC自己租VLCC把货送出海峡，刚进入这个模式；
+4）卡塔尔：核心不是原油，而是LNG，主要由QatarEnergy关联船队和长期租船穿越海峡，STS原油模式不是主线。
+
+船舶会形成安全窗口/编队式通过，部分关闭AIS，美国海空力量提供掩护。
+
+3、高成本的来源
+这个体系就是把一趟运输拆成了两段：
+第一段负责“冒险”，第二段负责正常运输。也确实解决了“油运不出来”的问题，但问题是运费也是真贵。
+
+WSJ最新调查显示，一些船东因为一次shuttle trip能够收取最高约4000万美元
+，而船员单次危险航程奖金甚至达到最高2.5万美元/人。这导致越来越多独立船东进入这个市场
+
+一艘shuttle VLCC承担四重风险：战争险、船损风险、船员风险、周转时间风险。
+目前中东→亚洲VLCC报价一度达到：
+约120万美金一天，而战争前差不多3万美金一天。看到有估算，在极端情况下物流费用已经能占到交付原油价格约27%
+
+这也就解释了为什么霍尔木兹海峡原油物理供应已经恢复了很多，Brent仍然在100美元附近。
+
+4、还有个新的限制
+Kpler已经明确说：阿曼湾船对船转运作业正在接近容量上限。之前船对船STS差不多5—7天左右能够完成一轮。现在部分Sohar附近操作已经接近10天。
+
+所以现在盯油价不只是要盯美伊博弈海峡运输，而更要关注这个转运成本！
+转运成本是现在决定油价高低的关键变量！
+
+这五个指标：
+“每日Hormuz VLCC实际通过数、
+Sohar/Fujairah STS（苏哈尔/富查伊拉船对船转运）吞吐量、
+Saudi Ras Tanura（沙特拉斯塔努拉）装船量、
+Yanbu/East-West Pipeline（延布/东西输油管道）流量
+VLCC日租金。”
+比单纯看“海峡是否关闭”的新闻标题更能告诉我们真实供给有没有重新恶化。
+
+本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易
+
+[10-06 17:26] @Ougil1988 核心还是这个运输成本、运输成本下来了裂解价差应该也能下来一些
+
+[10-06 18:07] @Halu198888 日1420万桶、其实也就是7艘VLCC的运输量
+
+[10-06 18:21] @QyjjWEB3 同意，只要运输量能起来、成本迟早也会慢慢下去的
+</code></pre>
+<h3>茶不思 @mdzzi（7 条）</h3>
+<pre><code>[10-06 06:55] 不要私信问我任何观点
+
+我没有义务告知我的想法，也没有义务分享，没有收费群（免费的也没有）没有社区没有私人联系方式。
+
+做自己的研究，然后试着去相信。
+
+[10-06 07:09] 微信也别问，微信是用来生活的😇
+
+[10-06 08:09] @Tintinx2021 凉面
+
+[10-06 11:07] @bocaibocai_ 那也不至于，主要是天天问问的心烦😅
+
+[10-06 13:09] SDGR的AI Agent更详细信息在今晚会公布
+
+我认为最值得关注，也最重要的是：SDGR的业务正从药物发现拓展到材料学
+
+https://t.co/cQabRsehB1
+
+[10-06 13:11] 聊估值是一件现实的事，更现实的是需要关注未来增长点在哪里。
+
+[10-06 14:45] @zchrhrhr 爹新加坡没去，下次香港约吧
+</code></pre>
+<h3>Macro_Lin @LinQingV（6 条）</h3>
+<pre><code>[10-06 11:03] 国内个税实在是太高了。
+
+[10-06 11:20] @lizmoneyprinter 是的，年薪100万往上性价比就开始变低了。
+
+[10-06 12:51] @papa47577346 精辟。
+
+[10-06 13:13] 难得出一个晴天，成都喝茶的人就格外勤快，来得一个比一个早。十二点到茶馆，靠河那排已经坐满了。 https://t.co/xnGQJ0qpxY
+
+[10-06 13:24] @jack1159722 喝早茶的大爷们，中午要回家吃饭的吧？
+
+[10-06 15:57] @xuchuanmei @papa47577346 你应该没有认真比较过。
+</code></pre>
+<h3>3X Long Labubu @labubu_trader（5 条）</h3>
+<pre><code>[10-06 03:35] A very holistic and thorough post made by Freda from Altimeter.
+I was one of the early bulls of AI4S back in June, and had stepped in with big positions in early Aug(https://t.co/VWrQYB9406)
+However I have reduced most of AI4S position already in the last week given the parabolic move.
+From fundamentals perspective, it still look exciting but I believe clinical trials stage is the bottleneck in US so question mark on the final economic value(yes, clinical trials stage will be accelerated by AI in the long term future but not imminent to me)
+From trading perspective, I don’t like the parabolic move. Especially the short term euphoric sentiment from Chinese sell side analysts in the last few weeks. This type of FOMO price action regardless of 5D MA also suggests that CN/HK HF are rushing into them, which probably will be a volatile pump and dump setup in the end.
+
+[10-06 03:37] I even have friends are longing this garbage $RXRX and it's flying...
+I'm staying vigilant on this.
+
+[10-06 03:39] @AntonLaVay I think you were one of the early folks who called out refinery trades.
+
+[10-06 03:44] @AWildSubstitute 👍
+
+[10-06 04:17] @MartinShkreli I would patiently wait for a daily tombstone candle first
+</code></pre>
+<h3>Fiona ❤️&amp; ✌️ @nft_hu（4 条）</h3>
+<pre><code>[10-06 15:13] 谷歌正接近与美国核电运营商 Constellation Energy $CEG 达成一份多年期核电采购协议，合同累计金额可能达到或超过10亿美元，目的是为数据中心扩张保障电力。
+
+除了 CEG， $VST 也拥有核电。
+
+[10-06 15:35] 不过还是感谢这浪潮，新药测试股们（CRDM）迎来大涨！
+
+[10-06 16:15] 有一个最近越来越多被提到的指标是“市场广度”。
+
+市场广度——一个经济周期中非常值得关注的指标。指数涨而绝大多数成分股不涨，被视为“广度变窄”；反之，大部分股票一起上涨就是“广度宽”。
+
+而9月的反弹行情中，广度在变差。
+标普500站上50日均线比例约为25%，也就是说这一轮上涨，并非多数股票都参与到了。如果以行业来说的话，只有科技行业上涨。
+
+10月初有初步反弹迹象，但不足以说广度反转。
+最近5个交易日，Russell 2000上涨约0.95%，显示小盘股也有反弹趋势。
+
+[10-06 16:31] $AAOI 的6亿ATM 终于卖完了
+</code></pre>
+<h3>Serenity @aleabitoreddit（1 条）</h3>
+<pre><code>[10-06 04:00] @Blinklebloop I think we’ll go back to regularly scheduled programming now
+
+It’s just that ATM was holding $AAOI back for the longest time https://t.co/udXpmERWpw
+</code></pre>
+<h3>Star@Day1Global Podcast @starzq（1 条）</h3>
+<pre><code>[10-06 09:37] Who is SemiAnalysis of Biotech?
+</code></pre>
+<h3>川沐｜Trumoo🐮 @xiaomustock（1 条）</h3>
+<pre><code>[10-06 03:36] @mia_okx 牛
+</code></pre>
+<h3>零推文成员</h3>
+<ul>
+<li>@fi56622380 fin — 窗口内无推文</li>
+<li>@0xSleepinRain 雨中狂睡SleepinRain — 窗口内无推文</li>
+</ul>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
