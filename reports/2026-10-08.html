@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.10.08</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.10.08</a></h1>
+  <div class="date">2026.10.08</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.10.08</h1>
+<blockquote>
+<p>今晚主线：美债拍卖打了强心针，但博主们集体转为「轻仓等更好赔率」——资金开始盯利率敏感的后排股（小盘、银行、地产、公用事业）与 BTC。</p>
+</blockquote>
+<h2>一、博主观点汇总（逐一展开）</h2>
+<h3>1. @qinbafrank（qinbafrank）— 今日 11 条</h3>
+<p><strong>① 十年期美债拍卖爆表：5.3% 的收益率被长期资金一口吃掉</strong></p>
+<blockquote>
+<p>原文：「昨晚的十年期美债拍卖结果是一个好的信号：美国390亿美元10年期国债拍卖中标收益率5.3%，低于预发行利率；认购倍数2.77倍明显高于过去六次平卖平均的2.54倍；非交易商投资者认购比例创历史纪录97.5%……5.3%的拍卖收益率为2000年11月以来最高水平，而一级交易商——即负责兜底未被投资者认购债券的大型银行——此次的参与比例只有2.5%已经降至2003年以来最低。」</p>
+</blockquote>
+<p><strong>解读</strong>：所谓「拍卖」就是美国财政部发新债、大家来投标。投标的人越多、价格越好，说明市场愿意接。这次 97.5% 的债是被海外央行/机构这类「非交易商」买走的，负责兜底的银行只买了 2.5%——意思是根本不用兜底，需求太旺。含义：5.3% 这个高收益率已经吸引了长期资金入场，收益率短期有回落压力，对利率敏感的板块（地产、小盘、公用事业）是利好。小白可以记一句话：<strong>债市不慌，股市才敢涨</strong>。</p>
+<p><strong>② 美联储 9 月纪要：加息共识很强，但 10 月不急</strong></p>
+<blockquote>
+<p>原文：「美联储9月会议纪要称：『多数与会者评估认为，在年底前再次上调联邦基金利率目标区间可能是合适的。』部分联储官员近期表态已明显降温10月行动预期，就是年内再次加息共识很强但10月可能不急……相当于说十年期美债拍卖结果提振了短期情绪，但美联储政策信号令利率长期维持高位的预期难以消退。接下来更重要的验证就是今晚的规模220亿美金的30年美债拍卖了。」</p>
+</blockquote>
+<p><strong>解读</strong>：这条是今天最关键的「宏观背景」。美联储不是要降息，而是<strong>可能还要加息</strong>（防通胀），只是这个月先不动。所以债券收益率会长期维持高位——高利率 = 高估值科技股的压力源。作者自己也说，今晚的 30 年期拍卖才是真正的验证。</p>
+<p><strong>③ 美联储首次把「AI 基建投资」写进总需求分析</strong></p>
+<blockquote>
+<p>原文：「纪要指出，AI基础设施建设持续支持企业投资，部分委员认为建设规模和速度仍然超出此前预期。与此同时有委员担心：AI相关需求增长可能在中期超过经济的供给扩张速度，从而推高通胀……问题在于，这两个过程发生的时间不同。目前市场已经可以比较明确地看到前者，后者的规模和兑现时间还需要时间。」</p>
+</blockquote>
+<p><strong>解读</strong>：美联储现在把 AI 数据中心当成了影响通胀的变量——短期它推高需求（要电、要设备、要人），长期它可能提高生产率。对小白的意思是：<strong>AI 行情不只是故事，它已经大到能影响宏观数据</strong>。这既是支撑 $NVDA 等基建链的理由，也是通胀难降的原因。</p>
+<p><strong>④ AI 公司发债正在推高长期利率（新的传导链）</strong></p>
+<blockquote>
+<p>原文：「公开市场操作部门在报告中指出，大规模私人部门债务发行，尤其用于AI基础设施建设的融资需求，是市场认为推动长期美债收益率及期限溢价上升的因素之一……现在美联储已经明确记录到另一条传导链：AI资本开支增加 → 大规模企业债发行 → 争夺长期资本 → 企业信用利差和美债期限溢价承压。这意味着AI投资周期正在通过资本市场影响自身融资成本。」</p>
+</blockquote>
+<p><strong>解读</strong>：以前大家想的是「AI 花钱 → 芯片电力赚钱」。现在多了一层：<strong>AI 公司借了太多钱 → 把钱市场利率推高了 → 连自己的融资成本都变贵</strong>。这是一个负反馈风险，值得留意 $MSFT、$GOOGL 这些大厂后续发债动作。</p>
+<p><strong>⑤ 美联储认为这轮股市上涨是「盈利驱动」不是「放水驱动」</strong></p>
+<blockquote>
+<p>原文：「纪要中公开市场操作部门提到，今年股票上涨主要归因于实际和预期企业盈利增长，而市盈率倍数有所下降，这是一个很有价值的市场判断。如果这一评估成立，那么2026年上涨已经越来越不同于典型的流动性推动估值扩张行情。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是很正面的一句话——意思是股价涨是因为公司真赚钱了，不是靠估值泡沫吹起来的。对小白的意义：<strong>这轮 AI 行情的「底子」比 2021 年那次扎实</strong>，回调时更值得考虑。</p>
+<p><strong>⑥ 流动性没有系统性短缺，美联储不会因为收益率快涨就出手</strong></p>
+<blockquote>
+<p>原文：「纪要显示，准备金仍处于充裕范围，短期融资市场整体稳定……长债收益率上涨，并不自动意味着银行准备金或回购市场已经发生流动性危机，当前仍然更接近资产长期均衡价格的重新调整……只有当政策传导受到威胁时，它才会干预。」</p>
+</blockquote>
+<p><strong>解读</strong>：翻译成人话——<strong>别指望美联储看到利率涨就来救市</strong>。他们只在「银行间转不动钱」这种真危机时才动手。所以利率高位要自己扛。</p>
+<p><strong>⑦ 生物医药：扎克伯格 Biohub 联合政府+Google 建 AI 生物学数据集</strong></p>
+<blockquote>
+<p>原文：「Biohub宣布与美国政府、Google DeepMind、Isomorphic Labs及Meta合作，建设用于AI生物学研究的开放数据集，总规模约18亿美元……这项合作希望利用自动化实验、测量和模型训练形成更高质量的数据集。它对应的是一个潜在长期机会：AI药研的核心瓶颈，可能从模型计算能力逐渐转向可验证的实验数据和自动化实验能力……DNA合成、蛋白生产、CRO或成最先受益的『卖铲人』。」</p>
+</blockquote>
+<p><strong>解读</strong>：AI 制药最大的瓶颈不是算力，而是<strong>没有足够多干净的实验数据</strong>。这次合作就是砸钱造数据。拿「卖铲子」逻辑找机会：CRO（药物研发外包）、DNA 合成、蛋白生产这些上游服务商先受益。跟 A 股/港股 CXO 板块（如 $药明康德 系）逻辑相通。</p>
+<p><strong>⑧ Grok Bot 可搜可读可监控 X 全平台内容</strong></p>
+<blockquote>
+<p>原文：「这个功能太实用了，Grok Bot可以帮我们搜索、阅读和监控X平台上所有的内容，包括不限于产品反馈、突发新闻和行业汇总……X的数据价值也会越来越强。不仅个人，企业在做舆情、用户产品互动都有极强的需求、甚至进阶版付费商业化空间也很大。」</p>
+</blockquote>
+<p><strong>解读</strong>：$X 平台（老马旗下）数据变现能力被强化。作者是 X 信息价值的长期看多者。</p>
+<p><strong>⑨ 关于 Apple/Siri 与问答互动</strong></p>
+<blockquote>
+<p>原文：「siri其实很有潜力从对话到agent，估计还是节奏的问题和产品力的问题。但说实话，苹果产品强在硬件和软件界面，但过往App类的应用做的都一般呐」</p>
+</blockquote>
+<p><strong>解读</strong>：作者认为 $AAPL 的 Siri 有做 AI Agent（能干活的智能助手）潜力，但苹果软件应用的执行力偏弱，是它的短板。和下面 @labubu_trader 第 7 条讲 Google 做个人 agent 的观点正好可对照。</p>
+<p><strong>⑩ 长文：X 已成为全球信息中心（三个大事件 + 一个趋势）</strong></p>
+<blockquote>
+<p>原文：「三个大事件：24年美国总统大选、25年关税战、26年伊朗战争（伊朗最高领袖、总统、议长、外长都启用X账号发声）；一个趋势就是AI公司和科技领袖越来越倾向在X上发布动态、营销，打口水仗……黄仁勋最近都注册了X账号开始频繁发生、扎克伯格时隔三年重新启用X账号，苹果新人CEO于9月1日首次在X上公开发帖。」</p>
+</blockquote>
+<p><strong>解读</strong>：这是作者的长期主题之一——<strong>X 是实时信息的密度最高点</strong>，谁掌握一手信源谁就有信息优势（对交易者尤其重要）。对普通投资者的实用价值：多看一手信源，少看被转述三遍的二手解读。</p>
+<p><strong>另</strong>：其余为互动与运动闲聊（有氧 vs 力量训练等），无新增观点。</p>
+<h3>2. @labubu_trader（3X Long Labubu）— 今日 9 条</h3>
+<p><strong>① 重磅长贴：AI 基本面继续变强，但我刻意保持轻仓（15 点框架）</strong></p>
+<blockquote>
+<p>原文（TLDR）：「AI fundamentals are still getting stronger. But after the big run, I'm keeping positions light and waiting for a cleaner setup. The next major opportunity could be the assets that high rates have kept under pressure.」（AI 基本面仍在变强。但大涨之后我保持轻仓，等更干净的入场结构。下一个大机会可能是那些被高利率压着的资产。）</p>
+</blockquote>
+<p>这条是今天<strong>信息量最大、最值得逐字读</strong>的一条，作者用 15 点讲清了思路，逐条展开：</p>
+<ul>
+<li>
+<p><strong>1）美债 10 年期：波动的「剧烈程度」比具体收益率更重要。</strong></p>
+<blockquote>
+<p>「I'm less concerned about whether the 10-year yield is 5.3% or 5.5% than how violently it moves. Before adding meaningful risk, I want yields stabilizing or gradually declining, with MOVE—the bond market's volatility index—coming down too.」（我不太在意 10 年期是 5.3% 还是 5.5%，我在意它波动得多凶。加实质仓位前，我要看到收益率企稳或缓慢下行，同时 MOVE 指数——债市的波动率指数——也降下来。）
+<strong>解读</strong>：他在看 <strong>MOVE 指数</strong>（衡量债市恐慌程度的指标），愿意等它回落再进场，别在高波动里硬冲。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>2）市场宽度（breadth）需要化解。</strong></p>
+<blockquote>
+<p>「Money has concentrated in AI winners while much of the market struggles. Breadth can improve through laggards catching up, or through winners correcting. Either outcome makes chasing semiconductors with maximum size less attractive here.」（钱全挤在 AI 赢家身上，大盘其他部分在挣扎。宽度修复要么靠落后者补涨，要么靠赢家回调。无论哪种，现在满仓追半导体都不划算。）
+<strong>解读</strong>：市场「宽度」= 上涨的股票覆盖面有多广。现在只有 AI 独涨，是典型的「窄幅行情」，风险偏高。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>3）补涨篮子：$KRE、$IWM、$RKT、$XLU。</strong></p>
+<blockquote>
+<p>「Regional banks, small caps, housing and utilities could respond sharply to easing rate pressure, helped by short covering. The condition matters: an orderly decline in yields supports that setup. A sudden collapse could signal recession instead.」（区域银行、小盘股、房地产、公用事业可能对利率压力缓解反应剧烈，还有空头回补助力。关键是方式：收益率「有序」下行利好这套逻辑；「突然崩塌」则可能意味着衰退。）
+<strong>解读</strong>：这是他给的<strong>最具体的可跟清单</strong>——$KRE（区域银行 ETF）、$IWM（小盘股 ETF）、$RKT（房贷公司）、$XLU（公用事业 ETF）。前提是利率「慢慢」降，不是崩。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>4）中期选举不影响 AI 数据中心建设。</strong></p>
+<blockquote>
+<p>「The key topics from Democrats are still inflation, Iran and gas price. These have higher priority than AI datacenter. However I see long term risk as the US people's sentiment towards AI and datacenter is quickly deteriorate except people who are working in the AI industry.」（民主党的核心议题还是通胀、伊朗、油价，优先级高于 AI 数据中心。但我认为长期风险是民众对 AI 和数据中心的反感正在快速恶化，除了在 AI 行业工作的人。）
+<strong>解读</strong>：短期政策风险不大，但<strong>民意 Long-term 风险</strong>值得盯——数据中心耗电、扰民引发的政治阻力。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>5）石油问题不止是原油。</strong></p>
+<blockquote>
+<p>「Refinery capacity and refined-product supply deserve more attention. Having crude available doesn't automatically solve gasoline or diesel shortages. Persistent pressure on those products can keep inflation expectations—and long-term yields—elevated.」（炼油产能和成品油供应更值得关注。有原油不等于自动解决汽柴油短缺。成品油持续紧张会让通胀预期和长端收益率维持高位。）
+<strong>解读</strong>：和 @nft_hu 今天讲炼油瓶颈是同一主题——<strong>瓶颈在炼油不在采油</strong>。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>6）AI 收入增长是关键验证。</strong></p>
+<blockquote>
+<p>「I'm skeptical of claims that OpenAI is already at $70B ARR. But if coding and enterprise growth stays steep, an $80–100B annualized revenue run rate by year-end is conceivable. That's a possible outcome, not a confirmed number. Downstream revenue must justify upstream capex.」（我怀疑「OpenAI 已达 700 亿美元 ARR」的说法。但如果编程和企业增长保持陡峭，年底 800–1000 亿美元年化营收是可能的——那是一种可能，不是已确认的数字。下游收入必须支撑上游 capex。）
+<strong>解读</strong>：ARR=年度经常性收入。他的核心逻辑一句话：<strong>下游（应用/收入）得撑得住上游（芯片/资本开支）</strong>，否则整条链会塌。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>7）Google 最大的机会是个人 AI Agent。</strong></p>
+<blockquote>
+<p>「Google has distribution through Search, YouTube, Gmail, Maps and Android, existing monetization infrastructure, and its own hardware-to-model stack with low inference cost. I'd like to see it combine those advantages into a personal agent. Coding isn't its advantage.」（Google 有搜索/YouTube/Gmail/地图/安卓的分发渠道、现成的变现基建、自有硬件到模型的全栈和低推理成本。我希望它把这些整合成个人 agent。编程不是它的强项。）
+<strong>解读</strong>：$GOOGL 的护城河是「入口+分发」，agent（能主动帮用户干活的智能助手）才是它该发力的方向。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>8）下一轮 AI 重估需要「回报证据」。</strong></p>
+<blockquote>
+<p>「Personal agents, AI for Science, biotech and enterprise applications could broaden monetization beyond coding. Faster research, cheaper drug discovery and measurable productivity gains would help demonstrate that AI spending can generate attractive returns on invested capital.」（个人 agent、AI 科学、生物科技、企业应用可以把变现从编程扩展到更多领域。更快的研发、更便宜的新药发现、可量化的效率提升，才能证明 AI 支出能带来有吸引力的投资回报。）
+<strong>解读</strong>：呼应 @qinbafrank 的 AI 药研主题——<strong>AI for Science（AI 做科学研究）</strong>是下一个变现场景。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>9）AI IPO 会重分配「AI 溢价」。</strong></p>
+<blockquote>
+<p>「If OpenAI or Anthropic goes public, investors would gain direct access to another layer of AI monetization. Some capital could rotate away from semiconductor proxies.」（如果 OpenAI 或 Anthropic 上市，投资者能直接买到另一层 AI 变现。部分资金可能从半导体「代理股」轮动出去。）
+<strong>解读</strong>：$NVDA 这类是「AI 代理股」；真 OpenAI 上市，资金可能分流。对半导体是隐性利空。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>10）在半导体内部我更挑。</strong></p>
+<blockquote>
+<p>「CPU still has catch-up potential as server architecture evolves. Optical has already run hard, and strong memory results may already be well understood. I'm treating semiconductor equipment more tactically.」（CPU 随着服务器架构演进还有补涨潜力。光模块已经涨狠了，存储的强业绩可能已被充分理解。半导体设备我处理得更战术性。）
+<strong>解读</strong>：细分方向排序——<strong>CPU 补涨空间 &gt; 光模块/存储（涨过了）；半导体设备做波段</strong>。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>11）BTC 是我在利率结构改善时的第一观察对象。</strong></p>
+<blockquote>
+<p>「If US10Y and MOVE genuinely top out, BTC looks like a strong expression of improving liquidity and risk appetite.」（如果 10 年期和 MOVE 真正见顶，BTC 是流动性改善和风险偏好回升的强表达。）
+<strong>解读</strong>：这是他给的策略联动——<strong>利率见顶 + 波动率回落 → 利好 BTC</strong>。小白可理解为「利率是开关，BTC 是弹性最大的开关灯」。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>12）$TLT 看涨期权吸引力下降。</strong></p>
+<blockquote>
+<p>「High bond volatility makes options expensive. Even if TLT rises as yields decline, falling implied volatility can eat into call returns. For this setup, I prefer considering equities with underlying businesses that could benefit from easing rate pressure.」（高债市波动让期权很贵。就算 TLT 因收益率下行而涨，隐含波动率回落也会吃掉 call 的收益。这种环境下，我宁愿买那些业务能从利率压力缓解中受益的股票。）
+<strong>解读</strong>：$TLT=长期美债 ETF。他的建议是<strong>别用期权赌债市，直接买受益的股票</strong>（即第 3 条的 $KRE/$IWM 等）。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>13）主要宏观催化剂：FOMC、CPI、国债发行。</strong></p>
+<blockquote>
+<p>「These can change expectations for policy, inflation and long-term bond supply. For the midterms, I care most about what follows: changes to fiscal policy and issuance that could alter the path of long-term yields.」（这三件事会改变政策、通胀、长期债券供给预期。中期选举后我最在意财政政策和发行变化，那会改变长端收益率路径。）</p>
+</blockquote>
+</li>
+<li>
+<p><strong>14）轻仓是刻意选择。</strong></p>
+<blockquote>
+<p>「I already traded the post-September FOMC rally aggressively. Now I'm waiting for better risk/reward. With leverage and options, timing matters enormously. A stable index can still hide severe drawdowns in individual stocks.」（9 月 FOMC 后的反弹我已经激进做过一轮。现在等更好的风险回报比。用杠杆和期权，择时极其重要。指数平稳也可能掩盖个股的暴跌。）
+<strong>解读</strong>：一句提醒——<strong>指数没事不代表你的个股没事</strong>。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>15）下一笔大交易可能是「落后者补涨」。</strong></p>
+<blockquote>
+<p>「I remain confident in AI's fundamentals, especially as downstream monetization expands. But confidence doesn't require maximum exposure at every price. If yields stabilize and MOVE falls, BTC and KRE/IWM/RKT/XLU could offer a compelling next setup.」（我对 AI 基本面保持信心，尤其是下游变现扩张时。但信心不代表每个价位都要满仓。如果收益率企稳、MOVE 回落，BTC 和 KRE/IWM/RKT/XLU 可能是下一个有吸引力的布局。）
+<strong>解读</strong>：全篇结论一句话——<strong>信仰 AI，但此刻轻仓，等利率企稳信号，然后买落后补涨的利率敏感资产 + BTC</strong>。</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>② 关于中期选举与民主党横扫：10 年期收益率可能快速反转</strong></p>
+<blockquote>
+<p>原文：「One more thing, if we indeed get Democrats sweep in midterm. I would expect a quick reversal of US 10Y.」（补一句：如果中期选举民主党真的横扫，我预计美债 10 年期会快速反转。）
+「Yes all Trump's stimulus policies would get blocked or delayed by Dems. Also Dems will use inflation, Iran, gas price topics to attach Reps. So the bond market would need to price in a cooler inflation expectation + a slower economy growth, which translates to lower yield.」（对，特朗普的刺激政策会被民主党阻挠或延后。民主党还会用通胀、伊朗、油价这些议题攻击共和党。所以债市要计入更低的通胀预期 + 更慢的经济增长，等于更低的收益率。）
+<strong>解读</strong>：他的选举交易逻辑——<strong>民主党横扫 → 长端收益率下行</strong>（利好第 3 条的利率敏感篮子）。他也在等 CPI 落地再看（「I guess they are waiting for CPI first」）。</p>
+</blockquote>
+<p><strong>③ 关于 AI capex 与民主党横扫的关系</strong></p>
+<blockquote>
+<p>原文：「Also I don't think Dem Sweep would cause AI capex slow down. It's not a top priority for them to attach at the moment.」（我也不认为民主党横扫会让 AI 资本开支放缓，这不是他们当前的攻击重点。）</p>
+</blockquote>
+<p><strong>④ 关于是否给 10 年期收益率封顶</strong></p>
+<blockquote>
+<p>原文：「I don't have the ball to call a top now for 10Y. Just watch it.」（我现在没本事说 10 年期见顶了，就盯着看。）</p>
+</blockquote>
+<p><strong>⑤ 关于访谈被质疑的回应（互动）</strong></p>
+<blockquote>
+<p>原文删节（含粗口，仅记录）——作者回应外界对其访谈内容的质疑，强调「所有帖子无论对错都可查证」。属互动性质，无新观点。</p>
+</blockquote>
+<h3>3. @jukan05（Jukan ✈️OCP 2026）— 今日 6 条</h3>
+<p><strong>① 三星电子 2026 年 Q3 初步业绩：营收不及预期、利润小超预期</strong></p>
+<blockquote>
+<p>原文：「Company: Samsung Electronics (Market Cap: KRW 1,572.6489 trillion) … Revenue: KRW 195.0 trillion (Consensus: KRW 200.8422 trillion / −3%) Operating Profit: KRW 107.4 trillion (Consensus: KRW 106.7467 trillion / +1%) … Report: Preliminary Consolidated Operating Results (Fair Disclosure)」（公司：三星电子（市值 1,572.65 万亿韩元）……营收 195 万亿韩元（市场预期 200.84 万亿，低 3%）；营业利润 107.4 万亿韩元（预期 106.75 万亿，高 1%）；报告：初步合并经营业绩（公平披露））
+<strong>解读</strong>：三星是<strong>存储/内存（HBM 高带宽内存、DRAM 内存、NAND 闪存）</strong>的龙头风向标。营收低于预期但利润略超，说明「量少但价高」——存储涨价周期还在。这条对 $MU（美光）、$NVDA 供应链都有参照意义。注意这是初步业绩，后续还有详细披露。</p>
+</blockquote>
+<p><strong>② 中国「电力过剩」的黑色幽默</strong></p>
+<blockquote>
+<p>原文：「China is absolutely insane. As if a pork glut weren't enough, now it has an electricity glut too… Just think about how insane this sentence sounds: "Data centers are the solution to electricity oversupply."」（中国简直了。好像猪肉过剩还不够，现在连电力也过剩了……你想想这句话听上去多荒诞：『数据中心是电力过剩的解决方案』。）
+<strong>解读</strong>：这是反讽中国电力过剩到需要「靠建数据中心来消化」的地步。对投资的提示：中国电力/数据中心建设成本极低，是 AI 基建的成本优势来源（呼应 @qinbafrank「中国电力过剩」的独立线索）。</p>
+</blockquote>
+<p><strong>③ 台积电 9 月营收：同比大增 54.6%</strong></p>
+<blockquote>
+<p>原文：「TSMC September revenue: NT$511,857 million (-0.6% MoM, +54.6% YoY)」（台积电 9 月营收 5,118.57 亿新台币，环比 -0.6%，同比 +54.6%）
+<strong>解读</strong>：$TSM（台积电）是 AI 芯片（$NVDA、$AMD 的 GPU/CPU）唯一的高端代工厂，它的营收就是 <strong>AI 需求的最硬数据</strong>。同比 +54.6% 说明 AI 芯片需求极其强劲，环比微降属正常波动。这是今天最扎实的「AI 基本面仍在变强」的证据。</p>
+</blockquote>
+<p><strong>④ 吐槽某黑客事件（幽默）</strong></p>
+<blockquote>
+<p>原文：「This hacker is truly legendary. A complete amateur. 1. He left directory listing enabled on his own server… 2. They found files like CLAUDE.md and went through his Claude Code sessions… 3. There were questions like, "Where can I sell this data?" 4. He'd also asked, "Can you write my résumé?"…」（这个黑客真是传奇，纯业余。1. 他自己服务器上目录列表没关……2. 找到 CLAUDE.md 这类文件，翻了他的 Claude Code 会话……3. 里面有类似「这数据我去哪卖」的问题。4. 他还问「你能帮我写简历吗」……）
+<strong>解读</strong>：纯娱乐/安全闲聊，无投资观点，但侧面反映 AI 编码工具（Claude Code）的普及度。</p>
+</blockquote>
+<p><strong>另</strong>：其余 2 条为同事件延伸吐槽与表情回应（「LMAO」等），无新观点。</p>
+<h3>4. @starzq（Star@Day1Global Podcast）— 今日 4 条</h3>
+<p><strong>① 重磅：a16z《Top 100 消费级 AI 应用》报告 26 点纪要</strong></p>
+<blockquote>
+<p>原文：「a16z【Top 100 Consumer AI Apps】报告纪要……近一半的美国消费者使用 AI，但只有 25%的人每天使用，4.5% 的用户付费。消费支出排名前 10% 的用户贡献了约一半的总支出，主要购买编程、生产力和创意工具。」</p>
+</blockquote>
+<p>作者逐条整理了这份报告，挑最有信息量的展开：</p>
+<ul>
+<li>
+<p><strong>Claude 的用户「更值钱」</strong></p>
+<blockquote>
+<p>「4) Claude 的用户价值更高：7.3% 订阅了 $100 套餐，ChatGPT 和 Gemini 只有 1.3% 和 1.1%。」（Claude 有 7.3% 用户订阅 100 美元档，ChatGPT、Gemini 分别只有 1.3%、1.1%）
+「5) ChatGPT 7 月推出 GPT-5.6 Sol、Terra 和 Luna, 帮助其在每日新订阅人数上超过了 Claude。6) 只有 8%的美国 ChatGPT 订阅用户同时订阅了 Claude。」
+<strong>解读</strong>：$MSFT 系（ChatGPT）× $GOOGL 系（Gemini）× Anthropic（Claude）三者格局——Claude 走「高客单价专业用户」路线，ChatGPT 靠新模型抢回增长。对投资：谁在企业端付费率高谁更抗周期。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>AI 消费支出遵循「幂律分布」（少数人贡献多数钱）</strong></p>
+<blockquote>
+<p>「11) 支付金额排名前 1%的用户贡献了所有观察到的消费者 AI 支出的 19.5%。12) 这 1% 的高支出用户，平均每月在消费者卡上为 AI 支付 903 美元，而且这个数字还在增长，过去 18 个月增长了 80%。13) 这 1% 更像是专业消费者，主要购买自动化和产品构建工具，如 n8n、fal、Manus 和 Nous Research（Hermes Agent），以及创意工具，如 Higgsfield、Figma 和 HeyGen。」
+<strong>解读</strong>：AI 赚钱靠的是<strong>少数重度用户</strong>，不是全民普涨——这点和游戏、SaaS 行业一样。其中点名了 n8n、Manus、HeyGen、Figma 等自动化/创意工具。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>个人助理（Personal Agent）竞赛还很早期</strong></p>
+<blockquote>
+<p>「14) 注册页面访问量：Muse 每日 80 万，Instinct 每日 25 万。15) Personal Agent 的 Top 9 用例：编码、旅行、购物、金融、知识管理、日程管理、研究、销售、餐厅预约。17) 这个赛道仍十分早期。Muse 的早期势头远不及 Meta 当年推出 Threads。（Threads 前 22 天下载超 1500 万次，Muse 不到一个月只有 500 万）」
+<strong>解读</strong>：个人 AI 助手赛道刚起步，用例集中在「干活类」（编码、旅行、购物、金融、日程）。呼应 @labubu_trader 第 7 条「Google 该做个人 agent」。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>初创公司仍在取胜的领域</strong></p>
+<blockquote>
+<p>「18) 拥有差异化模型：Suno、ElevenLabs、Midjourney、HeyGen、Kling、Topaz Labs 都进了支出榜——都是基于专有模型构建的。19) 拥有多模型体验：Cursor 支持多实验室模型；OpenRouter 提供多供应商访问。20) 编码和生产力产品是早期受益者：Lovable、Cursor、Base44、Replit 均入选网站流量榜。」
+<strong>解读</strong>：有「独家模型」或「多模型聚合」的公司能活下来。$ADBE 这类传统软件商面临 Figma 等新生代的挤压。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>商业模式：订阅为王</strong></p>
+<blockquote>
+<p>「23) 目前主要的变现方式是付费订阅，占 84%的产品采用；其次是使用费/额外积分，采用率为 64%。只有 14%的产品有广告……25) ChatGPT 广告在八月份达到了年化 10 亿美元的收入运行率，基数为 12 亿每周活跃用户；50-60% 的美国医生使用 OpenEvidence。」
+<strong>解读</strong>：AI 应用主要靠<strong>订阅收费</strong>，不是广告（至少现在）。ChatGPT 广告已是 10 亿美元年化——$MSFT/OpenAI 的变现路径又多一条。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>作者个人判断（原文）</strong></p>
+<blockquote>
+<p>「（我个人觉得，未来会有 2 种收入方式，用户付费订阅和消费抽成，一个拐点是 token 的使用价格降到获客成本以下）」</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>另</strong>：其余 2 条为 Grok Bot 抓 X 的功能感叹与科技大周期互动回复，无新增标的观点。</p>
+<h3>5. @nft_hu（Fiona ❤️&amp; ✌️）— 今日 6 条</h3>
+<p><strong>① 「炼油/石油加工」才是现在真正的瓶颈交易</strong></p>
+<blockquote>
+<p>原文：「大家这么爱用瓶颈交易，其实『炼油』『石油加工』是现在的瓶颈交易。乌克兰无人机攻击轰炸俄罗斯的大型炼油厂和石油加工基础设施，导致大量炼油设备受损、停产或减产，成品油产能严重受限。毕竟，原油与成品油无法直接划等号。俄罗斯开采的是地下原油，必须经过炼油厂加工才能变成汽车能用的汽油和柴油。目前多地加油站出现限购、加油站缺油、排长龙甚至从印度、白俄罗斯等国紧急进口燃料的现象。」
+<strong>解读</strong>：「瓶颈交易」= 找到供应链里最紧的那一环去布局。她的判断是：<strong>卡的不是原油，是炼油产能</strong>。逻辑链：乌克兰无人机炸俄罗斯炼油厂 → 成品油产能受限 → 俄罗斯从出口国变进口国 → 全球成品油（汽油/柴油）供给收紧。对投资的含义：炼油环节的公司、成品油价格、乃至通胀预期都受影响（呼应 @labubu_trader 第 5 条）。</p>
+</blockquote>
+<p><strong>② 炼油副产品断供的连锁反应（航空煤油/石脑油/硫磺/化肥）</strong></p>
+<blockquote>
+<p>原文：「1️⃣航空煤油……由于大量精炼设施受损或停产，俄罗斯发布行政命令限制或禁止航空煤油出口。2️⃣石脑油及下游基础化工原料……石脑油产出暴跌，其下游的塑料、合成橡胶产业链就会出现『断粮』危机。3️⃣硫磺……俄罗斯从全球第二大『硫磺出口国』变成了『进口国』；为了保住国内化肥和粮食产量，不得不对尿素和各类化肥实施严厉的出口配额和禁令。4️⃣尿素与化肥……政府为了稳定农业秋收，发布了第431号决议等法令，严格限制尿素及复合肥的出口配额。」
+<strong>解读</strong>：炼油厂不只产汽油，还产<strong>航空煤油</strong>（飞机燃料）、<strong>石脑油</strong>（做塑料、化纤、轮胎的原料）、<strong>硫磺</strong>（做化肥）——一个环节卡住，化工、航空、农业全被牵动。小白视角：这类「上游原料涨价」会慢慢传导到很多东西的成本上。</p>
+</blockquote>
+<p><strong>③ 油价已传导到机票</strong></p>
+<blockquote>
+<p>原文：「如果我没记错价格的话，石油漲價已經迅速傳導到了機票😭 前几天看星宇飞美國商務艙往返還是15萬台幣，現在已經18萬多了🥲」
+<strong>解读</strong>：她用自己的机票涨价作为「油价传导到终端消费」的实例——这也是<strong>通胀黏性</strong>的直观证据（对债市、美联储决策有含义）。</p>
+</blockquote>
+<p><strong>④ 对下跌标的的态度</strong></p>
+<blockquote>
+<p>原文：「下跌趋势中不买了，毕竟能买的标的太多了😂」「有时候就是市场对你的看法。哪怕是业绩增长的，但你可能被分走蛋糕，那么市场就会给你一个下跌。已经无数次证明了这一点。」
+<strong>解读</strong>：她的纪律——<strong>下跌趋势里不接飞刀</strong>。并且点出一个关键认知：<strong>业绩增长 ≠ 股价上涨</strong>，如果市场认为你被抢了份额，照样跌。这句对小白很有价值。</p>
+</blockquote>
+<h3>6. @insane_analyst（Irrational Analysis）— 今日 12 条</h3>
+<p><strong>① 核心观点：良率（yield）的真正瓶颈在「参数良率」不在「灾难性缺陷」</strong></p>
+<blockquote>
+<p>原文：「We all know catestrophic/defect yield is 100% from the routing. Parametric yield is the problem. 100% of wafers pass ATE screen which is reasonable although slightly generous assumption. What % wafers survive into usable product/system/enclosure/rack?」（我们都知道灾难性缺陷良率在布线环节是 100%。真正的问题是参数良率。100% 的晶圆通过 ATE 筛选算合理（虽然假设略宽松）。但最终有多少百分比能变成可用的产品/系统/机柜？）
+<strong>解读</strong>：良率=合格芯片的比例。这是半导体制造的硬知识——<strong>真正的损耗发生在「参数不合规」的筛选上，而不是物理报废</strong>。ATE=自动测试设备。对小白：这解释了为什么 GPU/HBM 的「实际可用产量」可能远低于表面良率，是 AI 芯片供给紧张的深层原因。</p>
+</blockquote>
+<p><strong>② 关于 Ayar Labs（光互联/硅光公司）</strong></p>
+<blockquote>
+<p>原文：「Ayar Labs https://t.co/hbnvShYLT4」「Bigger question is did AMD drop Ayar lol.」（更大的问题是 $AMD 是不是把 Ayar 甩了，哈哈。）
+<strong>解读</strong>：Ayar Labs 做的是<strong>光互联（用光而不是电来传数据）</strong>，是 AI 数据中心里解决「芯片间带宽」瓶颈的关键技术。作者在追踪它是否与 $AMD 合作。呼应 @labubu_trader 第 10 条「光模块已涨狠」的话题。</p>
+</blockquote>
+<p><strong>③ 关于某「聪明人」Dunn 的评论</strong>：原文「This Dunn person seems very clever.」——简短互动，无实质标的。</p>
+<p><strong>④ 各种互动</strong>：原文含「No rank. Public co only」「💀」「Awooo」「Ok i should have said non-startup.」「Same」「Not really. Nothing new.」「Electrocute the pigs obviously.」等——均为回复与调侃，无新增投资观点。</p>
+<p><strong>另</strong>：该账号今日以半导体制造技术讨论与回复为主，未给出明确买卖建议。</p>
+<h3>7. @xiaomustock（川沐｜Trumoo🐮）— 今日 8 条</h3>
+<p><strong>① 核电股亏麻了：硬了一天就崩</strong></p>
+<blockquote>
+<p>原文：「核电股亏麻，只硬了一天，都跌成这逼样了还能一直跌，嘎了一半留了一半，全跑的话不甘心，不跑的话又觉得跌的恶心。」
+<strong>解读</strong>：这是作者的真实持仓吐槽——核电板块（如 $OKLO、$SMR 等小堆核电概念）只涨一天就连续下跌，他选择「砍一半、留一半」。对小白：<strong>核电/AI 电力是当下高波动题材</strong>，涨得猛跌得也狠，别重仓押单一题材。</p>
+</blockquote>
+<p><strong>② 原油别「一叶障目」：北美南美产量很大，中东还有闲置产能</strong></p>
+<blockquote>
+<p>原文：「人很容易一叶障目，比如原油，大家能看到的油价波动都来自霍尔木兹海峡开与否或者中东战事，但都自动忽略了北美洲也产石油，南美洲也产，而且他们量还都很大，巴西日均产油380万桶，委内瑞拉日均110万桶，美国日均1350万桶，加拿大日均500万桶。同时因为中东opec机制存在，中东每个国家都有大量的闲置产能，他们既是被炸毁一些产油设施也不影响总产出。」
+<strong>解读</strong>：他的观点是<strong>别过度恐慌原油供给中断</strong>——美加巴委产量可观，OPEC 还有闲置产能。这与 @nft_hu 的「炼油瓶颈」形成互补视角：原油本身不缺，缺的是加工能力。对小白：看油价不能只盯中东新闻，要算全球总供给。</p>
+</blockquote>
+<p><strong>③ Claude 冲击低价/落后模型股</strong></p>
+<blockquote>
+<p>原文：「Claude一把干死了低价模型的股票和落后模型的叙事。」
+<strong>解读</strong>：直指 AI 模型竞争的残酷——<strong>Claude 的强势挤压了「便宜模型」「落后模型」公司的故事空间</strong>。与 @starzq 的 a16z 报告（Claude 用户价值更高、7.3% 订阅 $100 档）互相印证。相关标的包括一些二线 AI 模型概念股。</p>
+</blockquote>
+<p><strong>④ 华为相关调侃（互动）</strong></p>
+<blockquote>
+<p>原文：「一夜之间变天了，他娘的，太乱了。」「一个人的认知与财富不匹配的时候财富就会流向华为」「刹车踏板断裂的公关词都帮华为想好了。华为：我们计划下一代尊界去掉刹车踏板和方向盘，对齐甚至远远超越特斯拉智驾。」
+<strong>解读</strong>：这些是对华为汽车/智能驾驶的调侃段子，非严肃投资观点。但「对齐甚至超越特斯拉智驾」间接涉及 $TSLA 的竞争话题，可当情绪参考。</p>
+</blockquote>
+<p><strong>另</strong>：其余为回复调侃，无新增标的。</p>
+<h3>8. @mdzzi（茶不思）— 今日 3 条</h3>
+<p><strong>① 研究维亚生物，已买入 50 万股观察</strong></p>
+<blockquote>
+<p>原文：「最近在研究维亚生物。财报会议的一句话有意思：Backed by a strong order backlog and the ongoing expansion of AI and other new technology platforms, the Company is expected to maintain a full-year growth rate in 2026 at or above its current level.（在强劲订单储备和 AI 等新技术平台持续扩张的支撑下，公司预计 2026 年全年增速将维持在当前水平或以上。）事实上维亚也开始处于业绩反转的时间节点了。买了50万股观察。」
+<strong>解读</strong>：维亚生物（港股 CRO，医药研发外包）是他今天唯一的实质个股观点。逻辑：<strong>订单储备强 + AI 平台扩张 + 业绩反转拐点</strong>。这正好呼应今天 @qinbafrank 的「AI 药研 / CRO 是卖铲人」主线。他已实际买入 50 万股（观察仓）。</p>
+</blockquote>
+<p><strong>另</strong>：其余 1 条为配图、1 条为互动回复，无新增观点。</p>
+<h3>9. @aleabitoreddit（Serenity）— 今日 1 条</h3>
+<p><strong>① 看好 $CCXI（人形机器人 / Physical AI），期待其 Q4 上市</strong></p>
+<blockquote>
+<p>原文：「$CCXI looks like it's going public Q4 2026. And my hope is that it sort of looks like $OKLO if they generate enough excitement. Watched the investor presentation the other day, just waiting for the public listing anytime soon (I personally added some the other day). Big fan of humanoids, pretty confident physical AI shift is coming next. I'm personally not looking too much about the price action while it's in its filing phase, fun usually begins after ticker change.」（$CCXI 看起来会在 2026 年 Q4 上市。我希望它能像 $OKLO 那样，只要制造出足够的热度。前几天看了它的投资者演示，就等它随时上市了（我本人前几天加了一些仓）。我是人形机器人的大粉丝，坚信「物理 AI（Physical AI）」的转变会是下一个浪潮。在它申报阶段我不太看价格走势，好玩的部分通常在股票代码变更之后才开始。）
+<strong>解读</strong>：两个关键点——(1) 他把 <strong>Physical AI（物理 AI，即 AI 驱动机器人进入现实世界）</strong> 视为下一波大趋势，对标的是人形机器人；(2) 他用 $OKLO（核电明星股，上市后爆炒）作为 $CCXI 的「炒作模板」，期待同样的热度行情。小白提示：这是<strong>早期/概念阶段的高风险押注</strong>，申报期价格参考意义不大，他本人也只加了少量。</p>
+</blockquote>
+<h3>10. @fi56622380（fin）— 今日无新推文</h3>
+<p>窗口内该成员未发布任何推文，无法提供观点。</p>
+<h3>11. @0xSleepinRain（雨中狂睡SleepinRain）— 今日无新推文</h3>
+<p>窗口内该成员未发布任何推文，无法提供观点。</p>
+<h3>12. @LinQingV（Macro_Lin）— 今日无新推文</h3>
+<p>窗口内该成员未发布任何推文，无法提供观点。</p>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>🟡 谨慎偏多（信仰不减，仓位转轻）</td>
+<td>@labubu_trader 明确「keeping positions light」等更好赔率；@xiaomustock 核电持仓受挫砍半；@nft_hu「下跌趋势不买」；@mdzzi、@aleabitoreddit 只在个别标的建观察仓——无人喊满仓</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>🟡 中性偏紧</td>
+<td>10 年期美债拍卖需求爆表（97.5% 非交易商承接）提振短期情绪，但美联储 9 月纪要显示「年内可能还要加息」；AI 发债推高长端利率成新变量；今晚 220 亿美元 30 年期拍卖待验证</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>🔴 偏高</td>
+<td>高利率长期维持预期未消 + 市场宽度极窄（钱全挤在 AI）+ AI capex 下游变现尚未证实 + 核电等热门题材剧烈回撤 + 油价/成品油推高通胀黏性</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最值得记住的一句话来自 @labubu_trader：<strong>「信心不代表每个价位都要满仓（confidence doesn't require maximum exposure at every price）」</strong>。</p>
+<p>AI 基本面确实还在变强——台积电 9 月营收同比 +54.6%、三星存储利润超预期，这些都是硬数据（@jukan05）。但从博主们的一致动作看，<strong>大涨之后大家都在等一个更干净的入场点</strong>：等 10 年期美债收益率企稳、等 MOVE 波动率指数回落。</p>
+<p><strong>可跟的研究方向</strong>（不含买卖建议）：
+1. 关注<strong>利率敏感的后排补涨篮子</strong> —— @labubu_trader 点名 $KRE（区域银行）、$IWM（小盘股）、$RKT（房贷）、$XLU（公用事业），前提是收益率「有序」下行而非崩塌。
+2. 关注 <strong>AI 药研 / CRO 卖铲人</strong> —— @qinbafrank、@mdzzi、@labubu_trader 三人今天指向同一方向（Biohub 数据集、维亚生物、AI for Science）。
+3. 今晚 <strong>30 年期美债拍卖结果</strong>是短线胜负手。</p>
+<p>⚠️ 风险提醒：博主观点是他们的个人判断，且 @labubu_trader 自己都在刻意轻仓、「The next big trade」只是「could be」（可能是）——别把别人的观察当成确定性信号。高波动题材（核电、人形机器人概念）尤其要小仓。</p>
+<hr />
+<h2>附录：当日推文原文全量</h2>
+<blockquote>
+<p>窗口：2026-10-07 18:50 至 2026-10-08 18:50（北京时间）。按博主分组，时间戳为北京时间。</p>
+</blockquote>
+<h3>@qinbafrank（qinbafrank）— 11 条</h3>
+<p><strong>[10-08 08:58]</strong> 昨晚的十年期美债拍卖结果是一个好的信号：
+1）美国390亿美元10年期国债拍卖中标收益率5.3%，低于预发行利率、即市场定价预期；
+2）认购倍数2.77倍明显高于过去六次平卖平均的2.54倍；
+3）非交易商投资者认购比例创历史纪录97.5%，代表外国央行、国际货币当局、海外投资机构等海外机构的间接投标人获配80.3%、为历史第四高，显示外资需求异常强劲</p>
+<p>很多人可能不是很理解这次拍卖数据意义多重大？
+5.3%的拍卖收益率为2000年11月以来最高水平，美国国内的直接竞标这和美国海外的间接竞标者直接把这次拍卖97.5%的美债直接给买走了。而一级交易商——即负责兜底未被投资者认购债券的大型银行——此次的参与比例只有2.5%已经降至2003年以来最低。</p>
+<p>但这也给出了一个很有价值的信号：5.3%左右的长债收益率开始出现明显的长期资金承接，这也源于投资者对高收益率的主动追逐。这也是10月1号这个推文https://t.co/zUtcdpyXJW聊到的：收益率大幅回升改变了债券的风险收益结构，当前这个位置上应该会有一批债市资金开始重新逐步买入长债，因为性价比开始显现了。</p>
+<p>拍卖结果好，收益率也就有回落。但昨晚公布的美联储9月议息会议既要，美联储9月会议纪要称："多数与会者评估认为，在年底前再次上调联邦基金利率目标区间可能是合适的。"部分联储官员近期表态已明显降温10月行动预期，就是年内再次加息共识很强但10月可能不急。</p>
+<p>相当于说十年期美债拍卖结果提振了短期情绪，但美联储政策信号令利率长期维持高位的预期难以消退。接下来更重要的验证就是今晚的规模220亿美金的30年美债拍卖了。</p>
+<p>本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易</p>
+<p><strong>[10-08 09:18]</strong> @Guilin_Chen_ 还有今晚30年期美债拍卖，现在的观察资金对十年期比较亲睐、30年期则没那么受欢迎，看看今晚的结构😅</p>
+<p><strong>[10-08 09:41]</strong> 扎克伯格和妻子共同创立的非营利性生物医学研究机构Biohub宣布与美国政府、Google DeepMind、Isomorphic Labs及Meta合作，建设用于AI生物学研究的开放数据集，总规模约18亿美元。看路途的报道：
+1）Meta、Google DeepMind和Isomorphic Labs共同投入约3亿美元；
+2）美国能源部未来五年投入超过5亿美元；
+3）NIH（美国国立卫生研究院）协调利用此前联邦资金建设的数据资产，涉及超过5亿美元历史投入；
+4）Biohub今年4月已经承诺5亿美元。</p>
+<p>这个事的意义在于：过去AI药物研发最主要的瓶颈之一就似乎高质量实验数据不足。当前大模型已经能够处理大量文本和结构化数据，但真实生物学世界中的：细胞状态、基因表达、蛋白质变化、药物反应和不同实验条件下的动态数据，仍然远远不够。
+这项合作希望利用自动化实验、测量和模型训练形成更高质量的数据集。</p>
+<p>它对应的是一个潜在长期机会：AI药研的核心瓶颈，可能从模型计算能力逐渐转向可验证的实验数据和自动化实验能力。</p>
+<p>这也正好契合了前面Freda Duan的文章要聊到的：AI让失败实验也变成有价值的训练数据，湿实验室正从"造药"转型为"造数据"，DNA合成、蛋白生产、CRO或成最先受益的"卖铲人"。</p>
+<p><strong>[10-08 10:30]</strong> @roger9949 是呐、基础科学一个个搞</p>
+<p><strong>[10-08 11:16]</strong> 美联储如何看待AI基建投资和发债潮，以及市场的走势?今天凌晨公布的美联储9月议息会议纪要显示，委员们对需要进一步控制通胀基本认同，但对于加息的主要逻辑存在区别：一部分委员强调能源供应冲击带来的通胀风险；另一部分更关注需求本身仍然偏强。整体传达的信息就是：加息共识很强，10月却不急。除了对于通胀和利率走势看法，还有几个点值得单独聊聊：</p>
+<p>1、AI投资已经正式进入美联储的总需求分析
+纪要指出，AI基础设施建设持续支持企业投资，部分委员认为建设规模和速度仍然超出此前预期。与此同时有委员担心：AI相关需求增长可能在中期超过经济的供给扩张速度，从而推高通胀。但委员们也认为，AI未来可能通过提高生产率和潜在产出改善长期供给。</p>
+<p>这两个判断可以同时成立。
+1）短期：AI数据中心建设需要大量设备、电力、建筑施工、工程人员和融资。
+2）中长期：AI部署可能提高企业劳动生产率和资本效率。</p>
+<p>问题在于，这两个过程发生的时间不同。目前市场已经可以比较明确地看到前者，后者的规模和兑现时间还需要时间。Fed这个和我之前讨论的AI投资"四个时钟"逻辑https://t.co/hegQVCSvwX是高度一致：资本投入、产品收入、企业部署、宏观生产率改善，发生在不同时间。</p>
+<p>2、会议纪要直接提到AI公司发债推动长期收益率
+公开市场操作部门在报告中指出，大规模私人部门债务发行，尤其用于AI基础设施建设的融资需求，是市场认为推动长期美债收益率及期限溢价上升的因素之一。纪要还提到，Hyperscaler为AI基础设施融资发行的债券，因发行规模巨大、期限较长，其利差仍然相对较宽。</p>
+<p>这非常重要，过去市场通常认为：AI资本开支增加→ 芯片、设备、电力需求增加→ 相关公司盈利增加。
+现在美联储已经明确记录到另一条传导链：
+AI资本开支增加 → 大规模企业债发行 → 争夺长期资本 → 企业信用利差和美债期限溢价承压。最早8月中旬在"长债高中枢时代的结构性问题"这篇推文https://t.co/1Zk9fGfdda也有聊过。</p>
+<p>这意味着AI投资周期正在通过资本市场影响自身融资成本。未来如果AI大科技基础设施开发商继续进行大规模举债，债券市场的反应可能越来越重要。</p>
+<p>3、美联储认为股市上涨主要由盈利驱动
+纪要中公开市场操作部门提到，今年股票上涨主要归因于实际和预期企业盈利增长，而市盈率倍数有所下降，这是一个很有价值的市场判断。</p>
+<p>如果这一评估成立，那么2026年上涨已经越来越不同于典型的流动性推动估值扩张行情。目前的主要支持来自盈利预期。近期一直在聊的就是AI基本面很强势，没有减弱。</p>
+<p>4、美联储暂时不认为资金市场已经出现系统性短缺
+纪要显示，准备金仍处于充裕范围，短期融资市场整体稳定，国库券增加供应也被较顺利吸收。纽约联储公开市场操作部门已暂停部分准备金管理购买，并强调未来调整取决于准备金供需。</p>
+<p>这个信息对判断美债很重要。
+长债收益率上涨，并不自动意味着银行准备金或回购市场已经发生流动性危机，当前仍然更接近资产长期均衡价格的重新调整。暗含的意思其实就是美联储的思路没有改变：只有当政策传导受到威胁时，它才会干预，而不仅仅是因为收益率快速上升。</p>
+<p>本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易</p>
+<p><strong>[10-08 11:36]</strong> 这个功能太实用了，Grok Bot可以帮我们搜索、阅读和监控X平台上所有的内容，包括不限于产品反馈、突发新闻和行业汇总。还是昨天说依托X这个越来越活跃的平台，Bot一开始就有了无可比拟分发到的渠道平台。X的数据价值也会越来越强。不仅个人，企业在做舆情、用户产品互动都有极强的需求、甚至进阶版付费商业化空间也很大。</p>
+<p><strong>[10-08 12:54]</strong> @BigAvenu3 是这样，官方通道数据应该是最全的</p>
+<p><strong>[10-08 12:57]</strong> @yyjarsy siri其实很有潜力从对话到agent，估计还是节奏的问题和产品力的问题。但说实话，苹果产品强在硬件和软件界面，但过往App类的应用做的都一般呐</p>
+<p><strong>[10-08 14:28]</strong> @laochenusa @cz_binance 光有氧还是不够的、得加一些功能性训练或者力量训练，纯有氧老化很快（你看周润发和吕良伟对比就是很好的例子）😅</p>
+<p><strong>[10-08 16:07]</strong> 三个大事件和一个趋势，让X平台在政治、地缘、科技AI和金融这些高度重视时效的领域，越来越成为全球范围内的信息中心，也越来越成为全球最有影响力的社交媒体平台（没有之一）。三个大事件：24年美国总统大选、25年关税战、26年伊朗战争（伊朗最高领袖、总统、议长、外长都启用X账号发声）；
+一个趋势就是AI公司和科技领袖越来越倾向在X上发布动态、营销，打口水仗。详细说说：</p>
+<p>1、2024年美国总统大选：关键政治人物的发声，本身就能成为平台上的重大事件
+2024年7月13日，川普遇刺，这个事件迅速在网络上发酵，X是最主要的传播和讨论平台。
+2024年7月21日，拜登通过社交媒体发布退选信，X是主要发布渠道之一。24年8月12日，特朗普与马斯克直接在X Spaces进行访谈。
+以及之后大选的民调、选情进展，还有大选投票日的实施进展，这类事件对X平台的影响，远远超过普通热点带来的一轮流量。
+当公众发现重大决定可能由当事人直接发出来，记者、政治观察者、交易者就有动力持续监测相关账号。对新闻机构而言，守在现场的必要性也随之提高。</p>
+<p>关键人物在这里发声，记者和分析者就会关注。记者和分析者持续关注，发声者就更容易获得平台之外的传播。这种传播效果被反复验证，其他关键人物也更愿意加入。对于我们这些普通投资人来说，自然也是获取相关资讯的最快渠道。</p>
+<p>2、2025年关税战：持续监测政策消息，开始具有非常直接的经济价值
+当时川普的声明首先发布在Truth Social，但被拿来快速传播和讨论几乎都是X平台，X 在这类事件中承担了迅速汇集、转播和解释的作用。</p>
+<p>关税战强化了 X 的另一个属性：它成为市场参与者共同监测政策变化、讨论解释的重要场所。
+对于投资者而言，消息的重要性取决于它能否改变盈利、通胀、利率或风险偏好。政策如果在交易时段发生变化，持续监测的价值就会上升。</p>
+<p>3、2026年的伊朗战争：交战方直接进入全球舆论和市场预期的争夺
+这一次伊朗最高领袖开始启用X账号对外发声，战争提高了既有高层账号的国际关注度，新任最高领袖也迅速启用了官方账号。</p>
+<p>一条公开表态可能同时被外交人员、记者和投资者阅读。不同受众会分别判断它是否意味着谈判立场改变、航运风险变化，或能源价格需要重新评估。以至于大家都觉得伊朗高层也学会了川普利用社交媒体来影响舆论的套路。</p>
+<p>4、而"AI公司和科技领袖商业大佬越来越倾向在X上发布动态、营销、打口水仗"的这个趋势影响则更为深远
+黄仁勋最近都注册了X账号开始频繁发生、扎克伯格时隔三年重新启用X账号，苹果新人CEO于9月1日首次在X上公开发帖。</p>
+<p>LVMH 的 Bernard Arnault 在今年7月开始使用个人 X 账号，回应关于其家族和接班安排的报道；
+传媒业的 David Ellison 则于10月2日首次使用 X 发布重大公司消息。</p>
+<p>AI 产品的一个特点是，发布者可以同时给出演示、链接或测试入口，专业用户随后就能提出问题。
+一次传播有可能很快从"公司宣布了什么"，进入"实际表现怎样""哪些条件下有效""和另一家相比有什么差别"的讨论。
+对企业来说，这种即时反馈有产品价值，也有营销价值。对用户来说，原作者与专业人士的来回回应，有时比单独阅读发布稿更有信息量。</p>
+<p>你想想一下，一个普通X账户讨论grok bot、英伟达等新闻，引来的老马和老黄的点赞、评论甚至转发，对于普通人来说不仅是巨大的曝光量，还有巨大的成就感。</p>
+<p>当然这种趋势已经不至于AI领域，加密领域更早，其他行业也越来越多。这给 X 带来了一种相对持续的内容供给，而且发布者、评价者、产品开发者和商业决策者之间高度重叠。</p>
+<p>5、这背后的逻辑是啥？
+1）X的信息内容传播机制：公开关注和引用帖，让内容能够跨越原有圈层
+X 的公开帖子可以沿关注关系传播。转帖保留原作者的内容和身份；引用帖则允许用户附加自己的评论，形成一条新的传播入口。</p>
+<p>这种结构很适合专业信息跨圈传播。
+例如，假设一名工程师写了一段芯片技术分析，AI 研究人员引用并补充，投资者再讨论对产业链的含义，记者随后联系当事人核实。同一份原始材料就可能经过几次互动，进入多个不同圈子。</p>
+<p>每一次专业回应，都有机会让原信息接触到新的受众。
+争论同样具有这种作用。一个有影响力的人反驳另一方时，也可能把对方的观点介绍给自己的关注者。因此，企业之间的公开争论有时会同时增加双方的曝光。</p>
+<p>2）X聚集了大量"会继续传播信息的人"
+政治领导人、政治家、科技大佬、商业领袖、金融投资大佬、各行业资深人士以及越老越多涌现的不同类型的博主，这些人本身就有发声的需求，也愿意传播有价值信息，当然更想让自己的观点被更多人的看到。</p>
+<p>假设一条消息被一万个人看到，其中有大量记者、研究人员和行业意见领袖，那么后续传播可能远远超过这一万次直接触达。
+就产生了一个有趣的场景：
+这些人还会在自己的文章、节目、邮件和其他社交平台上继续讨论。最终受众可能没有打开过 X，却仍然接触到了从 X 进入公共讨论的议题。</p>
+<p>这回形成马太效应，越来越多的政治名人、科技商业大佬会把X当作首选发声平台。</p>
+<p>3）不可忽视老马的示范作用
+他本人持续给平台提供值得关注的议题，马斯克涉及科技、企业经营和政治讨论，使平台拥有一个频繁制造新闻、也频繁回应新闻的人物。
+这会让一部分用户即使对平台其他内容兴趣有限，也有动力继续关注。他的回复和互动，可以把新加入者迅速带进既有圈子</p>
+<p>马斯克在多个圈层的存在，也让一条原本只属于科技圈的话题，有机会进入投资或政治讨论。</p>
+<p>他强化了企业负责人直接发声的风格，对企业负责人来说，价值除了曝光，还包括很快接触到同行、合作伙伴及相关受众。</p>
+<p>4）当然还有X自己的机制变化
+关注关系提供稳定入口，推荐系统提供额外扩散。特别是启用AI算法之后，排序会预测用户可能发生的点赞、回复、转帖、分享、停留，以及负面反馈等行为，再综合打分。由此可以推断，突发变化、具有争议的技术判断、重要人物之间的回应，都可能形成持续互动，并获得进一步传播。</p>
+<p>还有一点，文字本身就是一个低成本生产和低成本获取的内容形态。</p>
+<p>所以当：
+1）一手信源在这里。记者、交易员、研究员、政客、监管者和公司发言人的默认公共时间线仍是X。当最高领袖、总统、芯片CEO自己发帖时，二次传播的起点就在平台内；
+2）短文本、引用帖、回复串、列表和Spaces的摩擦远低于长视频或闭源社群；算法按互动把高争议、高时效内容顶上来，所以政治、地缘和行情类信息的"第一波"往往先在这里完成扩散，再被路透、彭博、CNN等转写。Community Notes和放开后的言论尺度也让原本被限流的政治内容重新聚集。</p>
+<p>这就导致了X还不是最大社交网络，总用户也只超过10亿，活跃用户估计也只有五到六亿，但X已经成为精英和实时公共讨论的密度最高的地方。特别是在政治、地缘、财经和前沿科技这几条线上，最快的公共信息往往先发生在X，平台的议程影响力远超其他平台。</p>
+<p><strong>[10-08 17:56]</strong> @KuiGas 确实越来越好用了</p>
+<h3>@labubu_trader（3X Long Labubu）— 9 条</h3>
+<p><strong>[10-08 01:03]</strong> Thanks @168X_Fortune and @168MrZ for having me back. Here is the summary in English</p>
+<p>TLDR, AI fundamentals are still getting stronger. But after the big run, I'm keeping positions light and waiting for a cleaner setup. The next major opportunity could be the assets that high rates have kept under pressure.</p>
+<p>Here's how I'm thinking about it:</p>
+<ol>
+<li>US10Y: volatility matters more than the exact yield.</li>
+</ol>
+<p>I'm less concerned about whether the 10-year yield is 5.3% or 5.5% than how violently it moves. Before adding meaningful risk, I want yields stabilizing or gradually declining, with MOVE—the bond market's volatility index—coming down too.</p>
+<ol start="2">
+<li>Market breadth needs to resolve.</li>
+</ol>
+<p>Money has concentrated in AI winners while much of the market struggles. Breadth can improve through laggards catching up, or through winners correcting. Either outcome makes chasing semiconductors with maximum size less attractive here.</p>
+<ol start="3">
+<li>The catch-up basket: KRE, IWM, RKT and XLU.</li>
+</ol>
+<p>Regional banks, small caps, housing and utilities could respond sharply to easing rate pressure, helped by short covering. The condition matters: an orderly decline in yields supports that setup. A sudden collapse could signal recession instead.</p>
+<ol start="4">
+<li>
+<p>Mid term election is not a risk to AI datacenter development.
+The key topics from Democrats are still inflation, Iran and gas price. These have higher priority than AI datacenter. However I see long term risk as the US people's sentiment towards AI and datacenter is quickly deteriorate except people who are working in the AI industry.</p>
+</li>
+<li>
+<p>The oil issue extends beyond crude.</p>
+</li>
+</ol>
+<p>Refinery capacity and refined-product supply deserve more attention. Having crude available doesn't automatically solve gasoline or diesel shortages. Persistent pressure on those products can keep inflation expectations—and long-term yields—elevated.</p>
+<ol start="6">
+<li>AI revenue growth is the key validation.</li>
+</ol>
+<p>I'm skeptical of claims that OpenAI is already at $70B ARR. But if coding and enterprise growth stays steep, an $80–100B annualized revenue run rate by year-end is conceivable. That's a possible outcome, not a confirmed number. Downstream revenue must justify upstream capex.</p>
+<ol start="7">
+<li>Google's biggest opportunity is a personal AI agent.</li>
+</ol>
+<p>Google has distribution through Search, YouTube, Gmail, Maps and Android, existing monetization infrastructure, and its own hardware-to-model stack with low inference cost. I'd like to see it combine those advantages into a personal agent. Coding isn't its advantage.</p>
+<ol start="8">
+<li>The next AI re-rating needs evidence of returns.</li>
+</ol>
+<p>Personal agents, AI for Science, biotech and enterprise applications could broaden monetization beyond coding. Faster research, cheaper drug discovery and measurable productivity gains would help demonstrate that AI spending can generate attractive returns on invested capital.</p>
+<ol start="9">
+<li>AI IPOs could redistribute the premium.</li>
+</ol>
+<p>If OpenAI or Anthropic goes public, investors would gain direct access to another layer of AI monetization. Some capital could rotate away from semiconductor proxies. That could change where the AI premium sits even while chip fundamentals remain healthy.</p>
+<ol start="10">
+<li>I'm more selective within semiconductors.</li>
+</ol>
+<p>CPU still has catch-up potential as server architecture evolves. Optical has already run hard, and strong memory results may already be well understood. I'm treating semiconductor equipment more tactically. Timing matters increasingly after the sector's major advance.</p>
+<ol start="11">
+<li>BTC is my first watch when the rate setup improves.</li>
+</ol>
+<p>If US10Y and MOVE genuinely top out, BTC looks like a strong expression of improving liquidity and risk appetite. Its technical structure matters too. I'd look at that strength alongside the catch-up potential in rate-sensitive equities.</p>
+<ol start="12">
+<li>TLT calls have become less attractive.</li>
+</ol>
+<p>High bond volatility makes options expensive. Even if TLT rises as yields decline, falling implied volatility can eat into call returns. For this setup, I prefer considering equities with underlying businesses that could benefit from easing rate pressure.</p>
+<ol start="13">
+<li>My main macro catalysts: FOMC, CPI and Treasury issuance.</li>
+</ol>
+<p>These can change expectations for policy, inflation and long-term bond supply. For the midterms, I care most about what follows: changes to fiscal policy and issuance that could alter the path of long-term yields.</p>
+<ol start="14">
+<li>Light positioning is a deliberate choice.</li>
+</ol>
+<p>I already traded the post-September FOMC rally aggressively. Now I'm waiting for better risk/reward. With leverage and options, timing matters enormously. A stable index can still hide severe drawdowns in individual stocks.</p>
+<ol start="15">
+<li>The next big trade could be the laggards catching up.</li>
+</ol>
+<p>I remain confident in AI's fundamentals, especially as downstream monetization expands. But confidence doesn't require maximum exposure at every price. If yields stabilize and MOVE falls, BTC and KRE/IWM/RKT/XLU could offer a compelling next setup.</p>
+<p>For now, I'm keeping risk light, watching the bond market, and waiting for the opportunity to become clearer.</p>
+<p><strong>[10-08 02:52]</strong> @rhZhaObserves @bubbleboi @168X_Fortune @grok Delete my ass, go fuck yourself, all of those posts no matter it's right or wrong are searchable.</p>
+<p><strong>[10-08 02:53]</strong> CC @bubbleboi</p>
+<p><strong>[10-08 04:03]</strong> @Glassesman88 @168X_Fortune @168MrZ Ok hope next time can do an English interview</p>
+<p><strong>[10-08 12:13]</strong> @acemoney21 I don't have the ball to call a top now for 10Y. Just watch it</p>
+<p><strong>[10-08 12:36]</strong> One more thing , if we indeed get Democrats sweep in midterm. I would expect a quick reversal of US 10Y. https://t.co/b2vlk3TTM7</p>
+<p><strong>[10-08 12:42]</strong> @valuedrift @TomSzczypka Yes all Trump's stimulus policies would get blocked or delayed by Dems.
+Also Dems will use inflation, Iran, gas price topics to attach Reps.
+So the bond market would need to price in a cooler inflation expectation + a slower economy growth, which translates to lower yield.</p>
+<p><strong>[10-08 12:47]</strong> @livebreatheai Push more spending is hard to achieve in 27-28 because if Trump doesn't sign, no bill can be passed unless concessions from both sides.
+Also I don't think Dem Sweep would cause AI capex slow down. It's not a top priority for them to attach at the moment.</p>
+<p><strong>[10-08 12:52]</strong> @TShirtnJeans2 @valuedrift @TomSzczypka I guess they are waiting for CPi first</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 8 条</h3>
+<p><strong>[10-08 00:20]</strong> 核电股亏麻，只硬了一天，都跌成这逼样了还能一直跌，嘎了一半留了一半，全跑的话不甘心，不跑的话又觉得跌的恶心。 https://t.co/oVeTbHW8Dm</p>
+<p><strong>[10-08 02:01]</strong> 人很容易一叶障目，比如原油，大家能看到的油价波动都来自霍尔木兹海峡开与否或者中东战事，但都自动忽略了北美洲也产石油，南美洲也产，而且他们量还都很大，巴西日均产油380万桶，委内瑞拉日均110万桶，美国日均1350万桶，加拿大日均500万桶。同时因为中东opec机制存在，中东每个国家都有大量的闲置产能，他们既是被炸毁一些产油设施也不影响总产出。</p>
+<p><strong>[10-08 12:21]</strong> 一夜之间变天了，他娘的，太乱了。 https://t.co/7X2TNQbPwm</p>
+<p><strong>[10-08 12:48]</strong> 一个人的认知与财富不匹配的时候财富就会流向华为 https://t.co/F98O6uysAZ</p>
+<p><strong>[10-08 14:54]</strong> Claude一把干死了低价模型的股票和落后模型的叙事。</p>
+<p><strong>[10-08 16:08]</strong> 刹车踏板断裂的公关词都帮华为想好了。华为：我们计划下一代尊界去掉刹车踏板和方向盘，对齐甚至远远超越特斯拉智驾。 https://t.co/gYDh899oa0</p>
+<p><strong>[10-08 16:13]</strong> @flyfishbtc 所以说是下一代不是这一代。</p>
+<p><strong>[10-08 16:49]</strong> @xtony1314 刹车踏板断裂是为了保护车主安全起飞？😂</p>
+<h3>@nft_hu（Fiona ❤️&amp; ✌️）— 6 条</h3>
+<p><strong>[10-08 06:20]</strong> @jimmyhuli 下跌趋势中不买了，毕竟能买的标的太多了😂</p>
+<p><strong>[10-08 06:22]</strong> 有时候就是市场对你的看法。哪怕是业绩增长的，但你可能被分走蛋糕，那么市场就会给你一个下跌。已经无数次证明了这一点。</p>
+<p><strong>[10-08 18:04]</strong> 大家这么爱用瓶颈交易，其实"炼油""石油加工"是现在的瓶颈交易。乌克兰无人机攻击轰炸俄罗斯的大型炼油厂和石油加工基础设施，导致大量炼油设备受损、停产或减产，成品油产能严重受限。毕竟，原油与成品油无法直接划等号。俄罗斯开采的是地下原油，必须经过炼油厂加工才能变成汽车能用的汽油和柴油。目前多地加油站出现限购、加油站缺油、排长龙甚至从印度、白俄罗斯等国紧急进口燃料的现象。</p>
+<p><strong>[10-08 18:05]</strong> @Laura6liu 来试试看！</p>
+<p><strong>[10-08 18:14]</strong> 炼油这一过程除了产生汽油、柴油之外，还会生成非常多的副产品。所以炼油厂被轰炸，除了影响成品油，受影响的还有：</p>
+<p>1️⃣航空煤油
+航空煤油属于中间馏分油，其提炼需要极高的精细度。由于大量精炼设施受损或停产，俄罗斯发布行政命令限制或禁止航空煤油出口。这可能影响其民航业的正常运转。</p>
+<p>2️⃣石脑油及下游基础化工原料
+很多被袭击的炼油厂拥有与之相连的石脑油重整和裂化装置。当炼厂主塔受损，石脑油产出暴跌，其下游的塑料、合成橡胶产业链就会出现"断粮"危机。包括了我们平时用的塑料包装、轮胎制造、化纤服装等轻工业和制造业。</p>
+<p>3️⃣硫磺
+俄罗斯目前极度缺乏硫磺，导致其从全球第二大"硫磺出口国"变成了"进口国"（从哈萨克斯坦和中东大量买入硫）；而为了保住国内的化肥和粮食产量，俄罗斯政府不得不对尿素和各类化肥实施严厉的出口配额和禁令。</p>
+<p>4️⃣尿素与化肥：
+尿素和氮肥的生产高度依赖天然气（合成氨工艺）。俄罗斯的天然气开采并未受到太大实质伤害，因此化肥的"产能"依然很高。但政府为了稳定农业秋收，发布了第431号决议等法令，严格限制尿素及复合肥的出口配额。</p>
+<p><strong>[10-08 18:23]</strong> 如果我没记错价格的话，石油漲價已經迅速傳導到了機票😭</p>
+<p>前几天看星宇飞美國商務艙往返還是15萬台幣，現在已經18萬多了🥲</p>
+<p>毁灭吧🙃</p>
+<h3>@jukan05（Jukan ✈️OCP 2026）— 6 条</h3>
+<p><strong>[10-08 06:59]</strong> October 8, 2026, 07:44:36
+Company: Samsung Electronics (Market Cap: KRW 1,572.6489 trillion)
+Stock Code: A005930
+Report: Preliminary Consolidated Operating Results (Fair Disclosure)
+Revenue: KRW 195.0 trillion (Consensus: KRW 200.8422 trillion / −3%)
+Operating Profit: KRW 107.4 trillion (Consensus: KRW 106.7467 trillion / +1%)
+Net Income: — (Consensus: KRW 88.4415 trillion)</p>
+<p>Disclosure link: https://t.co/gyDWQmlrtd</p>
+<p><strong>[10-08 08:09]</strong> LMAO https://t.co/b04PHIQzFl</p>
+<p><strong>[10-08 12:16]</strong> China is absolutely insane. As if a pork glut weren't enough, now it has an electricity glut too…</p>
+<p>Just think about how insane this sentence sounds: "Data centers are the solution to electricity oversupply." https://t.co/GwCN1Xfvzr</p>
+<p><strong>[10-08 13:38]</strong> TSMC September revenue: NT$511,857 million
+(-0.6% MoM, +54.6% YoY) https://t.co/MR4jBPK9vr</p>
+<p><strong>[10-08 16:21]</strong> This hacker is truly legendary. A complete amateur.</p>
+<ol>
+<li>He left directory listing enabled on his own server, so researchers could figure out who he was with barely any effort.</li>
+<li>They found files like CLAUDE.md and went through his Claude Code sessions.</li>
+<li>There were questions like, "Where can I sell this data?"</li>
+<li>He'd also asked, "Can you write my résumé?" That pretty much handed them all his personal information.</li>
+<li>Apparently, he's a student at South China University of Technology living in Guangdong. His name, phone number, and where he lives have all been identified.</li>
+</ol>
+<p><strong>[10-08 17:30]</strong> This amateur asked Claude to write on his résumé that he'd hacked Korean banks 😭😭😭 https://t.co/278dFsRcUC</p>
+<h3>@starzq（Star@Day1Global Podcast）— 4 条</h3>
+<p><strong>[10-08 10:38]</strong> @GaoNew3 对，整个科技大周期向上，但波动更厉害了</p>
+<p><strong>[10-08 11:05]</strong> 终于来了，Grok Bot 现在可以搜索、阅读和监控 X 上的信息，无需设置 X 连接器和 API</p>
+<p>也就是说，可以用 Grok Bot 免费抓取和监控 X</p>
+<p>我试了一下，的确没有使用我 X 连接器的额度，而且消耗的 token 也很少</p>
+<p>X 在科技、政治、金融、加密上面的信息密度，让 Grok Bot 有了独特的竞争力</p>
+<p>再感叹一下，老马之前买 X 太值了</p>
+<p><strong>[10-08 15:06]</strong> a16z【Top 100 Consumer AI Apps】报告纪要</p>
+<p>1) 三个排名维度：网页版流量、移动版 MAU、每月收入</p>
+<p>2) 近一半的美国消费者使用 AI，但只有 25%的人每天使用，4.5% 的用户付费。消费支出排名前 10% 的用户贡献了约一半的总支出，主要购买编程、生产力和创意工具</p>
+<p>ChatGPT vs Gemini vs Claude</p>
+<p>3) 网页版流量 &amp; 付费订阅前三：ChatGPT、Gemini、Claude</p>
+<p>4) Claude 的用户价值更高：7.3% 订阅了 $100 套餐，ChatGPT 和 Gemini 只有 1.3% 和 1.1%</p>
+<p>5) ChatGPT 7 月推出 GPT-5.6 Sol、Terra 和 Luna, 帮助其在每日新订阅人数上超过了 Claude</p>
+<p>6) 只有 8%的美国 ChatGPT 订阅用户同时订阅了 Claude</p>
+<p>7) ChatGPT 的消费者在性别和收入上分布更均衡，男性比例为 58.5%，Anthropic 的男性比例是 76.5%</p>
+<p>8) ChatGPT、Gemini、Claude 三者定位不同：Claude 几乎完全专注于专业消费者市场，Gemini 主导了创意模型领域，OpenAI 则同时面向消费者和企业</p>
+<p>AI 消费支出：遵循幂律分布</p>
+<p>9) 只有 4.5% 的用户付费订阅过ChatGPT、Gemini 或 Claude, 一年前的这一比例为 2.1%</p>
+<p>10) 只有 13% 的用户为一个 AI 产品付费后，还会为另一款 AI 工具付费</p>
+<p>11) 支付金额排名前 1%的用户贡献了所有观察到的消费者 AI 支出的 19.5%</p>
+<p>12) 这 1% 的高支出用户，平均每月在消费者卡上为 AI 支付 903 美元 ，而且这个数字还在增长，过去 18 个月增长了 80%（like 高净值用户的新玩具？</p>
+<p>13) 这 1% 更像是专业消费者，主要购买自动化和产品构建工具，如 n8n、fal、Manus 和 Nous Research（Hermes Agent），以及创意工具，如 Higgsfield、Figma 和 HeyGen</p>
+<p>个人助理的竞赛</p>
+<p>14) 注册页面访问量：Muse 每日 80 万，Instinct 每日 25 万</p>
+<p>15) Personal Agent 的 Top 9 用例：编码、旅行、购物、金融、知识管理、日程管理、研究、销售、餐厅预约</p>
+<p>16) 专业消费者使用 Grok Bot、Dots 和 Town, 消费者领域的对决是 Instinct 与 Muse</p>
+<p>17) 这个赛道仍十分早期。Muse 的早期势头远不及 Meta 当年推出 Threads. Threads 在前 22 天内下载量超过 1500 万次，Muse 不到一个月下载量是 500 万</p>
+<p>初创公司仍在取胜的领域</p>
+<p>18) 拥有差异化模型：Suno 在网站流量排名第 19，支出排名第 7；ElevenLabs 排名第 25 和第 10。Midjourney、HeyGen、Kling 和 Topaz Labs 也进入了支出榜单——所有这些产品都是基于专有模型构建的</p>
+<p>19) 拥有多模型体验：Cursor 支持来自多个实验室的模型；OpenRouter 为开发者提供多个供应商的访问权限</p>
+<p>20) 编码和生产力产品是早期受益者：Lovable、Cursor、Base44 和 Replit 均入选网站流量排名榜单。Cursor 从第 41 名升至第 35 名，Base44 首次亮相即排名第 46 名</p>
+<p>21) 拥有特定需求的受众：服务医生的OpenEvidence 网站流量排名第 47，专注于私有 AI 的 Venice 以第 43 名首次亮相</p>
+<p>22) 内容政策也创造了机会：如果加上 NSFW 产品，可占据网络流量榜单超过 20%</p>
+<p>商业模式</p>
+<p>23) 目前主要的变现方式是付费订阅，占 84%的产品采用；其次是使用费/额外积分，采用率为 64%。只有 14%的产品有广告，2%的产品通过交易或平台费用获利，这与前人工智能时代的消费者互联网形成了鲜明对比</p>
+<p>24) 广告和交易收入通常需要庞大的用户基础，有算力成本的 AI 公司在初期选择订阅付费也顺理成章</p>
+<p>25) ChatGPT 广告在八月份达到了年化 10 亿美元的收入运行率，基数为 12 亿每周活跃用户；50-60% 的美国医生使用 OpenEvidence，该产品现在也通过广告实现部分变现</p>
+<p>26) 个人代理可能开辟另一条路径，Instinct 和 Muse 都曾描述过通过交易赚取费用的计划，尽管目前两者都尚未实施</p>
+<p>（我个人觉得，未来会有 2 种收入方式，用户付费订阅和消费抽成，一个拐点是 token 的使用价格降到获客成本以下）</p>
+<p><strong>[10-08 15:11]</strong> 消费者是如何使用 AI 的？ 哪些公司值得关注？初创企业有哪些机会？</p>
+<p>我读了 a16z 这份报告，整理了 26 个要点，欢迎阅读👇🏻</p>
+<h3>@mdzzi（茶不思）— 3 条</h3>
+<p><strong>[10-08 11:23]</strong> 最近在研究维亚生物</p>
+<p>财报会议的一句话有意思：Backed by a strong order backlog and the ongoing expansion of AI and other new technology platforms, the Company is expected to maintain a full-year growth rate in 2026 at or above its current level.</p>
+<p>事实上维亚也开始处于业绩反转的时间节点了。</p>
+<p>买了50万股观察。</p>
+<p><strong>[10-08 11:33]</strong> 放一张图片 https://t.co/zQssZc5i93</p>
+<p><strong>[10-08 14:28]</strong> @oilupupup 可以耍起了</p>
+<h3>@aleabitoreddit（Serenity）— 1 条</h3>
+<p><strong>[10-08 16:27]</strong> @UjenA93UTP63896 $CCXI looks like it's going public Q4 2026. And my hope is that it sort of looks like $OKLO if they generate enough excitement.</p>
+<p>Watched the investor presentation the other day, just waiting for the public listing anytime soon (I personally added some the other day).</p>
+<p>Big fan of humanoids, pretty confident physical AI shift is coming next.</p>
+<p>I'm personally not looking too much about the price action while it's in its filing phase, fun usually begins after ticker change. We'll see what happens</p>
+<h3>@insane_analyst（Irrational Analysis）— 12 条</h3>
+<p><strong>[10-07 23:31]</strong> @AlexMP_1 No rank. Public co only</p>
+<p><strong>[10-08 00:12]</strong> @IanCutress @nymfree 💀</p>
+<p><strong>[10-08 02:30]</strong> @MilksandMatcha @astrr We all know catestrophic/defect yield is 100% from the routing. Parametric yield is the problem.</p>
+<p>100% of wafers pass ATE screen which is reasonable although slightly generous assumption.</p>
+<p>What % wafers survive into usable product/system/enclosure/rack?</p>
+<p><strong>[10-08 05:24]</strong> Awooo</p>
+<p><strong>[10-08 09:14]</strong> @zhaoxo Ok i should have said non-startup.</p>
+<p><strong>[10-08 09:43]</strong> @ContrarianCurse Same</p>
+<p><strong>[10-08 10:21]</strong> @Jmoran07235302 Not really. Nothing new.</p>
+<p><strong>[10-08 10:22]</strong> Bigger question is did AMD drop Ayar lol.</p>
+<p><strong>[10-08 10:32]</strong> @JDorbal1989 This Dunn person seems very clever.</p>
+<p><strong>[10-08 10:37]</strong> Ayar Labs https://t.co/hbnvShYLT4</p>
+<p><strong>[10-08 12:17]</strong> @jukan05 Electrocute the pigs obviously.</p>
+<p><strong>[10-08 12:22]</strong> https://t.co/agnOfjv7Ql</p>
+<h3>零推文成员</h3>
+<ul>
+<li>@fi56622380（fin）— 今日无新推文</li>
+<li>@0xSleepinRain（雨中狂睡SleepinRain）— 今日无新推文</li>
+<li>@LinQingV（Macro_Lin）— 今日无新推文</li>
+</ul>
+<hr />
+<p><em>本报告由自动化任务于 2026-10-08 生成，素材来源为 X 平台美股博主 list 窗口内推文（2026-10-07 18:50 至 2026-10-08 18:50 北京时间）。博主观点为其个人判断，不构成投资建议。</em></p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
