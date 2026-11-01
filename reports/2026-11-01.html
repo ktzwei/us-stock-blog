@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.11.01</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.11.01</a></h1>
+  <div class="date">2026.11.01</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.11.01</h1>
+<blockquote>
+<p>主线是AI资本链开始吃紧：OpenAI融资缩水、Anthropic估值被打折，同时半导体封装良率之争升温；博主整体偏谨慎但没转空。</p>
+</blockquote>
+<h2>一、博主观点（按名单顺序，不按重要性）</h2>
+<h3>@aleabitoreddit（Serenity）— 0 条</h3>
+<p>今日无新推文。</p>
+<h3>@jukan05（Jukan）— 5 条</h3>
+<p><strong>① 追问Anthropic为何独独给SpaceX付高溢价</strong>
+他指出Anthropic一边跟其他云厂商重谈价格压价，一边却给SpaceX支付明显高于市场的费用，逻辑上讲不通。他反问SpaceX的可靠性是否真强过谷歌云和微软云。含义是稀缺算力供给方拿到了定价权，$GOOGL、$MSFT的云议价能力被削弱。
+<strong>② 台媒数据：Intel先进封装良率远落后台积电</strong>
+他转述台媒数字，Intel的EMIB（Embedded Multi-die Interconnect Bridge，把多颗芯片用硅桥连在同一基板上的封装技术）整体良率约60–65%，其中把硅桥嵌入ABF基板这一段只有25–30%，而台积电CoWoS（把GPU与高带宽内存封装到一起的工艺）约98%。差距在封装而非制程，直接压制$INTC抢AI订单的能力，也解释$TSM为何仍是瓶颈方。
+另有 3 条为互动（落地上海问美食、追问云厂商可靠性、万圣节cosplay吐槽）。</p>
+<h3>@insane_analyst（Irrational Analysis）— 6 条</h3>
+<p><strong>① 拿Microchip CEO的万圣节扮相暗讽管理层无能</strong>
+他点名Matt Murphy扮成宝可梦主角小智，用「毛骨悚然级别的无能」收尾。这不是玩笑话，是在质疑$MCHP管理层把精力放在形象经营而非周期底部修复上，语气里带着对这家模拟芯片公司治理的不信任。
+<strong>② 讽Intel该把产能押在数据中心而不是笔记本芯片</strong>
+他的意思是全球最大的数据中心市场就在眼前，Intel却在印笔记本芯片；一旦有人拿EMIB封装当挡箭牌解释落后，他会直接否定。核心矛头是$INTC的产品组合与资本开支错配，不是缺技术。
+<strong>③ 提示GRIN光纤明年会变得重要得多</strong>
+GRIN（graded-index，渐变折射率光纤，靠纤芯折射率渐变来传导光）长期被单模光纤挤到角落，全世界几乎没人用。他认为这条冷门路线被低估，明年在AI数据中心互联里权重会明显上升，属早期线索而非当下交易。
+另有 3 条为互动（称赞同行、会场吐槽、观察AI圈万圣节氛围）。</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 1 条</h3>
+<p><strong>① OpenAI融资缩水、Anthropic被打「垃圾」评级，AI泡沫开始验伤</strong>
+他列出本周两件事：OpenAI原计划融资300亿美元，投资人只肯给110亿，不足一半，被迫缩到200亿规模；Anthropic上市前被机构给出垃圾级评级，理由是隐性债务规模达9000亿美元。指向AI资本开支的融资端在收紧，$MSFT、$NVDA的订单预期要打折看。
+另有 0 条为互动。</p>
+<h3>@fi56622380（fin）— 1 条</h3>
+<p><strong>① 仅一条万圣节邻里闲聊，无市场观点</strong>
+讲的是有人把一整盆糖连盆端走，多年头一次遇到。纯生活内容，不涉及任何标的，只能说明他今日没在看盘上表态。
+另有 0 条为互动。</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 2 条</h3>
+<p><strong>① 用「承压」两字定调当前盘面</strong>
+配图未展开说明，但仅这两个字已是他对当下价格结构的判断：上方有压制、价格上不去。他没给标的和位置，属情绪表态而非操作建议，需要等他自己补数据。
+<strong>② 看好Kinetiq主网上线后的费用回购机制</strong>
+他的推演是：多数Layer2（二层网络）的排序器收入归团队，不反馈给代币持有者，而公链转向高性能低费后活动无法产生足够收入，于是应用与代币持有者之间出现价值缺口。他看好elysium的做法——生态应用Ascend不发币、用费用回购kntq，形成机械性买盘，关键观察点是Ascend能否拿下Launchpad一半以上份额。</p>
+<h3>@qinbafrank（qinbafrank）— 9 条</h3>
+<p><strong>① 全球股票多空总仓位10月去杠杆7.8%，2016年来最大</strong>
+他引大摩数据：gross exposure（多空总仓位，衡量整体杠杆水平而非方向）本月降7.8%，超过2016、2020、2021年的回撤。他的判断是短期波动仍高、科技成长股被放大，但中期燃料减少、强制平仓风险下降，出清后往往给更好的进场点。
+<strong>② 中期选举的核心是情景而非谁赢</strong>
+他强调市场该做的是分别推演民主党横扫与共和党保住参议院两种结果下，AI、加密产业政策与财政支出的差异；并引用自己的观点——对市场而言「选举结束可能比结果更重要」。他反感评论区只看开头就扣立场，反复说明不看赢家看框架。
+<strong>③ FBI把币安被盗归因朝鲜黑客集团</strong>
+他整理FBI历年归因案例：2022年Ronin约6.2亿美元、Harmony约1亿、2023年Atomic Wallet超1亿、Stake约4100万、2024年DMM Bitcoin约3.08亿美元、2025年Bybit约15亿美元，统称TraderTraitor。他的落点是这已是国家网络恐怖主义，加密托管风险是结构性的。
+另有 6 条为互动（回应选举质疑、SpaceX谈判节奏、达里奥泡沫警告等）。</p>
+<h3>@LinQingV（Macro_Lin）— 5 条</h3>
+<p><strong>① 拿王朝周期类比：能力对错取决于所处阶段</strong>
+他把中国王朝分成开国、休养、盛世、腐败、中兴、崩坏六段，指出同一份才能在错的时代结局完全相反——岳飞、海瑞、张居正的例子。落点是当下也存在周期错配，个人努力要先看所处阶段，属宏观框架输出而非选股。
+<strong>② 明确站队：AI是主线，crypto十余年没兑现技术革命</strong>
+他认为2024年技术赛马已分胜负，AI第一、商业航天第二，crypto留下的主要是投机与收割。语气相当不客气，实质是在否定把希望押在币圈的资金配置，属对风险偏好的直接劝退。
+另有 3 条为互动（回应王朝周期讨论、追问强度、与他人简短对话）。</p>
+<h3>@nft_hu（Fiona）— 0 条</h3>
+<p>今日无新推文。</p>
+<h3>@mdzzi（茶不思）— 0 条</h3>
+<p>今日无新推文。</p>
+<h3>@labubu_trader（3X Long Labubu）— 18 条</h3>
+<p><strong>① 质疑「0良率」说法与谷歌测试传闻自相矛盾</strong>
+他听说谷歌正在测humufish的封装方案，同时又流传良率为零，直接说这两件事不可能并存、看不懂。他的怀疑对象是消息源本身，而不是技术路线，提醒别拿单一爆料当结论。
+<strong>② 台系厂商爱吹联发科，出问题就往Intel身上推</strong>
+他的观察是台湾半导体圈对联发科（$MTK）的乐观有明显主场情绪，一旦不如预期就甩锅给$INTC。这是对卖方叙事的一次拆解：归因给谁，往往取决于谁在本地有人情。
+<strong>③ SPCX拿的是英伟达卡，但Anthropic训练主要用谷歌TPU</strong>
+他确认SpaceX那边装机是$NVDA，同时点出Anthropic当前训练主要跑在谷歌TPU上。两条并排放，等于说英伟达的垄断叙事在头部大模型客户身上已经开始松动，$GOOGL自研芯片是真分流。
+<strong>④ 又一位机器人创业者说Astra做机器人出奇地好</strong>
+他是转述他人评价，但特意标出「surprisingly」，说明这个反馈超出了预期。属产业链草根调研信号，没有对应上市公司，只能作为机器人赛道温度参考。
+<strong>⑤ 看多AI不等于看多半导体，两者相关但完全不同</strong>
+这是他今天最锋利的一句：AI的乐观叙事不能直接推导出半导体股价。资金容易把两个概念混为一谈，他要拆开的正是这层偷换。
+另有 13 条为互动（$ALAB饭局氛围、火锅人均150–200美元、海鲜、餐厅名、简短道谢与认同）。</p>
+<h3>@starzq（Star@Day1Global Podcast）— 5 条</h3>
+<p><strong>① 实测X的限流标签：自己账号正常，抽奖帖被打标</strong>
+他试了X新出的可见性检测功能，账号本身无异常，但一条纯福利抽奖帖被标记。结论是平台在压抽奖类内容，对做流量增长的人是实用情报。
+<strong>② 币安承诺全额担责并开放第一阶段提币，但用户不敢提</strong>
+他把群里分歧摆出来：有人问提到哪，有人说不如不提、别处更不安全。他做了个小调研问大家会不会提。真正的信息是交易所信用受损后，资金并没有明确的避险去处。
+另有 3 条为互动（称赞同行、转发提问、表情回应）。</p>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>🟡</td>
+<td>半导体仍是主要战场，对$INTC的封装良率与产品组合几乎一致看空，对AI一级市场融资端开始警觉，分歧集中在「AI需求真伪」而非「有没有AI」</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>🟠</td>
+<td>10月全球股票多空总仓位去杠杆7.8%，为2016年以来最大，杠杆出清未完，波动仍会被放大</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>🟠</td>
+<td>AI一级市场融资缩水叠加次级评级，是估值端最直接的裂缝；叠加交易所信用受损，避险去处并不清晰</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最该带走的是：AI的融资端在变紧，不要用「AI很重要」去推导半导体股价一定涨。可以跟的验证点是Intel先进封装那25–30%的硅桥良率会不会被公司自己确认或反驳——如果台媒数字成立，台积电的封装瓶颈地位就更硬，Intel的AI订单故事更难讲。风险提醒：本周叙事多来自转述与爆料，没有一家公司正式公告，别把二手数字当结论去下单。</p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
