@@ -14,6 +14,9 @@ import re
 import sys
 import os
 import html
+import subprocess
+import time
+import urllib.request
 from pathlib import Path
 from datetime import datetime
 
@@ -147,6 +150,53 @@ def normalize_date(label: str) -> str:
     return label.replace(".", "-")
 
 
+def _pages_token() -> str:
+    """从 git remote URL 里抠出 x-access-token，用于触发 Pages 重建。"""
+    try:
+        url = subprocess.check_output(["git", "remote", "get-url", "origin"], cwd=ROOT, text=True).strip()
+        m = re.search(r"x-access-token:([^@]+)@", url)
+        return m.group(1) if m else ""
+    except Exception:
+        return ""
+
+
+def _trigger_pages_build() -> None:
+    tok = _pages_token()
+    if not tok:
+        print("⚠️ 无 token，跳过 Pages 重建触发")
+        return
+    req = urllib.request.Request(
+        "https://api.github.com/repos/ktzwei/us-stock-blog/pages/builds",
+        data=b"{}", method="POST",
+        headers={"Authorization": f"token {tok}", "Accept": "application/vnd.github+json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            print(f"已触发 Pages 重建 (HTTP {r.status})")
+    except Exception as e:
+        print(f"⚠️ 触发 Pages 重建失败: {e}")
+
+
+def _wait_live(date_slug: str, tries: int = 10, gap: int = 15) -> bool:
+    """发布后确认线上页面真的 200；失败则触发重建再等一轮。"""
+    url = f"https://ktzwei.github.io/us-stock-blog/reports/{date_slug}.html"
+    for attempt in range(2):
+        for _ in range(tries):
+            try:
+                with urllib.request.urlopen(url, timeout=15) as r:
+                    if r.status == 200:
+                        print(f"线上校验通过: {url}")
+                        return True
+            except Exception:
+                pass
+            time.sleep(gap)
+        if attempt == 0:
+            print("线上仍是 404，触发 Pages 重建…")
+            _trigger_pages_build()
+    print(f"⚠️ 线上校验未通过（页面可能仍在构建）: {url}")
+    return False
+
+
 def main() -> int:
     if len(sys.argv) < 2:
         print("用法: publish.py <report.md> <date_label> [--push]")
@@ -181,6 +231,7 @@ def main() -> int:
         os.system("git add -A && git commit -q -m '新增美股日报' || true")
         os.system("git push -q origin main")
         print("已 push 到 GitHub Pages")
+        _wait_live(date_slug)
     return 0
 
 
