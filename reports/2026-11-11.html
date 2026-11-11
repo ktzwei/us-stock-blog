@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.11.11</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.11.11</a></h1>
+  <div class="date">2026.11.11</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.11.11</h1>
+<blockquote>
+<p>主线是 AI 算力链多空撕扯：CRWV 财报与 Anthropic 定价双双验证需求，博主多数在股价下跌里坚持看多基本面。</p>
+</blockquote>
+<h2>一、博主观点（按名单顺序，不按重要性）</h2>
+<h3>@aleabitoreddit（Serenity）— 2 条</h3>
+<p><strong>① CRWV 需求是产能十倍，算力股在需求增长时崩盘很荒诞</strong>
+她读 $CRWV 财报：合格需求是可用产能的 10 倍，2028 年产能意向已达供给的数倍；旧卡 Ampere、Hopper 租金环比涨 30–50%，新贷款利率降到 7–7.5%。她的判断是 $NBIS、$IREN 这些同行处境更好，需求还在涨而股价下跌不合逻辑。</p>
+<p><strong>② 客户 100% 预付合同款，等于给同行立了定价标杆</strong>
+她强调 CRWV 已经能拿到合同全额预付款，说明下游抢算力根本不看账期。这条把「新云厂商融资断裂」的叙事往下压了一档，$NBIS、$IREN 的融资条件会被拿来对照，对空头不利。</p>
+<h3>@jukan05（Jukan）— 11 条</h3>
+<p><strong>① Anthropic 保守的四季度指引，理由只是工程师年底休假</strong>
+他转述巴克莱（Barclays）在 Anthropic 非交易路演（non-deal roadshow，不融资的投资者沟通会）后给客户的简报：四季度指引约 193 亿美元、年化约 770 亿，低于 10 月的 810 亿年化营收。他的态度是这解释合理，不算需求转弱。</p>
+<p><strong>② 他真正担心的是「AI 见顶」正在变成共识</strong>
+这条最值得留意：当看空逻辑人人都会讲，赔率就反转了。他反复提醒市场用环比（MoM）看 Anthropic 是错的，因为指数级增长的公司年底本就有季节性，未来该换成同比（YoY）口径。</p>
+<p><strong>③ 他自述九月已卖掉大部分公开市场持仓，转投私募</strong>
+他澄清自己没参与所谓做空报告，也不认为那份东西多空。这话透露出他现在的仓位不在二级市场，对美股个股的判断要打个折扣看。</p>
+<p>另有 8 条为互动（回应质疑与来源核实，涉及 Anthropic 估值区间是否回到 1.5 万亿以上）。</p>
+<h3>@insane_analyst（Irrational Analysis）— 6 条</h3>
+<p><strong>① 同一个提示词和论文，Astra 给出的结果明显更好</strong>
+他在做模型横评，只给结论不给细节。这类表态通常意味着他对某个模型的推理能力重新排序，但没点标的，当情绪参考即可。</p>
+<p><strong>② 买 Anthropic 上市只打算拿几天，未来半年仍看空</strong>
+他说 IPO 定价上调本身是个短期信号，但半年维度看空不变，自己进场只是「手里没货几天也挺好玩」。他自己都打了免责声明，这类话别当买入依据。</p>
+<p><strong>③ 数据中心被政治拖延，是接下来的真麻烦</strong>
+他点出地方政治会拖慢数据中心落地，还提到英伟达（$NVDA）与政府之间的敏感关系。对算力链是供给端的时间风险，不是需求风险。</p>
+<p><strong>④ 顺手做空 $QCOM</strong>
+只有一句「做空高通」，没给理由。高通不在 AI 算力主线上，属于他个人的分散押注，不必跟。</p>
+<p><strong>⑤ 1.6T AEC（有源电缆，数据中心机柜间的高速铜缆）2027 年底跑通的概率约 70%</strong>
+他说对方技术问答质量不错，产品计划 2027 下半年出货。这是给某条互联硬件路线的下注，70% 是他自己的主观概率。</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 3 条</h3>
+<p><strong>① 闪迪按单季赚 100 亿美元算，市盈率只剩 2.5 倍</strong>
+存储涨价的极端假设被他推到极致：$SNDK 若真到这个盈利水平，估值便宜到不合理。这其实是在说 NAND 涨价周期里，市场给的估值远没跟上盈利，但前提是他那个盈利假设要成立。</p>
+<p><strong>② 最近亏到怀疑自己，跑去海边散心，但不打算下牌桌</strong>
+难得的实话。交易者的情绪本身就是风险信号，他自己承认心气快崩了，说明这波调整对多头杀伤不小。</p>
+<p><strong>③ 韩国政府 13 号要开会讨论救市</strong>
+这条对着韩股，间接照出亚洲科技股情绪有多差。政府出手往往是跌到位之后的动作，不是见底保证。</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 1 条</h3>
+<p><strong>① 一句「愿赌服输」，等于承认这波做多错了</strong>
+只有情绪没有仓位细节。结合今天整个 AI 板块的下跌，可以判断他手上大概率是亏的，属于典型的情绪见底型发言，参考价值在情绪面。</p>
+<h3>@qinbafrank（qinbafrank）— 14 条</h3>
+<p><strong>① Anthropic 路演最该看的是「AI 能力扩张曲线」</strong>
+他把那条图读成三层递进：从 2024 年查事实、改 bug，到 2025–26 年代码重构、多步工作流、自主编程，再到未来的工业设计、药物发现、自主软件开发。逻辑是场景扩散等于商业化加速，这是他今天所有看多的地基。</p>
+<p><strong>② 小火箭 $RKLB 财报把利空砸出了黄金坑</strong>
+三季度营收 2.68 亿美元同比增 73%，高于预期；积压订单（backlog，已签约未交付的订单总额）冲到 36 亿，单季新增超 10 亿；117 次发射合同创纪录。他判断 Neutron 首飞推迟的利空已在 10 月 15 日消化完，现在是情绪修复期。</p>
+<p><strong>③ 但 $RKLB 真正爆发必须等 Neutron 首飞成功</strong>
+他明确提出风险点：首飞前测试顺利与否决定走势，否则还会波折。同时点出行业运力极紧——太空探索（SpaceX）2028 年后不卖拼车，$RKLB 已能按 7000 万美元全价卖发射槽位，涨价逻辑硬。</p>
+<p><strong>④ Anthropic 的 IPO 定价几乎没给二级市场留溢价，但 P/S（市销率）14 倍仍便宜</strong>
+发行上限从 2 万亿一路砍到 1.02 万亿，对上轮私募 9650 亿基本平开。他算按 678 亿年化营收是 14.3 倍 P/S，而 SpaceX 上市时是 95 倍以上，所以对长期看 AI Agent 的资金来说性价比高。</p>
+<p><strong>⑤ CRWV 财报最大看点是商业模式转向「代客运营」</strong>
+三季度收入 36.6 亿、环比增 10.9 亿，剩余履约义务（RPO，已签约未确认的收入）1323 亿。真正变化是 2027 年前母公司不再发无担保债，改靠客户预付款和以合同抵押的 DDTL（延迟发放贷款，提款才计息），70% 交易已收预付款。他结论：融资担忧缓解，但这类票只适合做波段不适合长持。</p>
+<p><strong>⑥ 美国财政部季度再融资：11 月下旬流动性收紧，12 月才是改善窗口</strong>
+四季度私人净借款下调至 6180 亿，短债反而多增 150 亿。他推算财政部账户（TGA，财政部在美联储的现金存款）11 月下旬冲到 1.025 万亿，银行准备金被抽到约 2.87 万亿；12 月底 TGA 回落到 8500 亿，准备金回升到 3.05 万亿。所以他的操作判断是 11 月中长线逢低买，12 月流动性回暖可能带一波加密行情。</p>
+<p>另有 8 条为互动（回应 TGA 与流动性节奏质疑、Anthropic 发行股本口径、云厂商增速与 AI 商业化风险）。</p>
+<h3>@labubu_trader（3X Long Labubu）— 22 条</h3>
+<p><strong>① 把 $LITE 从观察名单里划掉了，因为 Marvell 并购改变了价格行为</strong>
+并购套利（merger-arb，赌并购能否成交的资金）会把两只票绑在一起波动，像他之前讲过的 CoreWeave 与 CORZ。除非交易结构变化，比如股东否掉，否则他不碰了。</p>
+<p><strong>② $INTC 要时间自证，短线他宁可跟强势也不赌反转</strong>
+他原本把英特尔放进抄底清单，看中的是先进制程和封装；但财报失望、政治支持叙事走弱、EMIB 良率传闻（他自己承认是传闻）让逻辑打折。结论是先看强势再说。</p>
+<p><strong>③ 港股只选择性做，小米是多头短线，$BABA 有芯片断供风险</strong>
+他认为美元走弱、中国更容易建数据中心对小 $MI 有利；但 $BABA 若碰上英伟达（$NVDA）限制收紧，芯片来源是独立风险。他的原话是港股最难赚钱。</p>
+<p><strong>④ 他仍极度看多 AI，只是做股票的那个人最悲观</strong>
+调研在建 AI 的人会看到大量乐观情绪，空头声音出自交易股票的人。这句其实是在区分产业和股价，也解释了他自己为什么看多却不敢重仓。</p>
+<p><strong>⑤ $NVDA 这家公司和 $NVDA 这只股票是两个问题</strong>
+他提醒别被叙事推着在顶部买入、又在杀跌之后才转空。这句话点的是散户最常见的追高与恐慌顺序，不是基本面判断。</p>
+<p><strong>⑥ 明年很多新云厂商会被紧缩的金融条件打爆，然后被云大厂收购</strong>
+他对信用市场反而没那么悲观：坏公司被并表就消化了，不会演变成系统性信用事件。这条和今天 $CRWV 财报的融资改善是同一枚硬币两面。</p>
+<p><strong>⑦ 数据中心建设者该给当地社区分红或多交税</strong>
+他在回应选址阻力问题：AIDC（AI 数据中心）想落地，就得让当地拿到好处，否则审批会卡。这是把政治风险具体化，也是 $IREN 这类公司扩张的隐性成本。</p>
+<p><strong>⑧ $QQQ 第三次在 680 被打回，若再被拒就下看 660（NQ 27200）找流动性</strong>
+他的技术框架很干净：680 是反复确认的阻力，破了就加多、700 止盈；过不去就等下方流动性被吃掉。这条给了最可执行的价格地图。</p>
+<p><strong>⑨ 放开 $IREN 拿微软（$MSFT）订单的条件，等于救了新云厂商的命</strong>
+他点出微软历史上常在新云厂商交易里抽身（如 nscale），过去是 $IREN 单独扛融资。现在结构改善，是对 $IREN 最实质的单独利好。</p>
+<p><strong>⑩ 比特币矿工手里有已锁定的电力，这是议价筹码</strong>
+他解释为何矿工系新云厂商更难被压价：电力未来难拿，大厂最终得妥协。这条支撑了他对 $IREN、$CIFR 这类资产的中期判断。</p>
+<p><strong>⑪ 停掉 FOMO 式 AIDC 扩张、把资本开支曲线压平，半导体才能摆脱周期标签</strong>
+他认为无限加速建数据中心反而让芯片股永远被当周期股折价。真正的长牛需要供需节奏可控，这话是在给暴跌找结构性解药。</p>
+<p><strong>⑫ 他反复向亚洲和美国基金经理解释：工程师 11、12 月不怎么干活</strong>
+所以别指望 Anthropic 的营收环比（MoM，跟上个月比）继续冲高，指数级公司的年底季节性很明显。这条和 Jukan 讲的是同一件事，但他给的是产业内部视角。</p>
+<p>另有 10 条为互动（回应 $NBIS 是否有仓、AIDC 社区分摊、FTX 清算拿股成本、二级市场只是赌场等）。</p>
+<h3>@LinQingV（Macro_Lin）— 1 条</h3>
+<p><strong>① 只回了一句「完全同意」，无独立判断</strong>
+今日无实质观点（仅互动）。</p>
+<h3>@fi56622380（fin）— 0 条</h3>
+<p>今日无实质观点（窗口内无新推文）。</p>
+<h3>@nft_hu（Fiona）— 0 条</h3>
+<p>今日无实质观点（窗口内无新推文）。</p>
+<h3>@mdzzi（茶不思）— 0 条</h3>
+<p>今日无实质观点（窗口内无新推文）。</p>
+<h3>@starzq（Star@Day1Global Podcast）— 0 条</h3>
+<p>今日无实质观点（窗口内无新推文）。</p>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>🟡</td>
+<td>需求端人人喊「十倍缺口」，但没人敢重仓，多数人在跌势里等确认，多头是信念不是仓位</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>🟡</td>
+<td>财政部 11 月下旬抽走准备金、12 月才释放，流动性先紧后松，中期偏多但需熬过这两周</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>🟠</td>
+<td>$QQQ 680 三度被拒，若确认失守 660 会触发程序化抛售；数据中心政治阻力是新增变量</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最该带走的判断是：AI 算力的需求是真的（CRWV 需求是产能十倍、Anthropic 定价嫌便宜），但股价的敌人不是需求而是融资条件和流动性。可跟的验证点是 $QQQ 680 这个位置——破了才算多头拿回主动权，被拒三次就该相信阻力。风险提醒：博主们普遍在下跌中看多，这是最容易集体错的姿势，别把他们的信念当成你的仓位依据。</p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
