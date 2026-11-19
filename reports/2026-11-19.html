@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>美股小白观察报告 · 2026.11.19</title>
+<style>
+:root {
+  --bg: #0a0e17; --surface: #111726; --surface-2: #1a2233; --border: #232d42;
+  --text: #e6eaf2; --muted: #8a94ab; --accent: #4f8cff; --green: #38d996;
+  --red: #ff5c6c; --amber: #ffb84d; --purple: #a78bfa;
+  --radius: 14px;
+  --mono: "SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+.wrap { max-width:860px; margin:0 auto; padding:0 24px; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+header { padding:56px 0 32px; border-bottom:1px solid var(--border); background:radial-gradient(1200px 400px at 20% -10%,rgba(79,140,255,.15),transparent 60%),radial-gradient(800px 300px at 90% -20%,rgba(56,217,150,.08),transparent 60%); }
+.kicker { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; letter-spacing:2px; color:var(--green); text-transform:uppercase; margin-bottom:16px; }
+.kicker::before { content:""; width:28px; height:1px; background:var(--green); }
+h1 { font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.2; margin-bottom:10px; }
+h1 a { color:var(--text); }
+.date { font-family:var(--mono); color:var(--muted); font-size:14px; }
+h2 { font-size:20px; font-weight:700; margin:28px 0 14px; letter-spacing:-0.01em; color:var(--text); }
+h3 { font-size:17px; font-weight:600; margin:20px 0 10px; color:var(--text); }
+p { margin-bottom:12px; }
+strong { color:var(--text); font-weight:600; }
+em { color:var(--amber); font-style:normal; }
+blockquote { border-left:3px solid var(--green); padding:8px 18px; margin:14px 0; background:rgba(56,217,150,.05); border-radius:0 8px 8px 0; }
+blockquote p { margin:0; }
+code { font-family:var(--mono); color:var(--purple); font-size:13px; background:rgba(167,139,250,.1); padding:1px 7px; border-radius:5px; }
+ul,ol { padding-left:24px; margin:12px 0; }
+li { margin-bottom:8px; }
+table { width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+th { text-align:left; font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--border); }
+td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td:first-child { font-weight:600; color:var(--accent); white-space:nowrap; }
+hr { border:none; border-top:1px solid var(--border); margin:28px 0; }
+footer { padding:40px 0 64px; text-align:center; color:var(--muted); font-size:13px; }
+.back { display:inline-block; margin-top:12px; font-family:var(--mono); font-size:13px; }
+.section { padding:12px 0; }
+@media (max-width:600px){ .wrap{padding:0 18px;} header{padding:40px 0 24px;} td:first-child{white-space:normal;} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">US Stock Daily · ktzwei.github.io/us-stock-blog</div>
+  <h1><a href="../">美股小白观察报告 · 2026.11.19</a></h1>
+  <div class="date">2026.11.19</div>
+</div></header>
+<div class="wrap">
+<h1>美股小白观察报告 · 2026.11.19</h1>
+<blockquote>
+<p>主线是 Anthropic 上市与 AI 硬件退潮，博主整体偏防守：清仓、零多头、只做应用。</p>
+</blockquote>
+<h2>一、博主观点（按名单顺序，不按重要性）</h2>
+<h3>@insane_analyst（Irrational Analysis）— 16 条</h3>
+<p><strong>① $AMD 良率没问题，毛利率已经说明一切</strong>
+他直接反驳外界对 AMD 良率的怀疑，理由是毛利率（gross margin，营收扣掉直接成本后的比例）没有塌，产出就没出问题；又点了一句 OpenAI 是私有公司、不必对外交代。意思很明确：别拿没证实的传闻压 $AMD 的估值。</p>
+<p><strong>② 死守旧模型权重是一种邪教</strong>
+他把「保存老模型权重（model weights，训练完固化下来的参数文件）」比作人死后非要防腐保存遗体，讽刺 AI 圈对旧版本的怀旧。逻辑是模型该淘汰就淘汰，迷恋老参数是信仰，不是工程判断，也不产生收入。</p>
+<p><strong>③ Claude 的宪法条文里全是怪东西</strong>
+他说 David Sacks 提过 Anthropic 给 Claude 写的「宪法」（constitution，一套让它自我约束的行为准则）内容诡异，自己翻了一遍也有同感。这是在质疑头部实验室的价值观设定缺乏透明度，属于对 AI 治理的软性担忧。</p>
+<p><strong>④ 峰会听完，没清仓的话今天就清</strong>
+他参加完 TomorrowX 峰会后说，本来今天就想全卖，只是几周前基本清掉了，所以不用动手。这条信息量大：一个多月前明确做多的人，现在人站在卖方，说明这类宏观多头立场已经翻转。</p>
+<p><strong>⑤ 条件成立就做空 50 万美元 $NVDA</strong>
+他没讲具体触发条件，但把金额摆出来了——50 万美元名义做空（short，借股票卖出赌跌），这是表态级仓位，不是嘴上说说。含义是他对 $NVDA 当前的定价极度不信任，愿意用真金白银定价。</p>
+<p><strong>⑥ 没人想要 20 层 HBM</strong>
+SK 海力士正测试 20 层 HBM（高带宽内存，AI 加速卡旁边垂直堆叠的存储）堆叠，他一句「没人要」直接否掉需求端。潜台词是堆层数不等于客户买单，硬件军备竞赛可能已经跑到需求前面。</p>
+<p>另有 10 条为互动（含 Webull 开空需多勾一个风险框、与朋友调侃 Jensen 该去 AMD、播客嘉宾与合影等），无交易信息。</p>
+<h3>@qinbafrank — 14 条</h3>
+<p><strong>① 网络安全是 AI 时代最硬的需求</strong>
+他的观察是每发生一次重大安全事故，企业对安全的需求就加一分，而且这板块调整时跌得少、反弹最快最猛。逻辑是安全支出属于「不得不花」的钱，需求刚性比算力弹性好，值得在回调里重点盯。</p>
+<p><strong>② 腾讯自己承认资本开支已在阶段高位</strong>
+他拆腾讯三季度电话会：现金口径资本开支约 650 亿元，2026–2027 年在峰值附近波动，2028 年之后回落，且刘炽平说 2028 年即便需求不变、硬件采购价格也会显著下降。这是给算力硬件（$NVDA、$AMD）的远期需求天花板扣了一层。</p>
+<p><strong>③ 德鲁肯米勒已把股票净敞口压到接近零</strong>
+他复盘德鲁肯米勒 1 月全力做多、11 月 18 日在峰会上说「进入资本保全模式（capital preservation，目标是先不亏钱）」的全过程：美联储转鹰、商品见顶、腾落指数（advance-decline line，涨跌家数差，衡量市场广度）8 月就见顶、信用利差走阔，四个理由 1 月全反了。他自己后来勘误：是净敞口（net exposure，多头减空头）接近平，不是清仓，内部仍有多空对冲。</p>
+<p><strong>④ AI 下半场买应用，不买基建</strong>
+他提炼德鲁肯米勒的核心判断：不再靠 AI 基建硬件当主升浪引擎，转而找「卖任务而不是卖 token（token 指模型按量计费的文本单位）」的应用层，甚至认为最强的应用用例就是前沿实验室自己。落点是云厂与下游应用，基建只能算超跌后的短线战术交易。</p>
+<p><strong>⑤ Anthropic 定价 83 美元，破发概率不大</strong>
+他按实际发行股数算出约 1.09 万亿美元市值（完全稀释口径 1.5 万亿），链上合约已给到 100 美元一股，觉得申购火爆、定价不算过分、开盘涨一波概率还在。但同时提醒：纯正 AI 龙头上市会把资金注意力从非龙头身上抽走。</p>
+<p>另有 3 条为互动与勘误（Backpack 一周集齐 DCM、DCO、FCM 三张美国合规衍生品牌照，可自主上合约与清算；以及承认「清仓」说法不严谨）。</p>
+<h3>@labubu_trader（3X Long Labubu）— 12 条</h3>
+<p><strong>① $NVDA 该多 $AMD、$AVGO，空 $NVDA</strong>
+他重读自己财报前的 $NVDA 多头逻辑，发现董事会三项动作全指向「永久把 Jensen 挡在外面」：拒绝其回归请求、大手笔回购安抚股东、给员工加薪发更多 RSU（restricted stock unit，限制性股票，分批解禁）。他的结论是原逻辑作废，长期估值应低于 $AMD 和 $AVGO。</p>
+<p><strong>② 一个半星期聊了 30–50 位对冲基金 PM，零多头</strong>
+他做的是一线情绪采样（PM 指 portfolio manager 投资经理），结果是完全没有看多的人。这个样本量足够大，说明机构仓位已经极度偏空，反而容易形成扎空（squeeze，空头被迫平仓推高价格）的燃料。</p>
+<p><strong>③ 现在做空任何东西都没兴趣</strong>
+他明确说自己当前没有做空欲望，即便机构一片看空。理由是跌到这儿做空性价比太低，与前面「零多头」形成组合判断：情绪极空但没人愿意加空，向上更容易。</p>
+<p><strong>④ 所谓的痛感交易现在是向上</strong>
+他的推演是：如果期权、波动率控制、CTA（commodity trading advisor，趋势跟踪资金）这些机械性资金把市场推到年底，那些仓位很低的机构只能 1 月追高，再做出一个一季度局部顶。「痛感交易（pain trade）」指让多数人难受的那个方向，现在指上涨。</p>
+<p><strong>⑤ 财报问答期间发推能把股价砸 2%</strong>
+他调侃有人在业绩电话会 Q&amp;A 时段发推，股价立刻回撤 2%，说明当下 $NVDA 情绪极度脆弱，一点噪音就能触发抛压。这是流动性薄、信心差的典型特征，不是基本面信号。</p>
+<p><strong>⑥ 大机构在卖，只是嘴上不认</strong>
+他向一家 LO（long only，只做多的公募型机构）求证，对方说基准是指数、不在乎回撤不会卖；但从高盛的资金流数据和开盘一小时的价格行为看，他认为 LO 上周起就在主动卖。这是典型的言行不一致，量价证据优先。</p>
+<p>另有 4 条为互动（回应 $ANT 会清掉持币者、认同 Jensen 若传闻属实则应被解雇但要先调查、以及「涨就必须是扎空」等），无新增仓位信息。</p>
+<h3>@jukan05（Jukan）— 8 条</h3>
+<p><strong>① Anthropic 手握 1100 亿美元现金</strong>
+他给的数字直观解释了什么叫做「不差钱」：现金储备本身就让它在算力采购和抢人上有长期弹药，也解释了 IPO 定价敢往上调。对 $NVDA 这类卖方是硬支撑，对二线 AI 公司是碾压式竞争压力。</p>
+<p><strong>② SK 海力士在测 20 层 HBM5 混合键合</strong>
+韩国媒体称 SK 海力士引入韩华 Semitech 与 BESI 两台混合键合（hybrid bonding，不用凸点直接以铜面键合堆叠芯片）设备做 20 层 HBM5 验证。这说明存储堆叠的技术门槛还在抬升，$NVDA 的供应链单点依赖仍在加深。</p>
+<p><strong>③ 字节跳动与三星代工的合作已暂停</strong>
+FT 报道字节跳动与三星代工（foundry，替别人生产芯片的制造业务）的项目停了，昆仑芯的也停了，小米在 $TSM 的消费芯片暂缓。他列这一串是中国 AI 芯片产能被卡的实际后果，对 $TSM 是短期订单流失、长期议价力提升。</p>
+<p><strong>④ Kimi 想租 1.5 亿美元 Blackwell 被逼放弃</strong>
+The Information 报道 Kimi 原计划在印尼租 1.5 亿美元等值的 Blackwell 算力，因美国限制收紧而放弃。他反问「那这批 GPU 谁来接」，暗示算力供给出现区域性闲置，是对 AI 基建需求叙事的直接反证。</p>
+<p><strong>⑤ 分享新闻被骂「散播 FUD」很荒唐</strong>
+他被人指责发负面新闻是散播 FUD（fear、uncertainty、doubt，制造恐慌情绪），他反驳说只是转述事实。这条本身没有仓位信息，但说明当下 AI 叙事已进入「不许讲坏消息」的紧绷阶段。</p>
+<p>另有 2 条为互动（评价旧金山 AI 圈是邪教式狂热、赞同某观点），无新增判断。</p>
+<h3>@starzq（Star@Day1Global Podcast）— 3 条</h3>
+<p><strong>① Anthropic IPO 定价上调到 83 美元，估值 1.5 万亿</strong>
+他只报事实、不下判断：定价从原区间上调，公司估值（valuation，市场给的整家公司总价）到 1.5 万亿美元。这条是当天 AI 板块所有情绪的共同锚点，也解释了为什么二级市场资金在往龙头抽。</p>
+<p><strong>② 马斯克在深圳发「修昔底德陷阱」是悲观暗示</strong>
+他解释了这个概念（Thucydides trap，崛起国挑战守成国时因恐惧与误判走向冲突），并判断马斯克潜台词是希望和平但担心中美竞争失控。这是宏观背景噪音，对具体标的没指向，但会影响中概与半导体供应链的风险溢价。</p>
+<p>另有 1 条为互动（对一个猜测回「有可能」）。</p>
+<h3>@0xSleepinRain（雨中狂睡SleepinRain）— 3 条</h3>
+<p><strong>① Anthropic 上市后流动性会修复，但只是死猫跳</strong>
+他对比 SpaceX 上市后的板块走势：上市七天内有价格修复，但拉长看美股 7 月是跌的，8 月才真修复。当前宏观仍在收紧预期，所以他认为这波反弹属于死猫跳（dead cat bounce，暴跌后的短暂反抽），不是趋势反转。</p>
+<p><strong>② 补充定义：反弹的是一周，不改判断</strong>
+他明确时间尺度——「这段时间」指最近一周会反弹，但仍视作死猫跳，除非出现新的变化（宏观预期转向或政策松动）。这条的价值在于把模糊表述钉成了可验证的时间窗，一周内不涨或涨完就跌，都算他对。</p>
+<p>另有 1 条为互动（猜测 OpenAI 内部风波与其支持开源模型有关）。</p>
+<h3>@aleabitoreddit（Serenity）— 2 条</h3>
+<p><strong>① $GOOGL 抢在 $ANT 上市前发 Gemini 4 基准</strong>
+他在 Anthropic 上市前夜点出谷歌发布 Gemini 4 Neon 跑分，含义是巨头用产品节奏打断「新龙头独享注意力」的叙事。对 $GOOGL 是估值修复的弹药，对 $ANT 首日情绪是一次正面狙击。</p>
+<p><strong>② $SOI 是光互联真正拐点，不只是概念</strong>
+他拆 Soitec 财报：光子 SOI（silicon on insulator，在绝缘层上做硅的光电器件衬底）季度收入从 2500 万美元起步，本季拿下 12 亿美元协议，收入同比增 39%，管理层称增长回来得比预期更早更猛。他抓住的关键句是「铜连接限制 GPU 利用率，光互联才解开瓶颈」，所以总资本开支不等于光模块收入。</p>
+<h3>@xiaomustock（川沐｜Trumoo🐮）— 2 条</h3>
+<p><strong>① 台湾周五起限制卖空，利好 $TSM</strong>
+他给的是交易层面的直接推论：限制卖空（禁空令，暂停融券卖出）会压缩做空供给，短期价格更容易被买盘推高。这是事件驱动的短线机会，而不是对台积电基本面的重新定价。</p>
+<p><strong>② 亚洲人更聪明的「芯片类比」纯属闲聊</strong>
+他用芯片越做越微观、传输距离越短算力越强来类比亚洲人体型与脑神经密度，推「亚洲人最聪明」。这条没有标的、没有数据，属于脑洞发言，不构成任何可执行判断。</p>
+<blockquote>
+<p>说明：名单接口今日返回成员数为 0（脚本抓取异常），上述 7 位为窗口内实际有推文的成员；零推文名单为空，故不另列。</p>
+</blockquote>
+<h2>二、市场情绪温度计 🌡️</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>状态</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股博主</td>
+<td>🔴</td>
+<td>一线 PM 采样零多头 + 德鲁肯米勒净敞口压到接近零，但「没人愿意加空」说明这是极度悲观而非趋势确认</td>
+</tr>
+<tr>
+<td>宏观</td>
+<td>🟠</td>
+<td>美联储转鹰、信用利差走阔、市场广度 8 月已见顶，腾讯也自认资本开支在阶段高位</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>🟠</td>
+<td>$ANT 上市抽走非龙头资金，AI 基建叙事被算力闲置与订单暂停两面夹击，反弹大概率是短线反抽</td>
+</tr>
+</tbody>
+</table>
+<h2>三、给小白的一句话</h2>
+<p>今天最该带走的判断是：<strong>这不是「AI 完了」，而是「AI 的钱从基建往应用搬」</strong>——德鲁肯米勒清空方向性仓位却不敢做空科技，就是这个意思。可跟的验证点：看 $ANT 首日是否真按链上给的 100 美元附近开盘，以及上市一周后资金是否回流其他 AI 标的。风险提醒：机构零多头但也没人加空，这种结构下急跌急涨都容易放大，别在这时候满仓赌方向。</p>
+<a class="back" href="../">← 返回目录</a>
+</div>
+<footer><div>仅供学习参考，不构成投资建议</div></footer>
+</body></html>
